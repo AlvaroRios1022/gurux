@@ -1,0 +1,1636 @@
+/* Hoverr menu */
+
+.chats {
+    width: 100%;
+    background-color: transparent;
+    height: 430px;
+    overflow: auto;
+}
+
+.chat {
+    border: 1px solid #462161;
+    border-radius: 20px;
+    width: 200px;
+    text-decoration: none;
+}
+
+textarea:focus,
+input:focus,
+input[type]:focus {
+    outline: 0 none;
+}
+
+
+/* and so on... */
+
+.menuamarillo {
+    color: #fff;
+}
+
+.menuamarillo :hover {
+    color: #FFC808;
+    padding-left: -100;
+}
+
+.bordes {
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
+
+
+/* menu-submenu*/
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+nav li {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+nav li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+nav li>ul {
+    display: none;
+}
+
+nav li:hover>ul {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+
+/* Banner */
+
+.banner {
+    height: auto;
+    width: 1140px;
+    float: right;
+}
+
+
+/* sub menu*/
+
+.barra {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #8ED8F8;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
+.barra2 {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #A5CE39;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
+.barrayoga {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #FFED90;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
+.barrapsiquicos {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #A665A9;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
+.barrareligioso {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #59C7DA;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
+.barracoaching {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #F58120;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
+.barraidiomas {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #4EB3BD;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
+.barratutores {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #DE5886;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
+.barraotros {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #9AD3AE;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
+.barraconstruccion {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #FFC808;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
+#lista1 li {
+    display: inline-block;
+    list-style-type: none;
+    font-family: "Circular Std Book", "Circular Std Black";
+    font-size: 13px;
+    font-weight: bold;
+    color: #512975;
+    text-decoration: none;
+}
+
+.itemlista1 {
+    font-family: "Circular Std Book", "Circular Std Black";
+    font-size: 13px;
+    font-weight: bold;
+    color: #512975;
+    text-decoration: none;
+}
+
+.itemlista1 a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.itemlista1 a {
+    color: #512975;
+    text-decoration: none;
+}
+
+a:current {
+    color: red;
+}
+
+
+/* barraizquierda */
+
+.barraizquierda {
+    width: 17%;
+    background-color: #d6f0fc;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
+.barraizquierdaalterna {
+    width: 17%;
+    background-color: #e5ecae;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
+.barraizquierdayoga {
+    width: 17%;
+    background-color: #FFF8DA;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
+.barraizquierdapsiquico {
+    width: 17%;
+    background-color: #EBD1E5;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
+.barraizquierdareligioso {
+    width: 17%;
+    background-color: #DCEEF3;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
+.barraizquierdacoaching {
+    width: 17%;
+    background-color: #FEE1CA;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
+.barraizquierdaidiomas {
+    width: 17%;
+    background-color: #D0E9EA;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
+.barraizquierdatutores {
+    width: 17%;
+    background-color: #FBD6E5;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
+.barraizquierdaotros {
+    width: 17%;
+    background-color: #E3F2E6;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
+.barraizquierdaconstruccion {
+    width: 17%;
+    background-color: #f8d878;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
+.especial {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especial :hover {
+    background-color: #DEF6FF;
+    color: #000;
+    text-decoration: none;
+}
+
+.especialalterno {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especialalterno :hover {
+    background-color: #f8fdd0;
+    color: #000;
+    text-decoration: none;
+}
+
+.especialyoga {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especialyoga :hover {
+    background-color: #f7f3e1;
+    color: #000;
+    text-decoration: none;
+}
+
+.especialpsiquicos {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especialpsiquicos :hover {
+    background-color: #fdeaf9;
+    color: #000;
+    text-decoration: none;
+}
+
+.especialreligioso {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especialreligioso :hover {
+    background-color: #edfafd;
+    color: #000;
+    text-decoration: none;
+}
+
+.especialcoaching {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especialcoaching :hover {
+    background-color: #f8eade;
+    color: #000;
+    text-decoration: none;
+}
+
+.especialidiomas {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especialidiomas :hover {
+    background-color: #edfbfc;
+    color: #000;
+    text-decoration: none;
+}
+
+.especialtutores {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especialtutores :hover {
+    background-color: #fce3ee;
+    color: #000;
+    text-decoration: none;
+}
+
+.especialotros {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especialotros :hover {
+    background-color: #f6fcf7;
+    color: #000;
+    text-decoration: none;
+}
+
+.especialconstructores {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especialconstructores :hover {
+    background-color: #fae6a5;
+    color: #000;
+    text-decoration: none;
+}
+
+.contenido {
+    height: 0px;
+    width: 100%;
+    float: left;
+    background-color: #FFF;
+}
+
+.blanco {
+    height: auto;
+    width: 3px;
+    float: left;
+    background-color: #FFF;
+}
+
+
+/* pre-footer */
+
+.container {
+    display: left;
+    flex-flow: column nowrap;
+}
+
+
+/* pre-Footer*/
+
+.footer2 {
+    margin-left: 17%;
+    background-color: #8ED8F8;
+    padding: 40px 0px;
+    height: auto;
+}
+
+.footeralternativa2 {
+    margin-left: 17%;
+    background-color: #A5CE39;
+    padding: 40px 0px;
+    height: auto;
+}
+
+.footeryoga {
+    margin-left: 17%;
+    background-color: #FFED90;
+    padding: 40px 0px;
+    height: auto;
+}
+
+.footerpsiquicos {
+    margin-left: 17%;
+    background-color: #A665A9;
+    padding: 40px 0px;
+    height: auto;
+}
+
+.footerreligioso {
+    margin-left: 17%;
+    background-color: #59C7DA;
+    padding: 40px 0px;
+    height: auto;
+}
+
+.footercoaching {
+    margin-left: 17%;
+    background-color: #F58120;
+    padding: 40px 0px;
+    height: auto;
+}
+
+.footeridiomas {
+    margin-left: 17%;
+    background-color: #4EB3BD;
+    padding: 40px 0px;
+    height: auto;
+}
+
+.footertutores {
+    margin-left: 17%;
+    background-color: #DE5886;
+    padding: 40px 0px;
+    height: auto;
+}
+
+.footerotros {
+    margin-left: 17%;
+    background-color: #9AD3AE;
+    padding: 40px 0px;
+    height: auto;
+}
+
+.footerconstruccion {
+    margin-left: 17%;
+    background-color: #FFC808;
+    padding: 40px 0px;
+    height: auto;
+}
+
+.footer2 ul li {
+    padding: 5px 0px;
+}
+
+
+/* lateral izquierdo*/
+
+.menuleft {
+    width: 40%;
+    margin-top: 25px;
+    background-color: #D6F0FC;
+    position: sticky;
+}
+
+
+/* Buscador */
+
+.buscador {
+    width: 75%;
+    background-color: #D6F0FC;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+}
+
+.buscadoralterna {
+    width: 75%;
+    background-color: #E1EA9D;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+}
+
+.buscadoryoga {
+    width: 75%;
+    background-color: #FFF8DA;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+}
+
+.buscadorpsiquico {
+    width: 75%;
+    background-color: #EBD1E5;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+}
+
+.buscadorreligioso {
+    width: 75%;
+    background-color: #DCEEF3;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+}
+
+.buscadorcoaching {
+    width: 75%;
+    background-color: #FEE1CA;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+}
+
+.buscadoridiomas {
+    width: 75%;
+    background-color: #D0E9EA;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+}
+
+.buscadortutores {
+    width: 75%;
+    background-color: #FBD6E5;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+}
+
+.buscadorotros {
+    width: 75%;
+    background-color: #E3F2E6;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+}
+
+.buscadorconstruccion {
+    width: 75%;
+    background-color: #f8d878;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+}
+
+.search {
+    background-color: #D6F0FC;
+    border: none;
+    width: 14%;
+}
+
+.searchalterna {
+    background-color: #E1EA9D;
+    border: none;
+    width: 14%;
+}
+
+.searchyoga {
+    background-color: #FFF8DA;
+    border: none;
+    width: 14%;
+}
+
+.searchpsiquico {
+    background-color: #EBD1E5;
+    border: none;
+    width: 14%;
+}
+
+.searchreligioso {
+    background-color: #DCEEF3;
+    border: none;
+    width: 14%;
+}
+
+.searchcoaching {
+    background-color: #FEE1CA;
+    border: none;
+    width: 14%;
+}
+
+.searchidiomas {
+    background-color: #D0E9EA;
+    border: none;
+    width: 14%;
+}
+
+.searchtutores {
+    background-color: #FBD6E5;
+    border: none;
+    width: 14%;
+}
+
+.searchotros {
+    background-color: #E3F2E6;
+    border: none;
+    width: 14%;
+}
+
+.searchconstruccion {
+    background-color: #f8d878;
+    border: none;
+    width: 14%;
+}
+
+
+/* footer */
+
+.container {
+    display: left;
+    flex-flow: column nowrap;
+}
+
+
+/*Footer*/
+
+footer {
+    margin-left: 17%;
+    background-color: #452167;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+footer ul li {
+    padding: 5px 0px;
+}
+
+.adress span,
+.contact span,
+.social span {
+    color: #FFF;
+    font-weight: 800;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.adress li p,
+.contact li a,
+.social li a {
+    color: #FFF;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.social li {
+    float: left;
+}
+
+.adress,
+.contact,
+.social {
+    list-style: none;
+}
+
+.fa {
+    color: #9c9c9c;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+
+/* Lateral Izquierdo*/
+
+
+/*Menu Right*/
+
+.botonright {
+    width: 60%;
+    height: 40px;
+    margin-bottom: 40px;
+    color: #4f2770;
+    background-color: #FEC705;
+    border: 0px;
+    text-decoration: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menuright {
+    width: 99%;
+    margin-top: 25px;
+    background-color: #4f2770;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menuright2 {
+    width: 99%;
+    background-color: #E3E4E5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.menuright3 {
+    width: 99%;
+    background-color: #5C3293;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.imputright {
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 12px;
+    text-indent: 20px;
+}
+
+
+/* Gurus */
+
+.textopguru {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.textopguru2 {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form label {
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    color: #462161;
+}
+
+label {
+    color: grey;
+}
+
+.clasificacion {
+    unicode-bidi: bidi-override;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.clasificacion {
+    unicode-bidi: bidi-override;
+    margin-left: 10px;
+    text-align: left;
+}
+
+label:hover,
+label:hover~label {
+    color: orange;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+}
+
+.container {
+    display: left;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.bloqueguru {
+    background-color: #F2F2F2;
+}
+
+.imgredonguru {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.bloqueguru2 {
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.bloqueguru3 {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.bloqueguru3 {
+    background-color: #F2F2F2;
+}
+
+.imgredonguru3 {
+    width: 800px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.buttons {
+    font-size: 22px;
+    margin-top: 2%;
+    margin-left: 4.2%;
+}
+
+.fa:hover {
+    color: darkcyan;
+}
+
+.container {
+    display: left;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.cabecera {
+    background-color: #452167;
+}
+
+.fondomedio {
+    background-color: #FEFEFE;
+    width: 100%;
+}
+
+.fondomedio2 {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*CSS Grid*/
+
+.section-grid {
+    display: flex;
+    width: 100%;
+}
+
+.section-grid2 {
+    display: flex;
+    margin-left: 19%;
+}
+
+.grid-prod {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 150%;
+    margin-left: 10px;
+}
+
+.prod-grid {
+    flex: 1 1 27%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-left: 25px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bootm: 0;
+}
+
+.prod-grid2 {
+    flex: 1 1 27%;
+    margin-top: 25px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.prod-grid3 {
+    flex: 1 1 27%;
+    margin-right: 25px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.grid-prod2 {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 170%;
+}
+
+.prod-grid img {
+    width: 100%;
+}
+
+.prod-grid2 img {
+    width: 100%;
+}
+
+.prod-grid3 img {
+    width: 100%;
+}
+
+h3,
+p {
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+
+/*CSS List*/
+
+.section-list {
+    display: flex;
+    padding: 2% 4%;
+}
+
+table {
+    width: 100%;
+    margin: 10px 10px;
+    border: 2px solid #000;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table tr td {
+    padding: 10px;
+    border-top: 2px solid #000;
+}
+
+tr td img {
+    width: 100%;
+}
+
+.btn-list {
+    background: darkcyan;
+    border: 1px solid darkcyan;
+    border-radius: 6px;
+    color: white;
+    font-size: 22px;
+    width: 200px;
+    height: 40px;
+    position: right;
+    margin: 10px;
+    margin-top: 10%;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.btn-list:hover {
+    background: white;
+    border: 2px solid darkcyan;
+    color: darkcyan;
+    margin: 10%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .section-list,
+    .buttons {
+        display: none;
+    }
+}
+
+
+/* Header*/
+
+#container2 {
+    margin-top: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #452167;
+    height: 100px;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo {
+    margin-left: -10px;
+    width: 7%;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    float: left;
+}
+
+.menu {
+    width: 93%;
+    float: right;
+    height: 120px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menusuperiorizquierdo {
+    width: 645px;
+    float: left;
+    height: 22px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.menusuperiocentro {
+    width: 370px;
+    float: left;
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.menusuperiocentroa {
+    width: 500px;
+    float: left;
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.menusuperiorderecho {
+    width: 128px;
+    float: right;
+    margin: 0px;
+    height: 22px;
+    padding-top: 16px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.menusuperiorderecho2 {
+    width: 300px;
+    float: right;
+    margin: 0px;
+    height: 22px;
+    padding-top: 16px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.menuinferior {
+    text-decoration: blink;
+    float: left;
+    height: 82px;
+    width: 100%;
+    margin: 0px;
+    padding-left: 3px;
+}
+
+#lista li {
+    display: inline-block;
+    list-style-type: none;
+    height: 47px;
+}
+
+.itemlista {
+    font-family: "Circular Std Book", "Circular Std Black";
+    font-size: 14px;
+    color: #FFF;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-family: "Circular Std Book", "Circular Std Black";
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    display: inline-block;
+    width: 115px;
+    height: 50px;
+    background-color: #8ED8F8;
+    text-align: center;
+    color: #000;
+    padding-top: 5px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    vertical-align: middle;
+}
+
+nav li {
+    display: inline-block;
+    width: 115px;
+    height: 50px;
+    background-color: #8ED8F8;
+    text-align: center;
+    color: #000;
+    padding-top: 5px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    vertical-align: middle;
+}
+
+nav li:hover {
+    background-color: #dedede;
+    color: #000;
+}
+
+.azulmedicos {
+    background-color: #8ED8F8;
+}
+
+.verdemedicos {
+    background-color: #A5CE39;
+}
+
+.amarilloyoga {
+    background-color: #FFED90;
+}
+
+.moradosiquico {
+    background-color: #A665A9;
+}
+
+.azulreligioso {
+    background-color: #59C7DA;
+}
+
+.naranjacoaching {
+    background-color: #F58120;
+}
+
+.azulidioma {
+    background-color: #4EB3BD;
+}
+
+.verdeotros {
+    background-color: #9AD3AE;
+}
+
+.amarillocontruccion {
+    background-color: #FFC808;
+}
+
+.rosadotutores {
+    background-color: #DE5886;
+}
+
+
+/* Slider*/
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container2 {
+    max-width: 85%;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2000000s;
+    animation-name: fade;
+    animation-duration: 2000000s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 100
+    }
+    to {
+        opacity: 100
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 100
+    }
+    to {
+        opacity: 100
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* Fuentes */
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-MediumItalic.eot');
+    src: local('../font/CircularStd-MediumItalic'), local('../font/CircularStd-MediumItalic'), url('../font/CircularStd-MediumItalic.eot?#iefix') format('embedded-opentype'), url('../font/CircularStd-MediumItalic.woff2') format('woff2'), url('../font/CircularStd-MediumItalic.woff') format('woff'), url('../font/CircularStd-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-Black.eot');
+    src: local('../font/CircularStd-Black'), local('../font/CircularStd-Black'), url('../font/CircularStd-Black.eot?#iefix') format('embedded-opentype'), url('../font/CircularStd-Black.woff2') format('woff2'), url('../font/CircularStd-Black.woff') format('woff'), url('../font/CircularStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-Medium.eot');
+    src: local('../font/CircularStd-Medium'), local('../font/CircularStd-Medium'), url('../font/CircularStd-Medium.eot?#iefix') format('embedded-opentype'), url('../font/CircularStd-Medium.woff2') format('woff2'), url('../font/CircularStd-Medium.woff') format('woff'), url('../font/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-Bold.eot');
+    src: local('../font/CircularStd-Bold'), local('../font/CircularStd-Bold'), url('../font/CircularStd-Bold.eot?#iefix') format('embedded-opentype'), url('../font/CircularStd-Bold.woff2') format('woff2'), url('../font/CircularStd-Bold.woff') format('woff'), url('../font/CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-BlackItalic.eot');
+    src: local('../font/CircularStd-BlackItalic'), local('../font/CircularStd-BlackItalic'), url('../font/CircularStd-BlackItalic.eot?#iefix') format('embedded-opentype'), url('../font/CircularStd-BlackItalic.woff2') format('woff2'), url('../font/CircularStd-BlackItalic.woff') format('woff'), url('../font/CircularStd-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('../font/CircularStd-BookItalic.eot');
+    src: local('../font/CircularStd-BookItalic'), local('../font/CircularStd-BookItalic'), url('../font/CircularStd-BookItalic.eot?#iefix') format('embedded-opentype'), url('../font/CircularStd-BookItalic.woff2') format('woff2'), url('../font/CircularStd-BookItalic.woff') format('woff'), url('../font/CircularStd-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-BoldItalic.eot');
+    src: local('../font/CircularStd-BoldItalic'), local('../font/CircularStd-BoldItalic'), url('../font/CircularStd-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../font/CircularStd-BoldItalic.woff2') format('woff2'), url('../font/CircularStd-BoldItalic.woff') format('woff'), url('../font/CircularStd-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('../font/CircularStd-Book.eot');
+    src: local('../font/CircularStd-Book'), local('../font/CircularStd-Book'), url('../font/CircularStd-Book.eot?#iefix') format('embedded-opentype'), url('../font/CircularStd-Book.woff2') format('woff2'), url('../font/CircularStd-Book.woff') format('woff'), url('../font/CircularStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul,
+label,
+a,
+button {
+    font-family: 'Circular Std';
+}
