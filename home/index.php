@@ -153,7 +153,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			}
 		?>
 	<div >
-		<img style="width:100%;margin-top: 8rem;" src="img/categorias/barracomo.png" alt="estres">
+		<img style="width:100%;margin-top: 116px;" src="img/categorias/barracomo.png" alt="estres">
 	</div>
 	<div class="slideshow-container">
 		<div class="mySlides fade">
@@ -1413,7 +1413,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	</div>
 
 	<footer>
-		<div class="container">
+		<div class="container" style="margin-left:20%">
 			<div class="row">
 			    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 	<ul class="contact">
