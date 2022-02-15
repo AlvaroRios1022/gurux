@@ -1423,20 +1423,18 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 	<ul class="contact">
 						<span style="color: #C93782">SOBRE NOSOTROS </span>    
-						<li>
-                        	<a href="#">Sobre Nosotros</a>
-                  		</li>
+						
                            
 						<li>
-							<a href="#">Política de Privacidad</a>
+							<a href="politicas.pdf" download="politicas.pdf">Política de Privacidad</a>
 						</li>
 							
 						<li>
-							<a href="#">Términos y Condiciones</a>
+							<a href="terminos.pdf" download="terminos.pdf">Términos y Condiciones</a>
 						</li>
 							
 						<li>
-							<a href="#">Términos de Uso </a>
+							<a href="terminos.pdf" download="terminos.pdf">Términos de Uso </a>
 						</li>
 					</ul>
             	</div>
@@ -1445,7 +1443,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                 <ul class="contact">
                      <span style="color: #C93782">ERES GURÚ?</span>    
                      <li>
-                        <a href="#">Únete hoy a nosotros y conéctate a esta gran red de expertos.</a>
+                        <a href="https://www.guruxy.com" >Únete hoy a nosotros y conéctate a esta gran red de expertos.</a>
                      </li>
                 </ul>
             </div>
