@@ -412,7 +412,20 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	
 	<div >
 		<br>
-		<img src="img/nuestros.png"  style="width: 55%; margin-left:17%" height="auto">
+		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto">
+		<span style="margin-left:20%"> Filtrar Por</span>
+		<select class="camposgenerales" style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    
+    text-decoration: none;
+    margin-bottom: auto;
+	"name="cars" id="cars">
+	<option value="volvo"></option>
+    <option value="volvo">Categoría</option>
+    <option value="saab">Ciudad</option>
+    <option value="opel">Precio</option>
+  </select>
 	</div>
 	
 	
