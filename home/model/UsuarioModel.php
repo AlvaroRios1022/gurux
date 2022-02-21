@@ -103,7 +103,7 @@ class UsuarioModel {
         $apellido = $db->real_escape_string($_POST['apellido']);
         $usuario = $db->real_escape_string($_POST['telefono']);
         $email = $db->real_escape_string($_POST['email']);
-        $pk = $db->real_escape_string($post['pk']);
+        $pk = $db->real_escape_string($_POST['pk']);
         $password = md5($_POST['pass']);
         $ip = $_SERVER['REMOTE_ADDR'];
         $fecha = $db->real_escape_string($_POST['fecha']);
@@ -128,7 +128,7 @@ class UsuarioModel {
             $return['status'] ='warning';
         }
         else {
-            //$aleatorio = uniqid();
+            $aleatorio = uniqid();
     
             $query = "INSERT INTO usuario_guru (conocio,fecha, usuario_usu, nombre_usu, apellido_usu, email_usu, pass_usu, fecha_usu, ip_usu, codigo_usu ) VALUES ($conocio,'$fecha','$usuario','$nombre','$apellido','$email','$password',now(),'$ip','$aleatorio')";
     

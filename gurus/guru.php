@@ -710,14 +710,14 @@ header('Access-Control-Allow-Origin: *');
                                     <option value="Vietnamita">Vietnamita</option>
                                 </select>
                                 
-                                <label for="nivel" class="titulosa">
+                                <label for="idioma_adicional" class="titulosa">
                                     <ul class="lista" >
                                         <li> 
                                             <p>Idiomas adicionales</p>
                                         </li> 
                                     </ul>
                                 </label>
-                                <input id="nivel" name="nivel" class="camposgenerales" >
+                                <input id="idioma_adicional" name="idioma_adicional" class="camposgenerales" >
 
                                 <input  class="check" id="nativo" name="nativo" type="hidden"  >
                             <!-- <label for="Femenino" class="labels">Nativo</label> -->
