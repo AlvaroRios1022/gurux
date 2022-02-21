@@ -454,7 +454,7 @@ if(isset($_GET["tipo_envio"])){
 		</div>
 	</div>
 	<footer>
-		<div class="container" style="margin-left:20%">
+		<div class="container" >
 			<div class="row">
 			    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 	<ul class="contact">
