@@ -158,13 +158,13 @@ box-shadow: none;
 		</div>
 		<div class="barraotros" style="margin-top:-6px; ">
 		<ul id="lista1" >
-                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="#" style="color:#fff; text-shadow: 1px 1px 1px black;"> HOME OTROS PROFESIONALES </a></li>
+                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="otros.php" style="color:#fff; text-shadow: 1px 1px 1px black;"> HOME OTROS PROFESIONALES </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">WEBINAR</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">CITA PRESENCIAL</a></li>
+                <li class="itemlista1"><a href="presencial_otros.php">CITA PRESENCIAL</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">CURSOS EN LÍNEA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>

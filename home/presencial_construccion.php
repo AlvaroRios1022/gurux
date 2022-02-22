@@ -64,7 +64,11 @@ box-shadow: none;
 -webkit-box-shadow: none;
 
 }
-	
+.caja_inline {
+    display: inline-block;
+    width: 100px;
+}
+
 
 		
 	</style>
@@ -158,11 +162,11 @@ box-shadow: none;
 		</div>
 		<div class="barraconstruccion" style="margin-top:-6px; ">
 		<ul id="lista1" >
-                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="construccion.php" style="color:#fff; text-shadow: 1px 1px 1px black;"> HOME ESPECIALISTAS CONSTRUCCIÓN </a></li>
+                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="construccion.php" > HOME ESPECIALISTAS CONSTRUCCIÓN </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="presencial_construccion.php">CITA PRESENCIAL</a></li>
+                <li class="itemlista1"><a href="presencial_construccion.php" style="color:#fff; text-shadow: 1px 1px 1px black;">CITA PRESENCIAL</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">CURSOS EN LÍNEA </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
@@ -238,11 +242,151 @@ box-shadow: none;
 		<?php
 			}
 		?>
-				          
+			<div align="center" style="background-color:#f8d878">
+		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
+		<br>
+		<br>
+		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
+		<br>
 		
-	<div align="right">
-		<img style="width:84%; margin-top:142px " src="img/categorias/barracomo.png" alt="estres">
+		<span >  Especialista:</span>
+  <select class="camposgenerales"
+  x
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
+
+  </select>
+  <span style="margin-left:3%"> Rango de Precio:</span>
+  <select class="camposgenerales" 
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center;  " 
+    
+    name="cars" id="cars">
+    <option value="">-----</option>       
+        <option value="1">$0 - $50.000</option>
+        <option value="2">$50.000 - $100.000</option>
+        <option value="3">$100.000 - $150.000</option>
+        <option value="4">$150.000 - $200.000</option>
+        <option value="5">$200.000 - $250.000</option>
+        <option value="6">$250.000 - $300.000</option>
+        <option value="7">$300.000 - $350.000</option>
+        <option value="8">Mayor a $350.000 </option>
+  </select>
+
+
+  <span style="margin-left:3%">  Ciudad:</span>
+  <select class="camposgenerales"
+  
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
+
+  </select>
+
+  
+	<span style="margin-left:3%"> Disponibilidad:</span>
+  <select class="camposgenerales"
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+	width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center" 
+	
+	name="cars" id="cars">
+	<option value="">-----</option>       
+	<option value="">En Linea</option>       
+	<option value="">En Consulta</option>       
+	<option value="">OffLine</option>        
+
+  </select>
+  <br>
+  <br>
+		</form>
+<br>
+
+<div class="content" align="center" style="margin-left: 17%">
+    <div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+	
+		<span style="margin-left:3%;">  El gurú Habla:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>       
+
+  		</select>
 	</div>
+
+	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+		<span style="margin-left:3%">  Ordenar Por:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>  
+   		 <option value="">Nuestros Destacados</option>       
+
+  		</select>
+	</div>
+
+	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+		<span style="margin-left:3%">  Buscar por Nombre:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>       
+
+  		</select>
+	</div>
+
+   
+</div>
+
+	<br>
 	
 	<div class="slideshow-container2" style="margin-left:16%" >
 	<div class="mySlides fade">
@@ -259,107 +403,6 @@ box-shadow: none;
 		<!-- Gurus -->
 
 		<div class="fondomedio" >
-	
-	<div >
-		<br>
-		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto">
-		<br><br>
-		
-
-  <span style="margin-left:20%"> Ciudad:</span>
-  <select class="camposgenerales"
-  
-  	style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
-	name="cars" id="cars">        
-	<option value="">-----</option>       
-
-  </select>
-
-  <span style="margin-left:3%"> Rango de Precio:</span>
-  <select class="camposgenerales" 
-  
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
-	
-	name="cars" id="cars">
-	<option value="">-----</option>       
-        <option value="1">$0 - $50.000</option>
-        <option value="2">$50.000 - $100.000</option>
-        <option value="3">$100.000 - $150.000</option>
-        <option value="4">$150.000 - $200.000</option>
-        <option value="5">$200.000 - $250.000</option>
-        <option value="6">$250.000 - $300.000</option>
-        <option value="7">$300.000 - $350.000</option>
-        <option value="8">Mayor a $350.000 </option>
-  </select>
-
-  <span style="margin-left:3%"> Idioma</span>
-  <select class="camposgenerales" 
-  
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
-	
-	name="cars" id="cars">
-        <option value="">-----</option>
-	
-	</select>
-
-  <span style="margin-left:3%"> Pais:</span>
-  <select class="camposgenerales"
-  
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
-	
-	name="cars" id="cars">
-
-        <option value="">-----</option>       
-        
-	</select>
-
-
-  <span style="margin-left:3%"> Estado:</span>
-  <select class="camposgenerales"
-  
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
-	
-	name="cars" id="cars">
-	<option value="">-----</option>       
-	<option value="">En Linea</option>       
-	<option value="">En Consulta</option>       
-	<option value="">OffLine</option>       
-
-  </select>
-	</div>
-	
-	
-	
 		  <!--Product Grid-->
 		<div align="right">
 

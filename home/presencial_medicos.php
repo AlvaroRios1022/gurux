@@ -332,7 +332,7 @@ box-shadow: none;
   </select>
 
   
-	<span style="margin-left:3%"> Disponibilidad: </span>:</span>
+	<span style="margin-left:3%"> Disponibilidad:</span>
   <select class="camposgenerales"
   
   style=" border: none;

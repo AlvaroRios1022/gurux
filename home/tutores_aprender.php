@@ -65,6 +65,10 @@ box-shadow: none;
 
 }
 	
+.caja_inline {
+    display: inline-block;
+    width: 100px;
+}
 
 		
 	</style>
@@ -403,37 +407,150 @@ box-shadow: none;
 				          
 		<div align="center" style="background-color:#FBD6E5">
 		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
-		<form style="margin-left:230px;" >
-		<input class="barratop holder1" type="text" id="pais" name="pais" placeholder=" Escribe tu Pais" style="margin-top:5px; margin-bottom:5px; color:#452167; width:280px; height:60px; background-color:#DE5886; border: 1px solid #452167;">
-			<select id="buscar" style="text-align-last: center; color:#452167; width:280px; height:60px; background-color:#DE5886; border: 1px solid #452167;">
-				<option value="0"> Rango de Precio por Hora</option>
-				<option value="1">$ 50.000 - $ 100.000</option>
-				<option value="2">$ 100.000 - $ 150.000</option>
-				<option value="3">$ 150.000 - $ 200.000</option>
-				<option value="4">$ 200.000 - $ 250.000</option>
-				<option value="4">$ 250.000 - $ 300.000</option>
-			</select>
-			<select id="buscar" style="text-align-last: center; color:#452167; width:280px; height:60px; background-color:#DE5886; border: 1px solid #452167;">
-			<option value="0"> Estoy Dispinible Elige un Horario</option>
-				<option value="1">6:00 - 7:00</option>
-				<option value="2">7:00 - 8:00</option>
-				<option value="3">8:00 - 9:00</option>
-				<option value="4">9:00 - 10:00</option>
-				<option value="5">10:00 - 11:00</option> 
-				<option value="6">11:00 - 12:00</option>
-				<option value="7">12:00 - 13:00</option>
-				<option value="8">13:00 - 14:00</option>
-				<option value="9">14:00 - 15:00</option>
-				<option value="10">15:00 - 16:00</option>
-				<option value="12">16:00 - 17:00</option>
-				<option value="13">17:00 - 18:00</option>
-				<option value="14">18:00 - 19:00</option>
-				<option value="15">19:00 - 20:00</option>
-			</select>
-			<input type="submit" value="Enviar " style="color:#000; width:180px; height:58px; background-color:#ccc; border: 1px solid #999;" />
-		</form>
-	</div>
+		<br>
+		<br>
+		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
+		<br>
 		
+		<span >  Tutor:</span>
+  <select class="camposgenerales"
+  x
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
+
+  </select>
+  <span style="margin-left:3%"> Rango de Precio:</span>
+  <select class="camposgenerales" 
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center;  " 
+    
+    name="cars" id="cars">
+    <option value="">-----</option>       
+        <option value="1">$0 - $50.000</option>
+        <option value="2">$50.000 - $100.000</option>
+        <option value="3">$100.000 - $150.000</option>
+        <option value="4">$150.000 - $200.000</option>
+        <option value="5">$200.000 - $250.000</option>
+        <option value="6">$250.000 - $300.000</option>
+        <option value="7">$300.000 - $350.000</option>
+        <option value="8">Mayor a $350.000 </option>
+  </select>
+
+
+  <span style="margin-left:3%">  Ciudad:</span>
+  <select class="camposgenerales"
+  
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
+
+  </select>
+
+  
+	<span style="margin-left:3%"> Disponibilidad:</span>
+  <select class="camposgenerales"
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+	width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center" 
+	
+	name="cars" id="cars">
+	<option value="">-----</option>       
+	<option value="">En Linea</option>       
+	<option value="">En Consulta</option>       
+	<option value="">OffLine</option>        
+
+  </select>
+  <br>
+  <br>
+		</form>
+<br>
+
+<div class="content" align="center" style="margin-left: 17%">
+    <div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+	
+		<span style="margin-left:3%;">  El gurú Habla:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>       
+
+  		</select>
+	</div>
+
+	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+		<span style="margin-left:3%">  Ordenar Por:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>  
+   		 <option value="">Nuestros Destacados</option>       
+
+  		</select>
+	</div>
+
+	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+		<span style="margin-left:3%">  Buscar por Nombre:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>       
+
+  		</select>
+	</div>
+
+   
+</div>
+
+	<br>
+	
 	
 	
 	<div class="slideshow-container2" style="margin-left:16%" >

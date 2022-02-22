@@ -42,7 +42,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			margin-right:10px;
 			margin-top:60px;
 			width:4px;
-			background-color: #FFC808;
+			background-color: #9AD3AE;
 		}
 .mySlides {display:none;}
 
@@ -64,7 +64,11 @@ box-shadow: none;
 -webkit-box-shadow: none;
 
 }
-	
+.caja_inline {
+    display: inline-block;
+    width: 100px;
+}
+
 
 		
 	</style>
@@ -156,59 +160,373 @@ box-shadow: none;
 				</nav>
 			</div>
 		</div>
-		<div class="barraconstruccion" style="margin-top:-6px; ">
+		<div class="barraotros" style="margin-top:-6px; ">
 		<ul id="lista1" >
-                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="construccion.php" style="color:#fff; text-shadow: 1px 1px 1px black;"> HOME ESPECIALISTAS CONSTRUCCIÓN </a></li>
-                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="otros.php" > HOME OTROS PROFESIONALES </a></li>
+                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">PREGUNTAS FRECUENTES</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="presencial_construccion.php">CITA PRESENCIAL</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">CURSOS EN LÍNEA </a></li>
-                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                <li class="itemlista1"><a href="#">WEBINAR</a></li>
+                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                <li class="itemlista1"><a href="presencial_otros.php" style="color:#fff; text-shadow: 1px 1px 1px black;">CITA PRESENCIAL</a></li>
+                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                <li class="itemlista1"><a href="#">CURSOS EN LÍNEA</a></li>
+                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">LIBRERÍA</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">MI CUENTA</a></li>
             </ul>
         </div>
 
         <div class="contenido">
-            <div class="barraizquierdaconstruccion">
+            <div class="barraizquierdaotros">
 			
 					<form class="form-search">
 						<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadorconstruccion" maxlength="128" placeholder="Buscar" size="15" type="text" />
-							<button class="searchconstruccion" >
+							<input style="margin-left:10px" class="buscadorotros" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<button class="searchotros" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
 					</form>
-							<div class="especialconstructores" >
-								<a href=" "><li style="color: #333; " value=">Baños">Baños</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Casa inteligente y Seguridad">Casa inteligente y Seguridad</li></a><br>
-                                <a href=" "><li style="color: #333; " value=">Cerraduras y Herrajes">Cerraduras y Herrajes</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Climatizacion">Climatizacion</li></a><br>
-                                <a href=" "><li style="color: #333; " value=">Cocina">Cocina</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Complementos de Baños">Complementos de Baños</li></a><br>
-                                <a href=" "><li style="color: #333; " value=">Construccion y Ferreteria">Construccion y Ferreteria</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Cortinas y Persianas">Cortinas y Persianas</li></a><br>
-                                <a href=" "><li style="color: #333; " value=">Electricidad">Electricidad</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Electrodomésticos de Cocina">Electrodomésticos de Cocina</li></a><br>
-                                <a href=" "><li style="color: #333; " value=">Electrodomésticos del Hogar">Electrodomésticos del Hogar</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Escaleras y Mudanzas">Escaleras y Mudanzas</li></a><br>
-                                <a href=" "><li style="color: #333; " value=">Estufas, Hornos & Campanas">Estufas, Hornos & Campanas</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Herramientas Electricas">Herramientas Electricas</li></a><br>
-                                <a href=" "><li style="color: #333; " value=">Lavandería y Lavadero">Lavandería y Lavadero</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Maderas, Tableros y Herrajes">Maderas, Tableros y Herrajes</li></a><br>
-                                <a href=" "><li style="color: #333; " value=">Pinturas">Pinturas</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Pisos y Paredes">Pisos y Paredes</li></a><br>
-                                <a href=" "><li style="color: #333; " value=">Pisos y Pinturas para tus Espacios">Pisos y Pinturas para tus Espacios</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Plomería">Plomería</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Puertas">Puertas</li></a><br>
-                                <a href=" "><li style="color: #333; " value=">Tecnologia y Television">Tecnologia y Television</li></a><br>
-								<a href=" "><li style="color: #333; " value=">Tejas y Drywall">Tejas y Drywall</li></a><br>
-                                <div> &nbsp;</div>
+							<div class="especialotros" >
+                            <a href=" "><li style="color: #333; " value="Abogado “Contratación Estatal">Abogado “Contratación Estatal</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Abogado “Contratación  Comercial ">Abogado “Contratación  Comercial </li></a><br>
+                            <a href=" "><li style="color: #333; " value="Abogado “Contratación  Civil ">Abogado “Contratación  Civil </li></a><br>
+                            <a href=" "><li style="color: #333; " value="Abogado “Contratación  Penal">Abogado “Contratación  Penal</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Abogado “Contratación Propiedad Intelectual ">Abogado “Contratación Propiedad Intelectual </li></a><br>
+                            <a href=" "><li style="color: #333; " value="Abogado “Contratación Estatal Tributaritarista">Abogado “Contratación Estatal Tributaritarista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Acompanante">Acompanante</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Actor">Actor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Actuario">Actuario</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Administrador Aeropuerto">Administrador Aeropuerto</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Administrador de Empresas">Administrador de Empresas</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Aduana">Agente de Aduana</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Bolsa">Agente de Bolsa</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Policía">Agente de Policía</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Embarque">Agente de Embarque</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Inmigracion">Agente de Inmigración</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Marcas y Patentes">Agente de Marcas y Patentes</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente Maritimo">Agente Marítimo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente Portuario">Agente Portuario</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente Comerciales, Corredores y Afines">Agente Comerciales, Corredores y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Aduanas e Inspectores de Fronteras">Agente de Aduanas e Inspectores de Fronteras</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Compras, Intermediacion y consignatarios">Agente de Compras, Intermediación y Consignatarios</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Impuestos">Agente de Impuestos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Seguros">Agente de Seguros</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente de Viajes">Agentes de Viajes</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente Inmobiliarios">Agente Inmobiliarios</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agente y Policía de Transito">Agente y Policía de Transito</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agregado Diplomático">Agregado Diplomático</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agricultor">Agricultor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Agrónomo">Agrónomo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Analista Económico">Analista Económico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Analista Gestión Humana">Analista Gestión Humana</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Analista Mercados">Analista Mercados</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Analista Siniestros">Analista Siniestros</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Analista de Sistemas Informaticos">Analista de Sistemas Informaticos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Analista y Agentes Financieros">Analista y Agentes Financieros</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Antropologos">Antropólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Arqueologos">Arqueólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Arquitecto">Arquitecto</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Artesano de la Madera y Materiales Similares">Artesano de la Madera y Materiales Similares</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Artesano de los Tejidos, El cuero y Materiales similares">Artesano de los Tejidos, El cuero y Materiales similares</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Asesor Financiero">Asesor Financiero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Asesor Legal">Asesor Legal</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Asistente de Cine, Teatro, Televisión y Afines">Asistente de Cine, Teatro, Televisión y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Asistente Contable">Asistente Contable</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Asistente de Bibliotecas y Archivos">Asistente de Bibliotecas y Archivos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Asistente Jurídico">Asistente Jurídico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Asistente de Comercio Exterior">Asistente de Comercio Exterior</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Asistente de Trabajo Social y Comunitario">Asistente de Trabajo Social y Comunitario</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Astrofísico">Astrofísico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Astrólogo">Astrólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Astrónomo">Astrónomo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Atletas, Deportistas y Afines">Atletas, Deportistas y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auditor Contable">Auditor Contable</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auditor Financiero">Auditor Financiero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auditor Interno">Auditor Interno</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auditor Sistemas">Auditor Sistemas</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auxiliar de Cartera y Afines">Auxiliar de Cartera y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auxiliar de Servicios de Correo">Auxiliar de Servicios de Correo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auxiliar de Droguería">Auxiliar de Droguería</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auxiliar Licencias">Auxiliar Licencias</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auxiliar Mecánica">Auxiliar Mecánica</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auxiliar de Vuelo">Auxiliar de Vuelo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auxiliar de Administración y Afines">Auxiliar de Administración y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auxiliar de Enfermería">Auxiliar de Enfermería</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Auxiliar de Odontología">Auxiliar de Odontología</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Avaluador Bienes">Avaluador Bienes</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Avicultores">Avicultores</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Azafata">Azafata</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Bacteriólogo">Bacteriólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Bailarín">Bailarín</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Banderillero">Banderillero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Barquero">Barquero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Beisbolista">Beisbolista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Bibliotecarios, Documentalistas y Afines">Bibliotecarios, Documentalistas y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Biofísico">Biofísico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Biógrafo">Biógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Biólogo">Biólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Bioquímico">Bioquímico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Bomberos y Rescatistas">Bomberos y Rescatistas</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Bordadores y Afines">Bordadores y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Botánico">Botánico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Boxeador">Boxeador</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Caficultor">Caficultor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Cajero">Cajero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Cajistas, Tipógrafos y Afines">Cajistas, Tipografos y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Camarógrafo">Camarógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Cantante">Cantante</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Capitán de Aviación">Capitán de Aviación</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Capitanes, Oficiales de Cubierta y Prácticos">Capitanes, Oficiales de Cubierta y Prácticos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Caricaturista">Caricaturista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Carnicero, Pescadores y Afines">Carnicero, Pescadores y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Carpintero">Carpintero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Cartógrafo">Cartógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Catadores y Clasificadores de Alimentos y Bebidas">Catadores y Clasificadores de Alimentos y Bebidas</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Cazadores y Tramperos">Cazadores y Tramperos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Cesteros, Bruceros y Afines">Cesteros, Bruceros y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Catalogadores de Piezas de Museos, Archivos y Afines">Catalogadores de Piezas de Museos, Archivos y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Catedrático">Catedrático</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ciclista">Ciclista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Cienfífico">Cienfífico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Cocineros">Cocineros</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Codificador de Datos, Corrector Pruebas Imprenta y Afines">Codificador de Datos, Corrector Pruebas Imprenta y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Columnista">Columnista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Comandante Estación Bomberos">Comandante Estación Bomberos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Comediante">Comediante</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Comerciante">Comerciante</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Comisario de Familia">Comisario de Familia</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Compositor">Compositor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Comunicador Social">Comunicador Social</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Concejal">Concejal</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consejero de Estado">Consejero de Estado</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consejero Jurídico">Consejero Jurídico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consejero Matrimonial">Consejero Matrimonial</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consejero Ocupacional">Consejero Ocupacional</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consejero Educativo">Consejero Educativo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consul">Consul</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consultor Ambiental">Consultor Ambiental</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consultor Financiero">Consultor Financiero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consultor Organizacional">Consultor Organizacional</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consultor Política Social">Consultor Política Social</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Consultor Recursos Humanos">Consultor Recursos Humanos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Contadores">Contadores</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Contralores">Contralores</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Coordinador Servicios Generales">Coordinador Servicios Generales</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Copiloto Aeronave">Copiloto Aeronave</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Coreógrafo y Afines">Coreógrafo y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Corredor Autos">Corredor Autos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Corredor Bolsa">Corredor Bolsa</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Corresponsal de Prensa">Corresponsal de Prensa</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Criador de Ganado y Animales Domésticos">Criador de Ganado y Animales Domésticos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Criador de Especies Acuáticas">Criador de Especies Acuáticas</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Criador de Insectors, Sericultures y Afines">Criador de Insectors, Sericultures y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Cristalero">Cristalero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Crítico Artes y Medios">Crítico Artes y Medios</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Cuentero">Cuentero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Curador Arte">Curador Arte</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Curador Urbanístico">Curador Urbanístico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Dactiloscopista">Dactiloscopista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Decanos">Decanos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Declamador">Declamador</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director Artístico">Director Artístico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director Cine">Director Cine</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director Departamento de Mantenimiento">Director Departamento de Mantenimiento</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director Departamento de Seguridad">Director Departamento de Seguridad</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director Escuela de Aviación">Director Escuela de Aviación</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director General Industria Manufacturera">Director General Industria Manufacturera</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director Grupo Musical">Director Grupo Musical</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director Departamento Financiero y Administrativo">Director Departamento Financiero y Administrativo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director Departamento Investigacion y Desarrollo">Director Departamento Investigacion y Desarrollo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director Departamento Personal">Director Departamento Personal</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Director Departamento Publicidad y Mercadeo">Director Departamento Publicidad y Mercadeo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Dibujantes">Dibujantes</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Diseñador Grafico e Industrial">Diseñador Grafico e Industrial</li></a><br>
+                            <a href=" "><li style="color: #333; " value="DiskJockey">DiskJockey</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Dramaturgo">Dramaturgo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ecologista">Ecologista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ecólogo">Ecólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Economistas">Economistas</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Edil">Edil</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Educadores">Educadores</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Electricista">Electricista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Electrotécnico">Electrotécnico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Empresario">Empresario</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Entrenador">Entrenador</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Escritor y Afines">Escritor y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Estadístico">Estadístico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Etimologista">Etimologista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Etnografo">Etnografo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Etnólogo">Etnólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Farmacéutico">Farmacéutico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Farmacólogo">Farmacólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Filólogo">Filólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Filósofo">Filósofo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Fiscal">Fiscal</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Fisiatra">Fisiatra</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Físico">Físico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Fisiólogo">Fisiólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Floricultor">Floricultor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Fontanero e Instaladores de Tuberias">Fontanero e Instaladores de Tuberias</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Fotógrafo">Fotógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Fruticultor">Fruticultor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Fisioterapeuta">Fisioterapeuta</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Fonólogo">Fonólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Forenses">Forenses</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Fotógrafo">Fotógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Futbolista">Futbolista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ganadero">Ganadero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Geólogo">Geólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Geotecnista">Geotecnista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Gemólogo">Gemólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Genetista">Genetista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Geofísico">Geofísico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Geógrafo">Geógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Geriatra">Geriatra</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Gobernador Comunidad Indígena">Gobernador Comunidad Indígena</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Grabadores de Imprenta y Fotograbadores">Grabadores de Imprenta y Fotograbadores</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Grabadores de Vidrio">Grabadores de Vidrio</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Grafólogo">Grafólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Herramentistas y Afines">Herramentistas y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Herreros y Forjadores">Herreros y Forjadores</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Histólogo">Histólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Histopatólogo">Histopatólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Humorista">Humorista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Higienetistas">Higienetistas</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Historiador">Historiador</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ictólogo">Ictólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Impresor Artes Gráficas">Impresor Artes Gráficas</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Agrícola">Ingeniero Agrícola</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Agroindustrial">Ingeniero Agroindustrial</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Agrónomo">Ingeniero Agrónomo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Alimentos">Ingeniero Alimentos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Ambiental">Ingeniero Ambiental</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Biomédico">Ingeniero Biomédico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Civil">Ingeniero Civil</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Electricista">Ingeniero Electricista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Eléctrico">Ingeniero Eléctrico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Electromécanico">Ingeniero Electromécanico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Electronico">Ingeniero Electronico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Industrial">Ingeniero Industrial</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Forestal">Ingeniero Forestal</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Genética">Ingeniero Genética</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Geologo">Ingeniero Geólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Hidráulico">Ingeniero Hidráulico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Mecánico">Ingeniero Mecánico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Mecatrónico">Ingeniero Mecatrónico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Naval">Ingeniero Naval</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Pesquero">Ingeniero Pesquero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Petróleos">Ingeniero Petróleos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Producción">Ingeniero Producción</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Químico">Ingeniero Químico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Sanitario">Ingeniero Sanitario</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Seguridad Industrial">Ingeniero Seguridad Industrial</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Sistemas">Ingeniero Sistemas</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Sonido">Ingeniero Sonido</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Telecomunicaciones">Ingeniero Telecomunicaciones</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Textil">Ingeniero Textil</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Transportes">Ingeniero Transportes</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Vuelo">Ingeniero Vuelo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ingeniero Minas, Metalúrgicos ">Ingeniero Minas, Metalúrgicos </li></a><br>
+                            <a href=" "><li style="color: #333; " value="Instrumentador Quirúrgico">Instrumentador Quirúrgico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Interprete">Interprete</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Interventor">Interventor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Investigador">Investigador</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Jardinero">Jardinero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Juez">Juez</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Lexicógrafo">Lexicógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Lexicólogo">Lexicólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Libretista">Libretista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Licenciado">Licenciado</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Locutor de Radio, Televisión y Afines">Locutor de Radio, Televisión y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Luminotécnico">Luminotécnico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Maestro">Maestro</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Magistrado">Magistrado</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Maquinista de Vehiculos por riel">Maquinista de Vehiculos por riel</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Marineros de Cubierta y Afines">Marineros de Cubierta y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Maquetero">Maquetero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Marroquinero">Marroquinero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Matemático">Matemático</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Mecánico Industrial">Mecánico Industrial</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Mesero, Taberneros y Afines">Mesero, Taberneros y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Meteorologos">Meteorologos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Mimo Teatro y Callejero">Mimo Teatro y Callejero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Mineros y Canteros">Mineros y Canteros</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ministro">Ministro</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Músico">Músico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Notario">Notario</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Novillero">Novillero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Oceanógrafo">Oceanógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Odontólogo">Odontólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Oficial Ejército">Oficial Ejército</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Oficial Polícia">Oficial Polícia</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Oficial Naval">Oficial Naval</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Oficial Fuerza Aérea">Oficial Fuerza Aérea</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Oftalmólogo">Oftalmólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Operador Máquinas ">Operador Máquinas </li></a><br>
+                            <a href=" "><li style="color: #333; " value="Optómetra">Optómetra</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ortodoncista">Ortodoncista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Ortopedista">Ortopedista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Paleobiólogo">Paleobiólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Paleógrafo">Paleógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Paleólogo">Paleólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Paleontólogo">Paleontólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Panadero, Pastelero y Confitero">Panadero, Pastelero y Confitero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Patinador">Patinador</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Patólogo">Patólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Pedagogo">Pedagogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Periodista">Periodista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Perito">Perito</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Periodoncista">Periodoncista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Personero">Personero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Pescador">Pescador</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Piloto Avión, Carros Carreras, Afines">Piloto Avión, Carros Carreras, Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Pintor Arte">Pintor Arte</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Piscicultor">Piscicultor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Planificador Medio Ambiente">Planificador Medio Ambiente</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Planificador Tránsito">Planificador Tránsito</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Plomero">Plomero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Poeta">Poeta</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Politólogo">Politólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Polvorero">Polvorero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Porcicultor">Porcicultor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Publicista">Publicista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Procurador">Procurador</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Químico y Afines">Químico y Afines</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Radiotécnico">Radiotécnico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Rector Institución Educativa">Rector Institución Educativa</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Registrador">Registrador</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Rejoneador">Rejoneador</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Relojero">Relojero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Reportero Gráfico">Reportero Gráfico</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Representante a la Cámara">Representante a la Cámara</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Revisor Fiscal">Revisor Fiscal</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Salvavidas">Salvavidas</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Sastres, Modistos">Sastres, Modistos</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Sismólogo">Sismólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Sub Oficial Ejercito">Sub Oficial Ejercito</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Sub Oficial Policia">Sub Oficial Policia</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Sub Oficial Naval">Sub Oficial Naval</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Sub Oficial Fuerza Aerea">Sub Oficial Fuerza Aerea</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Taxonomista">Taxonomista</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Técnicos en general">Técnicos en general</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Terapeuta">Terapeuta</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Tesorero">Tesorero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Topógrafo">Topógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Torero">Torero</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Toxicólogo">Toxicólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Traductor">Traductor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Tutor">Tutor</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Veterinario">Veterinario</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Virólogo">Virólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Vulcanólogo">Vulcanólogo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Xilógrafo">Xilógrafo</li></a><br>
+                            <a href=" "><li style="color: #333; " value="Zoólogo ">Zoólogo </li></a><br>
+                            <a href=" "><li style="color: #333; " value="Zootécnico">Zootécnico</li></a><br>
+        <div> &nbsp;</div>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>
 							</div>
@@ -238,62 +556,41 @@ box-shadow: none;
 		<?php
 			}
 		?>
-				          
-		
-	<div align="right">
-		<img style="width:84%; margin-top:142px " src="img/categorias/barracomo.png" alt="estres">
-	</div>
-	
-	<div class="slideshow-container2" style="margin-left:16%" >
-	<div class="mySlides fade">
-			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_inicio1.jpg" style="width:100%"></a>
-		</div>
-		<div class="mySlides fade">
-			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_construccion3.jpg" style="width:100%"></a>
-		</div>
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	
-		</div>
-
-		<!-- Gurus -->
-
-		<div class="fondomedio" >
-	
-	<div >
+				    
+					<div align="center" style="background-color:#E3F2E6">
+		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
 		<br>
-		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto">
-		<br><br>
+		<br>
+		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
+		<br>
 		
-
-  <span style="margin-left:20%"> Ciudad:</span>
+		<span >  Tutor:</span>
   <select class="camposgenerales"
-  
-  	style=" border: none;
+  x
+    style=" border: none;
     background-color: #0000;
     font-size: 15px;
-	width: 100px;
+    width: 100px;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
-	name="cars" id="cars">        
-	<option value="">-----</option>       
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
 
   </select>
-
   <span style="margin-left:3%"> Rango de Precio:</span>
   <select class="camposgenerales" 
   
   style=" border: none;
     background-color: #0000;
     font-size: 15px;
-	width: 100px;
+    width: 100px;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
-	
-	name="cars" id="cars">
-	<option value="">-----</option>       
+    text-align: center;  " 
+    
+    name="cars" id="cars">
+    <option value="">-----</option>       
         <option value="1">$0 - $50.000</option>
         <option value="2">$50.000 - $100.000</option>
         <option value="3">$100.000 - $150.000</option>
@@ -304,41 +601,24 @@ box-shadow: none;
         <option value="8">Mayor a $350.000 </option>
   </select>
 
-  <span style="margin-left:3%"> Idioma</span>
-  <select class="camposgenerales" 
-  
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
-	
-	name="cars" id="cars">
-        <option value="">-----</option>
-	
-	</select>
 
-  <span style="margin-left:3%"> Pais:</span>
+  <span style="margin-left:3%">  Ciudad:</span>
   <select class="camposgenerales"
   
-  style=" border: none;
+    style=" border: none;
     background-color: #0000;
     font-size: 15px;
-	width: 100px;
+    width: 100px;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
-	
-	name="cars" id="cars">
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
 
-        <option value="">-----</option>       
-        
-	</select>
+  </select>
 
-
-  <span style="margin-left:3%"> Estado:</span>
+  
+	<span style="margin-left:3%"> Disponibilidad:</span>
   <select class="camposgenerales"
   
   style=" border: none;
@@ -353,12 +633,96 @@ box-shadow: none;
 	<option value="">-----</option>       
 	<option value="">En Linea</option>       
 	<option value="">En Consulta</option>       
-	<option value="">OffLine</option>       
+	<option value="">OffLine</option>        
 
   </select>
+  <br>
+  <br>
+		</form>
+<br>
+
+<div class="content" align="center" style="margin-left: 17%">
+    <div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+	
+		<span style="margin-left:3%;">  El gurú Habla:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>       
+
+  		</select>
 	</div>
+
+	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+		<span style="margin-left:3%">  Ordenar Por:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>  
+   		 <option value="">Nuestros Destacados</option>       
+
+  		</select>
+	</div>
+
+	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+		<span style="margin-left:3%">  Buscar por Nombre:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>       
+
+  		</select>
+	</div>
+
+   
+</div>
+
+	<br>
 	
+	<div class="slideshow-container2" style="margin-left:16%" >
+	<div class="mySlides fade">
+			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_inicio2.jpg" style="width:100%"></a>
+		</div>
+		<div class="mySlides fade">
+			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_otros_profesionales2.jpg" style="width:100%"></a>
+		</div>
+		<div class="mySlides fade">
+			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_otros_profesionales3.jpg" style="width:100%"></a>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	
+		</div>
+
+		<!-- Gurus -->
+
+		<div class="fondomedio" >
+	
+
 	
 		  <!--Product Grid-->
 		<div align="right">
@@ -370,7 +734,7 @@ box-shadow: none;
 				
 					<div class="prod-grid3 " style="margin-top:25px">
 						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -395,7 +759,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -403,7 +767,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 "style="margin-top:25px">
 						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -428,7 +792,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -436,7 +800,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 "style="margin-top:25px">
 						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -461,7 +825,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -472,7 +836,7 @@ box-shadow: none;
 
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -497,7 +861,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -505,7 +869,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -530,7 +894,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -538,7 +902,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -563,7 +927,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -573,7 +937,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -598,7 +962,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -606,7 +970,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -631,7 +995,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -639,7 +1003,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -664,7 +1028,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -674,7 +1038,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -699,7 +1063,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -707,7 +1071,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -732,7 +1096,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -740,7 +1104,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -765,7 +1129,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -775,7 +1139,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -800,7 +1164,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -808,7 +1172,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -833,7 +1197,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -841,7 +1205,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -866,7 +1230,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -876,7 +1240,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -901,7 +1265,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -909,7 +1273,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -934,7 +1298,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -942,7 +1306,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -967,7 +1331,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -977,7 +1341,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1002,7 +1366,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1010,7 +1374,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1035,7 +1399,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1043,7 +1407,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1068,7 +1432,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1078,7 +1442,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1103,7 +1467,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1111,7 +1475,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1136,7 +1500,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1144,7 +1508,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1169,7 +1533,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1179,7 +1543,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1204,7 +1568,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1212,7 +1576,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1237,7 +1601,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1245,7 +1609,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/9m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1270,7 +1634,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
+						<div class=" bloqueguru3" style=" background-color:#D5E2D9; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1344,7 +1708,7 @@ box-shadow: none;
 						<form  action="" method="post">
 							<h4 style="color:#5C3293; padding-top: 20px; margin-bottom: 20px; font-size:16"> GURÚS DESTACADOS </h4>
 						</form>
-						<div class="prod-grid2 bloqueguru " style=" background-color: #FFC808; color:#fff">
+						<div class="prod-grid2 bloqueguru " style=" background-color: #9AD3AE; color:#fff">
 							<br>
 							<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
 							<br><br>
@@ -1375,13 +1739,13 @@ box-shadow: none;
 						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
 						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
 						</p>
-						<div class=" bloqueguru3" style=" background-color:#FFC808; " >
+						<div class=" bloqueguru3" style=" background-color:#9AD3AE; " >
 						<p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
 						</div>
 						<br><br>
-						<div class="prod-grid2 bloqueguru " style=" background-color: #FFC808; color:#fff">
+						<div class="prod-grid2 bloqueguru " style=" background-color: #9AD3AE; color:#fff">
 						<br>
 						<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
 						<br><br>
@@ -1412,13 +1776,13 @@ box-shadow: none;
 						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
 						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
 						</p>
-						<div class=" bloqueguru3" style=" background-color:#FFC808; " >
+						<div class=" bloqueguru3" style=" background-color:#9AD3AE; " >
 						<p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
 						</div>
 						<br><br>
-						<div class="prod-grid2 bloqueguru " style=" background-color: #FFC808; color:#fff">
+						<div class="prod-grid2 bloqueguru " style=" background-color: #9AD3AE; color:#fff">
 						<br>
 							<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
 						<br><br>
@@ -1449,13 +1813,13 @@ box-shadow: none;
 						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
 						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
 						</p>
-						<div class=" bloqueguru3" style=" background-color:#FFC808; " >
+						<div class=" bloqueguru3" style=" background-color:#9AD3AE; " >
 						<p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
 						</div>
 						<br><br>
-						<div class="prod-grid2 bloqueguru " style=" background-color: #FFC808; color:#fff">
+						<div class="prod-grid2 bloqueguru " style=" background-color: #9AD3AE; color:#fff">
 						<br>
 						<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
 						<br><br>
@@ -1487,13 +1851,13 @@ box-shadow: none;
 						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
 						</p>
 						
-						<div class=" bloqueguru3" style=" background-color:#FFC808; " >
+						<div class=" bloqueguru3" style=" background-color:#9AD3AE; " >
 							<p class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
 								<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
 						</div>
 						<br><br>
-						<div class="prod-grid2 bloqueguru " style=" background-color: #FFC808; color:#fff">
+						<div class="prod-grid2 bloqueguru " style=" background-color: #9AD3AE; color:#fff">
 							<br>
 							<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
 							<br><br>
@@ -1524,7 +1888,7 @@ box-shadow: none;
 						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
 						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
 						</p>
-						<div class=" bloqueguru3" style=" background-color:#FFC808; " >
+						<div class=" bloqueguru3" style=" background-color:#9AD3AE; " >
 							<p class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
 								<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1537,15 +1901,15 @@ box-shadow: none;
 		</div>
 	</div>
 
-	<div class="footerconstruccion" align="center" >
+	<div class="footerotros" align="center" >
 		<div class="container2" >
 		<div align="right">         
-            <img  style="width:100%; margin-top:-15px; margin-bottom:30px;" src="img/aconstruccion.png" alt="kalita">
+            <img  style="width:100%; margin-top:-15px; margin-bottom:30px;" src="img/aotros.png" alt="kalita">
         </div>
             
                 <div align="center">
                     
-					<img  style="width:15%; border-radius:20px" src="img/preffo1.png" alt="kalita">
+				<img  style="width:15%; border-radius:20px" src="img/preffo1.png" alt="kalita">
                     <img  style="width:15%; border-radius:20px; margin-left:25px" src="img/preffo2.png" alt="kalita">
                     <img  style="width:15%; border-radius:20px; margin-left:25px" src="img/preffo3.png" alt="kalita">
                     <img  style="width:15%; border-radius:20px; margin-left:25px; margin-right:25px " src="img/preffo4.png" alt="kalita">
@@ -1650,15 +2014,16 @@ box-shadow: none;
 			dots[slideIndex-1].className += " active";
 			}
 		</script>
-		<script>
+<script>
     (function($){
         $(window).on("load",function(){
-            $(".barraizquierdaconstruccion").mCustomScrollbar({
+            $(".barraizquierdaotros").mCustomScrollbar({
     theme:"rounded"
 });
         });
     })(jQuery);
 </script>
+
 <script>
 var slideIndex = 0;
 carousel();
@@ -1675,6 +2040,5 @@ function carousel() {
   setTimeout(carousel, 15000); 
 }
 </script>
-
 </body>
 </html>

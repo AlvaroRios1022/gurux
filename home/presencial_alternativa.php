@@ -64,7 +64,10 @@ box-shadow: none;
 -webkit-box-shadow: none;
 
 }
-	
+.caja_inline {
+    display: inline-block;
+    width: 100px;
+}
 
 		
 	</style>
@@ -390,7 +393,151 @@ box-shadow: none;
 		?>
 				          
 		
+						  <div align="center" style="background-color:#e5ecae">
+		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
+		<br>
+		<br>
+		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
+		<br>
+		
+		<span >  Sintomatologia:</span>
+  <select class="camposgenerales"
+  
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
 
+  </select>
+  <span style="margin-left:3%"> Rango de Precio:</span>
+  <select class="camposgenerales" 
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center;  " 
+    
+    name="cars" id="cars">
+    <option value="">-----</option>       
+        <option value="1">$0 - $50.000</option>
+        <option value="2">$50.000 - $100.000</option>
+        <option value="3">$100.000 - $150.000</option>
+        <option value="4">$150.000 - $200.000</option>
+        <option value="5">$200.000 - $250.000</option>
+        <option value="6">$250.000 - $300.000</option>
+        <option value="7">$300.000 - $350.000</option>
+        <option value="8">Mayor a $350.000 </option>
+  </select>
+
+
+  <span style="margin-left:3%">  Ciudad:</span>
+  <select class="camposgenerales"
+  
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
+
+  </select>
+
+  
+	<span style="margin-left:3%"> Disponibilidad:</span>
+  <select class="camposgenerales"
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+	width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center" 
+	
+	name="cars" id="cars">
+	<option value="">-----</option>       
+	<option value="">En Linea</option>       
+	<option value="">En Consulta</option>       
+	<option value="">OffLine</option>        
+
+  </select>
+  <br>
+  <br>
+		</form>
+<br>
+
+<div class="content" align="center" style="margin-left: 17%">
+    <div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+	
+		<span style="margin-left:3%;">  El gurú Habla:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>       
+
+  		</select>
+	</div>
+
+	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+		<span style="margin-left:3%">  Ordenar Por:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>  
+   		 <option value="">Nuestros Destacados</option>       
+
+  		</select>
+	</div>
+
+	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+		<span style="margin-left:3%">  Buscar por Nombre:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>       
+
+  		</select>
+	</div>
+
+   
+</div>
+
+	<br>
 	
 	<div class="slideshow-container2" style="margin-left:16%" >
 	<div class="mySlides fade">
@@ -410,11 +557,17 @@ box-shadow: none;
 		<!-- Gurus -->
 
 		<div class="fondomedio" >
-	
-	<div >
+		<div style="margin-left:250px; color: #452167;">
 		<br>
-		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto">
 		
+
+		<h2 >Cita Presencial</h2>
+			<br>
+			<p style="font-size:14px; text-align: justify;">
+				La cita presencial sólo se puede realizar en inicialmente en Colombia. 
+				Los invitamos a solicitar citas ON LINE para el resto de países. <br> 
+				Nuestros Gurús estarán gustusos de atenderlos.
+			</p>
 	</div>
 	
 	
