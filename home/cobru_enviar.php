@@ -58,6 +58,21 @@ if(isset($_GET["tipo_envio"])){
   color: #452167;
   
 }
+input:focus, select:focus, select, input.form-control:focus {
+
+outline:none !important;
+
+outline-width: 0 !important;
+
+box-shadow: none;
+
+-moz-box-shadow: none;
+
+-webkit-box-shadow: none;
+
+}
+	
+
 
 ::placeholder {
   color: #777;

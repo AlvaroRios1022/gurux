@@ -27,6 +27,22 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			margin-right: 0px;
 			margin-bottom: 0px;
 		}
+
+
+input:focus, select:focus, select, input.form-control:focus {
+
+outline:none !important;
+
+outline-width: 0 !important;
+
+box-shadow: none;
+
+-moz-box-shadow: none;
+
+-webkit-box-shadow: none;
+
+}
+	
 	</style>
 </head>
 

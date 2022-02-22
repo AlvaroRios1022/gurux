@@ -54,6 +54,21 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
   color: #452167;
   
 }
+input:focus, select:focus, select, input.form-control:focus {
+
+outline:none !important;
+
+outline-width: 0 !important;
+
+box-shadow: none;
+
+-moz-box-shadow: none;
+
+-webkit-box-shadow: none;
+
+}
+	
+
 		
 		
 	</style>
