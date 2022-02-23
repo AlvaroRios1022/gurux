@@ -27,28 +27,28 @@ $mail->isSMTP();
 // SMTP::DEBUG_SERVER = client and server messages
 $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 //Set the hostname of the mail server
-$mail->Host = 'smtp.hostinger.co';
+$mail->Host = 'mail.guruxy.com';
 //Set the SMTP port number - likely to be 25, 465 or 587
-$mail->Port = 587;
+$mail->Port = 465;
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 
 $mail->SMTPSecure = 'TLS'; //seguridad
 //Username to use for SMTP authentication
-$mail->Username = 'contacto@guruxy.com';
+$mail->Username = 'info@guruxy.com';
 //Password to use for SMTP authentication
 $mail->Password = '1Contacto2*';
 //Set who the message is to be sent from
-$mail->setFrom('contacto@guruxy.com', 'Notificaciones Guru');
+$mail->setFrom('info@guruxy.com', 'Notificaciones Guru');
 //Set an alternative reply-to address
 //Set who the message is to be sent to
-$mail->addAddress($email_to);
+$mail->addAddress($email);
 //Set the subject line
 $mail->Subject = utf8_decode($email_subject);
 //Read an HTML message body from an external file, convert referenced images to embedded,
 
 $body = file_get_contents(dirname(__FILE__).'/plantilla_clave.html');
-$body = str_replace('%testemail%', $email_to, $body); 
+$body = str_replace('%testemail%', $email, $body); 
 $body = str_replace('%testpk%', $pk, $body); 
 $mail->msgHTML(utf8_decode($body));
 //Replace the plain text body with one created manually
@@ -63,7 +63,4 @@ $mail->AltBody = 'This is a plain-text message body';
       //  echo 'Message sent!';
     }
     }
-
-
-
 }
