@@ -105,7 +105,8 @@ class UsuarioModel {
         $email = $db->real_escape_string($_POST['email']);
         $password = md5($_POST['password']);
         $ip = $_SERVER['REMOTE_ADDR'];
-
+        $conocio = $db->real_escape_string($_POST['conocio']); 
+        $fecha = $db->real_escape_string($_POST['fecha']); 
 
         $consultausuario = "SELECT usuario_usu FROM usuario_guru WHERE usuario_usu = '$usuario'";
 	    $consultaemail = "SELECT email_usu FROM usuario_guru WHERE email_usu = '$email'";
@@ -127,26 +128,19 @@ class UsuarioModel {
         else {
             $aleatorio = uniqid();
     
-            $query = "INSERT INTO usuario_guru ( usuario_usu, nombre_usu, apellido_usu, email_usu, pass_usu, fecha_usu, ip_usu, codigo_usu ) VALUES ('$usuario','$nombre','$apellido','$email','$password',now(),'$ip','$aleatorio')";
-    
-            if($registro = $db->query($query)) {
-    
-            
-    
-            $return['mensaje']= "Felicidades $usuario se ha registrado correctamente, te hemos enviado un correo de confirmacion.";
-            $return['status'] ='success';
-            require_once(dirname(__FILE__) . "/../class/Mailer/envio.php");
-                // Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
-                $email_to = $email;
-                $email_subject = "Confirma tu email Gurú";
-                $email_from = "noreply.guruxy.com";
-                $email_message = "Hola " . $usuario . ", para poder disfrutar de nuestro sitio web, debes confirmar tu email\n\n";
-                $email_message .= "Ingresa el siguiente codigo para confirmar tu email\n\n";
-                $email_message .= "Codigo: " . $aleatorio . "\n";
-    
-    
+            $query = "INSERT INTO usuario_guru (conocio,fecha, usuario_usu, nombre_usu, apellido_usu, email_usu, pass_usu, fecha_usu, ip_usu, codigo_usu ) 
+                                         VALUES ($conocio,'$fecha','$usuario','$nombre','$apellido','$email','$password',now(),'$ip','$aleatorio')";
+        
+            if($registro = $db->query($query)) {          
+
+                $return['mensaje']= "Felicidades ". $nombre ." ". $apellido ." se ha registrado correctamente, te hemos enviado un correo de confirmacion.";
+                $return['status'] ='success';
+                require_once(dirname(__FILE__) . "/../class/Mailer/envio.php");
+
+                $email_subject = 'Notificaciones Guru';
+                
                 ob_start();
-                EnvioModel::EnvioCodigo($email_to, $email_subject, $email_message);
+                EnvioModel::EnvioCodigo($email, $email_subject, $email_message);
                 ob_end_clean();
                 
               }

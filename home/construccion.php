@@ -51,6 +51,21 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
   color: #452167;
   
 }
+input:focus, select:focus, select, input.form-control:focus {
+
+outline:none !important;
+
+outline-width: 0 !important;
+
+box-shadow: none;
+
+-moz-box-shadow: none;
+
+-webkit-box-shadow: none;
+
+}
+	
+
 		
 	</style>
 </head>
@@ -143,11 +158,11 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 		</div>
 		<div class="barraconstruccion" style="margin-top:-6px; ">
 		<ul id="lista1" >
-                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="#" style="color:#fff; text-shadow: 1px 1px 1px black;"> HOME ESPECIALISTAS CONSTRUCCIÓN </a></li>
+                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="construccion.php" style="color:#fff; text-shadow: 1px 1px 1px black;"> HOME ESPECIALISTAS CONSTRUCCIÓN </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">CITA PRESENCIAL</a></li>
+                <li class="itemlista1"><a href="presencial_construccion.php">CITA PRESENCIAL</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">CURSOS EN LÍNEA </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
@@ -248,18 +263,98 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<div >
 		<br>
 		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto">
-		<span style="margin-left:20%"> Filtrar Por</span>
-		<select class="camposgenerales" style=" border: none;
+		<br><br>
+		
+
+  <span style="margin-left:20%"> Ciudad:</span>
+  <select class="camposgenerales"
+  
+  	style=" border: none;
     background-color: #0000;
     font-size: 15px;
-    
+	width: 100px;
     text-decoration: none;
     margin-bottom: auto;
-	"name="cars" id="cars">
-	<option value="volvo"></option>
-    <option value="volvo">Categoría</option>
-    <option value="saab">Ciudad</option>
-    <option value="opel">Precio</option>
+	text-align: center" 
+	name="cars" id="cars">        
+	<option value="">-----</option>       
+
+  </select>
+
+  <span style="margin-left:3%"> Rango de Precio:</span>
+  <select class="camposgenerales" 
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+	width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center" 
+	
+	name="cars" id="cars">
+	<option value="">-----</option>       
+        <option value="1">$0 - $50.000</option>
+        <option value="2">$50.000 - $100.000</option>
+        <option value="3">$100.000 - $150.000</option>
+        <option value="4">$150.000 - $200.000</option>
+        <option value="5">$200.000 - $250.000</option>
+        <option value="6">$250.000 - $300.000</option>
+        <option value="7">$300.000 - $350.000</option>
+        <option value="8">Mayor a $350.000 </option>
+  </select>
+
+  <span style="margin-left:3%"> Idioma</span>
+  <select class="camposgenerales" 
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+	width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center" 
+	
+	name="cars" id="cars">
+        <option value="">-----</option>
+	
+	</select>
+
+  <span style="margin-left:3%"> Pais:</span>
+  <select class="camposgenerales"
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+	width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center" 
+	
+	name="cars" id="cars">
+
+        <option value="">-----</option>       
+        
+	</select>
+
+
+  <span style="margin-left:3%"> Estado:</span>
+  <select class="camposgenerales"
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+	width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center" 
+	
+	name="cars" id="cars">
+	<option value="">-----</option>       
+	<option value="">En Linea</option>       
+	<option value="">En Consulta</option>       
+	<option value="">OffLine</option>       
+
   </select>
 	</div>
 	

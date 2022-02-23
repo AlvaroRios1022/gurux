@@ -24,7 +24,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<script src="js/jquery-2.1.0.min.js"></script>
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	
-	
 	<title>Gurus Center</title>
 	<style type="text/css">
 		body {
@@ -33,7 +32,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			margin-right: 0px;
 			margin-bottom: 0px;
 		}
-		
 		.mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
 			background-color: #fff;
 			margin-top:60px;			
@@ -44,10 +42,9 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			margin-right:10px;
 			margin-top:60px;
 			width:4px;
-			background-color: #F58120;
+			background-color: #FFC808;
 		}
-
-		.mySlides {display:none;}
+.mySlides {display:none;}
 
 .holder1::-webkit-input-placeholder {
   text-align: center;
@@ -67,9 +64,11 @@ box-shadow: none;
 -webkit-box-shadow: none;
 
 }
-	
+.caja_inline {
+    display: inline-block;
+    width: 100px;
+}
 
-		
 
 		
 	</style>
@@ -161,54 +160,62 @@ box-shadow: none;
 				</nav>
 			</div>
 		</div>
-		<div class="barracoaching" style="margin-top:-6px; ">
+		<div class="barraconstruccion" style="margin-top:-6px; ">
 		<ul id="lista1" >
-                <li style="margin-left:-23px;" class="itemlista1"><a id="current" > HOME COACHING </a></li>
+                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="construccion.php" > HOME ESPECIALISTAS CONSTRUCCIÓN </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="preguntas_coaching.php">PREGUNTAS FRECUENTES</a></li>
+                <li class="itemlista1"><a href="#">PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="coaching_cursos.php" href="coaching.php" style="color:#fff; text-shadow: 1px 1px 1px black;">CURSOS EN LÍNEA</a></li>
+                <li class="itemlista1"><a href="presencial_construccion.php" style="color:#fff; text-shadow: 1px 1px 1px black;">CITA PRESENCIAL</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="coaching_certificaciones.php">CERTIFICACIONES EN LÍNEA</a></li>
+                <li class="itemlista1"><a href="#">CURSOS EN LÍNEA </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="libreria_coaching.php">ARTÍCULOS </a></li>
+                <li class="itemlista1"><a href="#">LIBRERÍA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="historia_coaching.php">MI CUENTA</a></li>
+                <li class="itemlista1"><a href="#">MI CUENTA</a></li>
             </ul>
         </div>
 
         <div class="contenido">
-            <div class="barraizquierdacoaching">
+            <div class="barraizquierdaconstruccion">
 			
 					<form class="form-search">
 						<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadorcoaching" maxlength="128" placeholder="Buscar" size="15" type="text" />
-							<button class="searchcoaching" >
+							<input style="margin-left:10px" class="buscadorconstruccion" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<button class="searchconstruccion" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
 					</form>
-						<div class="especialcoaching" >
-							<a href=" "><li style="color: #333;" value="Coaching adicciones">Coaching adicciones</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching coercitivo">Coaching coercitivo</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching de atracción ">Coaching de atracción </li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching de sombra">Coaching de sombra</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching deportivo">Coaching deportivo</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching familiar">Coaching familiar</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching inteligencia emocional">Coaching inteligencia emocional</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching ontológico">Coaching ontológico</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching organizacional">Coaching organizacional</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching personal">Coaching personal</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching PLN">Coaching PLN</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching sistémico">Coaching sistémico</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Coaching transformacional">Coaching transformacional</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Neurocoaching">Neurocoaching</li></a><br>
-
-							     <div> &nbsp;</div>
+							<div class="especialconstructores" >
+								<a href=" "><li style="color: #333; " value=">Baños">Baños</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Casa inteligente y Seguridad">Casa inteligente y Seguridad</li></a><br>
+                                <a href=" "><li style="color: #333; " value=">Cerraduras y Herrajes">Cerraduras y Herrajes</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Climatizacion">Climatizacion</li></a><br>
+                                <a href=" "><li style="color: #333; " value=">Cocina">Cocina</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Complementos de Baños">Complementos de Baños</li></a><br>
+                                <a href=" "><li style="color: #333; " value=">Construccion y Ferreteria">Construccion y Ferreteria</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Cortinas y Persianas">Cortinas y Persianas</li></a><br>
+                                <a href=" "><li style="color: #333; " value=">Electricidad">Electricidad</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Electrodomésticos de Cocina">Electrodomésticos de Cocina</li></a><br>
+                                <a href=" "><li style="color: #333; " value=">Electrodomésticos del Hogar">Electrodomésticos del Hogar</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Escaleras y Mudanzas">Escaleras y Mudanzas</li></a><br>
+                                <a href=" "><li style="color: #333; " value=">Estufas, Hornos & Campanas">Estufas, Hornos & Campanas</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Herramientas Electricas">Herramientas Electricas</li></a><br>
+                                <a href=" "><li style="color: #333; " value=">Lavandería y Lavadero">Lavandería y Lavadero</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Maderas, Tableros y Herrajes">Maderas, Tableros y Herrajes</li></a><br>
+                                <a href=" "><li style="color: #333; " value=">Pinturas">Pinturas</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Pisos y Paredes">Pisos y Paredes</li></a><br>
+                                <a href=" "><li style="color: #333; " value=">Pisos y Pinturas para tus Espacios">Pisos y Pinturas para tus Espacios</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Plomería">Plomería</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Puertas">Puertas</li></a><br>
+                                <a href=" "><li style="color: #333; " value=">Tecnologia y Television">Tecnologia y Television</li></a><br>
+								<a href=" "><li style="color: #333; " value=">Tejas y Drywall">Tejas y Drywall</li></a><br>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>
-						</div>
+                                <div> &nbsp;</div>
+							</div>
 				</div>
 
             
@@ -235,64 +242,167 @@ box-shadow: none;
 		<?php
 			}
 		?>
-				      <div align="center" style="background-color:#FEE1CA">
+			<div align="center" style="background-color:#f8d878">
 		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
-		<form style="margin-left:230px;" >
-		<input class="barratop holder1" type="text" id="pais" name="pais" placeholder=" Escribe tu Pais" style="margin-top:5px; margin-bottom:5px; color:#452167; width:280px; height:60px; background-color:#F58120; border: 1px solid #452167;">
-			<select id="buscar" style="text-align-last: center; color:#452167; width:280px; height:60px; background-color:#F58120; border: 1px solid #452167;">
-				<option value="0"> Rango de Precio por Hora</option>
-				<option value="1">$ 50.000 - $ 100.000</option>
-				<option value="2">$ 100.000 - $ 150.000</option>
-				<option value="3">$ 150.000 - $ 200.000</option>
-				<option value="4">$ 200.000 - $ 250.000</option>
-				<option value="4">$ 250.000 - $ 300.000</option>
-			</select>
-			<select id="buscar" style="text-align-last: center; color:#452167; width:280px; height:60px; background-color:#F58120; border: 1px solid #452167;">
-			<option value="0"> Estoy Dispinible Elige un Horario</option>
-				<option value="1">6:00 - 7:00</option>
-				<option value="2">7:00 - 8:00</option>
-				<option value="3">8:00 - 9:00</option>
-				<option value="4">9:00 - 10:00</option>
-				<option value="5">10:00 - 11:00</option> 
-				<option value="6">11:00 - 12:00</option>
-				<option value="7">12:00 - 13:00</option>
-				<option value="8">13:00 - 14:00</option>
-				<option value="9">14:00 - 15:00</option>
-				<option value="10">15:00 - 16:00</option>
-				<option value="12">16:00 - 17:00</option>
-				<option value="13">17:00 - 18:00</option>
-				<option value="14">18:00 - 19:00</option>
-				<option value="15">19:00 - 20:00</option>
-			</select>
-			<input type="submit" value="Enviar " style="color:#000; width:180px; height:58px; background-color:#ccc; border: 1px solid #999;" />
-		</form>
-	</div>
+		<br>
+		<br>
+		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
+		<br>
 		
+		<span >  Especialista:</span>
+  <select class="camposgenerales"
+  x
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
+
+  </select>
+  <span style="margin-left:3%"> Rango de Precio:</span>
+  <select class="camposgenerales" 
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center;  " 
+    
+    name="cars" id="cars">
+    <option value="">-----</option>       
+        <option value="1">$0 - $50.000</option>
+        <option value="2">$50.000 - $100.000</option>
+        <option value="3">$100.000 - $150.000</option>
+        <option value="4">$150.000 - $200.000</option>
+        <option value="5">$200.000 - $250.000</option>
+        <option value="6">$250.000 - $300.000</option>
+        <option value="7">$300.000 - $350.000</option>
+        <option value="8">Mayor a $350.000 </option>
+  </select>
+
+
+  <span style="margin-left:3%">  Ciudad:</span>
+  <select class="camposgenerales"
+  
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
+
+  </select>
+
+  
+	<span style="margin-left:3%"> Disponibilidad:</span>
+  <select class="camposgenerales"
+  
+  style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+	width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center" 
+	
+	name="cars" id="cars">
+	<option value="">-----</option>       
+	<option value="">En Linea</option>       
+	<option value="">En Consulta</option>       
+	<option value="">OffLine</option>        
+
+  </select>
+  <br>
+  <br>
+		</form>
+<br>
+
+<div class="content" align="center" style="margin-left: 17%">
+    <div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+	
+		<span style="margin-left:3%;">  El gurú Habla:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>       
+
+  		</select>
+	</div>
+
+	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+		<span style="margin-left:3%">  Ordenar Por:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>  
+   		 <option value="">Nuestros Destacados</option>       
+
+  		</select>
+	</div>
+
+	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
+		<span style="margin-left:3%">  Buscar por Nombre:</span>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
+
+    	name="cars" id="cars">        
+   		 <option value="">-----</option>       
+
+  		</select>
+	</div>
+
+   
+</div>
+
+	<br>
 	
 	<div class="slideshow-container2" style="margin-left:16%" >
-	
-		<div class="mySlides fade">
+	<div class="mySlides fade">
 			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_inicio1.jpg" style="width:100%"></a>
 		</div>
 		<div class="mySlides fade">
-			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_coach2.jpg" style="width:100%"></a>
-		</div>
-		<div class="mySlides fade">
-			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_coach3.jpg" style="width:100%"></a>
+			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_construccion3.jpg" style="width:100%"></a>
 		</div>
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
 	
+		</div>
 
 		<!-- Gurus -->
 
 		<div class="fondomedio" >
-	
-
-	
-	
-	
 		  <!--Product Grid-->
 		<div align="right">
 
@@ -303,7 +413,7 @@ box-shadow: none;
 				
 					<div class="prod-grid3 " style="margin-top:25px">
 						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -328,7 +438,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -336,7 +446,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 "style="margin-top:25px">
 						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -361,7 +471,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -369,7 +479,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 "style="margin-top:25px">
 						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -394,7 +504,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -405,7 +515,7 @@ box-shadow: none;
 
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -430,7 +540,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -438,7 +548,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -463,7 +573,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -471,7 +581,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -496,7 +606,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -506,7 +616,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -531,7 +641,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -539,7 +649,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -564,7 +674,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -572,7 +682,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -597,7 +707,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -607,7 +717,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -632,7 +742,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -640,7 +750,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -665,7 +775,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -673,7 +783,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -698,7 +808,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -708,7 +818,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -733,7 +843,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -741,7 +851,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -766,7 +876,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -774,7 +884,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -799,7 +909,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -809,7 +919,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -834,7 +944,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -842,7 +952,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -867,7 +977,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -875,7 +985,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -900,7 +1010,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -910,7 +1020,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -935,7 +1045,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -943,7 +1053,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -968,7 +1078,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -976,7 +1086,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1001,7 +1111,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1011,7 +1121,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1036,7 +1146,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1044,7 +1154,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1069,7 +1179,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1077,7 +1187,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1102,7 +1212,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1112,7 +1222,7 @@ box-shadow: none;
 					
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1137,7 +1247,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1145,7 +1255,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1170,7 +1280,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1178,7 +1288,7 @@ box-shadow: none;
 					</div>
 					<div class="prod-grid3 ">
 						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/6m.png" alt="kalita">
+					  	<img src="img/categorias/en linea/3m.png" alt="kalita">
 					  	<div class="bloqueguru bloqueguru2">
 							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
 							<form>
@@ -1203,7 +1313,7 @@ box-shadow: none;
 								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
 							</p>
 						</div>
-						<div class=" bloqueguru3" style=" background-color:#E5CAB6; " >
+						<div class=" bloqueguru3" style=" background-color:#dfc876; " >
 							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
 							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
 							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
@@ -1245,21 +1355,240 @@ box-shadow: none;
 							<input type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
 						</form>
 					</div>
+					<div class="menuright3" align="center" style="margin-top: 20px" >
+						<form  action="" method="post">
+							<div >			
+								<h4 style=" color: #FEC705; ">&nbsp; </h4>
+								<h4 style=" color: #FEC705; ">Eres Gúru?</h4>
+								<P style="font-size: 18px; color: #ffffff">Ingresa a tu perfil</P>
+							</div>
+							<div >				
+								<div class="form-group" >
+									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario">
+								</div><br>
+								<div class="form-group" >
+									<div class="clearfix">
+									</div>
+									<input type="password"  name="password" class="imputright" required="required" placeholder="Contraseña">
 								</div>
+							</div>
+							<div >
+								<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
+																<a href="https://www.guruxy.com" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
+
+								<br>
+
+							</div>
+						  <input type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
+						</form>
+					</div>
+					
+					<div class="menuright2" align="center" style="margin-top: 20px" >
+						<form  action="" method="post">
+							<h4 style="color:#5C3293; padding-top: 20px; margin-bottom: 20px; font-size:16"> GURÚS DESTACADOS </h4>
+						</form>
+						<div class="prod-grid2 bloqueguru " style=" background-color: #FFC808; color:#fff">
+							<br>
+							<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
+							<br><br>
+							<a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
+							<br>
+							<form>
+								<p class="clasificacion2" >
+									<input id="radio1" type="radio" name="estrellas" value="5"><!--
+									--><label style="color:#fff" for="radio1">★</label><!--
+									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
+									--><label style="color:#fff" for="radio2">★</label><!--
+									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
+									--><label style="color:#fff" for="radio3">★</label><!--
+									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
+									--><label style="color:#fff" for="radio4">★</label><!--
+									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
+									--><label style="color:#fff" for="radio5">★</label>
+								</p>
+							</form>
+							<br>
+							<img  style="margin-bottom:10;" src="img/categorias/en linea/1.jpg" alt="kalita">
+						</div>
+								
+						<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
+						<p class="textopguru2">IDIOMAS  
+						<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
+						<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
+						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
+						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
+						</p>
+						<div class=" bloqueguru3" style=" background-color:#FFC808; " >
+						<p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
+							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
+							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
+						</div>
+						<br><br>
+						<div class="prod-grid2 bloqueguru " style=" background-color: #FFC808; color:#fff">
+						<br>
+						<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
+						<br><br>
+						<a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
+						<br>
+						<form>
+  							<p class="clasificacion2" style="margin-bottom: -7px">
+								<input id="radio1" type="radio" name="estrellas" value="5"><!--
+								--><label style="color:#fff" for="radio1">★</label><!--
+								--><input id="radio2" type="radio" name="estrellas" value="4"><!--
+								--><label style="color:#fff" for="radio2">★</label><!--
+								--><input id="radio3" type="radio" name="estrellas" value="3"><!--
+								--><label style="color:#fff" for="radio3">★</label><!--
+								--><input id="radio4" type="radio" name="estrellas" value="2"><!--
+								--><label style="color:#fff" for="radio4">★</label><!--
+								--><input id="radio5" type="radio" name="estrellas" value="1"><!--
+								--><label style="color:#fff" for="radio5">★</label>
+							</p>
+							<br><br>
+						</form>
+					  <img  style="margin-bottom:10;" src="img/categorias/en linea/2.jpg" alt="kalita">
+		</div>
+								
+						<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
+						<p class="textopguru2">IDIOMAS  
+						<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
+						<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
+						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
+						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
+						</p>
+						<div class=" bloqueguru3" style=" background-color:#FFC808; " >
+						<p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
+							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
+							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
+						</div>
+						<br><br>
+						<div class="prod-grid2 bloqueguru " style=" background-color: #FFC808; color:#fff">
+						<br>
+							<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
+						<br><br>
+						<a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
+						<br>
+						<form>
+  							<p class="clasificacion2" style="margin-bottom: -7px">
+								<input id="radio1" type="radio" name="estrellas" value="5"><!--
+								--><label style="color:#fff" for="radio1">★</label><!--
+								--><input id="radio2" type="radio" name="estrellas" value="4"><!--
+								--><label style="color:#fff" for="radio2">★</label><!--
+								--><input id="radio3" type="radio" name="estrellas" value="3"><!--
+								--><label style="color:#fff" for="radio3">★</label><!--
+								--><input id="radio4" type="radio" name="estrellas" value="2"><!--
+								--><label style="color:#fff" for="radio4">★</label><!--
+								--><input id="radio5" type="radio" name="estrellas" value="1"><!--
+								--><label style="color:#fff" for="radio5">★</label>
+							</p>
+							<br>
+						</form>
+					  <img  style="margin-bottom:10;" src="img/categorias/en linea/3.jpg" alt="kalita">
+						</div>
+								
+						<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
+						<p class="textopguru2">IDIOMAS  
+						<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
+						<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
+						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
+						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
+						</p>
+						<div class=" bloqueguru3" style=" background-color:#FFC808; " >
+						<p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
+							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
+							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
+						</div>
+						<br><br>
+						<div class="prod-grid2 bloqueguru " style=" background-color: #FFC808; color:#fff">
+						<br>
+						<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
+						<br><br>
+						<a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
+						<br>
+						<form>
+  							<p class="clasificacion2" style="margin-bottom: -7px">
+								<input id="radio1" type="radio" name="estrellas" value="5"><!--
+								--><label style="color:#fff" for="radio1">★</label><!--
+								--><input id="radio2" type="radio" name="estrellas" value="4"><!--
+								--><label style="color:#fff" for="radio2">★</label><!--
+								--><input id="radio3" type="radio" name="estrellas" value="3"><!--
+								--><label style="color:#fff" for="radio3">★</label><!--
+								--><input id="radio4" type="radio" name="estrellas" value="2"><!--
+								--><label style="color:#fff" for="radio4">★</label><!--
+								--><input id="radio5" type="radio" name="estrellas" value="1"><!--
+								--><label style="color:#fff" for="radio5">★</label>
+							</p>
+							<br>
+						</form>
+					  <img  style="margin-bottom:10;" src="img/categorias/en linea/4.jpg" alt="kalita">
+					</div>
+								
+						<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
+						<p class="textopguru2">IDIOMAS  
+						<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
+						<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
+						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
+						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
+						</p>
+						
+						<div class=" bloqueguru3" style=" background-color:#FFC808; " >
+							<p class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
+								<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
+							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
+						</div>
+						<br><br>
+						<div class="prod-grid2 bloqueguru " style=" background-color: #FFC808; color:#fff">
+							<br>
+							<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
+							<br><br>
+							<a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
+							<br>
+							<form>
+								<p class="clasificacion2" style="margin-bottom: -7px">
+									<input id="radio1" type="radio" name="estrellas" value="5"><!--
+									--><label style="color:#fff" for="radio1">★</label><!--
+									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
+									--><label style="color:#fff" for="radio2">★</label><!--
+									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
+									--><label style="color:#fff" for="radio3">★</label><!--
+									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
+									--><label style="color:#fff" for="radio4">★</label><!--
+									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
+									--><label style="color:#fff" for="radio5">★</label>
+								</p>
+								<br>
+							</form>
+					  		<img  style="margin-bottom:10;" src="img/categorias/en linea/5.jpg" alt="kalita">
+						</div>
+								
+						<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
+						<p class="textopguru2">IDIOMAS  
+						<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
+						<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
+						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
+						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
+						</p>
+						<div class=" bloqueguru3" style=" background-color:#FFC808; " >
+							<p class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
+								<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
+							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
+						</div>
+
+				<br><br>
+				</div>
 				</section>
 			</div>
 		</div>
 	</div>
 
-	<div class="footercoaching" align="center" >
+	<div class="footerconstruccion" align="center" >
 		<div class="container2" >
 		<div align="right">         
-            <img  style="width:100%; margin-top:-15px; margin-bottom:30px;" src="img/acoaching.png" alt="kalita">
+            <img  style="width:100%; margin-top:-15px; margin-bottom:30px;" src="img/aconstruccion.png" alt="kalita">
         </div>
             
                 <div align="center">
                     
-				<img  style="width:15%; border-radius:20px" src="img/preffo1.png" alt="kalita">
+					<img  style="width:15%; border-radius:20px" src="img/preffo1.png" alt="kalita">
                     <img  style="width:15%; border-radius:20px; margin-left:25px" src="img/preffo2.png" alt="kalita">
                     <img  style="width:15%; border-radius:20px; margin-left:25px" src="img/preffo3.png" alt="kalita">
                     <img  style="width:15%; border-radius:20px; margin-left:25px; margin-right:25px " src="img/preffo4.png" alt="kalita">
@@ -1364,17 +1693,15 @@ box-shadow: none;
 			dots[slideIndex-1].className += " active";
 			}
 		</script>
-<script>
+		<script>
     (function($){
         $(window).on("load",function(){
-            $(".barraizquierdacoaching").mCustomScrollbar({
+            $(".barraizquierdaconstruccion").mCustomScrollbar({
     theme:"rounded"
 });
         });
     })(jQuery);
 </script>
-
-
 <script>
 var slideIndex = 0;
 carousel();

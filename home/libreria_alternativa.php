@@ -52,6 +52,21 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
   color: #452167;
   
 }
+input:focus, select:focus, select, input.form-control:focus {
+
+outline:none !important;
+
+outline-width: 0 !important;
+
+box-shadow: none;
+
+-moz-box-shadow: none;
+
+-webkit-box-shadow: none;
+
+}
+	
+
 		
 	</style>
 </head>
@@ -147,6 +162,8 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                 <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="medicina_alternativa.php" > HOME MEDICINA ALTERNATIVA </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="preguntas_alternativos.php" >PREGUNTAS FRECUENTES</a></li>
+				<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                <li class="itemlista1"><a href="presencial_alternativa.php">CITA PRESENCIAL</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">PRUEBAS DE LABORATORIO</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>

@@ -42,7 +42,7 @@ function Registro($post){
     $url = "https://prod.cobru.co/token/";
 
     $post2 = array(
-        'username' => '3134965514',
+        'username' => '3123886527',
         'password' => 'Crea1504'
     );
 

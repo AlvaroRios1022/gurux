@@ -11,7 +11,8 @@ $( "#form_login" ).submit(function( event ) {
         success: function(datos){
             var json = JSON.parse(datos);
             if(json.status =="success"){
-                if(json.code == "0"){
+                console.log(json)
+                if(json.code == "1"){
                     setTimeout(() => {
                         location.href = 'cobru.php';    
                     }, 1000);
