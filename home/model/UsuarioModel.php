@@ -101,14 +101,12 @@ class UsuarioModel {
 
         $nombre = $db->real_escape_string($_POST['nombre']);
         $apellido = $db->real_escape_string($_POST['apellido']);
-        $usuario = $db->real_escape_string($_POST['telefono']);
+        $usuario = $db->real_escape_string($_POST['usuario']);
         $email = $db->real_escape_string($_POST['email']);
-        $pk = $db->real_escape_string($_POST['pk']);
-        $password = md5($_POST['pass']);
+        $password = md5($_POST['password']);
         $ip = $_SERVER['REMOTE_ADDR'];
-        $fecha = $db->real_escape_string($_POST['fecha']);
-        $conocio= $_POST['conocio'];
-
+        $conocio = $db->real_escape_string($_POST['conocio']); 
+        $fecha = $db->real_escape_string($_POST['fecha']); 
 
         $consultausuario = "SELECT usuario_usu FROM usuario_guru WHERE usuario_usu = '$usuario'";
 	    $consultaemail = "SELECT email_usu FROM usuario_guru WHERE email_usu = '$email'";
@@ -142,7 +140,7 @@ class UsuarioModel {
                 $email_subject = 'Notificaciones Guru';
                 
                 ob_start();
-                EnvioModel::EnvioCodigo($email, $email_subject, $pk);
+                EnvioModel::EnvioCodigo($email_to, $email_subject, $email_message);
                 ob_end_clean();
                 
               }
