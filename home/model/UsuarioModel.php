@@ -130,8 +130,9 @@ class UsuarioModel {
         else {
             $aleatorio = uniqid();
     
-            $query = "INSERT INTO usuario_guru (conocio,fecha, usuario_usu, nombre_usu, apellido_usu, email_usu, pass_usu, fecha_usu, ip_usu, codigo_usu ) VALUES ($conocio,'$fecha','$usuario','$nombre','$apellido','$email','$password',now(),'$ip','$aleatorio')";
-    
+            $query = "INSERT INTO usuario_guru (conocio,fecha, usuario_usu, nombre_usu, apellido_usu, email_usu, pass_usu, fecha_usu, ip_usu, codigo_usu ) 
+                                         VALUES ($conocio,'$fecha','$usuario','$nombre','$apellido','$email','$password',now(),'$ip','$aleatorio')";
+        
             if($registro = $db->query($query)) {          
 
                 $return['mensaje']= "Felicidades ". $nombre ." ". $apellido ." se ha registrado correctamente, te hemos enviado un correo de confirmacion.";
