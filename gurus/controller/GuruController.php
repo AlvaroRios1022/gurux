@@ -13,7 +13,7 @@ if (!isset($post["tipo"])) {
 }
 
 require_once(dirname(__FILE__) . "/../model/GuruModel.php");
-$GLOBALS['path'] ='';
+$GLOBALS['path'] ='/gurux';
 //$GLOBALS['path'] ='/guru17';
 switch ($post['tipo']) {
     case "info_pesonal" :
