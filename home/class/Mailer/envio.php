@@ -27,19 +27,19 @@ $mail->isSMTP();
 // SMTP::DEBUG_SERVER = client and server messages
 $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 //Set the hostname of the mail server
-$mail->Host = 'mail.guruxy.com';
+$mail->Host = 'smtp.powweb.com';
 //Set the SMTP port number - likely to be 25, 465 or 587
-$mail->Port = 465;
+$mail->Port = 587;
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 
 $mail->SMTPSecure = 'TLS'; //seguridad
 //Username to use for SMTP authentication
-$mail->Username = 'info@guruxy.com';
+$mail->Username = 'no-reply@asoleto.powweb.com';
 //Password to use for SMTP authentication
-$mail->Password = '1Contacto2*';
+$mail->Password = 'b1G4N.8912';
 //Set who the message is to be sent from
-$mail->setFrom('info@guruxy.com', 'Notificaciones Guru');
+$mail->setFrom('no-reply@asoleto.powweb.com', 'Notificaciones Guru');
 //Set an alternative reply-to address
 //Set who the message is to be sent to
 $mail->addAddress($email);

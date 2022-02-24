@@ -48,7 +48,6 @@ class LoginModel {
 
         }else{
             $consulta = "SELECT `id_usuario`, `usuario_usu`, `pass_usu` FROM `usuario_guru` WHERE usuario_usu= '$username' AND pass_usu = '$password'";
-
             if($resultado = $mysqli->query($consulta)) {
                 while($row = $resultado->fetch_array()) {
       

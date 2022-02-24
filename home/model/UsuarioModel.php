@@ -101,9 +101,9 @@ class UsuarioModel {
 
         $nombre = $db->real_escape_string($_POST['nombre']);
         $apellido = $db->real_escape_string($_POST['apellido']);
-        $usuario = $db->real_escape_string($_POST['usuario']);
+        $usuario = $db->real_escape_string($_POST['telefono']);
         $email = $db->real_escape_string($_POST['email']);
-        $password = md5($_POST['password']);
+        $password = md5($_POST['pass']);
         $ip = $_SERVER['REMOTE_ADDR'];
         $conocio = $db->real_escape_string($_POST['conocio']); 
         $fecha = $db->real_escape_string($_POST['fecha']); 
