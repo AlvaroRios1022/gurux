@@ -271,9 +271,10 @@ box-shadow: none;
 
 		<div class="fondomedio" >
 	
-	<div >
+	<div style=" background-color: #D0E9EA">
 		<br>
-		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto">
+		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto"> 
+		<a style=" margin-left:5%">Filtrar por:</a>
 		<br><br>
 		
 
@@ -284,6 +285,7 @@ box-shadow: none;
     background-color: #0000;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
 	text-align: center" 
@@ -299,6 +301,7 @@ box-shadow: none;
     background-color: #0000;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
 	text-align: center" 
@@ -322,6 +325,7 @@ box-shadow: none;
     background-color: #0000;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
 	text-align: center" 
@@ -338,6 +342,7 @@ box-shadow: none;
     background-color: #0000;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
 	text-align: center" 
@@ -356,6 +361,7 @@ box-shadow: none;
     background-color: #0000;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
 	text-align: center" 
@@ -367,6 +373,7 @@ box-shadow: none;
 	<option value="">OffLine</option>       
 
   </select>
+  <br><br>
 	</div>
 	
 	
