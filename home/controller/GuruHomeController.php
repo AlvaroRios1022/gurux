@@ -16,14 +16,14 @@ if (!isset($post["tipo"])) {
 require_once(dirname(__FILE__) . "/../model/GuruHomeModel.php");
 switch ($post['tipo']) {
     case "ALLGURUS" :
-        ConsultarGurus();
+        ConsultarGurus($post);
         break;
 default: echo('Error, no existe el dato "TIPO" en el objeto POST');
     break;
 }
 
 
-function  ConsultarGurus(){
-$datos = GuruHomeModel::ConsultarGurus();
+function  ConsultarGurus($post){
+$datos = GuruHomeModel::ConsultarGurus($post);
 echo json_encode($datos); 
 }
