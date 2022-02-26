@@ -564,7 +564,7 @@ box-shadow: none;
 		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
 		<br>
 		
-		<span >  Tutor:</span>
+		<span>  Profesional:</span>
   <select class="camposgenerales"
   x
     style=" border: none;
