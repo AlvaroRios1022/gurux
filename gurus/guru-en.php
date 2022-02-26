@@ -284,9 +284,9 @@ $nuevafechaestudio=date ('Y-m-d',$fecha_estudio);
                     if(isset($_POST['alternativa'])){
                         echo $_POST['alternativa'];
                     } ?>">
-                    <input type="hidden" name="yoga" id="yoga" value="<?php
-                    if(isset($_POST['yoga'])){
-                        echo $_POST['yoga'];
+                    <input type="hidden" name="fisico" id="fisico" value="<?php
+                    if(isset($_POST['fisico'])){
+                        echo $_POST['fisico'];
                     }  ?>">
                     <input type="hidden" name="psiquico" id="psiquico" value="<?php
                     if(isset($_POST['psiquico'])){
@@ -311,6 +311,14 @@ $nuevafechaestudio=date ('Y-m-d',$fecha_estudio);
                     <input type="hidden" name="tutor" id="tutor" value="<?php 
                     if(isset($_POST['tutor'])){
                         echo $_POST['tutor'];
+                    }  ?>">
+                    <input type="hidden" name="especialista" id="especialista" value="<?php 
+                    if(isset($_POST['especialista'])){
+                        echo $_POST['especialista'];
+                    } ?>">
+                    <input type="hidden" name="Preparacion_fisica" id="Preparacion_fisica" value="<?php 
+                    if(isset($_POST['Preparacion_fisica'])){
+                        echo $_POST['Preparacion_fisica'];
                     } 
                     ?>">
                     <input type="hidden" name="otros" id="otros" value="<?php
