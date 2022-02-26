@@ -242,8 +242,22 @@ box-shadow: none;
 		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
 		<br>
 		
+		<span >  Cuidado en Casa:</span>
+  <select class="camposgenerales"
+  
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="cars" id="cars">        
+    <option value="">-----</option>       
 
-  <span > Rango de Precio:</span>
+  </select>
+
+  <span style="margin-left:3%" > Rango de Precio:</span>
   <select class="camposgenerales" 
   
   style=" border: none;

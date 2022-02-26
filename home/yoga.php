@@ -233,7 +233,8 @@ box-shadow: none;
 	
 	<div >
 		<br>
-		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto">
+		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto"> 
+		<a style=" margin-left:5%">Filtrar por:</a>
 		<br><br>
 		
 

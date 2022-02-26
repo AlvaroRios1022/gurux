@@ -424,12 +424,14 @@ class GuruModel {
         $medicina = $db->real_escape_string($post['medicina']);
         $alternativa = $db->real_escape_string($post['alternativa']);
         //$yoga = $db->real_escape_string($post['yoga']);
+        $fisico = $db->real_escape_string($post['fisico']);
         $psiquico = $db->real_escape_string($post['psiquico']);
         $religioso = $db->real_escape_string($post['religioso']);
         $coaching = $db->real_escape_string($post['coaching']);
-        $idiomas = $db->real_escape_string($post['idioma']);
-        $registro_x = $db->real_escape_string($post['tutor']);
-        $registro_y = $db->real_escape_string($post['otros']);
+        $idiomas = $db->real_escape_string($post['idiomas']);
+        $otras_profesiones = $db->real_escape_string($post['otras_profesiones']);
+        $tutor = $db->real_escape_string($post['tutor']);
+        $construccion = $db->real_escape_string($post['otros']);
         $nombre = $db->real_escape_string($post['nombre']);
         $documento = $db->real_escape_string($post['documento']);
         $genero = $db->real_escape_string($post['genero']);
@@ -453,9 +455,10 @@ class GuruModel {
         $pk =$db->real_escape_string($post['pk']);
     
         if($id_personal=="0"){
-          $query = "INSERT INTO `guru`(`otro_idioma`,`idioma`,`codigo_pais`,`url_cert_formacion`,`estado_c`,`tipo_doc`,`medicina`, `alternativa`, `psiquico`, `religioso`, `coaching`, `idiomas`, `registro_x`, `registro_y`, `nombre`, `documento`, `genero`, `fecha`, `pais`, `ciudad`, `direccion`, `telefono`, `correo`,`url_image`,`password`)VALUES 
-          ('".$idioma_adicional."','".$idioma."','".$codigo."', '".$url_cert_formacion."','".$estado_c."',".$tipo_doc.",'".$medicina."', '".$alternativa."', '".$psiquico."', '".$religioso."', '".$coaching."', '".$idiomas."', '".$registro_x."', '".$registro_y."', '".$nombre."', '".$documento."', '".$genero."', '".$fecha."', '".$pais."', '".$ciudad."', '".$direccion."', '".$telefono."', '".$correo."','".$url_image."','".$password."')";
-        }else{
+          $query = "INSERT INTO `guru`(`otro_idioma`,`idioma`,`codigo_pais`,`url_cert_formacion`,`estado_c`,`tipo_doc`,`medicina`, `alternativa`, `fisico` , `tutor` ,`psiquico`, `religioso`, `coaching`, `idiomas`, `otras_profesiones`, `construccion`, `nombre`, `documento`, `genero`, `fecha`, `pais`, `ciudad`, `direccion`, `telefono`, `correo`,`url_image`,`password`)VALUES 
+          ('".$idioma_adicional."','".$idioma."','".$codigo."', '".$url_cert_formacion."','".$estado_c."',".$tipo_doc.",'".$medicina."', '".$alternativa."', '".$fisico."' , '".$tutor."',   '".$psiquico."', '".$religioso."', '".$coaching."', '".$idiomas."', '".$otras_profesiones."', '".$construccion."', '".$nombre."', '".$documento."', '".$genero."', '".$fecha."', '".$pais."', '".$ciudad."', '".$direccion."', '".$telefono."', '".$correo."','".$url_image."','".$password."')";
+        echo $query;  
+      }else{
           $query = "UPDATE guru SET `nombre` ='".$nombre."', `documento`='".$documento."', `genero`='".$genero."', `fecha`='".$fecha."', `pais`='".$pais."', `ciudad`='".$ciudad."', `direccion`='".$direccion."', `telefono`='".$telefono."', `correo`='".$correo."',url_image='".$url_image."' WHERE id=".$id_personal;
         }
             

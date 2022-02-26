@@ -251,7 +251,7 @@ box-shadow: none;
 		
 		<span >  Especialista:</span>
   <select class="camposgenerales"
-  x
+  
     style=" border: none;
     background-color: #0000;
     font-size: 15px;

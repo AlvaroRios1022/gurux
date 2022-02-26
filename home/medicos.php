@@ -143,7 +143,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos" style=" ">MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -290,9 +290,10 @@ box-shadow: none;
 
 		<div class="fondomedio" >
 	
-	<div >
+	<div style=" background-color: #d6f0fc; " >
 		<br>
-		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto">
+		<img src="img/nuestros.png"  style="width: 25%; margin-left:17%" height="auto"> 
+		<a style=" margin-left:5%">Filtrar por:</a>
 		<br><br>
 		
 	<input type="hidden" id="filtro" value="medicina">
@@ -312,6 +313,7 @@ box-shadow: none;
     background-color: #0000;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
 	text-align: center" 
@@ -335,6 +337,7 @@ box-shadow: none;
     background-color: #0000;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
 	text-align: center" 
@@ -379,6 +382,7 @@ box-shadow: none;
     background-color: #0000;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
 	text-align: center" 
@@ -641,6 +645,7 @@ box-shadow: none;
     background-color: #0000;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
 	text-align: center" 
@@ -652,6 +657,9 @@ box-shadow: none;
 	<option value="">OffLine</option>       
 
   </select>
+  <br>
+  <br>
+
 	</div>
 	
 	
