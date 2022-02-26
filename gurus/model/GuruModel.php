@@ -457,7 +457,7 @@ class GuruModel {
         if($id_personal=="0"){
           $query = "INSERT INTO `guru`(`otro_idioma`,`idioma`,`codigo_pais`,`url_cert_formacion`,`estado_c`,`tipo_doc`,`medicina`, `alternativa`, `body_fisico` , `tutor` ,`psiquico`, `religioso`, `coaching`, `idiomas`, `otras_profesiones`, `construccion`, `nombre`, `documento`, `genero`, `fecha`, `pais`, `ciudad`, `direccion`, `telefono`, `correo`,`url_image`,`password`)VALUES 
           ('".$idioma_adicional."','".$idioma."','".$codigo."', '".$url_cert_formacion."','".$estado_c."',".$tipo_doc.",'".$medicina."', '".$alternativa."', '".$fisico."' , '".$tutor."',   '".$psiquico."', '".$religioso."', '".$coaching."', '".$idiomas."', '".$otras_profesiones."', '".$construccion."', '".$nombre."', '".$documento."', '".$genero."', '".$fecha."', '".$pais."', '".$ciudad."', '".$direccion."', '".$telefono."', '".$correo."','".$url_image."','".$password."')";
-        echo $query;  
+         
       }else{
           $query = "UPDATE guru SET `nombre` ='".$nombre."', `documento`='".$documento."', `genero`='".$genero."', `fecha`='".$fecha."', `pais`='".$pais."', `ciudad`='".$ciudad."', `direccion`='".$direccion."', `telefono`='".$telefono."', `correo`='".$correo."',url_image='".$url_image."' WHERE id=".$id_personal;
         }
