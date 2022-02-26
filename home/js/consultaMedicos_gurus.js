@@ -2,12 +2,21 @@
 var LISTA_GURUS = []
 var LISTA_GURUS_TEMP = []
 var TIPO_GURU =""
+var CIUDAD = ""
+var RANGO_INICIAL = ""
+var RANGO_FINAL = ""
+var IDIOMA = ""
+var PAIS = ""
+
+
 $( document ).ready(function() {
 
+    var filtro = $("#filtro").val()
     $.ajax({
         type: "POST",
         url: "controller/GuruHomeController.php",
-        data:  {tipo:"ALLGURUS"},  
+        data:  {tipo:"ALLGURUS",
+                filtro:filtro},  
         success: function(datos){
             LISTA_GURUS = JSON.parse(datos)
             LISTA_GURUS_TEMP = LISTA_GURUS
@@ -23,8 +32,11 @@ function Pintar_Gurus(){
     LISTA_GURUS_TEMP = LISTA_GURUS
     $.each(LISTA_GURUS_TEMP, function (index, v) {
         
-        //if(v.medicina){
-            if(v.medicina ==TIPO_GURU || TIPO_GURU == ''){
+        
+            if((v.medicina ==TIPO_GURU || TIPO_GURU == '') && (v.ciudad == CIUDAD || CIUDAD == '' )
+            && ((RANGO_INICIAL < v.precio && v.precio < RANGO_FINAL) || (RANGO_INICIAL == '' || RANGO_FINAL == '') )
+            && (v.idioma == IDIOMA || IDIOMA == "" ) &&( v.pais == PAIS || PAIS == "")
+            ){
             html = html +  "<div class='prod-grid3' style='margin-top:25px;height: 180px;'>"+
             "<img class='imgredonguru' src='"+v.url_image+"' alt='kalita'>"+
               "<img src='img/categorias/en linea/1m.png' alt='kalita'>"+
@@ -59,9 +71,6 @@ function Pintar_Gurus(){
             "</div>"+
         "</div>";
             }
-        //}
-
-        
     });
 
    
@@ -74,5 +83,31 @@ function Pintar_Gurus(){
 
 function filtroTipo(tipo){
     TIPO_GURU = tipo;
+    Pintar_Gurus();
+}
+
+
+function change_ciudad(e){
+    
+    CIUDAD = e.value;
+    Pintar_Gurus();
+}
+
+function change_rango_precios(e){
+    var value_rango = e.value;
+    var array_rango = value_rango.split("-");
+
+    RANGO_INICIAL =array_rango[0];
+    RANGO_FINAL=array_rango[1];
+    Pintar_Gurus();
+}
+
+function change_idioma(e){
+    IDIOMA = e.value;
+    Pintar_Gurus();
+}
+
+function change_pais(e){
+    PAIS = e.value;
     Pintar_Gurus();
 }
