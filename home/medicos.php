@@ -191,7 +191,7 @@ box-shadow: none;
 						</div>
 					</form>
 							<div class="especial" >
-							<a href="#"><li style="color: #333; " onclick="filtroTipo('Alergólogo')">Alergólogo</li></a><br>
+							<a href="#"><li style="color: #333; "   onclick="filtroTipo('Alergólogo')">Alergólogo</li></a><br>
                                 <a href="#"><li style="color: #333; " onclick="filtroTipo('Cardiólogo')">Cardiólogo</li></a><br>
                                 <a href="#"><li style="color: #333; " onclick="filtroTipo('Angiólogo')">Angiólogo</li></a><br>
                                 <a href="#"><li style="color: #333; " onclick="filtroTipo('Deportólogo')">Deportólogo</li></a><br>
@@ -2180,7 +2180,7 @@ function carousel() {
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script src="js/consultaMedicos_gurus.js"></script>
+<script src="js/consulta_gurus.js"></script>
 
 </body>
 </html>
