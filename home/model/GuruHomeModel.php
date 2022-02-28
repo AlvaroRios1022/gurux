@@ -24,7 +24,25 @@ class GuruHomeModel {
                 break;     
             case "idiomas":
                 $filtroQuery = $filtroQuery.' AND idiomas <> ""';
-                break;               
+                break;     
+            case "body_fisico":
+                $filtroQuery = $filtroQuery.' AND body_fisico <> ""';
+                break;
+            case "tutor":
+                $filtroQuery = $filtroQuery.' AND tutor <> ""';
+                break;
+            case "otras_profesiones":
+                $filtroQuery = $filtroQuery.' AND otras_profesiones <> ""';
+                break;
+            case "construccion":
+                $filtroQuery = $filtroQuery.' AND construccion <> ""';
+                break;
+            case "preparacion_fisica":
+                $filtroQuery = $filtroQuery.' AND preparacion_fisica <> ""';
+                break;
+            case "especialista":
+                $filtroQuery = $filtroQuery.' AND especialista <> ""';
+                break;
         default: 
                 
             break;
