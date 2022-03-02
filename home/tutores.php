@@ -186,189 +186,189 @@ box-shadow: none;
 					</form>
 							<div class="especialtutores" >
 							<p>Asignaturas Colegio </p>
-                                <a href=" "><li style="color: #333; " value="Biología">Biología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ciencias sociales">Ciencias sociales</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Contabilidad">Contabilidad</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Economía">Economía</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Español">Español</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ética">Ética</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Filosofía">Filosofía</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Física">Física</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Geometría">Geometría</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Humanidades">Humanidades</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Matemáticas">Matemáticas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Química">Química</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sistemas y Tecnología">Sistemas y Tecnología</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Biología')" value="Biología">Biología</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias sociales')" value="Ciencias sociales">Ciencias sociales</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Contabilidad')" value="Contabilidad">Contabilidad</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Economía')" value="Economía">Economía</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Español')" value="Español">Español</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ética')" value="Ética">Ética</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Filosofía')" value="Filosofía">Filosofía</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Física')" value="Física">Física</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Geometría')" value="Geometría">Geometría</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Humanidades')" value="Humanidades">Humanidades</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Matemáticas')" value="Matemáticas">Matemáticas</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Química')" value="Química">Química</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas y Tecnología')" value="Sistemas y Tecnología">Sistemas y Tecnología</li></a><br>
                            <br>
 
                             <p>Ciencias</p>
-                             	<a href=" "><li style="color: #333; " value="Balance de materia y energía">Balance de materia y energía</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Biofísica">Biofísica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Biología">Biología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Biología celular">Biología celular</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Biología computacional">Biología computacional</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Biología molecular">Biología molecular</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Bioquímica">Bioquímica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Bioquímica metabólica">Bioquímica metabólica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Catálisis">Catálisis</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ciencias agrícolas">Ciencias agrícolas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Circuitos eléctricos">Circuitos eléctricos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Diseño de máquinas">Diseño de máquinas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ecología">Ecología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Electromagnetismo">Electromagnetismo</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Electrónica análoga">Electrónica análoga</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Estática">Estática</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Física 1">Física 1</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Física 2">Física 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Física biomecánica">Física biomecánica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Fisicoquímica">Fisicoquímica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Genética">Genética</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Geociencia">Geociencia</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Geología">Geología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Hidrología">Hidrología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mecánica de fluidos y sólidos">Mecánica de fluidos y sólidos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mecatrónica">Mecatrónica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Metrología">Metrología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Microbiología">Microbiología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Química analítica">Química analítica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Química general">Química general</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Química inorgánica">Química inorgánica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Química orgánica">Química orgánica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Resistencia de materiales">Resistencia de materiales</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Termodinámica">Termodinámica</li></a><br>
+                             	<a href="#"><li style="color: #333; "onclick="filtroTipo('Balance de materia y energía')" value="Balance de materia y energía">Balance de materia y energía</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Biofísica')" value="Biofísica">Biofísica</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Biología')" value="Biología">Biología</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Biología celular')" value="Biología celular">Biología celular</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Biología computacional')" value="Biología computacional">Biología computacional</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Biología molecular')" value="Biología molecular">Biología molecular</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Bioquímica')" value="Bioquímica">Bioquímica</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Bioquímica metabólica')" value="Bioquímica metabólica">Bioquímica metabólica</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Catálisis')" value="Catálisis">Catálisis</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Ciencias agrícolas')" value="Ciencias agrícolas">Ciencias agrícolas</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Circuitos eléctricos')" value="Circuitos eléctricos">Circuitos eléctricos</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Diseño de máquinas')" value="Diseño de máquinas">Diseño de máquinas</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Ecología')" value="Ecología">Ecología</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Electromagnetismo')" value="Electromagnetismo">Electromagnetismo</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Electrónica análoga')" value="Electrónica análoga">Electrónica análoga</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Estática')" value="Estática">Estática</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Física 1')" value="Física 1">Física 1</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Física 2')" value="Física 2">Física 2</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Física biomecánica')" value="Física biomecánica">Física biomecánica</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Fisicoquímica')" value="Fisicoquímica">Fisicoquímica</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Genética')" value="Genética">Genética</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Geociencia')" value="Geociencia">Geociencia</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Geología')" value="Geología">Geología</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Hidrología')" value="Hidrología">Hidrología</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Mecánica de fluidos y sólidos')" value="Mecánica de fluidos y sólidos">Mecánica de fluidos y sólidos</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Mecatrónica')" value="Mecatrónica">Mecatrónica</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Metrología')" value="Metrología">Metrología</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Microbiología')" value="Microbiología">Microbiología</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Química analítica')" value="Química analítica">Química analítica</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Química general')" value="Química general">Química general</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Química inorgánica')" value="Química inorgánica">Química inorgánica</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Química orgánica')" value="Química orgánica">Química orgánica</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Resistencia de materiales')" value="Resistencia de materiales">Resistencia de materiales</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Termodinámica')" value="Termodinámica">Termodinámica</li></a><br>
                             <br>
 
                             <p>Ciencias Politicas y Sociales</p>
-                                <a href=" "><li style="color: #333; " value="Antropología">Antropología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ciencias políticas">Ciencias políticas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Common law">Common law</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Criminología">Criminología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho civil">Derecho civil</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho comercial y mercantil">Derecho comercial y mercantil</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho constitucional">Derecho constitucional</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho internacional">Derecho internacional</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho laboral">Derecho laboral</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho penal">Derecho penal</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho privado">Derecho privado</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho procesal">Derecho procesal</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho público">Derecho público</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho romano">Derecho romano</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derechos humanos">Derechos humanos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Filosofía">Filosofía</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Hermenéutica">Hermenéutica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Historia y geografía">Historia y geografía</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Recursos humanos">Recursos humanos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Redacción y gramática">Redacción y gramática</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Relaciones internacionales">Relaciones internacionales</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sociología">Sociología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Teología">Teología</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Antropología')" value="Antropología">Antropología</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias políticas')" value="Ciencias políticas">Ciencias políticas</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Common law')" value="Common law">Common law</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Criminología')" value="Criminología">Criminología</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho civil')" value="Derecho civil">Derecho civil</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho comercial y mercantil')" value="Derecho comercial y mercantil">Derecho comercial y mercantil</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho constitucional')" value="Derecho constitucional">Derecho constitucional</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho internacional')" value="Derecho internacional">Derecho internacional</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho laboral')" value="Derecho laboral">Derecho laboral</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho penal')" value="Derecho penal">Derecho penal</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho privado')" value="Derecho privado">Derecho privado</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho procesal')" value="Derecho procesal">Derecho procesal</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho público')" value="Derecho público">Derecho público</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho romano')" value="Derecho romano">Derecho romano</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derechos humanos')" value="Derechos humanos">Derechos humanos</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Filosofía')" value="Filosofía">Filosofía</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Hermenéutica')" value="Hermenéutica">Hermenéutica</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Historia y geografía')" value="Historia y geografía">Historia y geografía</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Recursos humanos')" value="Recursos humanos">Recursos humanos</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Redacción y gramática')" value="Redacción y gramática">Redacción y gramática</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Relaciones internacionales')" value="Relaciones internacionales">Relaciones internacionales</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sociología')" value="Sociología">Sociología</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Teología')" value="Teología">Teología</li></a><br>
                             <br>
 
                             <p>Economía, Finanzas y Contabilidad</p>
-                                <a href=" "><li style="color: #333; " value="Análisis financiero">Análisis financiero</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Comercio">Comercio</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Contabilidad">Contabilidad</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Costos">Costos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Econometría">Econometría</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Economía internacional">Economía internacional</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Economía matemática">Economía matemática</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Finanzas">Finanzas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Fundamentos macroeconómicos">Fundamentos macroeconómicos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Fundamentos microeconómicos">Fundamentos microeconómicos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Impuestos">Impuestos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Macroeconomía 1">Macroeconomía 1</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Macroeconomía 2">Macroeconomía 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Matemática financiera">Matemática financiera</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mercadeo">Mercadeo</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mercado de valores">Mercado de valores</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mercadotecnia y ventas">Mercadotecnia y ventas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Microeconomía 1">Microeconomía 1</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Microeconomía 2">Microeconomía 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Niif">Niif</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Presupuesto">Presupuesto</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Simulación financiera">Simulación financiera</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Teoría de juegos">Teoría de juegos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Teoría del consumidor">Teoría del consumidor</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Trading">Trading</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Análisis financiero')" value="Análisis financiero">Análisis financiero</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Comercio')" value="Comercio">Comercio</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Contabilidad')" value="Contabilidad">Contabilidad</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Costos')" value="Costos">Costos</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Econometría')" value="Econometría">Econometría</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Economía internacional')" value="Economía internacional">Economía internacional</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Economía matemática')" value="Economía matemática">Economía matemática</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Finanzas')" value="Finanzas">Finanzas</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos macroeconómicos')" value="Fundamentos macroeconómicos">Fundamentos macroeconómicos</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos microeconómicos')" value="Fundamentos microeconómicos">Fundamentos microeconómicos</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Impuestos')" value="Impuestos">Impuestos</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Macroeconomía 1')" value="Macroeconomía 1">Macroeconomía 1</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Macroeconomía 2')" value="Macroeconomía 2">Macroeconomía 2</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Matemática financiera')" value="Matemática financiera">Matemática financiera</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Mercadeo')" value="Mercadeo">Mercadeo</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Mercado de valores')" value="Mercado de valores">Mercado de valores</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Mercadotecnia y ventas')" value="Mercadotecnia y ventas">Mercadotecnia y ventas</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Microeconomía 1')" value="Microeconomía 1">Microeconomía 1</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Microeconomía 2')" value="Microeconomía 2">Microeconomía 2</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Niif')" value="Niif">Niif</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Presupuesto')" value="Presupuesto">Presupuesto</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Simulación financiera')" value="Simulación financiera">Simulación financiera</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría de juegos')" value="Teoría de juegos">Teoría de juegos</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría del consumidor')" value="Teoría del consumidor">Teoría del consumidor</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Trading')" value="Trading">Trading</li></a><br>
                                 <br>
 
                             <p>Deportes</p>
-                                <a href=" "><li style="color: #333; " value="Ajedrez">Ajedrez</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Artes marciales">Artes marciales</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Baloncesto">Baloncesto</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Box/kick boxing">Box/kick boxing</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Entrenador personal">Entrenador personal</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Fútbol">Fútbol</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Manejo de dron">Manejo de dron</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mma (artes marciales mixtas)">Mma (artes marciales mixtas)</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Natación">Natación</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Patinaje">Patinaje</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Pilates">Pilates</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Slackline">Slackline</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Squash">Squash</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Tenis">Tenis</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Zumba">Zumba</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Ajedrez')"  value="Ajedrez">Ajedrez</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Artes marciales')"  value="Artes marciales">Artes marciales</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Baloncesto')"  value="Baloncesto">Baloncesto</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Box/kick boxing')"  value="Box/kick boxing">Box/kick boxing</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Entrenador personal')"  value="Entrenador personal">Entrenador personal</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Fútbol')"  value="Fútbol">Fútbol</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Manejo de dron')"  value="Manejo de dron">Manejo de dron</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Mma (artes marciales mixtas)')"  value="Mma (artes marciales mixtas)">Mma (artes marciales mixtas)</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Natación')"  value="Natación">Natación</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Patinaje')"  value="Patinaje">Patinaje</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Pilates')"  value="Pilates">Pilates</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Slackline')"  value="Slackline">Slackline</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Squash')"  value="Squash">Squash</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Tenis')"  value="Tenis">Tenis</li></a><br>
+                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Zumba')"  value="Zumba">Zumba</li></a><br>
                             <br>
 
                             <p>Ingeniería</p>
-                                <a href=" "><li style="color: #333; " value="Anadec">Anadec</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Base de datos">Base de datos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Base de datos linux">Base de datos linux</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Calidad">Calidad</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Comunicaciones analógicas">Comunicaciones analógicas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Control de producción">Control de producción</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Fundamentos de producción">Fundamentos de producción</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ingeniería civil">Ingeniería civil</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Inteligencia artificial">Inteligencia artificial</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Logística de producción">Logística de producción</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Machine learning">Machine learning</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Modelos de ingeniería 1 y 2">Modelos de ingeniería 1 y 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Simulación">Simulación</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sistema de apoyo a la decisión">Sistema de apoyo a la decisión</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sistema de control gerencial">Sistema de control gerencial</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sistemas de control analógico">Sistemas de control analógico</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sistemas de control discreto">Sistemas de control discreto</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Anadec')" value="Anadec">Anadec</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Base de datos')" value="Base de datos">Base de datos</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Base de datos linux')" value="Base de datos linux">Base de datos linux</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Calidad')" value="Calidad">Calidad</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Comunicaciones analógicas')" value="Comunicaciones analógicas">Comunicaciones analógicas</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Control de producción')" value="Control de producción">Control de producción</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos de producción')" value="Fundamentos de producción">Fundamentos de producción</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniería civil')" value="Ingeniería civil">Ingeniería civil</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Inteligencia artificial')" value="Inteligencia artificial">Inteligencia artificial</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Logística de producción')" value="Logística de producción">Logística de producción</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Machine learning')" value="Machine learning">Machine learning</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Modelos de ingeniería 1 y 2')" value="Modelos de ingeniería 1 y 2">Modelos de ingeniería 1 y 2</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Simulación')" value="Simulación">Simulación</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sistema de apoyo a la decisión')" value="Sistema de apoyo a la decisión">Sistema de apoyo a la decisión</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sistema de control gerencial')" value="Sistema de control gerencial">Sistema de control gerencial</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas de control analógico')" value="Sistemas de control analógico">Sistemas de control analógico</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas de control discreto')" value="Sistemas de control discreto">Sistemas de control discreto</li></a><br>
                             <br>
 
                             <p>Instrumentos Musicales</p>
-                                <a href=" "><li style="color: #333; " value="Acordeón">Acordeón</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Bajo">Bajo</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Batería">Batería</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Composición musical">Composición musical</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Flauta">Flauta</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Grabación y producción musical">Grabación y producción musical</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Guitarra">Guitarra</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Guitarra eléctrica">Guitarra eléctrica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ingeniería de sonido">Ingeniería de sonido</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Piano">Piano</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Técnica vocal">Técnica vocal</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Teoría musical">Teoría musical</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Trompeta">Trompeta</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ukelele">Ukelele</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Violín">Violín</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Acordeón')" value="Acordeón">Acordeón</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Bajo')" value="Bajo">Bajo</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Batería')" value="Batería">Batería</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Composición musical')" value="Composición musical">Composición musical</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Flauta')" value="Flauta">Flauta</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Grabación y producción musical')" value="Grabación y producción musical">Grabación y producción musical</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Guitarra')" value="Guitarra">Guitarra</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Guitarra eléctrica')" value="Guitarra eléctrica">Guitarra eléctrica</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniería de sonido')" value="Ingeniería de sonido">Ingeniería de sonido</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Piano')" value="Piano">Piano</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Técnica vocal')" value="Técnica vocal">Técnica vocal</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría musical')" value="Teoría musical">Teoría musical</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Trompeta')" value="Trompeta">Trompeta</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ukelele')" value="Ukelele">Ukelele</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Violín')" value="Violín">Violín</li></a><br>
                             <br>
 
                             <p>Matemáticas y probabilidad universitaria</p>
-                                <a href=" "><li style="color: #333; " value="Álgebra lineal">Álgebra lineal</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Análisis matemático">Análisis matemático</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Cálculo diferencial">Cálculo diferencial</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Cálculo integral">Cálculo integral</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Cálculo multivariado">Cálculo multivariado</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Cálculo vectorial">Cálculo vectorial</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ecuaciones diferenciales">Ecuaciones diferenciales</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Estadística aplicada">Estadística aplicada</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Estadística descriptiva">Estadística descriptiva</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Estadística inferencial">Estadística inferencial</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Geometría">Geometría</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Matemática estructural">Matemática estructural</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Modelos probabilísticos">Modelos probabilísticos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Precálculo">Precálculo</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Probabilidad 1">Probabilidad 1</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Probabilidad 2">Probabilidad 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Probabilidad y estadística 1">Probabilidad y estadística 1</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Probabilidad y estadística 2">Probabilidad y estadística 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Trigonometría">Trigonometría</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Variable compleja">Variable compleja</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Álgebra lineal')" value="Álgebra lineal">Álgebra lineal</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Análisis matemático')" value="Análisis matemático">Análisis matemático</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo diferencial')" value="Cálculo diferencial">Cálculo diferencial</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo integral')" value="Cálculo integral">Cálculo integral</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo multivariado')" value="Cálculo multivariado">Cálculo multivariado</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo vectorial')" value="Cálculo vectorial">Cálculo vectorial</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ecuaciones diferenciales')" value="Ecuaciones diferenciales">Ecuaciones diferenciales</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística aplicada')" value="Estadística aplicada">Estadística aplicada</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística descriptiva')" value="Estadística descriptiva">Estadística descriptiva</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística inferencial')" value="Estadística inferencial">Estadística inferencial</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Geometría')" value="Geometría">Geometría</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Matemática estructural')" value="Matemática estructural">Matemática estructural</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Modelos probabilísticos')" value="Modelos probabilísticos">Modelos probabilísticos</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Precálculo')" value="Precálculo">Precálculo</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad 1')" value="Probabilidad 1">Probabilidad 1</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad 2')" value="Probabilidad 2">Probabilidad 2</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad y estadística 1')" value="Probabilidad y estadística 1">Probabilidad y estadística 1</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad y estadística 2')" value="Probabilidad y estadística 2">Probabilidad y estadística 2</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Trigonometría')" value="Trigonometría">Trigonometría</li></a><br>
+                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Variable compleja')" value="Variable compleja">Variable compleja</li></a><br>
                             
 							<div> &nbsp;</div>
                                 <div> &nbsp;</div>
@@ -431,21 +431,1114 @@ box-shadow: none;
 		<a style=" margin-left:5%">Filtrar por:</a>
 		<br><br>
 		
-
+		<input type="hidden" id="filtro" value="tutor">
   <span style="margin-left:20%"> Ciudad:</span>
-  <select class="camposgenerales"
-  
-  	style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
-	name="cars" id="cars">        
-	<option value="">-----</option>       
-
+  <select class="camposgenerales"	style=" border: none; background-color: #0000;font-size: 15px;
+	width: 100px;text-decoration: none;margin-bottom: auto;text-align: center" 
+	name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
+	<option value="">-----</option>           
+	<option value="Leticia">Leticia</option>
+<option value="PuertoNariño">PuertoNariño</option>
+<option value="Abejorral">Abejorral</option>
+<option value="Abriaquí">Abriaquí</option>
+<option value="Alejandría">Alejandría</option>
+<option value="Amaga">Amaga</option>
+<option value="Amalfi">Amalfi</option>
+<option value="Andes">Andes</option>
+<option value="Angelópolis">Angelópolis</option>
+<option value="Angostura">Angostura</option>
+<option value="Anorí">Anorí</option>
+<option value="Anzá">Anzá</option>
+<option value="Apartadó">Apartadó</option>
+<option value="Arboletes">Arboletes</option>
+<option value="Argelia">Argelia</option>
+<option value="Armenia">Armenia</option>
+<option value="Barbosa">Barbosa</option>
+<option value="Bello">Bello</option>
+<option value="Belmira">Belmira</option>
+<option value="Betania">Betania</option>
+<option value="Betulia">Betulia</option>
+<option value="Briceño">Briceño</option>
+<option value="Buriticá">Buriticá</option>
+<option value="Cáceres">Cáceres</option>
+<option value="Caicedo">Caicedo</option>
+<option value="Caldas">Caldas</option>
+<option value="Campamento">Campamento</option>
+<option value="Cañasgordas">Cañasgordas</option>
+<option value="Caracolí">Caracolí</option>
+<option value="Caramanta">Caramanta</option>
+<option value="Carepa">Carepa</option>
+<option value="CarolinaDelPrincipe">CarolinaDelPrincipe</option>
+<option value="Caucasia">Caucasia</option>
+<option value="Chigorodó">Chigorodó</option>
+<option value="Cisneros">Cisneros</option>
+<option value="CiudadBolívar">CiudadBolívar</option>
+<option value="Cocorná">Cocorná</option>
+<option value="Concepción">Concepción</option>
+<option value="Concordia">Concordia</option>
+<option value="Copacabana">Copacabana</option>
+<option value="Dabeiba">Dabeiba</option>
+<option value="DonMatías">DonMatías</option>
+<option value="Ebéjico">Ebéjico</option>
+<option value="ElBagre">ElBagre</option>
+<option value="ElCarmenDeViboral">ElCarmenDeViboral</option>
+<option value="ElPeñol">ElPeñol</option>
+<option value="ElRetiro">ElRetiro</option>
+<option value="Entrerríos">Entrerríos</option>
+<option value="Envigado">Envigado</option>
+<option value="Fredonia">Fredonia</option>
+<option value="Frontino">Frontino</option>
+<option value="Giraldo">Giraldo</option>
+<option value="Girardota">Girardota</option>
+<option value="GómezPlata">GómezPlata</option>
+<option value="Granada">Granada</option>
+<option value="Guadalupe">Guadalupe</option>
+<option value="Guarne">Guarne</option>
+<option value="Guatapé">Guatapé</option>
+<option value="Heliconia">Heliconia</option>
+<option value="Hispania">Hispania</option>
+<option value="Itagüí">Itagüí</option>
+<option value="Ituango">Ituango</option>
+<option value="Jardín">Jardín</option>
+<option value="Jericó">Jericó</option>
+<option value="LaCejaDelTambo">LaCejaDelTambo</option>
+<option value="LaEstrella">LaEstrella</option>
+<option value="LaPintada">LaPintada</option>
+<option value="LaUnión">LaUnión</option>
+<option value="Liborina">Liborina</option>
+<option value="Maceo">Maceo</option>
+<option value="Marinilla">Marinilla</option>
+<option value="Medellín">Medellín</option>
+<option value="Montebello">Montebello</option>
+<option value="Murindó">Murindó</option>
+<option value="Mutatá">Mutatá</option>
+<option value="Nariño">Nariño</option>
+<option value="Nechí">Nechí</option>
+<option value="Necoclí">Necoclí</option>
+<option value="Olaya">Olaya</option>
+<option value="Peque">Peque</option>
+<option value="Pueblorrico">Pueblorrico</option>
+<option value="PuertoBerrio">PuertoBerrio</option>
+<option value="PuertoNare">PuertoNare</option>
+<option value="PuertoTriunfo">PuertoTriunfo</option>
+<option value="Remedios">Remedios</option>
+<option value="Rionegro">Rionegro</option>
+<option value="Sabanalarga">Sabanalarga</option>
+<option value="Sabaneta">Sabaneta</option>
+<option value="Salgar">Salgar</option>
+<option value="SanAndrésDeCuerquia">SanAndrésDeCuerquia</option>
+<option value="SanCarlos">SanCarlos</option>
+<option value="SanFrancisco">SanFrancisco</option>
+<option value="SanJerónimo">SanJerónimo</option>
+<option value="SanJoséDeLaMontaña">SanJoséDeLaMontaña</option>
+<option value="SanJuanDeUrabá">SanJuanDeUrabá</option>
+<option value="SanLuis">SanLuis</option>
+<option value="SanPedroDeLosMilagros">SanPedroDeLosMilagros</option>
+<option value="SanPedroDeUrabá">SanPedroDeUrabá</option>
+<option value="SanRafael">SanRafael</option>
+<option value="SanRoque">SanRoque</option>
+<option value="SanVicente">SanVicente</option>
+<option value="SantaBárbara">SantaBárbara</option>
+<option value="SantaRosaDeOsos">SantaRosaDeOsos</option>
+<option value="SantafeDeAntioquia">SantafeDeAntioquia</option>
+<option value="SantoDomingo">SantoDomingo</option>
+<option value="Santuario">Santuario</option>
+<option value="Segovia">Segovia</option>
+<option value="Sonsón">Sonsón</option>
+<option value="Sopetrán">Sopetrán</option>
+<option value="Támesis">Támesis</option>
+<option value="Tarazá">Tarazá</option>
+<option value="Tarso">Tarso</option>
+<option value="Titiribí">Titiribí</option>
+<option value="Toledo">Toledo</option>
+<option value="Turbo">Turbo</option>
+<option value="Uramita">Uramita</option>
+<option value="Urrao">Urrao</option>
+<option value="Valdivia">Valdivia</option>
+<option value="Valparaíso">Valparaíso</option>
+<option value="Vegachí">Vegachí</option>
+<option value="Venecia">Venecia</option>
+<option value="VigíaDelFuerte">VigíaDelFuerte</option>
+<option value="Yalí">Yalí</option>
+<option value="Yarumal">Yarumal</option>
+<option value="Yolombó">Yolombó</option>
+<option value="Yondo">Yondo</option>
+<option value="Zaragoza">Zaragoza</option>
+<option value="Arauca">Arauca</option>
+<option value="Arauquita">Arauquita</option>
+<option value="CravoNorte">CravoNorte</option>
+<option value="Fortul">Fortul</option>
+<option value="PuertoRondón">PuertoRondón</option>
+<option value="Saravena">Saravena</option>
+<option value="Tame">Tame</option>
+<option value="Baranoa">Baranoa</option>
+<option value="Barranquilla">Barranquilla</option>
+<option value="CampoDeLaCruz">CampoDeLaCruz</option>
+<option value="Candelaria">Candelaria</option>
+<option value="Galapa">Galapa</option>
+<option value="JuanDeAcosta">JuanDeAcosta</option>
+<option value="Luruaco">Luruaco</option>
+<option value="Malambo">Malambo</option>
+<option value="Manatí">Manatí</option>
+<option value="PalmarDeVarela">PalmarDeVarela</option>
+<option value="Piojo">Piojo</option>
+<option value="Polonuevo">Polonuevo</option>
+<option value="Ponedera">Ponedera</option>
+<option value="PuertoColombia">PuertoColombia</option>
+<option value="Repelón">Repelón</option>
+<option value="Sabanagrande">Sabanagrande</option>
+<option value="Sabanalarga">Sabanalarga</option>
+<option value="SantaLucía">SantaLucía</option>
+<option value="SantoTomas">SantoTomas</option>
+<option value="Soledad">Soledad</option>
+<option value="Suan">Suan</option>
+<option value="Tubará">Tubará</option>
+<option value="Usiacurí">Usiacurí</option>
+<option value="Achí">Achí</option>
+<option value="AltosDelRosario">AltosDelRosario</option>
+<option value="Arenal">Arenal</option>
+<option value="Arjona">Arjona</option>
+<option value="Arroyohondo">Arroyohondo</option>
+<option value="BarrancoDeLoba">BarrancoDeLoba</option>
+<option value="Calamar">Calamar</option>
+<option value="Cantagallo">Cantagallo</option>
+<option value="CartagenadeIndias">CartagenadeIndias</option>
+<option value="Cicuco">Cicuco</option>
+<option value="Clemencia">Clemencia</option>
+<option value="Córdoba">Córdoba</option>
+<option value="ElCarmenDeBolívar">ElCarmenDeBolívar</option>
+<option value="ElGuamo">ElGuamo</option>
+<option value="ElPeñon">ElPeñon</option>
+<option value="HatilloDeLoba">HatilloDeLoba</option>
+<option value="Magangué">Magangué</option>
+<option value="Mahates">Mahates</option>
+<option value="Margarita">Margarita</option>
+<option value="MaríaLaBaja">MaríaLaBaja</option>
+<option value="Montecristo">Montecristo</option>
+<option value="Morales">Morales</option>
+<option value="Norosí">Norosí</option>
+<option value="Pinillos">Pinillos</option>
+<option value="Regidor">Regidor</option>
+<option value="Rioviejo">Rioviejo</option>
+<option value="SanCristóbal">SanCristóbal</option>
+<option value="SanEstanislao">SanEstanislao</option>
+<option value="SanFernando">SanFernando</option>
+<option value="SanJacinto">SanJacinto</option>
+<option value="SanJacintoDelCauca">SanJacintoDelCauca</option>
+<option value="SanJuanNepomuceno">SanJuanNepomuceno</option>
+<option value="SanMartínDeLoba">SanMartínDeLoba</option>
+<option value="SanPablo">SanPablo</option>
+<option value="SantaCatalina">SantaCatalina</option>
+<option value="SantaCruzDeMompós">SantaCruzDeMompós</option>
+<option value="SantaRosaDelNorte">SantaRosaDelNorte</option>
+<option value="SantaRosaDelSur">SantaRosaDelSur</option>
+<option value="Simití">Simití</option>
+<option value="Soplaviento">Soplaviento</option>
+<option value="TalaiguaNuevo">TalaiguaNuevo</option>
+<option value="Tiquisio">Tiquisio</option>
+<option value="Turbaco">Turbaco</option>
+<option value="Turbana">Turbana</option>
+<option value="Villanueva">Villanueva</option>
+<option value="Zambrano">Zambrano</option>
+<option value="Almeida">Almeida</option>
+<option value="Aquitania">Aquitania</option>
+<option value="Arcabuco">Arcabuco</option>
+<option value="Belén">Belén</option>
+<option value="Berbeo">Berbeo</option>
+<option value="Betéitiva">Betéitiva</option>
+<option value="Boavita">Boavita</option>
+<option value="Boyacá">Boyacá</option>
+<option value="Briceño">Briceño</option>
+<option value="Buenavista">Buenavista</option>
+<option value="Busbanzá">Busbanzá</option>
+<option value="Caldas">Caldas</option>
+<option value="Campohermoso">Campohermoso</option>
+<option value="Cerinza">Cerinza</option>
+<option value="Chinavita">Chinavita</option>
+<option value="Chiquinquirá">Chiquinquirá</option>
+<option value="Chíquiza">Chíquiza</option>
+<option value="Chiscas">Chiscas</option>
+<option value="Chita">Chita</option>
+<option value="Chitaraque">Chitaraque</option>
+<option value="Chivata">Chivata</option>
+<option value="Chivor">Chivor</option>
+<option value="Ciénega">Ciénega</option>
+<option value="Combita">Combita</option>
+<option value="Coper">Coper</option>
+<option value="Corrales">Corrales</option>
+<option value="Covarachía">Covarachía</option>
+<option value="Cubará">Cubará</option>
+<option value="Cucaita">Cucaita</option>
+<option value="Cuítiva">Cuítiva</option>
+<option value="Duitama">Duitama</option>
+<option value="ElCocuy">ElCocuy</option>
+<option value="ElEspino">ElEspino</option>
+<option value="Firavitoba">Firavitoba</option>
+<option value="Floresta">Floresta</option>
+<option value="Gachantivá">Gachantivá</option>
+<option value="Gámeza">Gámeza</option>
+<option value="Garagoa">Garagoa</option>
+<option value="Guacamayas">Guacamayas</option>
+<option value="Guateque">Guateque</option>
+<option value="Guayatá">Guayatá</option>
+<option value="Güicán">Güicán</option>
+<option value="Iza">Iza</option>
+<option value="Jenesano">Jenesano</option>
+<option value="Jericó">Jericó</option>
+<option value="LaCapilla">LaCapilla</option>
+<option value="LaUvita">LaUvita</option>
+<option value="LaVictoria">LaVictoria</option>
+<option value="Labranzagrande">Labranzagrande</option>
+<option value="Macanal">Macanal</option>
+<option value="Maripi">Maripi</option>
+<option value="Miraflores">Miraflores</option>
+<option value="Mongua">Mongua</option>
+<option value="Monguí">Monguí</option>
+<option value="Moniquirá">Moniquirá</option>
+<option value="Motavita">Motavita</option>
+<option value="Muzo">Muzo</option>
+<option value="Nobsa">Nobsa</option>
+<option value="NuevoColón">NuevoColón</option>
+<option value="Oicatá">Oicatá</option>
+<option value="Otanche">Otanche</option>
+<option value="Pachavita">Pachavita</option>
+<option value="Páez">Páez</option>
+<option value="Paipa">Paipa</option>
+<option value="Pajarito">Pajarito</option>
+<option value="Panqueba">Panqueba</option>
+<option value="Pauna">Pauna</option>
+<option value="Paya">Paya</option>
+<option value="PazDeRío">PazDeRío</option>
+<option value="Pesca">Pesca</option>
+<option value="Pisba">Pisba</option>
+<option value="PuertoBoyacá">PuertoBoyacá</option>
+<option value="Quípama">Quípama</option>
+<option value="Ramiriquí">Ramiriquí</option>
+<option value="Ráquira">Ráquira</option>
+<option value="Rondón">Rondón</option>
+<option value="Saboya">Saboya</option>
+<option value="Sáchica">Sáchica</option>
+<option value="Samacá">Samacá</option>
+<option value="SanEduardo">SanEduardo</option>
+<option value="SanJoséDePare">SanJoséDePare</option>
+<option value="SanLuisDeGaceno">SanLuisDeGaceno</option>
+<option value="SanMateo">SanMateo</option>
+<option value="SanMiguelDeSema">SanMiguelDeSema</option>
+<option value="SanPabloDeBorbur">SanPabloDeBorbur</option>
+<option value="SantaMaría">SantaMaría</option>
+<option value="SantaRosaDeViterbo">SantaRosaDeViterbo</option>
+<option value="SantaSofía">SantaSofía</option>
+<option value="Santana">Santana</option>
+<option value="Sativanorte">Sativanorte</option>
+<option value="Sativasur">Sativasur</option>
+<option value="Siachoque">Siachoque</option>
+<option value="Soatá">Soatá</option>
+<option value="Socha">Socha</option>
+<option value="Socotá">Socotá</option>
+<option value="Sogamoso">Sogamoso</option>
+<option value="Somondoco">Somondoco</option>
+<option value="Sora">Sora</option>
+<option value="Soracá">Soracá</option>
+<option value="Sotaquirá">Sotaquirá</option>
+<option value="Susacón">Susacón</option>
+<option value="Sutamarchan">Sutamarchan</option>
+<option value="Sutatenza">Sutatenza</option>
+<option value="Tasco">Tasco</option>
+<option value="Tenza">Tenza</option>
+<option value="Tibaná">Tibaná</option>
+<option value="Tibasosa">Tibasosa</option>
+<option value="Tinjacá">Tinjacá</option>
+<option value="Tipacoque">Tipacoque</option>
+<option value="Toca">Toca</option>
+<option value="Togüí">Togüí</option>
+<option value="Tópaga">Tópaga</option>
+<option value="Tota">Tota</option>
+<option value="Tunja">Tunja</option>
+<option value="Tunungua">Tunungua</option>
+<option value="Turmequé">Turmequé</option>
+<option value="Tuta">Tuta</option>
+<option value="Tutazá">Tutazá</option>
+<option value="Úmbita">Úmbita</option>
+<option value="Ventaquemada">Ventaquemada</option>
+<option value="VillaDeLeyva">VillaDeLeyva</option>
+<option value="Viracachá">Viracachá</option>
+<option value="Zetaquirá">Zetaquirá</option>
+<option value="Aguadas">Aguadas</option>
+<option value="Anserma">Anserma</option>
+<option value="Aranzazu">Aranzazu</option>
+<option value="Belalcazar">Belalcazar</option>
+<option value="Chinchiná">Chinchiná</option>
+<option value="Filadelfia">Filadelfia</option>
+<option value="LaDorada">LaDorada</option>
+<option value="LaMerced">LaMerced</option>
+<option value="Manizales">Manizales</option>
+<option value="Manzanares">Manzanares</option>
+<option value="Marmato">Marmato</option>
+<option value="Marquetalia">Marquetalia</option>
+<option value="Marulanda">Marulanda</option>
+<option value="Neira">Neira</option>
+<option value="Norcasia">Norcasia</option>
+<option value="Pacora">Pacora</option>
+<option value="Palestina">Palestina</option>
+<option value="Pensilvania">Pensilvania</option>
+<option value="Riosucio">Riosucio</option>
+<option value="Risaralda">Risaralda</option>
+<option value="Salamina">Salamina</option>
+<option value="Samaná">Samaná</option>
+<option value="SanJosé">SanJosé</option>
+<option value="Supía">Supía</option>
+<option value="Victoria">Victoria</option>
+<option value="Villamaría">Villamaría</option>
+<option value="Viterbo">Viterbo</option>
+<option value="Albania">Albania</option>
+<option value="BelénDeLosAndaquies">BelénDeLosAndaquies</option>
+<option value="CartagenaDelChairá">CartagenaDelChairá</option>
+<option value="Curillo">Curillo</option>
+<option value="ElDoncello">ElDoncello</option>
+<option value="ElPaujil">ElPaujil</option>
+<option value="Florencia">Florencia</option>
+<option value="LaMontañita">LaMontañita</option>
+<option value="Milán">Milán</option>
+<option value="Morelia">Morelia</option>
+<option value="PuertoRico">PuertoRico</option>
+<option value="SanJoséDelFragua">SanJoséDelFragua</option>
+<option value="SanVicenteDelCaguán">SanVicenteDelCaguán</option>
+<option value="Solano">Solano</option>
+<option value="Solita">Solita</option>
+<option value="Valparaíso">Valparaíso</option>
+<option value="Aguazul">Aguazul</option>
+<option value="Chameza">Chameza</option>
+<option value="HatoCorozal">HatoCorozal</option>
+<option value="LaSalina">LaSalina</option>
+<option value="Maní">Maní</option>
+<option value="Monterrey">Monterrey</option>
+<option value="Nunchía">Nunchía</option>
+<option value="Orocué">Orocué</option>
+<option value="PazDeAriporo">PazDeAriporo</option>
+<option value="Pore">Pore</option>
+<option value="Recetor">Recetor</option>
+<option value="Sabanalarga">Sabanalarga</option>
+<option value="Sácama">Sácama</option>
+<option value="SanLuisDePalenque">SanLuisDePalenque</option>
+<option value="Támara">Támara</option>
+<option value="Tauramena">Tauramena</option>
+<option value="Trinidad">Trinidad</option>
+<option value="Villanueva">Villanueva</option>
+<option value="Yopal">Yopal</option>
+<option value="Almaguer">Almaguer</option>
+<option value="Argelia">Argelia</option>
+<option value="Balboa">Balboa</option>
+<option value="Bolívar">Bolívar</option>
+<option value="BuenosAires">BuenosAires</option>
+<option value="Cajibio">Cajibio</option>
+<option value="Caldono">Caldono</option>
+<option value="Caloto">Caloto</option>
+<option value="Corinto">Corinto</option>
+<option value="ElTambo">ElTambo</option>
+<option value="Florencia">Florencia</option>
+<option value="Guachené">Guachené</option>
+<option value="Guapi">Guapi</option>
+<option value="Inzá">Inzá</option>
+<option value="Jambaló">Jambaló</option>
+<option value="LaSierra">LaSierra</option>
+<option value="LaVega">LaVega</option>
+<option value="LópezDeMicay">LópezDeMicay</option>
+<option value="Mercaderes">Mercaderes</option>
+<option value="Miranda">Miranda</option>
+<option value="Morales">Morales</option>
+<option value="Padilla">Padilla</option>
+<option value="Páez">Páez</option>
+<option value="Patía">Patía</option>
+<option value="Piamonte">Piamonte</option>
+<option value="Piendamó">Piendamó</option>
+<option value="Popayán">Popayán</option>
+<option value="PuertoTejada">PuertoTejada</option>
+<option value="Puracé">Puracé</option>
+<option value="Rosas">Rosas</option>
+<option value="SanSebastián">SanSebastián</option>
+<option value="SantaRosa">SantaRosa</option>
+<option value="SantanderDeQuilichao">SantanderDeQuilichao</option>
+<option value="Silvia">Silvia</option>
+<option value="Sotará">Sotará</option>
+<option value="Suárez">Suárez</option>
+<option value="Sucre">Sucre</option>
+<option value="Timbío">Timbío</option>
+<option value="Timbiquí">Timbiquí</option>
+<option value="Toribio">Toribio</option>
+<option value="Totoro">Totoro</option>
+<option value="VillaRica">VillaRica</option>
+<option value="Aguachica">Aguachica</option>
+<option value="AgustínCodazzi">AgustínCodazzi</option>
+<option value="Astrea">Astrea</option>
+<option value="Becerril">Becerril</option>
+<option value="Bosconia">Bosconia</option>
+<option value="Chimichagua">Chimichagua</option>
+<option value="Chiriguaná">Chiriguaná</option>
+<option value="Curumaní">Curumaní</option>
+<option value="ElCopey">ElCopey</option>
+<option value="ElPaso">ElPaso</option>
+<option value="Gamarra">Gamarra</option>
+<option value="González">González</option>
+<option value="LaGloria">LaGloria</option>
+<option value="LaJaguaDeIbirico">LaJaguaDeIbirico</option>
+<option value="LaPaz">LaPaz</option>
+<option value="ManaureBalcónDelCésar">ManaureBalcónDelCésar</option>
+<option value="Pailitas">Pailitas</option>
+<option value="Pelaya">Pelaya</option>
+<option value="PuebloBello">PuebloBello</option>
+<option value="RioDeOro">RioDeOro</option>
+<option value="SanAlberto">SanAlberto</option>
+<option value="SanDiego">SanDiego</option>
+<option value="SanMartín">SanMartín</option>
+<option value="Tamalameque">Tamalameque</option>
+<option value="Valledupar">Valledupar</option>
+<option value="Acandí">Acandí</option>
+<option value="AltoBaudó">AltoBaudó</option>
+<option value="Atrato">Atrato</option>
+<option value="Bagadó">Bagadó</option>
+<option value="BahíaSolano">BahíaSolano</option>
+<option value="BajoBaudó">BajoBaudó</option>
+<option value="Bojayá">Bojayá</option>
+<option value="CarmenDelDarién">CarmenDelDarién</option>
+<option value="Cértegui">Cértegui</option>
+<option value="Condoto">Condoto</option>
+<option value="ElCantóndeSanPablo">ElCantóndeSanPablo</option>
+<option value="ElCarmenDeAtrato">ElCarmenDeAtrato</option>
+<option value="ElLitoralDeSanJuan">ElLitoralDeSanJuan</option>
+<option value="Istmina">Istmina</option>
+<option value="Juradó">Juradó</option>
+<option value="Lloró">Lloró</option>
+<option value="MedioAtrato">MedioAtrato</option>
+<option value="MedioBaudó">MedioBaudó</option>
+<option value="MedioSanJuan">MedioSanJuan</option>
+<option value="Nóvita">Nóvita</option>
+<option value="Nuquí">Nuquí</option>
+<option value="Quibdó">Quibdó</option>
+<option value="RíoIró">RíoIró</option>
+<option value="RíoQuito">RíoQuito</option>
+<option value="Riosucio">Riosucio</option>
+<option value="SanJosédeTadó">SanJosédeTadó</option>
+<option value="SanJoséDelPalmar">SanJoséDelPalmar</option>
+<option value="Sipí">Sipí</option>
+<option value="Ungüía">Ungüía</option>
+<option value="UniónPanamericana">UniónPanamericana</option>
+<option value="Ayapel">Ayapel</option>
+<option value="Buenavista">Buenavista</option>
+<option value="Canalete">Canalete</option>
+<option value="Cereté">Cereté</option>
+<option value="Chimá">Chimá</option>
+<option value="Chinú">Chinú</option>
+<option value="CiénagaDeOro">CiénagaDeOro</option>
+<option value="Cotorra">Cotorra</option>
+<option value="LaApartada">LaApartada</option>
+<option value="LosCórdobas">LosCórdobas</option>
+<option value="Momil">Momil</option>
+<option value="Montelibano">Montelibano</option>
+<option value="Montería">Montería</option>
+<option value="Moñitos">Moñitos</option>
+<option value="PlanetaRica">PlanetaRica</option>
+<option value="PuebloNuevo">PuebloNuevo</option>
+<option value="PuertoEscondido">PuertoEscondido</option>
+<option value="PuertoLibertador">PuertoLibertador</option>
+<option value="Purísima">Purísima</option>
+<option value="Sahagún">Sahagún</option>
+<option value="SanAndrésDeSotavento">SanAndrésDeSotavento</option>
+<option value="SanAntero">SanAntero</option>
+<option value="SanBernardoDelViento">SanBernardoDelViento</option>
+<option value="SanCarlos">SanCarlos</option>
+<option value="SanJoséDeUré">SanJoséDeUré</option>
+<option value="SanPelayo">SanPelayo</option>
+<option value="SantaCruzDeLorica">SantaCruzDeLorica</option>
+<option value="Tierralta">Tierralta</option>
+<option value="Tuchín">Tuchín</option>
+<option value="Valencia">Valencia</option>
+<option value="AguaDeDios">AguaDeDios</option>
+<option value="Albán">Albán</option>
+<option value="Anapoima">Anapoima</option>
+<option value="Anolaima">Anolaima</option>
+<option value="Apulo">Apulo</option>
+<option value="Arbeláez">Arbeláez</option>
+<option value="Beltrán">Beltrán</option>
+<option value="Bituima">Bituima</option>
+<option value="BogotáD.C.">BogotáD.C.</option>
+<option value="Bojacá">Bojacá</option>
+<option value="Cabrera">Cabrera</option>
+<option value="Cachipay">Cachipay</option>
+<option value="Cajicá">Cajicá</option>
+<option value="Caparrapí">Caparrapí</option>
+<option value="Cáqueza">Cáqueza</option>
+<option value="CarmenDeCarupa">CarmenDeCarupa</option>
+<option value="Chaguaní">Chaguaní</option>
+<option value="Chía">Chía</option>
+<option value="Chipaque">Chipaque</option>
+<option value="Choachí">Choachí</option>
+<option value="Chocontá">Chocontá</option>
+<option value="Cogua">Cogua</option>
+<option value="Cota">Cota</option>
+<option value="Cucunubá">Cucunubá</option>
+<option value="ElColegio">ElColegio</option>
+<option value="ElPeñón">ElPeñón</option>
+<option value="ElRosal">ElRosal</option>
+<option value="Facatativá">Facatativá</option>
+<option value="Fómeque">Fómeque</option>
+<option value="Fosca">Fosca</option>
+<option value="Funza">Funza</option>
+<option value="Fúquene">Fúquene</option>
+<option value="Fusagasugá">Fusagasugá</option>
+<option value="Gachalá">Gachalá</option>
+<option value="Gachancipá">Gachancipá</option>
+<option value="Gachetá">Gachetá</option>
+<option value="Gama">Gama</option>
+<option value="Girardot">Girardot</option>
+<option value="Granada">Granada</option>
+<option value="Guachetá">Guachetá</option>
+<option value="Guaduas">Guaduas</option>
+<option value="Guasca">Guasca</option>
+<option value="Guataquí">Guataquí</option>
+<option value="Guatavita">Guatavita</option>
+<option value="GuayabalDeSiquima">GuayabalDeSiquima</option>
+<option value="Guayabetal">Guayabetal</option>
+<option value="Gutierrez">Gutierrez</option>
+<option value="Jerusalen">Jerusalen</option>
+<option value="Junín">Junín</option>
+<option value="LaCalera">LaCalera</option>
+<option value="LaMesa">LaMesa</option>
+<option value="LaPalma">LaPalma</option>
+<option value="LaPeña">LaPeña</option>
+<option value="LaVega">LaVega</option>
+<option value="Lenguazaque">Lenguazaque</option>
+<option value="Machetá">Machetá</option>
+<option value="Madrid">Madrid</option>
+<option value="Manta">Manta</option>
+<option value="Medina">Medina</option>
+<option value="Mosquera">Mosquera</option>
+<option value="Nariño">Nariño</option>
+<option value="Nemocón">Nemocón</option>
+<option value="Nilo">Nilo</option>
+<option value="Nimaima">Nimaima</option>
+<option value="Nocaima">Nocaima</option>
+<option value="Pacho">Pacho</option>
+<option value="Paime">Paime</option>
+<option value="Pandi">Pandi</option>
+<option value="Paratebueno">Paratebueno</option>
+<option value="Pasca">Pasca</option>
+<option value="PuertoSalgar">PuertoSalgar</option>
+<option value="Pulí">Pulí</option>
+<option value="Quebradanegra">Quebradanegra</option>
+<option value="Quetame">Quetame</option>
+<option value="Quipile">Quipile</option>
+<option value="Ricaurte">Ricaurte</option>
+<option value="SanAntonioDelTequendama">SanAntonioDelTequendama</option>
+<option value="SanBernardo">SanBernardo</option>
+<option value="SanCayetano">SanCayetano</option>
+<option value="SanFrancisco">SanFrancisco</option>
+<option value="SanJuanDeRioseco">SanJuanDeRioseco</option>
+<option value="Sasaima">Sasaima</option>
+<option value="Sesquilé">Sesquilé</option>
+<option value="Sibaté">Sibaté</option>
+<option value="Silvania">Silvania</option>
+<option value="Simijaca">Simijaca</option>
+<option value="Soacha">Soacha</option>
+<option value="Sopó">Sopó</option>
+<option value="Subachoque">Subachoque</option>
+<option value="Suesca">Suesca</option>
+<option value="Supatá">Supatá</option>
+<option value="Susa">Susa</option>
+<option value="Sutatausa">Sutatausa</option>
+<option value="Tabio">Tabio</option>
+<option value="Tausa">Tausa</option>
+<option value="Tena">Tena</option>
+<option value="Tenjo">Tenjo</option>
+<option value="Tibacuy">Tibacuy</option>
+<option value="Tibirita">Tibirita</option>
+<option value="Tocaima">Tocaima</option>
+<option value="Tocancipá">Tocancipá</option>
+<option value="Topaipi">Topaipi</option>
+<option value="Ubalá">Ubalá</option>
+<option value="Ubaque">Ubaque</option>
+<option value="Ubate">Ubate</option>
+<option value="Une">Une</option>
+<option value="Útica">Útica</option>
+<option value="Venecia">Venecia</option>
+<option value="Vergara">Vergara</option>
+<option value="Vianí">Vianí</option>
+<option value="Villagomez">Villagomez</option>
+<option value="Villapinzón">Villapinzón</option>
+<option value="Villeta">Villeta</option>
+<option value="Viotá">Viotá</option>
+<option value="Yacopí">Yacopí</option>
+<option value="Zipacón">Zipacón</option>
+<option value="Zipaquirá">Zipaquirá</option>
+<option value="Barrancominas">Barrancominas</option>
+<option value="Inirida">Inirida</option>
+<option value="Calamar">Calamar</option>
+<option value="ElRetorno">ElRetorno</option>
+<option value="Miraflores">Miraflores</option>
+<option value="SanJoséDelGuaviare">SanJoséDelGuaviare</option>
+<option value="Acevedo">Acevedo</option>
+<option value="Agrado">Agrado</option>
+<option value="Aipe">Aipe</option>
+<option value="Algeciras">Algeciras</option>
+<option value="Altamira">Altamira</option>
+<option value="Baraya">Baraya</option>
+<option value="Campoalegre">Campoalegre</option>
+<option value="Colombia">Colombia</option>
+<option value="Elías">Elías</option>
+<option value="Garzón">Garzón</option>
+<option value="Gigante">Gigante</option>
+<option value="Guadalupe">Guadalupe</option>
+<option value="Hobo">Hobo</option>
+<option value="Iquira">Iquira</option>
+<option value="Isnos">Isnos</option>
+<option value="LaArgentina">LaArgentina</option>
+<option value="LaPlata">LaPlata</option>
+<option value="Nátaga">Nátaga</option>
+<option value="Neiva">Neiva</option>
+<option value="Oporapa">Oporapa</option>
+<option value="Paicol">Paicol</option>
+<option value="Palermo">Palermo</option>
+<option value="Palestina">Palestina</option>
+<option value="Pital">Pital</option>
+<option value="Pitalito">Pitalito</option>
+<option value="Rivera">Rivera</option>
+<option value="Saladoblanco">Saladoblanco</option>
+<option value="SanAgustín">SanAgustín</option>
+<option value="SantaMaría">SantaMaría</option>
+<option value="Suaza">Suaza</option>
+<option value="Tarqui">Tarqui</option>
+<option value="Tello">Tello</option>
+<option value="Teruel">Teruel</option>
+<option value="Tesalia">Tesalia</option>
+<option value="Timaná">Timaná</option>
+<option value="Villavieja">Villavieja</option>
+<option value="Yaguará">Yaguará</option>
+<option value="Albania">Albania</option>
+<option value="Barrancas">Barrancas</option>
+<option value="Dibulla">Dibulla</option>
+<option value="Distracción">Distracción</option>
+<option value="ElMolino">ElMolino</option>
+<option value="Fonseca">Fonseca</option>
+<option value="Hatonuevo">Hatonuevo</option>
+<option value="LaJaguaDelPilar">LaJaguaDelPilar</option>
+<option value="Maicao">Maicao</option>
+<option value="Manaure">Manaure</option>
+<option value="Riohacha">Riohacha</option>
+<option value="SanJuanDelCesar">SanJuanDelCesar</option>
+<option value="Uribia">Uribia</option>
+<option value="Urumita">Urumita</option>
+<option value="Villanueva">Villanueva</option>
+<option value="Algarrobo">Algarrobo</option>
+<option value="Aracataca">Aracataca</option>
+<option value="Ariguaní">Ariguaní</option>
+<option value="CerroDeSanAntonio">CerroDeSanAntonio</option>
+<option value="Chivolo">Chivolo</option>
+<option value="Ciénaga">Ciénaga</option>
+<option value="Concordia">Concordia</option>
+<option value="ElBanco">ElBanco</option>
+<option value="ElPiñón">ElPiñón</option>
+<option value="ElRetén">ElRetén</option>
+<option value="Fundación">Fundación</option>
+<option value="Guamal">Guamal</option>
+<option value="NuevaGranada">NuevaGranada</option>
+<option value="Pedraza">Pedraza</option>
+<option value="PijiñoDelCarmen">PijiñoDelCarmen</option>
+<option value="Pivijay">Pivijay</option>
+<option value="Plato">Plato</option>
+<option value="Puebloviejo">Puebloviejo</option>
+<option value="Remolino">Remolino</option>
+<option value="SabanasDeSanÁngel">SabanasDeSanÁngel</option>
+<option value="Salamina">Salamina</option>
+<option value="SanSebastiánDeBuenavista">SanSebastiánDeBuenavista</option>
+<option value="SanZenón">SanZenón</option>
+<option value="SantaAna">SantaAna</option>
+<option value="SantaBárbaraDePinto">SantaBárbaraDePinto</option>
+<option value="SantaMarta">SantaMarta</option>
+<option value="Sitionuevo">Sitionuevo</option>
+<option value="Tenerife">Tenerife</option>
+<option value="Zapayán">Zapayán</option>
+<option value="ZonaBananera">ZonaBananera</option>
+<option value="Acacías">Acacías</option>
+<option value="BarrancaDeUpía">BarrancaDeUpía</option>
+<option value="Cabuyaro">Cabuyaro</option>
+<option value="CastillaLaNueva">CastillaLaNueva</option>
+<option value="Cubarral">Cubarral</option>
+<option value="Cumaral">Cumaral</option>
+<option value="ElCalvario">ElCalvario</option>
+<option value="ElCastillo">ElCastillo</option>
+<option value="ElDorado">ElDorado</option>
+<option value="FuenteDeOro">FuenteDeOro</option>
+<option value="Granada">Granada</option>
+<option value="Guamal">Guamal</option>
+<option value="LaMacarena">LaMacarena</option>
+<option value="Lejanias">Lejanias</option>
+<option value="Mapiripán">Mapiripán</option>
+<option value="Mesetas">Mesetas</option>
+<option value="PuertoConcordia">PuertoConcordia</option>
+<option value="PuertoGaitán">PuertoGaitán</option>
+<option value="PuertoLleras">PuertoLleras</option>
+<option value="PuertoLópez">PuertoLópez</option>
+<option value="PuertoRico">PuertoRico</option>
+<option value="Restrepo">Restrepo</option>
+<option value="SanCarlosDeGuaroa">SanCarlosDeGuaroa</option>
+<option value="SanJuanDeArama">SanJuanDeArama</option>
+<option value="SanJuanito">SanJuanito</option>
+<option value="SanMartínDeLosLlanos">SanMartínDeLosLlanos</option>
+<option value="Uribe">Uribe</option>
+<option value="Villavicencio">Villavicencio</option>
+<option value="VistaHermosa">VistaHermosa</option>
+<option value="Alban">Alban</option>
+<option value="Aldana">Aldana</option>
+<option value="Ancuyá">Ancuyá</option>
+<option value="Arboleda">Arboleda</option>
+<option value="Barbacoas">Barbacoas</option>
+<option value="Belén">Belén</option>
+<option value="Buesaco">Buesaco</option>
+<option value="Chachagüí">Chachagüí</option>
+<option value="Colón">Colón</option>
+<option value="Consacá">Consacá</option>
+<option value="Contadero">Contadero</option>
+<option value="Córdoba">Córdoba</option>
+<option value="Cuaspud">Cuaspud</option>
+<option value="Cumbal">Cumbal</option>
+<option value="Cumbitara">Cumbitara</option>
+<option value="ElCharco">ElCharco</option>
+<option value="ElPeñol">ElPeñol</option>
+<option value="ElRosario">ElRosario</option>
+<option value="ElTablónDeGómez">ElTablónDeGómez</option>
+<option value="ElTambo">ElTambo</option>
+<option value="FranciscoPizarro">FranciscoPizarro</option>
+<option value="Funes">Funes</option>
+<option value="Guachucal">Guachucal</option>
+<option value="Guaitarilla">Guaitarilla</option>
+<option value="Gualmatán">Gualmatán</option>
+<option value="Iles">Iles</option>
+<option value="Imués">Imués</option>
+<option value="Ipiales">Ipiales</option>
+<option value="LaCruz">LaCruz</option>
+<option value="LaFlorida">LaFlorida</option>
+<option value="LaLlanada">LaLlanada</option>
+<option value="LaTola">LaTola</option>
+<option value="LaUnión">LaUnión</option>
+<option value="Leiva">Leiva</option>
+<option value="Linares">Linares</option>
+<option value="LosAndes">LosAndes</option>
+<option value="MagüiPayán">MagüiPayán</option>
+<option value="Mallama">Mallama</option>
+<option value="Mosquera">Mosquera</option>
+<option value="Nariño">Nariño</option>
+<option value="OlayaHerrera">OlayaHerrera</option>
+<option value="Ospina">Ospina</option>
+<option value="Policarpa">Policarpa</option>
+<option value="Potosí">Potosí</option>
+<option value="Providencia">Providencia</option>
+<option value="Puerres">Puerres</option>
+<option value="Pupiales">Pupiales</option>
+<option value="Ricaurte">Ricaurte</option>
+<option value="RobertoPayán">RobertoPayán</option>
+<option value="Samaniego">Samaniego</option>
+<option value="SanBernardo">SanBernardo</option>
+<option value="SanJuanDePasto">SanJuanDePasto</option>
+<option value="SanLorenzo">SanLorenzo</option>
+<option value="SanPablo">SanPablo</option>
+<option value="SanPedroDeCartago">SanPedroDeCartago</option>
+<option value="Sandoná">Sandoná</option>
+<option value="SantaBárbara">SantaBárbara</option>
+<option value="Santacruz">Santacruz</option>
+<option value="Sapuyes">Sapuyes</option>
+<option value="Taminango">Taminango</option>
+<option value="Tangua">Tangua</option>
+<option value="Tumaco">Tumaco</option>
+<option value="Túquerres">Túquerres</option>
+<option value="Yacuanquer">Yacuanquer</option>
+<option value="Abrego">Abrego</option>
+<option value="Arboledas">Arboledas</option>
+<option value="Bochalema">Bochalema</option>
+<option value="Bucarasica">Bucarasica</option>
+<option value="Cáchira">Cáchira</option>
+<option value="Cácota">Cácota</option>
+<option value="Chinácota">Chinácota</option>
+<option value="Chitagá">Chitagá</option>
+<option value="Convención">Convención</option>
+<option value="Cucutilla">Cucutilla</option>
+<option value="Durania">Durania</option>
+<option value="ElCarmen">ElCarmen</option>
+<option value="ElTarra">ElTarra</option>
+<option value="ElZulia">ElZulia</option>
+<option value="Gramalote">Gramalote</option>
+<option value="Hacarí">Hacarí</option>
+<option value="Herrán">Herrán</option>
+<option value="LaEsperanza">LaEsperanza</option>
+<option value="LaPlayaDeBelén">LaPlayaDeBelén</option>
+<option value="Labateca">Labateca</option>
+<option value="LosPatios">LosPatios</option>
+<option value="Lourdes">Lourdes</option>
+<option value="Mutiscua">Mutiscua</option>
+<option value="Ocaña">Ocaña</option>
+<option value="Pamplona">Pamplona</option>
+<option value="Pamplonita">Pamplonita</option>
+<option value="PuertoSantander">PuertoSantander</option>
+<option value="Ragonvalia">Ragonvalia</option>
+<option value="SalazarDeLasPalmas">SalazarDeLasPalmas</option>
+<option value="SanCalixto">SanCalixto</option>
+<option value="SanCayetano">SanCayetano</option>
+<option value="SanJoséDeCúcuta">SanJoséDeCúcuta</option>
+<option value="Santiago">Santiago</option>
+<option value="Sardinata">Sardinata</option>
+<option value="Silos">Silos</option>
+<option value="Teorama">Teorama</option>
+<option value="Tibú">Tibú</option>
+<option value="Toledo">Toledo</option>
+<option value="VillaCaro">VillaCaro</option>
+<option value="VillaDelRosario">VillaDelRosario</option>
+<option value="Colón">Colón</option>
+<option value="Mocoa">Mocoa</option>
+<option value="Orito">Orito</option>
+<option value="PuertoAsís">PuertoAsís</option>
+<option value="PuertoCaicedo">PuertoCaicedo</option>
+<option value="PuertoGuzmán">PuertoGuzmán</option>
+<option value="PuertoLeguizamo">PuertoLeguizamo</option>
+<option value="SanFrancisco">SanFrancisco</option>
+<option value="SanMiguel">SanMiguel</option>
+<option value="Santiago">Santiago</option>
+<option value="Sibundoy">Sibundoy</option>
+<option value="ValleDelGuamuez">ValleDelGuamuez</option>
+<option value="Villagarzón">Villagarzón</option>
+<option value="Armenia">Armenia</option>
+<option value="Buenavista">Buenavista</option>
+<option value="Calarcá">Calarcá</option>
+<option value="Circasia">Circasia</option>
+<option value="Córdoba">Córdoba</option>
+<option value="Filandia">Filandia</option>
+<option value="Génova">Génova</option>
+<option value="LaTebaida">LaTebaida</option>
+<option value="Montenegro">Montenegro</option>
+<option value="Pijao">Pijao</option>
+<option value="Quimbaya">Quimbaya</option>
+<option value="Salento">Salento</option>
+<option value="Apía">Apía</option>
+<option value="Balboa">Balboa</option>
+<option value="BelénDeUmbría">BelénDeUmbría</option>
+<option value="Dosquebradas">Dosquebradas</option>
+<option value="Guática">Guática</option>
+<option value="LaCelia">LaCelia</option>
+<option value="LaVirginia">LaVirginia</option>
+<option value="Marsella">Marsella</option>
+<option value="Mistrato">Mistrato</option>
+<option value="Pereira">Pereira</option>
+<option value="PuebloRico">PuebloRico</option>
+<option value="Quinchía">Quinchía</option>
+<option value="SantaRosaDeCabal">SantaRosaDeCabal</option>
+<option value="Santuario">Santuario</option>
+<option value="Providencia">Providencia</option>
+<option value="Aguada">Aguada</option>
+<option value="Albania">Albania</option>
+<option value="Aratoca">Aratoca</option>
+<option value="Barbosa">Barbosa</option>
+<option value="Barichara">Barichara</option>
+<option value="Barrancabermeja">Barrancabermeja</option>
+<option value="Betulia">Betulia</option>
+<option value="Bolívar">Bolívar</option>
+<option value="Bucaramanga">Bucaramanga</option>
+<option value="Cabrera">Cabrera</option>
+<option value="California">California</option>
+<option value="Capitanejo">Capitanejo</option>
+<option value="Carcasí">Carcasí</option>
+<option value="Cepita">Cepita</option>
+<option value="Cerrito">Cerrito</option>
+<option value="Charalá">Charalá</option>
+<option value="Charta">Charta</option>
+<option value="Chimá">Chimá</option>
+<option value="Chipatá">Chipatá</option>
+<option value="Cimitarra">Cimitarra</option>
+<option value="Concepción">Concepción</option>
+<option value="Confines">Confines</option>
+<option value="Contratación">Contratación</option>
+<option value="Coromoro">Coromoro</option>
+<option value="Curití">Curití</option>
+<option value="ElCarmenDeChucurí">ElCarmenDeChucurí</option>
+<option value="ElGuacamayo">ElGuacamayo</option>
+<option value="ElPeñón">ElPeñón</option>
+<option value="ElPlayón">ElPlayón</option>
+<option value="Encino">Encino</option>
+<option value="Enciso">Enciso</option>
+<option value="Florián">Florián</option>
+<option value="Floridablanca">Floridablanca</option>
+<option value="Galán">Galán</option>
+<option value="Gambita">Gambita</option>
+<option value="Girón">Girón</option>
+<option value="Guaca">Guaca</option>
+<option value="Guadalupe">Guadalupe</option>
+<option value="Guapota">Guapota</option>
+<option value="Guavatá">Guavatá</option>
+<option value="Güepsa">Güepsa</option>
+<option value="Hato">Hato</option>
+<option value="JesúsMaría">JesúsMaría</option>
+<option value="Jordán">Jordán</option>
+<option value="LaBelleza">LaBelleza</option>
+<option value="LaPaz">LaPaz</option>
+<option value="Landázuri">Landázuri</option>
+<option value="Lebrija">Lebrija</option>
+<option value="LosSantos">LosSantos</option>
+<option value="Macaravita">Macaravita</option>
+<option value="Málaga">Málaga</option>
+<option value="Matanza">Matanza</option>
+<option value="Mogotes">Mogotes</option>
+<option value="Molagavita">Molagavita</option>
+<option value="Ocamonte">Ocamonte</option>
+<option value="Oiba">Oiba</option>
+<option value="Onzaga">Onzaga</option>
+<option value="Palmar">Palmar</option>
+<option value="PalmasDelSocorro">PalmasDelSocorro</option>
+<option value="Paramo">Paramo</option>
+<option value="Piedecuesta">Piedecuesta</option>
+<option value="Pinchote">Pinchote</option>
+<option value="PuenteNacional">PuenteNacional</option>
+<option value="PuertoParra">PuertoParra</option>
+<option value="PuertoWilches">PuertoWilches</option>
+<option value="Rionegro">Rionegro</option>
+<option value="SabanaDeTorres">SabanaDeTorres</option>
+<option value="SanAndrés">SanAndrés</option>
+<option value="SanBenito">SanBenito</option>
+<option value="SanGil">SanGil</option>
+<option value="SanJoaquin">SanJoaquin</option>
+<option value="SanJoséDeMiranda">SanJoséDeMiranda</option>
+<option value="SanMiguel">SanMiguel</option>
+<option value="SanVicenteDelChucurí">SanVicenteDelChucurí</option>
+<option value="SantaBárbara">SantaBárbara</option>
+<option value="SantaHelenaDeOpon">SantaHelenaDeOpon</option>
+<option value="Simacota">Simacota</option>
+<option value="Socorro">Socorro</option>
+<option value="Suaita">Suaita</option>
+<option value="Sucre">Sucre</option>
+<option value="Surata">Surata</option>
+<option value="Tona">Tona</option>
+<option value="ValleDeSanJosé">ValleDeSanJosé</option>
+<option value="Vélez">Vélez</option>
+<option value="Vetas">Vetas</option>
+<option value="Villanueva">Villanueva</option>
+<option value="Zapatoca">Zapatoca</option>
+<option value="Buenavista">Buenavista</option>
+<option value="Caimito">Caimito</option>
+<option value="Chalan">Chalan</option>
+<option value="Coloso">Coloso</option>
+<option value="Corozal">Corozal</option>
+<option value="Coveñas">Coveñas</option>
+<option value="ElRoble">ElRoble</option>
+<option value="Galeras">Galeras</option>
+<option value="Guaranda">Guaranda</option>
+<option value="LaUnión">LaUnión</option>
+<option value="LosPalmitos">LosPalmitos</option>
+<option value="Majagual">Majagual</option>
+<option value="Morroa">Morroa</option>
+<option value="Ovejas">Ovejas</option>
+<option value="SanAntonioDePalmito">SanAntonioDePalmito</option>
+<option value="Sampues">Sampues</option>
+<option value="SanBenitoAbad">SanBenitoAbad</option>
+<option value="SanJuanDeBetulia">SanJuanDeBetulia</option>
+<option value="SanMarcos">SanMarcos</option>
+<option value="SanOnofre">SanOnofre</option>
+<option value="SanPedro">SanPedro</option>
+<option value="Sincé">Sincé</option>
+<option value="Sincelejo">Sincelejo</option>
+<option value="Sucre">Sucre</option>
+<option value="SantiagoDeTolú">SantiagoDeTolú</option>
+<option value="Toluviejo">Toluviejo</option>
+<option value="Alpujarra">Alpujarra</option>
+<option value="Alvarado">Alvarado</option>
+<option value="Ambalema">Ambalema</option>
+<option value="Anzoátegui">Anzoátegui</option>
+<option value="Armero">Armero</option>
+<option value="Ataco">Ataco</option>
+<option value="Cajamarca">Cajamarca</option>
+<option value="CarmenDeApicalá">CarmenDeApicalá</option>
+<option value="Casabianca">Casabianca</option>
+<option value="Chaparral">Chaparral</option>
+<option value="Coello">Coello</option>
+<option value="Coyaima">Coyaima</option>
+<option value="Cunday">Cunday</option>
+<option value="Dolores">Dolores</option>
+<option value="ElEspinal">ElEspinal</option>
+<option value="Falan">Falan</option>
+<option value="Flandes">Flandes</option>
+<option value="Fresno">Fresno</option>
+<option value="ElGuamo">ElGuamo</option>
+<option value="Herveo">Herveo</option>
+<option value="Honda">Honda</option>
+<option value="Ibagué">Ibagué</option>
+<option value="Icononzo">Icononzo</option>
+<option value="Lérida">Lérida</option>
+<option value="Libano">Libano</option>
+<option value="Mariquita">Mariquita</option>
+<option value="Melgar">Melgar</option>
+<option value="Murillo">Murillo</option>
+<option value="Natagaima">Natagaima</option>
+<option value="Ortega">Ortega</option>
+<option value="Palocabildo">Palocabildo</option>
+<option value="Piedras">Piedras</option>
+<option value="Planadas">Planadas</option>
+<option value="Prado">Prado</option>
+<option value="Purificación">Purificación</option>
+<option value="Rioblanco">Rioblanco</option>
+<option value="Roncesvalles">Roncesvalles</option>
+<option value="Rovira">Rovira</option>
+<option value="Saldaña">Saldaña</option>
+<option value="SanAntonio">SanAntonio</option>
+<option value="SanLuis">SanLuis</option>
+<option value="SantaIsabel">SantaIsabel</option>
+<option value="Suarez">Suarez</option>
+<option value="ValleDeSanJuan">ValleDeSanJuan</option>
+<option value="Venadillo">Venadillo</option>
+<option value="Villahermosa">Villahermosa</option>
+<option value="Villarrica">Villarrica</option>
+<option value="Alcalá">Alcalá</option>
+<option value="Andalucía">Andalucía</option>
+<option value="Ansermanuevo">Ansermanuevo</option>
+<option value="Argelia">Argelia</option>
+<option value="Bolívar">Bolívar</option>
+<option value="Buenaventura">Buenaventura</option>
+<option value="GuadalajaraDeBuga">GuadalajaraDeBuga</option>
+<option value="Bugalagrande">Bugalagrande</option>
+<option value="Caicedonia">Caicedonia</option>
+<option value="CalimaDelDarién">CalimaDelDarién</option>
+<option value="Candelaria">Candelaria</option>
+<option value="Cartago">Cartago</option>
+<option value="Dagua">Dagua</option>
+<option value="ElÁguila">ElÁguila</option>
+<option value="ElCairo">ElCairo</option>
+<option value="ElCerrito">ElCerrito</option>
+<option value="ElDovio">ElDovio</option>
+<option value="Florida">Florida</option>
+<option value="Ginebra">Ginebra</option>
+<option value="Guacarí">Guacarí</option>
+<option value="Jamundí">Jamundí</option>
+<option value="LaCumbre">LaCumbre</option>
+<option value="LaUnión">LaUnión</option>
+<option value="LaVictoria">LaVictoria</option>
+<option value="Obando">Obando</option>
+<option value="Palmira">Palmira</option>
+<option value="Pradera">Pradera</option>
+<option value="Restrepo">Restrepo</option>
+<option value="Riofrio">Riofrio</option>
+<option value="Roldanillo">Roldanillo</option>
+<option value="SanPedro">SanPedro</option>
+<option value="SantiagoDeCali">SantiagoDeCali</option>
+<option value="Sevilla">Sevilla</option>
+<option value="Toro">Toro</option>
+<option value="Trujillo">Trujillo</option>
+<option value="Tuluá">Tuluá</option>
+<option value="Ulloa">Ulloa</option>
+<option value="Versalles">Versalles</option>
+<option value="Vijes">Vijes</option>
+<option value="Yotoco">Yotoco</option>
+<option value="Yumbo">Yumbo</option>
+<option value="Zarzal">Zarzal</option>
+<option value="Caruru">Caruru</option>
+<option value="Mitú">Mitú</option>
+<option value="Taraira">Taraira</option>
+<option value="Cumaribo">Cumaribo</option>
+<option value="LaPrimavera">LaPrimavera</option>
+<option value="PuertoCarreño">PuertoCarreño</option>
+<option value="SantaRosalía">SantaRosalía</option>
   </select>
 
   <span style="margin-left:3%"> Rango de Precio:</span>
@@ -460,16 +1553,16 @@ box-shadow: none;
     margin-bottom: auto;
 	text-align: center" 
 	
-	name="cars" id="cars">
+	name="rango_precios" id="rango_precios" onchange="change_rango_precios(this)">
 	<option value="">-----</option>       
-        <option value="1">$0 - $50.000</option>
-        <option value="2">$50.000 - $100.000</option>
-        <option value="3">$100.000 - $150.000</option>
-        <option value="4">$150.000 - $200.000</option>
-        <option value="5">$200.000 - $250.000</option>
-        <option value="6">$250.000 - $300.000</option>
-        <option value="7">$300.000 - $350.000</option>
-        <option value="8">Mayor a $350.000 </option>
+        <option value="0-50000">$0 - $50.000</option>
+        <option value="50000-100000">$50.000 - $100.000</option>
+        <option value="100000-150000">$100.000 - $150.000</option>
+        <option value="150000-200000">$150.000 - $200.000</option>
+        <option value="200000-250000">$200.000 - $250.000</option>
+        <option value="250000-300000">$250.000 - $300.000</option>
+        <option value="300000-350000">$300.000 - $350.000</option>
+        <option value="350000-9999999999">Mayor a $350.000 </option>
   </select>
 
   <span style="margin-left:3%"> Idioma</span>
@@ -484,9 +1577,37 @@ box-shadow: none;
     margin-bottom: auto;
 	text-align: center" 
 	
-	name="cars" id="cars">
+	name="idioma" id="idioma" onchange="change_idioma(this)">
         <option value="">-----</option>
-	
+		
+                                    <option value="Alemán">Alemán</option>
+                                    <option value="Árabe">Árabe</option>
+                                    <option value="Bengalí">Bengalí</option>
+                                    <option value="Chino cantonés">Chino cantonés</option>
+                                    <option value="Chino mandarín">Chino mandarín</option>
+                                    <option value="Chino Mǐn Nán">Chino Mǐn Nán</option>
+                                    <option value="Chino Wu">Chino Wu</option>
+                                    <option value="Coreano">Coreano</option>
+                                    <option value="Español">Español</option>
+                                    <option value="Francés">Francés</option>
+                                    <option value="Hausa">Hausa</option>
+                                    <option value="Hindi">Hindi</option>
+                                    <option value="Indonesio">Indonesio</option>
+                                    <option value="Ingles">Ingles</option>
+                                    <option value="Italiano">Italiano</option>
+                                    <option value="Japonés">Japonés</option>
+                                    <option value="Javanés">Javanés</option>
+                                    <option value="Maratí">Maratí</option>
+                                    <option value="Panyabí occidental">Panyabí occidental</option>
+                                    <option value="Persa iraní">Persa iraní</option>
+                                    <option value="Portugués">Portugués</option>
+                                    <option value="Ruso">Ruso</option>
+                                    <option value="Tailandés">Tailandés</option>
+                                    <option value="Tamil">Tamil</option>
+                                    <option value="Telugú">Telugú</option>
+                                    <option value="Turco">Turco</option>
+                                    <option value="Urdu">Urdu</option>
+                                    <option value="Vietnamita">Vietnamita</option>
 	</select>
 
   <span style="margin-left:3%"> Pais:</span>
@@ -501,10 +1622,254 @@ box-shadow: none;
     margin-bottom: auto;
 	text-align: center" 
 	
-	name="cars" id="cars">
+	name="pais" id="pais" onchange="change_pais(this)">
 
         <option value="">-----</option>       
-        
+        <option value="AFGANISTAN">AFGANISTAN</option>
+                                    <option value="ALBANIA">ALBANIA</option>
+                                    <option value="ALEMANIA">ALEMANIA</option>
+                                    <option value="ANDORRA">ANDORRA</option>
+                                    <option value="ANGOLA">ANGOLA</option>
+                                    <option value="ANGUILLA">ANGUILLA</option>
+                                    <option value="ANTIGUA Y BARBUDA">ANTIGUA Y BARBUDA</option>
+                                    <option value="ANTILLAS HOLANDESAS">ANTILLAS HOLANDESAS</option>
+                                    <option value="ARABIA SAUDI">ARABIA SAUDI</option>
+                                    <option value="ARGELIA">ARGELIA</option>
+                                    <option value="ARGENTINA">ARGENTINA</option>
+                                    <option value="ARMENIA">ARMENIA</option>
+                                    <option value="ARUBA">ARUBA</option>
+                                    <option value="AUSTRALIA">AUSTRALIA</option>
+                                    <option value="AUSTRIA">AUSTRIA</option>
+                                    <option value="AZERBAIYAN">AZERBAIYAN</option>
+                                    <option value="BAHAMAS">BAHAMAS</option>
+                                    <option value="BAHREIN">BAHREIN</option>
+                                    <option value="BANGLADESH">BANGLADESH</option>
+                                    <option value="BARBADOS">BARBADOS</option>
+                                    <option value="BELARUS">BELARUS</option>
+                                    <option value="BELGICA">BELGICA</option>
+                                    <option value="BELICE">BELICE</option>
+                                    <option value="BENIN">BENIN</option>
+                                    <option value="BERMUDAS">BERMUDAS</option>
+                                    <option value="BHUTÁN">BHUTÁN</option>
+                                    <option value="BOLIVIA">BOLIVIA</option>
+                                    <option value="BOSNIA Y HERZEGOVINA">BOSNIA Y HERZEGOVINA</option>
+                                    <option value="BOTSWANA">BOTSWANA</option>
+                                    <option value="BRASIL">BRASIL</option>
+                                    <option value="BRUNEI">BRUNEI</option>
+                                    <option value="BULGARIA">BULGARIA</option>
+                                    <option value="BURKINA FASO">BURKINA FASO</option>
+                                    <option value="BURUNDI">BURUNDI</option>
+                                    <option value="CABO VERDE">CABO VERDE</option>
+                                    <option value="CAMBOYA">CAMBOYA</option>
+                                    <option value="CAMERUN">CAMERUN</option>
+                                    <option value="CANADA">CANADA</option>
+                                    <option value="CHAD">CHAD</option>
+                                    <option value="CHILE">CHILE</option>
+                                    <option value="CHINA">CHINA</option>
+                                    <option value="CHIPRE">CHIPRE</option>
+                                    <option value="COLOMBIA">COLOMBIA</option>
+                                    <option value="COMORES">COMORES</option>
+                                    <option value="CONGO">CONGO</option>
+                                    <option value="COREA">COREA</option>
+                                    <option value="COREA DEL NORTE ">COREA DEL NORTE </option>
+                                    <option value="COSTA DE MARFIL">COSTA DE MARFIL</option>
+                                    <option value="COSTA RICA">COSTA RICA</option>
+                                    <option value="CROACIA">CROACIA</option>
+                                    <option value="CUBA">CUBA</option>
+                                    <option value="DINAMARCA">DINAMARCA</option>
+                                    <option value="DJIBOUTI">DJIBOUTI</option>
+                                    <option value="DOMINICA">DOMINICA</option>
+                                    <option value="ECUADOR">ECUADOR</option>
+                                    <option value="EGIPTO">EGIPTO</option>
+                                    <option value="EL SALVADOR">EL SALVADOR</option>
+                                    <option value="EMIRATOS ARABES UNIDOS">EMIRATOS ARABES UNIDOS</option>
+                                    <option value="ERITREA">ERITREA</option>
+                                    <option value="ESLOVENIA">ESLOVENIA</option>
+                                    <option value="ESPAÑA">ESPAÑA</option>
+                                    <option value="ESTADOS UNIDOS DE AMERICA">ESTADOS UNIDOS DE AMERICA</option>
+                                    <option value="ESTONIA">ESTONIA</option>
+                                    <option value="ETIOPIA">ETIOPIA</option>
+                                    <option value="FIJI">FIJI</option>
+                                    <option value="FILIPINAS">FILIPINAS</option>
+                                    <option value="FINLANDIA">FINLANDIA</option>
+                                    <option value="FRANCIA">FRANCIA</option>
+                                    <option value="GABON">GABON</option>
+                                    <option value="GAMBIA">GAMBIA</option>
+                                    <option value="GEORGIA">GEORGIA</option>
+                                    <option value="GHANA">GHANA</option>
+                                    <option value="GIBRALTAR">GIBRALTAR</option>
+                                    <option value="GRANADA">GRANADA</option>
+                                    <option value="GRECIA">GRECIA</option>
+                                    <option value="GROENLANDIA">GROENLANDIA</option>
+                                    <option value="GUADALUPE">GUADALUPE</option>
+                                    <option value="GUAM">GUAM</option>
+                                    <option value="GUATEMALA">GUATEMALA</option>
+                                    <option value="GUAYANA FRANCESA">GUAYANA FRANCESA</option>
+                                    <option value="GUERNESEY">GUERNESEY</option>
+                                    <option value="GUINEA">GUINEA</option>
+                                    <option value="GUINEA ECUATORIAL">GUINEA ECUATORIAL</option>
+                                    <option value="GUINEA-BISSAU">GUINEA-BISSAU</option>
+                                    <option value="GUYANA">GUYANA</option>
+                                    <option value="HAITI">HAITI</option>
+                                    <option value="HONDURAS">HONDURAS</option>
+                                    <option value="HONG KONG">HONG KONG</option>
+                                    <option value="HUNGRIA">HUNGRIA</option>
+                                    <option value="INDIA">INDIA</option>
+                                    <option value="INDONESIA">INDONESIA</option>
+                                    <option value="IRAN">IRAN</option>
+                                    <option value="IRAQ">IRAQ</option>
+                                    <option value="IRLANDA">IRLANDA</option>
+                                    <option value="ISLA DE MAN">ISLA DE MAN</option>
+                                    <option value="ISLA NORFOLK">ISLA NORFOLK</option>
+                                    <option value="ISLANDIA">ISLANDIA</option>
+                                    <option value="ISLAS ALAND">ISLAS ALAND</option>
+                                    <option value="ISLAS CAIMÁN">ISLAS CAIMÁN</option>
+                                    <option value="ISLAS COOK">ISLAS COOK</option>
+                                    <option value="ISLAS DEL CANAL">ISLAS DEL CANAL</option>
+                                    <option value="ISLAS FEROE">ISLAS FEROE</option>
+                                    <option value="ISLAS MALVINAS">ISLAS MALVINAS</option>
+                                    <option value="ISLAS MARIANAS DEL NORTE">ISLAS MARIANAS DEL NORTE</option>
+                                    <option value="ISLAS MARSHALL">ISLAS MARSHALL</option>
+                                    <option value="ISLAS PITCAIRN">ISLAS PITCAIRN</option>
+                                    <option value="ISLAS SALOMON">ISLAS SALOMON</option>
+                                    <option value="ISLAS TURCAS Y CAICOS">ISLAS TURCAS Y CAICOS</option>
+                                    <option value="ISLAS VIRGENES BRITANICAS">ISLAS VIRGENES BRITANICAS</option>
+                                    <option value="ISLAS VÍRGENES DE LOS ESTADOS UNIDOS">ISLAS VÍRGENES DE LOS ESTADOS UNIDOS</option>
+                                    <option value="ISRAEL">ISRAEL</option>
+                                    <option value="ITALIA">ITALIA</option>
+                                    <option value="JAMAICA">JAMAICA</option>
+                                    <option value="JAPON">JAPON</option>
+                                    <option value="JERSEY">JERSEY</option>
+                                    <option value="JORDANIA">JORDANIA</option>
+                                    <option value="KAZAJSTAN">KAZAJSTAN</option>
+                                    <option value="KENIA">KENIA</option>
+                                    <option value="KIRGUISTAN">KIRGUISTAN</option>
+                                    <option value="KIRIBATI">KIRIBATI</option>
+                                    <option value="KUWAIT">KUWAIT</option>
+                                    <option value="LAOS">LAOS</option>
+                                    <option value="LESOTHO">LESOTHO</option>
+                                    <option value="LETONIA">LETONIA</option>
+                                    <option value="LIBANO">LIBANO</option>
+                                    <option value="LIBERIA">LIBERIA</option>
+                                    <option value="LIBIA">LIBIA</option>
+                                    <option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+                                    <option value="LITUANIA">LITUANIA</option>
+                                    <option value="LUXEMBURGO">LUXEMBURGO</option>
+                                    <option value="MACAO">MACAO</option>
+                                    <option value="MACEDONIA ">MACEDONIA </option>
+                                    <option value="MADAGASCAR">MADAGASCAR</option>
+                                    <option value="MALASIA">MALASIA</option>
+                                    <option value="MALAWI">MALAWI</option>
+                                    <option value="MALDIVAS">MALDIVAS</option>
+                                    <option value="MALI">MALI</option>
+                                    <option value="MALTA">MALTA</option>
+                                    <option value="MARRUECOS">MARRUECOS</option>
+                                    <option value="MARTINICA">MARTINICA</option>
+                                    <option value="MAURICIO">MAURICIO</option>
+                                    <option value="MAURITANIA">MAURITANIA</option>
+                                    <option value="MAYOTTE">MAYOTTE</option>
+                                    <option value="MEXICO">MEXICO</option>
+                                    <option value="MICRONESIA">MICRONESIA</option>
+                                    <option value="MOLDAVIA">MOLDAVIA</option>
+                                    <option value="MONACO">MONACO</option>
+                                    <option value="MONGOLIA">MONGOLIA</option>
+                                    <option value="MONTENEGRO">MONTENEGRO</option>
+                                    <option value="MONTSERRAT">MONTSERRAT</option>
+                                    <option value="MOZAMBIQUE">MOZAMBIQUE</option>
+                                    <option value="MYANMAR">MYANMAR</option>
+                                    <option value="NAMIBIA">NAMIBIA</option>
+                                    <option value="NAURU">NAURU</option>
+                                    <option value="NEPAL">NEPAL</option>
+                                    <option value="NICARAGUA">NICARAGUA</option>
+                                    <option value="NIGER">NIGER</option>
+                                    <option value="NIGERIA">NIGERIA</option>
+                                    <option value="NIUE">NIUE</option>
+                                    <option value="NORUEGA">NORUEGA</option>
+                                    <option value="NUEVA CALEDONIA">NUEVA CALEDONIA</option>
+                                    <option value="NUEVA ZELANDA">NUEVA ZELANDA</option>
+                                    <option value="OMAN">OMAN</option>
+                                    <option value="OTROS PAISES  O TERRITORIOS DE AMERICA DEL NORTE">OTROS PAISES  O TERRITORIOS DE AMERICA DEL NORTE</option>
+                                    <option value="OTROS PAISES O TERRITORIOS  DE SUDAMERICA">OTROS PAISES O TERRITORIOS  DE SUDAMERICA</option>
+                                    <option value="OTROS PAISES O TERRITORIOS DE AFRICA">OTROS PAISES O TERRITORIOS DE AFRICA</option>
+                                    <option value="OTROS PAISES O TERRITORIOS DE ASIA">OTROS PAISES O TERRITORIOS DE ASIA</option>
+                                    <option value="OTROS PAISES O TERRITORIOS DE LA UNION EUROPEA">OTROS PAISES O TERRITORIOS DE LA UNION EUROPEA</option>
+                                    <option value="OTROS PAISES O TERRITORIOS DE OCEANIA">OTROS PAISES O TERRITORIOS DE OCEANIA</option>
+                                    <option value="OTROS PAISES O TERRITORIOS DEL CARIBE Y AMERICA CENTRAL">OTROS PAISES O TERRITORIOS DEL CARIBE Y AMERICA CENTRAL</option>
+                                    <option value="OTROS PAISES O TERRITORIOS DEL RESTO DE EUROPA">OTROS PAISES O TERRITORIOS DEL RESTO DE EUROPA</option>
+                                    <option value="PAISES BAJOS">PAISES BAJOS</option>
+                                    <option value="PAKISTAN">PAKISTAN</option>
+                                    <option value="PALAOS">PALAOS</option>
+                                    <option value="PALESTINA">PALESTINA</option>
+                                    <option value="PANAMA">PANAMA</option>
+                                    <option value="PAPUA NUEVA GUINEA">PAPUA NUEVA GUINEA</option>
+                                    <option value="PARAGUAY">PARAGUAY</option>
+                                    <option value="PERU">PERU</option>
+                                    <option value="POLINESIA FRANCESA">POLINESIA FRANCESA</option>
+                                    <option value="POLONIA">POLONIA</option>
+                                    <option value="PORTUGAL">PORTUGAL</option>
+                                    <option value="PUERTO RICO">PUERTO RICO</option>
+                                    <option value="QATAR">QATAR</option>
+                                    <option value="REINO UNIDO">REINO UNIDO</option>
+                                    <option value="REP.DEMOCRATICA DEL CONGO">REP.DEMOCRATICA DEL CONGO</option>
+                                    <option value="REPUBLICA CENTROAFRICANA">REPUBLICA CENTROAFRICANA</option>
+                                    <option value="REPUBLICA CHECA">REPUBLICA CHECA</option>
+                                    <option value="REPUBLICA DOMINICANA">REPUBLICA DOMINICANA</option>
+                                    <option value="REPUBLICA ESLOVACA">REPUBLICA ESLOVACA</option>
+                                    <option value="REUNION">REUNION</option>
+                                    <option value="RUANDA">RUANDA</option>
+                                    <option value="RUMANIA">RUMANIA</option>
+                                    <option value="RUSIA">RUSIA</option>
+                                    <option value="SAHARA OCCIDENTAL">SAHARA OCCIDENTAL</option>
+                                    <option value="SAMOA">SAMOA</option>
+                                    <option value="SAMOA AMERICANA">SAMOA AMERICANA</option>
+                                    <option value="SAN BARTOLOME">SAN BARTOLOME</option>
+                                    <option value="SAN CRISTOBAL Y NIEVES">SAN CRISTOBAL Y NIEVES</option>
+                                    <option value="SAN MARINO">SAN MARINO</option>
+                                    <option value="SAN MARTIN (PARTE FRANCESA)">SAN MARTIN (PARTE FRANCESA)</option>
+                                    <option value="SAN PEDRO Y MIQUELON ">SAN PEDRO Y MIQUELON </option>
+                                    <option value="SAN VICENTE Y LAS GRANADINAS">SAN VICENTE Y LAS GRANADINAS</option>
+                                    <option value="SANTA HELENA">SANTA HELENA</option>
+                                    <option value="SANTA LUCIA">SANTA LUCIA</option>
+                                    <option value="SANTA SEDE">SANTA SEDE</option>
+                                    <option value="SANTO TOME Y PRINCIPE">SANTO TOME Y PRINCIPE</option>
+                                    <option value="SENEGAL">SENEGAL</option>
+                                    <option value="SERBIA">SERBIA</option>
+                                    <option value="SEYCHELLES">SEYCHELLES</option>
+                                    <option value="SIERRA LEONA">SIERRA LEONA</option>
+                                    <option value="SINGAPUR">SINGAPUR</option>
+                                    <option value="SIRIA">SIRIA</option>
+                                    <option value="SOMALIA">SOMALIA</option>
+                                    <option value="SRI LANKA">SRI LANKA</option>
+                                    <option value="SUDAFRICA">SUDAFRICA</option>
+                                    <option value="SUDAN">SUDAN</option>
+                                    <option value="SUECIA">SUECIA</option>
+                                    <option value="SUIZA">SUIZA</option>
+                                    <option value="SURINAM">SURINAM</option>
+                                    <option value="SVALBARD Y JAN MAYEN">SVALBARD Y JAN MAYEN</option>
+                                    <option value="SWAZILANDIA">SWAZILANDIA</option>
+                                    <option value="TADYIKISTAN">TADYIKISTAN</option>
+                                    <option value="TAILANDIA">TAILANDIA</option>
+                                    <option value="TANZANIA">TANZANIA</option>
+                                    <option value="TIMOR ORIENTAL">TIMOR ORIENTAL</option>
+                                    <option value="TOGO">TOGO</option>
+                                    <option value="TOKELAU">TOKELAU</option>
+                                    <option value="TONGA">TONGA</option>
+                                    <option value="TRINIDAD Y TOBAGO">TRINIDAD Y TOBAGO</option>
+                                    <option value="TUNEZ">TUNEZ</option>
+                                    <option value="TURKMENISTAN">TURKMENISTAN</option>
+                                    <option value="TURQUIA">TURQUIA</option>
+                                    <option value="TUVALU">TUVALU</option>
+                                    <option value="UCRANIA">UCRANIA</option>
+                                    <option value="UGANDA">UGANDA</option>
+                                    <option value="URUGUAY">URUGUAY</option>
+                                    <option value="UZBEKISTAN">UZBEKISTAN</option>
+                                    <option value="VANUATU">VANUATU</option>
+                                    <option value="VENEZUELA">VENEZUELA</option>
+                                    <option value="VIETNAM">VIETNAM</option>
+                                    <option value="WALLIS Y FORTUNA">WALLIS Y FORTUNA</option>
+                                    <option value="YEMEN">YEMEN</option>
+                                    <option value="ZAMBIA">ZAMBIA</option>
+                                    <option value="ZIMBABWE">ZIMBABWE</option>
 	</select>
 
 
@@ -540,915 +1905,6 @@ box-shadow: none;
 				
 				<div class="grid-prod2">
 				
-					<div class="prod-grid3 " style="margin-top:25px">
-						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 "style="margin-top:25px">
-						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 "style="margin-top:25px">
-						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
 					<P style="margin-left:64%;  padding-top:10px; color:#FFF; background-color:#BFBFBF; height:50px; font-size:100%">&nbsp;&nbsp;&nbsp;&nbsp;VER TODOS LOS GÚRUS >&nbsp;&nbsp;&nbsp;&nbsp;<P>
 
 				</div>
@@ -1848,5 +2304,9 @@ function carousel() {
   setTimeout(carousel, 15000); 
 }
 </script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="js/consulta_gurus.js"></script>
 </body>
 </html>
