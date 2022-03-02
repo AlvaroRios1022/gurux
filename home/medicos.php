@@ -307,9 +307,16 @@ box-shadow: none;
   <select class="camposgenerales"	style=" border: none; background-color: #0000;font-size: 15px;
 	width: 100px;text-decoration: none;margin-bottom: auto;text-align: center" 
 	name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
-	<option value="">-----</option>           
+	<option value="">-----</option>     
+
+	<optgroup label="Amazonas">     
 	<option value="Leticia">Leticia</option>
-<option value="PuertoNariño">PuertoNariño</option>
+	<option value="PuertoNariño">PuertoNariño</option>
+	
+</optgroup>
+	<optgroup label="Antioquia">
+	     
+
 <option value="Abejorral">Abejorral</option>
 <option value="Abriaquí">Abriaquí</option>
 <option value="Alejandría">Alejandría</option>
@@ -435,6 +442,12 @@ box-shadow: none;
 <option value="Yolombó">Yolombó</option>
 <option value="Yondo">Yondo</option>
 <option value="Zaragoza">Zaragoza</option>
+
+
+</optgroup>
+	<optgroup label="Arauca">
+
+
 <option value="Arauca">Arauca</option>
 <option value="Arauquita">Arauquita</option>
 <option value="CravoNorte">CravoNorte</option>
@@ -442,7 +455,12 @@ box-shadow: none;
 <option value="PuertoRondón">PuertoRondón</option>
 <option value="Saravena">Saravena</option>
 <option value="Tame">Tame</option>
-<option value="Baranoa">Baranoa</option>
+
+
+</optgroup>
+	<optgroup label="Atlántico">
+		
+	<option value="Baranoa">Baranoa</option>
 <option value="Barranquilla">Barranquilla</option>
 <option value="CampoDeLaCruz">CampoDeLaCruz</option>
 <option value="Candelaria">Candelaria</option>
@@ -465,6 +483,10 @@ box-shadow: none;
 <option value="Suan">Suan</option>
 <option value="Tubará">Tubará</option>
 <option value="Usiacurí">Usiacurí</option>
+
+</optgroup>
+	<optgroup label="Bolivar">
+
 <option value="Achí">Achí</option>
 <option value="AltosDelRosario">AltosDelRosario</option>
 <option value="Arenal">Arenal</option>
@@ -511,6 +533,10 @@ box-shadow: none;
 <option value="Turbana">Turbana</option>
 <option value="Villanueva">Villanueva</option>
 <option value="Zambrano">Zambrano</option>
+
+</optgroup>
+	<optgroup label="Boyacá">
+
 <option value="Almeida">Almeida</option>
 <option value="Aquitania">Aquitania</option>
 <option value="Arcabuco">Arcabuco</option>
@@ -634,6 +660,10 @@ box-shadow: none;
 <option value="VillaDeLeyva">VillaDeLeyva</option>
 <option value="Viracachá">Viracachá</option>
 <option value="Zetaquirá">Zetaquirá</option>
+
+</optgroup>
+	<optgroup label="Caldas">
+
 <option value="Aguadas">Aguadas</option>
 <option value="Anserma">Anserma</option>
 <option value="Aranzazu">Aranzazu</option>
@@ -661,6 +691,10 @@ box-shadow: none;
 <option value="Victoria">Victoria</option>
 <option value="Villamaría">Villamaría</option>
 <option value="Viterbo">Viterbo</option>
+
+</optgroup>
+	<optgroup label="Caquetá">
+
 <option value="Albania">Albania</option>
 <option value="BelénDeLosAndaquies">BelénDeLosAndaquies</option>
 <option value="CartagenaDelChairá">CartagenaDelChairá</option>
@@ -677,6 +711,10 @@ box-shadow: none;
 <option value="Solano">Solano</option>
 <option value="Solita">Solita</option>
 <option value="Valparaíso">Valparaíso</option>
+
+</optgroup>
+	<optgroup label="Casanare">
+
 <option value="Aguazul">Aguazul</option>
 <option value="Chameza">Chameza</option>
 <option value="HatoCorozal">HatoCorozal</option>
@@ -696,6 +734,10 @@ box-shadow: none;
 <option value="Trinidad">Trinidad</option>
 <option value="Villanueva">Villanueva</option>
 <option value="Yopal">Yopal</option>
+
+</optgroup>
+	<optgroup label="Cauca">
+
 <option value="Almaguer">Almaguer</option>
 <option value="Argelia">Argelia</option>
 <option value="Balboa">Balboa</option>
@@ -738,6 +780,10 @@ box-shadow: none;
 <option value="Toribio">Toribio</option>
 <option value="Totoro">Totoro</option>
 <option value="VillaRica">VillaRica</option>
+
+</optgroup>
+	<optgroup label="Cesar">
+
 <option value="Aguachica">Aguachica</option>
 <option value="AgustínCodazzi">AgustínCodazzi</option>
 <option value="Astrea">Astrea</option>
@@ -763,6 +809,10 @@ box-shadow: none;
 <option value="SanMartín">SanMartín</option>
 <option value="Tamalameque">Tamalameque</option>
 <option value="Valledupar">Valledupar</option>
+
+</optgroup>
+	<optgroup label="Chocó">
+
 <option value="Acandí">Acandí</option>
 <option value="AltoBaudó">AltoBaudó</option>
 <option value="Atrato">Atrato</option>
@@ -793,6 +843,10 @@ box-shadow: none;
 <option value="Sipí">Sipí</option>
 <option value="Ungüía">Ungüía</option>
 <option value="UniónPanamericana">UniónPanamericana</option>
+
+</optgroup>
+	<optgroup label="Córdoba">
+
 <option value="Ayapel">Ayapel</option>
 <option value="Buenavista">Buenavista</option>
 <option value="Canalete">Canalete</option>
@@ -823,6 +877,10 @@ box-shadow: none;
 <option value="Tierralta">Tierralta</option>
 <option value="Tuchín">Tuchín</option>
 <option value="Valencia">Valencia</option>
+
+</optgroup>
+	<optgroup label="Cundinamarca">
+
 <option value="AguaDeDios">AguaDeDios</option>
 <option value="Albán">Albán</option>
 <option value="Anapoima">Anapoima</option>
@@ -940,12 +998,24 @@ box-shadow: none;
 <option value="Yacopí">Yacopí</option>
 <option value="Zipacón">Zipacón</option>
 <option value="Zipaquirá">Zipaquirá</option>
+
+</optgroup>
+	<optgroup label="Guainía">
+
 <option value="Barrancominas">Barrancominas</option>
 <option value="Inirida">Inirida</option>
+
+</optgroup>
+	<optgroup label="Guaviare">
+
 <option value="Calamar">Calamar</option>
 <option value="ElRetorno">ElRetorno</option>
 <option value="Miraflores">Miraflores</option>
 <option value="SanJoséDelGuaviare">SanJoséDelGuaviare</option>
+
+</optgroup>
+	<optgroup label="Huila">
+
 <option value="Acevedo">Acevedo</option>
 <option value="Agrado">Agrado</option>
 <option value="Aipe">Aipe</option>
@@ -983,6 +1053,10 @@ box-shadow: none;
 <option value="Timaná">Timaná</option>
 <option value="Villavieja">Villavieja</option>
 <option value="Yaguará">Yaguará</option>
+
+</optgroup>
+	<optgroup label="La Guajira">
+
 <option value="Albania">Albania</option>
 <option value="Barrancas">Barrancas</option>
 <option value="Dibulla">Dibulla</option>
@@ -998,6 +1072,10 @@ box-shadow: none;
 <option value="Uribia">Uribia</option>
 <option value="Urumita">Urumita</option>
 <option value="Villanueva">Villanueva</option>
+
+</optgroup>
+	<optgroup label="Magdalena">
+
 <option value="Algarrobo">Algarrobo</option>
 <option value="Aracataca">Aracataca</option>
 <option value="Ariguaní">Ariguaní</option>
@@ -1028,6 +1106,10 @@ box-shadow: none;
 <option value="Tenerife">Tenerife</option>
 <option value="Zapayán">Zapayán</option>
 <option value="ZonaBananera">ZonaBananera</option>
+
+</optgroup>
+	<optgroup label="Meta">
+
 <option value="Acacías">Acacías</option>
 <option value="BarrancaDeUpía">BarrancaDeUpía</option>
 <option value="Cabuyaro">Cabuyaro</option>
@@ -1057,6 +1139,9 @@ box-shadow: none;
 <option value="Uribe">Uribe</option>
 <option value="Villavicencio">Villavicencio</option>
 <option value="VistaHermosa">VistaHermosa</option>
+
+</optgroup>
+	<optgroup label="Nariño">\
 <option value="Alban">Alban</option>
 <option value="Aldana">Aldana</option>
 <option value="Ancuyá">Ancuyá</option>
@@ -1121,6 +1206,10 @@ box-shadow: none;
 <option value="Tumaco">Tumaco</option>
 <option value="Túquerres">Túquerres</option>
 <option value="Yacuanquer">Yacuanquer</option>
+
+</optgroup>
+	<optgroup label="Norte de Santander">
+
 <option value="Abrego">Abrego</option>
 <option value="Arboledas">Arboledas</option>
 <option value="Bochalema">Bochalema</option>
@@ -1161,6 +1250,10 @@ box-shadow: none;
 <option value="Toledo">Toledo</option>
 <option value="VillaCaro">VillaCaro</option>
 <option value="VillaDelRosario">VillaDelRosario</option>
+
+</optgroup>
+	<optgroup label="Putumayo">
+
 <option value="Colón">Colón</option>
 <option value="Mocoa">Mocoa</option>
 <option value="Orito">Orito</option>
@@ -1174,6 +1267,10 @@ box-shadow: none;
 <option value="Sibundoy">Sibundoy</option>
 <option value="ValleDelGuamuez">ValleDelGuamuez</option>
 <option value="Villagarzón">Villagarzón</option>
+
+</optgroup>
+	<optgroup label="Qundío">
+
 <option value="Armenia">Armenia</option>
 <option value="Buenavista">Buenavista</option>
 <option value="Calarcá">Calarcá</option>
@@ -1186,6 +1283,10 @@ box-shadow: none;
 <option value="Pijao">Pijao</option>
 <option value="Quimbaya">Quimbaya</option>
 <option value="Salento">Salento</option>
+
+</optgroup>
+	<optgroup label="Risaralda">
+
 <option value="Apía">Apía</option>
 <option value="Balboa">Balboa</option>
 <option value="BelénDeUmbría">BelénDeUmbría</option>
@@ -1200,7 +1301,15 @@ box-shadow: none;
 <option value="Quinchía">Quinchía</option>
 <option value="SantaRosaDeCabal">SantaRosaDeCabal</option>
 <option value="Santuario">Santuario</option>
+
+</optgroup>
+	<optgroup label="San Andrés">
+
 <option value="Providencia">Providencia</option>
+
+</optgroup>
+	<optgroup label="Santander">
+
 <option value="Aguada">Aguada</option>
 <option value="Albania">Albania</option>
 <option value="Aratoca">Aratoca</option>
@@ -1288,6 +1397,10 @@ box-shadow: none;
 <option value="Vetas">Vetas</option>
 <option value="Villanueva">Villanueva</option>
 <option value="Zapatoca">Zapatoca</option>
+
+</optgroup>
+	<optgroup label="Sucre">
+
 <option value="Buenavista">Buenavista</option>
 <option value="Caimito">Caimito</option>
 <option value="Chalan">Chalan</option>
@@ -1314,6 +1427,10 @@ box-shadow: none;
 <option value="Sucre">Sucre</option>
 <option value="SantiagoDeTolú">SantiagoDeTolú</option>
 <option value="Toluviejo">Toluviejo</option>
+
+</optgroup>
+	<optgroup label="Tolima">
+
 <option value="Alpujarra">Alpujarra</option>
 <option value="Alvarado">Alvarado</option>
 <option value="Ambalema">Ambalema</option>
@@ -1361,6 +1478,10 @@ box-shadow: none;
 <option value="Venadillo">Venadillo</option>
 <option value="Villahermosa">Villahermosa</option>
 <option value="Villarrica">Villarrica</option>
+
+</optgroup>
+	<optgroup label="Valle del Cauca">
+
 <option value="Alcalá">Alcalá</option>
 <option value="Andalucía">Andalucía</option>
 <option value="Ansermanuevo">Ansermanuevo</option>
@@ -1403,14 +1524,23 @@ box-shadow: none;
 <option value="Yotoco">Yotoco</option>
 <option value="Yumbo">Yumbo</option>
 <option value="Zarzal">Zarzal</option>
+
+</optgroup>
+	<optgroup label="Vaupés">
+
 <option value="Caruru">Caruru</option>
 <option value="Mitú">Mitú</option>
 <option value="Taraira">Taraira</option>
+
+</optgroup>
+	<optgroup label="Vichada">
+
 <option value="Cumaribo">Cumaribo</option>
 <option value="LaPrimavera">LaPrimavera</option>
 <option value="PuertoCarreño">PuertoCarreño</option>
 <option value="SantaRosalía">SantaRosalía</option>
    
+</optgroup>
 
   </select>
 
