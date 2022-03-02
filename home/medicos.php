@@ -143,7 +143,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style=" ">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos">MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -181,62 +181,68 @@ box-shadow: none;
         <div class="contenido">
             <div class="barraizquierda">
 			
-					<form class="form-search">
+					
 						<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscador" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input style="margin-left:10px" id="buscador" class="buscador" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="search" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-					</form>
+					
 							<div class="especial" >
-							<a href="#"><li style="color: #333; "   onclick="filtroTipo('Alergólogo')">Alergólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cardiólogo')">Cardiólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Angiólogo')">Angiólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Deportólogo')">Deportólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Dermatólogo')">Dermatólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Endocrinólogo')">Endocrinólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermero')">Enfermero</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Epidemiólogo')">Epidemiólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Estomatólogo')">Estomatólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Farmacólogo')">Farmacólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Fisiólogo')">Fisiólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Fonoaudiólogo')">Fonoaudiólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Forense')">Forense</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('General')">General</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Geriatra')">Geriatra</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ginecólogo')">Ginecólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Hematólogo')">Hematólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Histólogo')">Histólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Inmunólogo')">Inmunólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Microbiólogo')">Microbiólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Nefrólogo')">Nefrólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Neumólogo')">Neumólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Neurólogo')">Neurólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Oncólogo')">Oncólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ortopedista')">Ortopedista</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Patólogo')">Patólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Pediatra')">Pediatra</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Podólogo')">Podólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Proctólogo')">Proctólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Psicoanalista')">Psicoanalista</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Psicólogo')">Psicólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Psicoterapeuta')">Psicoterapeuta</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Psiquiatra')">Psiquiatra</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Quiropráctico')">Quiropráctico</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Radiólogo')">Radiólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Radioterapeuta')">Radioterapeuta</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Reumatólogo')">Reumatólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sexólogo')">Sexólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sofrólogo')">Sofrólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Terapeuta')">Terapeuta</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Toxicólogo')">Toxicólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Traumatólogo y Ortopedista')">Traumatólogo y Ortopedista</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Urólogo')">Urólogo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Virólogo')">Virólogo</li></a><br>
-                                <div> &nbsp;</div>
-                                <div> &nbsp;</div>
+							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+							<tbody id="myTable">
+							<tr><td><a href="#"><li style="color: #333; "   onclick="filtroTipo('Alergólogo')">Alergólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cardiólogo')">Cardiólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Angiólogo')">Angiólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Deportólogo')">Deportólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dermatólogo')">Dermatólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Endocrinólogo')">Endocrinólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermero')">Enfermero</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Epidemiólogo')">Epidemiólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estomatólogo')">Estomatólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Farmacólogo')">Farmacólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fisiólogo')">Fisiólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fonoaudiólogo')">Fonoaudiólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Forense')">Forense</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('General')">General</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geriatra')">Geriatra</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ginecólogo')">Ginecólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hematólogo')">Hematólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Histólogo')">Histólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Inmunólogo')">Inmunólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Microbiólogo')">Microbiólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Nefrólogo')">Nefrólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neumólogo')">Neumólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neurólogo')">Neurólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Oncólogo')">Oncólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ortopedista')">Ortopedista</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Patólogo')">Patólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Pediatra')">Pediatra</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Podólogo')">Podólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Proctólogo')">Proctólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Psicoanalista')">Psicoanalista</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Psicólogo')">Psicólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Psicoterapeuta')">Psicoterapeuta</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Psiquiatra')">Psiquiatra</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Quiropráctico')">Quiropráctico</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Radiólogo')">Radiólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Radioterapeuta')">Radioterapeuta</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Reumatólogo')">Reumatólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sexólogo')">Sexólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sofrólogo')">Sofrólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Terapeuta')">Terapeuta</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Toxicólogo')">Toxicólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Traumatólogo y Ortopedista')">Traumatólogo y Ortopedista</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Urólogo')">Urólogo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Virólogo')">Virólogo</li></a></td></tr> 
+                             
+								
+							</tbody>
+							</table>
+							<div> &nbsp;</div>
+							<div> &nbsp;</div>
                                 <div> &nbsp;</div>
 							</div>
 				</div>

@@ -27,12 +27,22 @@ event.preventDefault();
 })
 
 
+$(document).ready(function(){
+    $("#buscador").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      console.log(value)
+      $("#myTable tr").filter(function() {
+          console.log(value)
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+
+
 function Pintar_Gurus(){
     var html =""
     LISTA_GURUS_TEMP = LISTA_GURUS
     $.each(LISTA_GURUS_TEMP, function (index, v) {
-        
-        
             if((v.medicina ==TIPO_GURU || TIPO_GURU == '') && (v.ciudad == CIUDAD || CIUDAD == '' )
             && ((RANGO_INICIAL < v.precio && v.precio < RANGO_FINAL) || (RANGO_INICIAL == '' || RANGO_FINAL == '') )
             && (v.idioma == IDIOMA || IDIOMA == "" ) &&( v.pais == PAIS || PAIS == "")

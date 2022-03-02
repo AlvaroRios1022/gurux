@@ -1404,7 +1404,7 @@ table {
 
 table tr td {
     padding: 10px;
-    border-top: 2px solid #000;
+    border-top: 2px solid transparent;
 }
 
 tr td img {

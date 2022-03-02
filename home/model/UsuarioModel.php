@@ -139,9 +139,9 @@ class UsuarioModel {
 
                 $email_subject = 'Notificaciones Guru';
                 
-                ob_start();
-                EnvioModel::EnvioCodigo($email, $email_subject, $email_message);
-                ob_end_clean();
+               // ob_start();
+                EnvioModel::EnvioCodigo($email, $email_subject, $aleatorio);
+                //ob_end_clean();
                 
               }
               else {
