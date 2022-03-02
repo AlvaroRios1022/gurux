@@ -270,7 +270,7 @@ box-shadow: none;
 		<a style=" margin-left:5%">Filtrar por:</a>
 		<br><br>
 		
-		<input type="hidden" id="filtro" value="construccion">
+		<input type="hidden" id="filtro" value="especialista">
   <span style="margin-left:20%"> Ciudad:</span>
   <select class="camposgenerales"	style=" border: none; background-color: #0000;font-size: 15px;
 	width: 100px;text-decoration: none;margin-bottom: auto;text-align: center" 
