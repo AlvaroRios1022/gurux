@@ -142,7 +142,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos" >MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -173,49 +173,50 @@ box-shadow: none;
         <div class="contenido">
             <div class="barraizquierdapsiquico">
 			
-					<form class="form-search">
-						<div class="input-group">
+			<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadorpsiquico" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input style="margin-left:10px" id="buscador" class="buscadorpsiquico" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchpsiquico" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-					</form>
 							<div class="especialpsiquicos" >
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Adivinación')" value="Adivinación">Adivinación</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Amor y relaciones')" value="Amor y relaciones">Amor y relaciones</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Análisis de sueños')" value="Análisis de sueños">Análisis de sueños</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Astrología')" value="Astrología">Astrología</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Astrología china')" value="Astrología china">Astrología china</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Cabalá')" value="Cabalá">Cabalá</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Casa y familia')" value="Casa y familia">Casa y familia</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Clarividencia')" value="Clarividencia">Clarividencia</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Espiritualidad new age')" value="Espiritualidad new age">Espiritualidad new age</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Exorcismos')" value="Exorcismos">Exorcismos</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Filosofía oriental')" value="Filosofía oriental">Filosofía oriental</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Grafología')" value="Grafología">Grafología</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Guías espirituales')" value="Guías espirituales">Guías espirituales</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Interpretación de sueños')" value="Interpretación de sueños">Interpretación de sueños</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Karma')" value="Karma">Karma</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Lectura de manos')" value="Lectura de manos">Lectura de manos</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Lecturas de imagen')" value="Lecturas de imagen">Lecturas de imagen</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Lecturas pasadas de la vida')" value="Lecturas pasadas de la vida">Lecturas pasadas de la vida</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Lecturas psíquicas')" value="Lecturas psíquicas">Lecturas psíquicas</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Leyes universales')" value="Leyes universales">Leyes universales</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Numerología oriental')" value="Numerología oriental">Numerología oriental</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Ocultismo')" value="Ocultismo">Ocultismo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Paranormal')" value="Paranormal">Paranormal</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Perspectivas financieras')" value="Perspectivas financieras">Perspectivas financieras</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Pronósticos de carrera')" value="Pronósticos de carrera">Pronósticos de carrera</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Reencarnación')" value="Reencarnación">Reencarnación</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Regresiones a vidas pasadas')" value="Regresiones a vidas pasadas">Regresiones a vidas pasadas</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Religión')" value="Religión">Religión</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Rituales y energía')" value="Rituales y energía">Rituales y energía</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Sexo e intimidad')" value="Sexo e intimidad">Sexo e intimidad</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Sonoterapia')" value="Sonoterapia">Sonoterapia</li></a><br>
-							<a href="#"><li style="color: #333;" onclick="filtroTipo('Tarot y cartas')" value="Tarot y cartas">Tarot y cartas</li></a><br>
-							
+							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+							<tbody id="myTable">
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Adivinación')" value="Adivinación">Adivinación</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Amor y relaciones')" value="Amor y relaciones">Amor y relaciones</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Análisis de sueños')" value="Análisis de sueños">Análisis de sueños</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Astrología')" value="Astrología">Astrología</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Astrología china')" value="Astrología china">Astrología china</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Cabalá')" value="Cabalá">Cabalá</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Casa y familia')" value="Casa y familia">Casa y familia</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Clarividencia')" value="Clarividencia">Clarividencia</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Espiritualidad new age')" value="Espiritualidad new age">Espiritualidad new age</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Exorcismos')" value="Exorcismos">Exorcismos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Filosofía oriental')" value="Filosofía oriental">Filosofía oriental</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Grafología')" value="Grafología">Grafología</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Guías espirituales')" value="Guías espirituales">Guías espirituales</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Interpretación de sueños')" value="Interpretación de sueños">Interpretación de sueños</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Karma')" value="Karma">Karma</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Lectura de manos')" value="Lectura de manos">Lectura de manos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Lecturas de imagen')" value="Lecturas de imagen">Lecturas de imagen</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Lecturas pasadas de la vida')" value="Lecturas pasadas de la vida">Lecturas pasadas de la vida</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Lecturas psíquicas')" value="Lecturas psíquicas">Lecturas psíquicas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Leyes universales')" value="Leyes universales">Leyes universales</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Numerología oriental')" value="Numerología oriental">Numerología oriental</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Ocultismo')" value="Ocultismo">Ocultismo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Paranormal')" value="Paranormal">Paranormal</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Perspectivas financieras')" value="Perspectivas financieras">Perspectivas financieras</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Pronósticos de carrera')" value="Pronósticos de carrera">Pronósticos de carrera</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Reencarnación')" value="Reencarnación">Reencarnación</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Regresiones a vidas pasadas')" value="Regresiones a vidas pasadas">Regresiones a vidas pasadas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Religión')" value="Religión">Religión</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Rituales y energía')" value="Rituales y energía">Rituales y energía</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Sexo e intimidad')" value="Sexo e intimidad">Sexo e intimidad</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Sonoterapia')" value="Sonoterapia">Sonoterapia</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Tarot y cartas')" value="Tarot y cartas">Tarot y cartas</li></a></td></tr>
+							</tbody>
+							</table>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>

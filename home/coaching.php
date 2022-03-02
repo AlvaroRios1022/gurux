@@ -146,7 +146,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos" >MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -179,31 +179,32 @@ box-shadow: none;
         <div class="contenido">
             <div class="barraizquierdacoaching">
 			
-					<form class="form-search">
-						<div class="input-group">
+			<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadorcoaching" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input style="margin-left:10px" id="buscador" class="buscadorcoaching" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchcoaching" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-					</form>
 						<div class="especialcoaching" >
-							<a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching adicciones')" value="Coaching adicciones">Coaching adicciones</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching coercitivo')" value="Coaching coercitivo">Coaching coercitivo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching de atracción')" value="Coaching de atracción ">Coaching de atracción </li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching de sombra')" value="Coaching de sombra">Coaching de sombra</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching deportivo')" value="Coaching deportivo">Coaching deportivo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching familiar')" value="Coaching familiar">Coaching familiar</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching inteligencia emocional')" value="Coaching inteligencia emocional">Coaching inteligencia emocional</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching ontológico')" value="Coaching ontológico">Coaching ontológico</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching organizacional')" value="Coaching organizacional">Coaching organizacional</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching personal')" value="Coaching personal">Coaching personal</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching PLN')" value="Coaching PLN">Coaching PLN</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching sistémico')" value="Coaching sistémico">Coaching sistémico</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching transformacional')" value="Coaching transformacional">Coaching transformacional</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Neurocoaching')" value="Neurocoaching">Neurocoaching</li></a><br>
-
+						<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+							<tbody id="myTable">
+							<tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching adicciones')" value="Coaching adicciones">Coaching adicciones</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching coercitivo')" value="Coaching coercitivo">Coaching coercitivo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching de atracción')" value="Coaching de atracción ">Coaching de atracción </li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching de sombra')" value="Coaching de sombra">Coaching de sombra</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching deportivo')" value="Coaching deportivo">Coaching deportivo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching familiar')" value="Coaching familiar">Coaching familiar</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching inteligencia emocional')" value="Coaching inteligencia emocional">Coaching inteligencia emocional</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching ontológico')" value="Coaching ontológico">Coaching ontológico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching organizacional')" value="Coaching organizacional">Coaching organizacional</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching personal')" value="Coaching personal">Coaching personal</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching PLN')" value="Coaching PLN">Coaching PLN</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching sistémico')" value="Coaching sistémico">Coaching sistémico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching transformacional')" value="Coaching transformacional">Coaching transformacional</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Neurocoaching')" value="Neurocoaching">Neurocoaching</li></a></td></tr>
+							</tbody>
+							</table>
 							     <div> &nbsp;</div>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>

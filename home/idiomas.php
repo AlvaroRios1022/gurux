@@ -143,7 +143,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos" >MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -176,46 +176,48 @@ box-shadow: none;
         <div class="contenido">
             <div class="barraizquierdaidiomas">
 			
-					<form class="form-search">
+				
 						<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadoridiomas" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input style="margin-left:10px" id="buscador"  class="buscadoridiomas" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchidiomas" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-					</form>
+					
 							<div class="especialidiomas" >
-
-								<a href="#"><li style="color: #333;" onclick="filtroTipo('Alemán')" value="Alemán">Alemán</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Árabe')" value="Árabe">Árabe</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Bengalí')" value="Bengalí">Bengalí</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Chino cantonés')" value="Chino cantonés">Chino cantonés</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Chino mandarín')" value="Chino mandarín">Chino mandarín</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Chino Mǐn Nán')" value="Chino Mǐn Nán">Chino Mǐn Nán</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Chino Wu')" value="Chino Wu">Chino Wu</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Coreano')" value="Coreano">Coreano</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Español')" value="Español">Español</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Francés')" value="Francés">Francés</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Hausa')" value="Hausa">Hausa</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Hindi')" value="Hindi">Hindi</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Indonesio')" value="Indonesio">Indonesio</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Ingles')" value="Ingles">Ingles</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Italiano')" value="Italiano">Italiano</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Japonés')" value="Japonés">Japonés</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Javanés')" value="Javanés">Javanés</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Maratí')" value="Maratí">Maratí</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Panyabí occidental')" value="Panyabí occidental">Panyabí occidental</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Persa iraní')" value="Persa iraní">Persa iraní</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Portugués')" value="Portugués">Portugués</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Portugués')" value="Ruso">Ruso</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Tailandés')" value="Tailandés">Tailandés</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Tamil')" value="Tamil">Tamil</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Telugú')" value="Telugú">Telugú</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Turco')" value="Turco">Turco</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Urdu')" value="Urdu">Urdu</li></a><br>
-                                <a href="#"><li style="color: #333;" onclick="filtroTipo('Vietnamita')" value="Vietnamita">Vietnamita</li></a><br>
-
+							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+							<tbody id="myTable">
+							<tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Alemán')" value="Alemán">Alemán</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Árabe')" value="Árabe">Árabe</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Bengalí')" value="Bengalí">Bengalí</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Chino cantonés')" value="Chino cantonés">Chino cantonés</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Chino mandarín')" value="Chino mandarín">Chino mandarín</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Chino Mǐn Nán')" value="Chino Mǐn Nán">Chino Mǐn Nán</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Chino Wu')" value="Chino Wu">Chino Wu</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coreano')" value="Coreano">Coreano</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Español')" value="Español">Español</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Francés')" value="Francés">Francés</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Hausa')" value="Hausa">Hausa</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Hindi')" value="Hindi">Hindi</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Indonesio')" value="Indonesio">Indonesio</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Ingles')" value="Ingles">Ingles</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Italiano')" value="Italiano">Italiano</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Japonés')" value="Japonés">Japonés</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Javanés')" value="Javanés">Javanés</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Maratí')" value="Maratí">Maratí</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Panyabí occidental')" value="Panyabí occidental">Panyabí occidental</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Persa iraní')" value="Persa iraní">Persa iraní</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Portugués')" value="Portugués">Portugués</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Portugués')" value="Ruso">Ruso</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Tailandés')" value="Tailandés">Tailandés</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Tamil')" value="Tamil">Tamil</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Telugú')" value="Telugú">Telugú</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Turco')" value="Turco">Turco</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Urdu')" value="Urdu">Urdu</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Vietnamita')" value="Vietnamita">Vietnamita</li></a></td></tr>
+								</tbody>
+							</table>
 								<div> &nbsp;</div>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>

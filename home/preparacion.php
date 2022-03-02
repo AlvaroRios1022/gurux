@@ -143,7 +143,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos">MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -180,43 +180,45 @@ box-shadow: none;
         <div class="contenido">
             <div class="barraizquierdayoga">
 			
-					<form class="form-search">
-						<div class="input-group">
+			<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadoryoga" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input style="margin-left:10px" id="buscador" class="buscadoryoga" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchyoga" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-					</form>
 							<div class="especialyoga" >
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Aeróbicos')" value=">Aeróbicos">Aeróbicos</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Bachata')" value=">Baile Bachata">Baile Bachata</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Merengue')" value=">Baile Merengue">Baile Merengue</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Salsa')" value=">Baile Salsa">Baile Salsa</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Tango')" value=">Baile Tango">Baile Tango</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Barre')" value=">Barre">Barre</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Crosstech')" value=">Crosstech">Crosstech</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Danzika')" value=">Danzika">Danzika</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Spinning')" value=">Spinning">Spinning</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Body Combat')" value=">Body Combat">Body Combat</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Gluteo Xp')" value=">Gluteo Xp">Gluteo Xp</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Pilates')" value=">Pilates">Pilates</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Rumba')" value=">Rumba">Rumba</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Step')" value=">Step">Step</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Zumba')" value=">Zumba">Zumba</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Tabata')" value=">Tabata">Tabata</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Tono')" value=">Tono">Tono</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Acroyoga')" value=">Acroyoga">Acroyoga</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Bikram yoga')" value=">Bikram yoga">Bikram yoga</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Esoterismo integral')" value=">Esoterismo integral">Esoterismo integral</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Adicción a medicamentos')" value=">Adicción a medicamentos">Hatha yoga</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Agorafobia')" value=">Agorafobia">Meditación</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Aeróbicos')" value=">Alcoholismo y abuso de alcohol">Tantra yoga</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Aeróbicos')" value=">Alergia a insectos">Vinyasa yoga</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Aeróbicos')" value=">Alergia ocular">Yoga aéreo</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Aeróbicos')" value=">Ambliopía">Yoga prenatal</li></a><br>
-							<a href="#"><li style="color: #333; "onclick="filtroTipo('Aeróbicos')" value=">Amenaza de aborto">Yoga restaurativo</li></a><br>
+							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+							<tbody id="myTable">
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Aeróbicos')" value="Aeróbicos">Aeróbicos</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Bachata')" value="Baile Bachata">Baile Bachata</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Merengue')" value="Baile Merengue">Baile Merengue</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Salsa')" value="Baile Salsa">Baile Salsa</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Tango')" value="Baile Tango">Baile Tango</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Barre')" value="Barre">Barre</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Crosstech')" value="Crosstech">Crosstech</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Danzika')" value="Danzika">Danzika</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Spinning')" value="Spinning">Spinning</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Body Combat')" value="Body Combat">Body Combat</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Gluteo Xp')" value="Gluteo Xp">Gluteo Xp</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Pilates')" value="Pilates">Pilates</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Rumba')" value="Rumba">Rumba</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Step')" value="Step">Step</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Zumba')" value="Zumba">Zumba</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Tabata')" value="Tabata">Tabata</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Tono')" value="Tono">Tono</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Acroyoga')" value="Acroyoga">Acroyoga</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Bikram yoga')" value="Bikram yoga">Bikram yoga</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Esoterismo integral')" value="Esoterismo integral">Esoterismo integral</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Hatha yoga')" value="Hatha yoga">Hatha yoga</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Meditación')" value="Meditación">Meditación</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Tantra yoga')" value="Tantra yoga">Tantra yoga</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Vinyasa yoga')" value="Vinyasa yoga">Vinyasa yoga</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Yoga aéreo')" value="Yoga aéreo">Yoga aéreo</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Yoga prenatal')" value="Yoga prenatal">Yoga prenatal</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('oga restaurativo')" value="oga restaurativo">Yoga restaurativo</li></a></td></tr>
+							</tbody>
+							</table>
                             <div> &nbsp;</div>
                             <div> &nbsp;</div>
                             <div> &nbsp;</div>

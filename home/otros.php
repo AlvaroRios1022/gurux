@@ -142,7 +142,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos" >MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -177,351 +177,354 @@ box-shadow: none;
         <div class="contenido">
             <div class="barraizquierdaotros">
 			
-					<form class="form-search">
+				
 						<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadorotros" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input style="margin-left:10px" id="buscador" class="buscadorotros" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchotros" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-					</form>
 							<div class="especialotros" >
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación Estatal')" value="Abogado “Contratación Estatal">Abogado “Contratación Estatal</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación  Comercial')" value="Abogado “Contratación  Comercial ">Abogado “Contratación  Comercial </li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación  Civil')" value="Abogado “Contratación  Civil ">Abogado “Contratación  Civil </li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación  Penal')" value="Abogado “Contratación  Penal">Abogado “Contratación  Penal</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación Propiedad Intelectual')" value="Abogado “Contratación Propiedad Intelectual ">Abogado “Contratación Propiedad Intelectual </li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación Estatal Tributaritarista')" value="Abogado “Contratación Estatal Tributaritarista">Abogado “Contratación Estatal Tributaritarista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Acompanante')" value="Acompanante">Acompanante</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Actor')" value="Actor">Actor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Actuario')" value="Actuario">Actuario</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Administrador Aeropuerto')" value="Administrador Aeropuerto">Administrador Aeropuerto</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Administrador de Empresas')" value="Administrador de Empresas">Administrador de Empresas</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Aduana')" value="Agente de Aduana">Agente de Aduana</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Bolsa')" value="Agente de Bolsa">Agente de Bolsa</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Policía')" value="Agente de Policía">Agente de Policía</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Embarque')" value="Agente de Embarque">Agente de Embarque</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Inmigracion')" value="Agente de Inmigracion">Agente de Inmigración</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Marcas y Patentes')" value="Agente de Marcas y Patentes">Agente de Marcas y Patentes</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente Maritimo')" value="Agente Maritimo">Agente Marítimo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente Portuario')" value="Agente Portuario">Agente Portuario</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente Comerciales, Corredores y Afines')" value="Agente Comerciales, Corredores y Afines">Agente Comerciales, Corredores y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Aduanas e Inspectores de Fronteras')" value="Agente de Aduanas e Inspectores de Fronteras">Agente de Aduanas e Inspectores de Fronteras</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Compras, Intermediacion y consignatarios')" value="Agente de Compras, Intermediacion y consignatarios">Agente de Compras, Intermediación y Consignatarios</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Impuestos')" value="Agente de Impuestos">Agente de Impuestos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Seguros')" value="Agente de Seguros">Agente de Seguros</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Viajes')" value="Agente de Viajes">Agentes de Viajes</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente Inmobiliarios')" value="Agente Inmobiliarios">Agente Inmobiliarios</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agente y Policía de Transito')" value="Agente y Policía de Transito">Agente y Policía de Transito</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agregado Diplomático')" value="Agregado Diplomático">Agregado Diplomático</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agricultor')" value="Agricultor">Agricultor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Agrónomo')" value="Agrónomo">Agrónomo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Analista Económico')" value="Analista Económico">Analista Económico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Analista Gestión Humana')" value="Analista Gestión Humana">Analista Gestión Humana</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Analista Mercados')" value="Analista Mercados">Analista Mercados</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Analista Siniestros')" value="Analista Siniestros">Analista Siniestros</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Analista de Sistemas Informaticos')" value="Analista de Sistemas Informaticos">Analista de Sistemas Informaticos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Analista y Agentes Financieros')" value="Analista y Agentes Financieros">Analista y Agentes Financieros</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Antropologos')" value="Antropologos">Antropólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Arqueologos')" value="Arqueologos">Arqueólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Arquitecto')" value="Arquitecto">Arquitecto</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Artesano de la Madera y Materiales Similares')" value="Artesano de la Madera y Materiales Similares">Artesano de la Madera y Materiales Similares</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Artesano de los Tejidos, El cuero y Materiales similares')" value="Artesano de los Tejidos, El cuero y Materiales similares">Artesano de los Tejidos, El cuero y Materiales similares</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Asesor Financiero')" value="Asesor Financiero">Asesor Financiero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Asesor Legal')" value="Asesor Legal">Asesor Legal</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente de Cine, Teatro, Televisión y Afines')" value="Asistente de Cine, Teatro, Televisión y Afines">Asistente de Cine, Teatro, Televisión y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente Contable')" value="Asistente Contable">Asistente Contable</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente de Bibliotecas y Archivos')" value="Asistente de Bibliotecas y Archivos">Asistente de Bibliotecas y Archivos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente Jurídico')" value="Asistente Jurídico">Asistente Jurídico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente de Comercio Exterior')" value="Asistente de Comercio Exterior">Asistente de Comercio Exterior</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente de Trabajo Social y Comunitario')" value="Asistente de Trabajo Social y Comunitario">Asistente de Trabajo Social y Comunitario</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Astrofísico')" value="Astrofísico">Astrofísico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Astrólogo')" value="Astrólogo">Astrólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Astrónomo')" value="Astrónomo">Astrónomo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Atletas, Deportistas y Afines')" value="Atletas, Deportistas y Afines">Atletas, Deportistas y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auditor Contable')" value="Auditor Contable">Auditor Contable</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auditor Financiero')" value="Auditor Financiero">Auditor Financiero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auditor Interno')" value="Auditor Interno">Auditor Interno</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auditor Sistemas')" value="Auditor Sistemas">Auditor Sistemas</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Cartera y Afines')" value="Auxiliar de Cartera y Afines">Auxiliar de Cartera y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Servicios de Correo')" value="Auxiliar de Servicios de Correo">Auxiliar de Servicios de Correo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Droguería')" value="Auxiliar de Droguería">Auxiliar de Droguería</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar Licencias')" value="Auxiliar Licencias">Auxiliar Licencias</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar Mecánica')" value="Auxiliar Mecánica">Auxiliar Mecánica</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Vuelo')" value="Auxiliar de Vuelo">Auxiliar de Vuelo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Administración y Afines')" value="Auxiliar de Administración y Afines">Auxiliar de Administración y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Enfermería')" value="Auxiliar de Enfermería">Auxiliar de Enfermería</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Odontología')" value="Auxiliar de Odontología">Auxiliar de Odontología</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Avaluador Bienes')" value="Avaluador Bienes">Avaluador Bienes</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Avicultores')" value="Avicultores">Avicultores</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Azafata')" value="Azafata">Azafata</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Bacteriólogo')" value="Bacteriólogo">Bacteriólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Bailarín')" value="Bailarín">Bailarín</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Banderillero')" value="Banderillero">Banderillero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Barquero')" value="Barquero">Barquero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Beisbolista')" value="Beisbolista">Beisbolista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Bibliotecarios, Documentalistas y Afines')" value="Bibliotecarios, Documentalistas y Afines">Bibliotecarios, Documentalistas y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Biofísico')" value="Biofísico">Biofísico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Biógrafo')" value="Biógrafo">Biógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Biólogo')" value="Biólogo">Biólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Bioquímico')" value="Bioquímico">Bioquímico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Bomberos y Rescatistas')" value="Bomberos y Rescatistas">Bomberos y Rescatistas</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Bordadores y Afines')" value="Bordadores y Afines">Bordadores y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Botánico')" value="Botánico">Botánico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Boxeador')" value="Boxeador">Boxeador</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Caficultor')" value="Caficultor">Caficultor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Cajero')" value="Cajero">Cajero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Cajistas, Tipógrafos y Afines')" value="Cajistas, Tipógrafos y Afines">Cajistas, Tipografos y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Camarógrafo')" value="Camarógrafo">Camarógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Cantante')" value="Cantante">Cantante</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Capitán de Aviación')" value="Capitán de Aviación">Capitán de Aviación</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Capitanes, Oficiales de Cubierta y Prácticos')" value="Capitanes, Oficiales de Cubierta y Prácticos">Capitanes, Oficiales de Cubierta y Prácticos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Caricaturista')" value="Caricaturista">Caricaturista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Carnicero, Pescadores y Afines')" value="Carnicero, Pescadores y Afines">Carnicero, Pescadores y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Carpintero')" value="Carpintero">Carpintero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Cartógrafo')" value="Cartógrafo">Cartógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Catadores y Clasificadores de Alimentos y Bebidas')" value="Catadores y Clasificadores de Alimentos y Bebidas">Catadores y Clasificadores de Alimentos y Bebidas</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Cazadores y Tramperos')" value="Cazadores y Tramperos">Cazadores y Tramperos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Cesteros, Bruceros y Afines')" value="Cesteros, Bruceros y Afines">Cesteros, Bruceros y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Catalogadores de Piezas de Museos, Archivos y Afines')" value="Catalogadores de Piezas de Museos, Archivos y Afines">Catalogadores de Piezas de Museos, Archivos y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Catedrático')" value="Catedrático">Catedrático</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ciclista')" value="Ciclista">Ciclista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Cienfífico')" value="Cienfífico">Cienfífico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Cocineros')" value="Cocineros">Cocineros</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Codificador de Datos, Corrector Pruebas Imprenta y Afines')" value="Codificador de Datos, Corrector Pruebas Imprenta y Afines">Codificador de Datos, Corrector Pruebas Imprenta y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Columnista')" value="Columnista">Columnista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Comandante Estación Bomberos')" value="Comandante Estación Bomberos">Comandante Estación Bomberos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Comediante')" value="Comediante">Comediante</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Comerciante')" value="Comerciante">Comerciante</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Comisario de Familia')" value="Comisario de Familia">Comisario de Familia</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Compositor')" value="Compositor">Compositor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Comunicador Social')" value="Comunicador Social">Comunicador Social</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Concejal')" value="Concejal">Concejal</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consejero de Estado')" value="Consejero de Estado">Consejero de Estado</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consejero Jurídico')" value="Consejero Jurídico">Consejero Jurídico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consejero Matrimonial')" value="Consejero Matrimonial">Consejero Matrimonial</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consejero Ocupacional')" value="Consejero Ocupacional">Consejero Ocupacional</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consejero Educativo')" value="Consejero Educativo">Consejero Educativo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consul')" value="Consul">Consul</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consultor Ambiental')" value="Consultor Ambiental">Consultor Ambiental</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consultor Financiero')" value="Consultor Financiero">Consultor Financiero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consultor Organizacional')" value="Consultor Organizacional">Consultor Organizacional</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consultor Política Social')" value="Consultor Política Social">Consultor Política Social</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Consultor Recursos Humanos')" value="Consultor Recursos Humanos">Consultor Recursos Humanos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Contadores')" value="Contadores">Contadores</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Contralores')" value="Contralores">Contralores</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Coordinador Servicios Generales')" value="Coordinador Servicios Generales">Coordinador Servicios Generales</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Copiloto Aeronave')" value="Copiloto Aeronave">Copiloto Aeronave</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Coreógrafo y Afines')" value="Coreógrafo y Afines">Coreógrafo y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Corredor Autos')" value="Corredor Autos">Corredor Autos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Corredor Bolsa')" value="Corredor Bolsa">Corredor Bolsa</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Corresponsal de Prensa')" value="Corresponsal de Prensa">Corresponsal de Prensa</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Criador de Ganado y Animales Domésticos')" value="Criador de Ganado y Animales Domésticos">Criador de Ganado y Animales Domésticos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Criador de Especies Acuáticas')" value="Criador de Especies Acuáticas">Criador de Especies Acuáticas</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Criador de Insectors, Sericultures y Afines')" value="Criador de Insectors, Sericultures y Afines">Criador de Insectors, Sericultures y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Cristalero')" value="Cristalero">Cristalero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Crítico Artes y Medios')" value="Crítico Artes y Medios">Crítico Artes y Medios</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Cuentero')" value="Cuentero">Cuentero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Curador Arte')" value="Curador Arte">Curador Arte</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Curador Urbanístico')" value="Curador Urbanístico">Curador Urbanístico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Dactiloscopista')" value="Dactiloscopista">Dactiloscopista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Decanos')" value="Decanos">Decanos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Declamador')" value="Declamador">Declamador</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director Artístico')" value="Director Artístico">Director Artístico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director Cine')" value="Director Cine">Director Cine</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento de Mantenimiento')" value="Director Departamento de Mantenimiento">Director Departamento de Mantenimiento</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento de Seguridad')" value="Director Departamento de Seguridad">Director Departamento de Seguridad</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director Escuela de Aviación')" value="Director Escuela de Aviación">Director Escuela de Aviación</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director General Industria Manufacturera')" value="Director General Industria Manufacturera">Director General Industria Manufacturera</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director Grupo Musical')" value="Director Grupo Musical">Director Grupo Musical</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento Financiero y Administrativo')" value="Director Departamento Financiero y Administrativo">Director Departamento Financiero y Administrativo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento Investigacion y Desarrollo')" value="Director Departamento Investigacion y Desarrollo">Director Departamento Investigacion y Desarrollo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento Personal')" value="Director Departamento Personal">Director Departamento Personal</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento Publicidad y Mercadeo')" value="Director Departamento Publicidad y Mercadeo">Director Departamento Publicidad y Mercadeo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Dibujantes')" value="Dibujantes">Dibujantes</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Diseñador Grafico e Industrial')" value="Diseñador Grafico e Industrial">Diseñador Grafico e Industrial</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('DiskJockey')" value="DiskJockey">DiskJockey</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Dramaturgo')" value="Dramaturgo">Dramaturgo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ecologista')" value="Ecologista">Ecologista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ecólogo')" value="Ecólogo">Ecólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Economistas')" value="Economistas">Economistas</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Edil')" value="Edil">Edil</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Educadores')" value="Educadores">Educadores</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Electricista')" value="Electricista">Electricista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Electrotécnico')" value="Electrotécnico">Electrotécnico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Empresario')" value="Empresario">Empresario</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Entrenador')" value="Entrenador">Entrenador</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Escritor y Afines')" value="Escritor y Afines">Escritor y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Estadístico')" value="Estadístico">Estadístico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Etimologista')" value="Etimologista">Etimologista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Etnografo')" value="Etnografo">Etnografo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Etnólogo')" value="Etnólogo">Etnólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Farmacéutico')" value="Farmacéutico">Farmacéutico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Farmacólogo')" value="Farmacólogo">Farmacólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Filólogo')" value="Filólogo">Filólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Filósofo')" value="Filósofo">Filósofo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Fiscal')" value="Fiscal">Fiscal</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Fisiatra')" value="Fisiatra">Fisiatra</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Físico')" value="Físico">Físico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Fisiólogo')" value="Fisiólogo">Fisiólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Floricultor')" value="Floricultor">Floricultor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Fontanero e Instaladores de Tuberias')" value="Fontanero e Instaladores de Tuberias">Fontanero e Instaladores de Tuberias</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Fotógrafo')" value="Fotógrafo">Fotógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Fruticultor')" value="Fruticultor">Fruticultor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Fisioterapeuta')" value="Fisioterapeuta">Fisioterapeuta</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Fonólogo')" value="Fonólogo">Fonólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Forenses')" value="Forenses">Forenses</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Fotógrafo')" value="Fotógrafo">Fotógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Futbolista')" value="Futbolista">Futbolista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ganadero')" value="Ganadero">Ganadero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Geólogo')" value="Geólogo">Geólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Geotecnista')" value="Geotecnista">Geotecnista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Gemólogo')" value="Gemólogo">Gemólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Genetista')" value="Genetista">Genetista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Geofísico')" value="Geofísico">Geofísico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Geógrafo')" value="Geógrafo">Geógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Geriatra')" value="Geriatra">Geriatra</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Gobernador Comunidad Indígena')" value="Gobernador Comunidad Indígena">Gobernador Comunidad Indígena</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Grabadores de Imprenta y Fotograbadores')" value="Grabadores de Imprenta y Fotograbadores">Grabadores de Imprenta y Fotograbadores</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Grabadores de Vidrio')" value="Grabadores de Vidrio">Grabadores de Vidrio</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Grafólogo')" value="Grafólogo">Grafólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Herramentistas y Afines')" value="Herramentistas y Afines">Herramentistas y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Herreros y Forjadores')" value="Herreros y Forjadores">Herreros y Forjadores</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Histólogo')" value="Histólogo">Histólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Histopatólogo')" value="Histopatólogo">Histopatólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Humorista')" value="Humorista">Humorista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Higienetistas')" value="Higienetistas">Higienetistas</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Historiador')" value="Historiador">Historiador</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ictólogo')" value="Ictólogo">Ictólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Impresor Artes Gráficas')" value="Impresor Artes Gráficas">Impresor Artes Gráficas</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Agrícola')" value="Ingeniero Agrícola">Ingeniero Agrícola</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Agroindustrial')" value="Ingeniero Agroindustrial">Ingeniero Agroindustrial</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Agrónomo')" value="Ingeniero Agrónomo">Ingeniero Agrónomo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Alimentos')" value="Ingeniero Alimentos">Ingeniero Alimentos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Ambiental')" value="Ingeniero Ambiental">Ingeniero Ambiental</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Biomédico')" value="Ingeniero Biomédico">Ingeniero Biomédico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Civil')" value="Ingeniero Civil">Ingeniero Civil</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Electricista')" value="Ingeniero Electricista">Ingeniero Electricista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Eléctrico')" value="Ingeniero Eléctrico">Ingeniero Eléctrico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Electromécanico')" value="Ingeniero Electromécanico">Ingeniero Electromécanico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Electronico')" value="Ingeniero Electronico">Ingeniero Electronico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Industrial')" value="Ingeniero Industrial">Ingeniero Industrial</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Forestal')" value="Ingeniero Forestal">Ingeniero Forestal</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Genética')" value="Ingeniero Genética">Ingeniero Genética</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Geologo')" value="Ingeniero Geologo">Ingeniero Geólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Hidráulico')" value="Ingeniero Hidráulico">Ingeniero Hidráulico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Mecánico')" value="Ingeniero Mecánico">Ingeniero Mecánico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Mecatrónico')" value="Ingeniero Mecatrónico">Ingeniero Mecatrónico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Naval')" value="Ingeniero Naval">Ingeniero Naval</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Pesquero')" value="Ingeniero Pesquero">Ingeniero Pesquero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Petróleos')" value="Ingeniero Petróleos">Ingeniero Petróleos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Producción')" value="Ingeniero Producción">Ingeniero Producción</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Químico')" value="Ingeniero Químico">Ingeniero Químico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Sanitario')" value="Ingeniero Sanitario">Ingeniero Sanitario</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Seguridad Industrial')" value="Ingeniero Seguridad Industrial">Ingeniero Seguridad Industrial</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Sistemas')" value="Ingeniero Sistemas">Ingeniero Sistemas</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Sonido')" value="Ingeniero Sonido">Ingeniero Sonido</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Telecomunicaciones')" value="Ingeniero Telecomunicaciones">Ingeniero Telecomunicaciones</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Textil')" value="Ingeniero Textil">Ingeniero Textil</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Transportes')" value="Ingeniero Transportes">Ingeniero Transportes</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Vuelo')" value="Ingeniero Vuelo">Ingeniero Vuelo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Minas, Metalúrgicos')" value="Ingeniero Minas, Metalúrgicos ">Ingeniero Minas, Metalúrgicos </li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Instrumentador Quirúrgico')" value="Instrumentador Quirúrgico">Instrumentador Quirúrgico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Interprete')" value="Interprete">Interprete</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Interventor')" value="Interventor">Interventor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Investigador')" value="Investigador">Investigador</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Jardinero')" value="Jardinero">Jardinero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Juez')" value="Juez">Juez</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Lexicógrafo')" value="Lexicógrafo">Lexicógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Lexicólogo')" value="Lexicólogo">Lexicólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Libretista')" value="Libretista">Libretista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Licenciado')" value="Licenciado">Licenciado</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Locutor de Radio, Televisión y Afines')" value="Locutor de Radio, Televisión y Afines">Locutor de Radio, Televisión y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Luminotécnico')" value="Luminotécnico">Luminotécnico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Maestro')" value="Maestro">Maestro</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Magistrado')" value="Magistrado">Magistrado</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Maquinista de Vehiculos por riel')" value="Maquinista de Vehiculos por riel">Maquinista de Vehiculos por riel</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Marineros de Cubierta y Afines')" value="Marineros de Cubierta y Afines">Marineros de Cubierta y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Maquetero')" value="Maquetero">Maquetero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Marroquinero')" value="Marroquinero">Marroquinero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Matemático')" value="Matemático">Matemático</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Mecánico Industrial')" value="Mecánico Industrial">Mecánico Industrial</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Mesero, Taberneros y Afines')" value="Mesero, Taberneros y Afines">Mesero, Taberneros y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Meteorologos')" value="Meteorologos">Meteorologos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Mimo Teatro y Callejero')" value="Mimo Teatro y Callejero">Mimo Teatro y Callejero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Mineros y Canteros')" value="Mineros y Canteros">Mineros y Canteros</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ministro')" value="Ministro">Ministro</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Músico')" value="Músico">Músico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Notario')" value="Notario">Notario</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Novillero')" value="Novillero">Novillero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Oceanógrafo')" value="Oceanógrafo">Oceanógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo')" value="Odontólogo">Odontólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Oficial Ejército')" value="Oficial Ejército">Oficial Ejército</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Oficial Polícia')" value="Oficial Polícia">Oficial Polícia</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Oficial Naval')" value="Oficial Naval">Oficial Naval</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Oficial Fuerza Aérea')" value="Oficial Fuerza Aérea">Oficial Fuerza Aérea</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Oftalmólogo')" value="Oftalmólogo">Oftalmólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Operador Máquinas')" value="Operador Máquinas ">Operador Máquinas </li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Optómetra')" value="Optómetra">Optómetra</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ortodoncista')" value="Ortodoncista">Ortodoncista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Ortopedista')" value="Ortopedista">Ortopedista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Paleobiólogo')" value="Paleobiólogo">Paleobiólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Paleógrafo')" value="Paleógrafo">Paleógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Paleólogo')" value="Paleólogo">Paleólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Paleontólogo')" value="Paleontólogo">Paleontólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Panadero, Pastelero y Confitero')" value="Panadero, Pastelero y Confitero">Panadero, Pastelero y Confitero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Patinador')" value="Patinador">Patinador</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Patólogo')" value="Patólogo">Patólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Pedagogo')" value="Pedagogo">Pedagogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Periodista')" value="Periodista">Periodista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Perito')" value="Perito">Perito</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Periodoncista')" value="Periodoncista">Periodoncista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Personero')" value="Personero">Personero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Pescador')" value="Pescador">Pescador</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Piloto Avión, Carros Carreras, Afines')" value="Piloto Avión, Carros Carreras, Afines">Piloto Avión, Carros Carreras, Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Pintor Arte')" value="Pintor Arte">Pintor Arte</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Piscicultor')" value="Piscicultor">Piscicultor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Planificador Medio Ambiente')" value="Planificador Medio Ambiente">Planificador Medio Ambiente</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Planificador Tránsito')" value="Planificador Tránsito">Planificador Tránsito</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Plomero')" value="Plomero">Plomero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Poeta')" value="Poeta">Poeta</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Politólogo')" value="Politólogo">Politólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Polvorero')" value="Polvorero">Polvorero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Porcicultor')" value="Porcicultor">Porcicultor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Publicista')" value="Publicista">Publicista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Procurador')" value="Procurador">Procurador</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Químico y Afines')" value="Químico y Afines">Químico y Afines</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Radiotécnico')" value="Radiotécnico">Radiotécnico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Rector Institución Educativa')" value="Rector Institución Educativa">Rector Institución Educativa</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Registrador')" value="Registrador">Registrador</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Rejoneador')" value="Rejoneador">Rejoneador</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Relojero')" value="Relojero">Relojero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Reportero Gráfico')" value="Reportero Gráfico">Reportero Gráfico</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Representante a la Cámara')" value="Representante a la Cámara">Representante a la Cámara</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Revisor Fiscal')" value="Revisor Fiscal">Revisor Fiscal</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Salvavidas')" value="Salvavidas">Salvavidas</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Sastres, Modistos')" value="Sastres, Modistos">Sastres, Modistos</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Sismólogo')" value="Sismólogo">Sismólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Sub Oficial Ejercito')" value="Sub Oficial Ejercito">Sub Oficial Ejercito</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Sub Oficial Policia')" value="Sub Oficial Policia">Sub Oficial Policia</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Sub Oficial Naval')" value="Sub Oficial Naval">Sub Oficial Naval</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Sub Oficial Fuerza Aerea')" value="Sub Oficial Fuerza Aerea">Sub Oficial Fuerza Aerea</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Taxonomista')" value="Taxonomista">Taxonomista</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Técnicos en general')" value="Técnicos en general">Técnicos en general</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Terapeuta')" value="Terapeuta">Terapeuta</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Tesorero')" value="Tesorero">Tesorero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Topógrafo')" value="Topógrafo">Topógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Torero')" value="Torero">Torero</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Toxicólogo')" value="Toxicólogo">Toxicólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Traductor')" value="Traductor">Traductor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Tutor')" value="Tutor">Tutor</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Veterinario')" value="Veterinario">Veterinario</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Virólogo')" value="Virólogo">Virólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Vulcanólogo')" value="Vulcanólogo">Vulcanólogo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Xilógrafo')" value="Xilógrafo">Xilógrafo</li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Zoólogo')" value="Zoólogo ">Zoólogo </li></a><br>
-                            <a href="#"><li style="color: #333; " onclick="filtroTipo('Zootécnico')" value="Zootécnico">Zootécnico</li></a><br>
+              <table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+							<tbody id="myTable">
+              <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación Estatal')" value="Abogado “Contratación Estatal">Abogado “Contratación Estatal</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación  Comercial')" value="Abogado “Contratación  Comercial ">Abogado “Contratación  Comercial </li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación  Civil')" value="Abogado “Contratación  Civil ">Abogado “Contratación  Civil </li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación  Penal')" value="Abogado “Contratación  Penal">Abogado “Contratación  Penal</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación Propiedad Intelectual')" value="Abogado “Contratación Propiedad Intelectual ">Abogado “Contratación Propiedad Intelectual </li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación Estatal Tributaritarista')" value="Abogado “Contratación Estatal Tributaritarista">Abogado “Contratación Estatal Tributaritarista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Acompanante')" value="Acompanante">Acompanante</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Actor')" value="Actor">Actor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Actuario')" value="Actuario">Actuario</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Administrador Aeropuerto')" value="Administrador Aeropuerto">Administrador Aeropuerto</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Administrador de Empresas')" value="Administrador de Empresas">Administrador de Empresas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Aduana')" value="Agente de Aduana">Agente de Aduana</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Bolsa')" value="Agente de Bolsa">Agente de Bolsa</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Policía')" value="Agente de Policía">Agente de Policía</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Embarque')" value="Agente de Embarque">Agente de Embarque</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Inmigracion')" value="Agente de Inmigracion">Agente de Inmigración</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Marcas y Patentes')" value="Agente de Marcas y Patentes">Agente de Marcas y Patentes</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente Maritimo')" value="Agente Maritimo">Agente Marítimo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente Portuario')" value="Agente Portuario">Agente Portuario</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente Comerciales, Corredores y Afines')" value="Agente Comerciales, Corredores y Afines">Agente Comerciales, Corredores y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Aduanas e Inspectores de Fronteras')" value="Agente de Aduanas e Inspectores de Fronteras">Agente de Aduanas e Inspectores de Fronteras</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Compras, Intermediacion y consignatarios')" value="Agente de Compras, Intermediacion y consignatarios">Agente de Compras, Intermediación y Consignatarios</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Impuestos')" value="Agente de Impuestos">Agente de Impuestos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Seguros')" value="Agente de Seguros">Agente de Seguros</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente de Viajes')" value="Agente de Viajes">Agentes de Viajes</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente Inmobiliarios')" value="Agente Inmobiliarios">Agente Inmobiliarios</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agente y Policía de Transito')" value="Agente y Policía de Transito">Agente y Policía de Transito</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agregado Diplomático')" value="Agregado Diplomático">Agregado Diplomático</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agricultor')" value="Agricultor">Agricultor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agrónomo')" value="Agrónomo">Agrónomo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Analista Económico')" value="Analista Económico">Analista Económico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Analista Gestión Humana')" value="Analista Gestión Humana">Analista Gestión Humana</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Analista Mercados')" value="Analista Mercados">Analista Mercados</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Analista Siniestros')" value="Analista Siniestros">Analista Siniestros</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Analista de Sistemas Informaticos')" value="Analista de Sistemas Informaticos">Analista de Sistemas Informaticos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Analista y Agentes Financieros')" value="Analista y Agentes Financieros">Analista y Agentes Financieros</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Antropologos')" value="Antropologos">Antropólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Arqueologos')" value="Arqueologos">Arqueólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Arquitecto')" value="Arquitecto">Arquitecto</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Artesano de la Madera y Materiales Similares')" value="Artesano de la Madera y Materiales Similares">Artesano de la Madera y Materiales Similares</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Artesano de los Tejidos, El cuero y Materiales similares')" value="Artesano de los Tejidos, El cuero y Materiales similares">Artesano de los Tejidos, El cuero y Materiales similares</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Asesor Financiero')" value="Asesor Financiero">Asesor Financiero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Asesor Legal')" value="Asesor Legal">Asesor Legal</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente de Cine, Teatro, Televisión y Afines')" value="Asistente de Cine, Teatro, Televisión y Afines">Asistente de Cine, Teatro, Televisión y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente Contable')" value="Asistente Contable">Asistente Contable</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente de Bibliotecas y Archivos')" value="Asistente de Bibliotecas y Archivos">Asistente de Bibliotecas y Archivos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente Jurídico')" value="Asistente Jurídico">Asistente Jurídico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente de Comercio Exterior')" value="Asistente de Comercio Exterior">Asistente de Comercio Exterior</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Asistente de Trabajo Social y Comunitario')" value="Asistente de Trabajo Social y Comunitario">Asistente de Trabajo Social y Comunitario</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Astrofísico')" value="Astrofísico">Astrofísico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Astrólogo')" value="Astrólogo">Astrólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Astrónomo')" value="Astrónomo">Astrónomo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Atletas, Deportistas y Afines')" value="Atletas, Deportistas y Afines">Atletas, Deportistas y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auditor Contable')" value="Auditor Contable">Auditor Contable</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auditor Financiero')" value="Auditor Financiero">Auditor Financiero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auditor Interno')" value="Auditor Interno">Auditor Interno</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auditor Sistemas')" value="Auditor Sistemas">Auditor Sistemas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Cartera y Afines')" value="Auxiliar de Cartera y Afines">Auxiliar de Cartera y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Servicios de Correo')" value="Auxiliar de Servicios de Correo">Auxiliar de Servicios de Correo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Droguería')" value="Auxiliar de Droguería">Auxiliar de Droguería</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar Licencias')" value="Auxiliar Licencias">Auxiliar Licencias</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar Mecánica')" value="Auxiliar Mecánica">Auxiliar Mecánica</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Vuelo')" value="Auxiliar de Vuelo">Auxiliar de Vuelo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Administración y Afines')" value="Auxiliar de Administración y Afines">Auxiliar de Administración y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Enfermería')" value="Auxiliar de Enfermería">Auxiliar de Enfermería</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Auxiliar de Odontología')" value="Auxiliar de Odontología">Auxiliar de Odontología</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Avaluador Bienes')" value="Avaluador Bienes">Avaluador Bienes</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Avicultores')" value="Avicultores">Avicultores</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Azafata')" value="Azafata">Azafata</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bacteriólogo')" value="Bacteriólogo">Bacteriólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bailarín')" value="Bailarín">Bailarín</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Banderillero')" value="Banderillero">Banderillero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Barquero')" value="Barquero">Barquero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Beisbolista')" value="Beisbolista">Beisbolista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bibliotecarios, Documentalistas y Afines')" value="Bibliotecarios, Documentalistas y Afines">Bibliotecarios, Documentalistas y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biofísico')" value="Biofísico">Biofísico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biógrafo')" value="Biógrafo">Biógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biólogo')" value="Biólogo">Biólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bioquímico')" value="Bioquímico">Bioquímico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bomberos y Rescatistas')" value="Bomberos y Rescatistas">Bomberos y Rescatistas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bordadores y Afines')" value="Bordadores y Afines">Bordadores y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Botánico')" value="Botánico">Botánico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Boxeador')" value="Boxeador">Boxeador</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Caficultor')" value="Caficultor">Caficultor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cajero')" value="Cajero">Cajero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cajistas, Tipógrafos y Afines')" value="Cajistas, Tipógrafos y Afines">Cajistas, Tipografos y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Camarógrafo')" value="Camarógrafo">Camarógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cantante')" value="Cantante">Cantante</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Capitán de Aviación')" value="Capitán de Aviación">Capitán de Aviación</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Capitanes, Oficiales de Cubierta y Prácticos')" value="Capitanes, Oficiales de Cubierta y Prácticos">Capitanes, Oficiales de Cubierta y Prácticos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Caricaturista')" value="Caricaturista">Caricaturista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Carnicero, Pescadores y Afines')" value="Carnicero, Pescadores y Afines">Carnicero, Pescadores y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Carpintero')" value="Carpintero">Carpintero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cartógrafo')" value="Cartógrafo">Cartógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Catadores y Clasificadores de Alimentos y Bebidas')" value="Catadores y Clasificadores de Alimentos y Bebidas">Catadores y Clasificadores de Alimentos y Bebidas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cazadores y Tramperos')" value="Cazadores y Tramperos">Cazadores y Tramperos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cesteros, Bruceros y Afines')" value="Cesteros, Bruceros y Afines">Cesteros, Bruceros y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Catalogadores de Piezas de Museos, Archivos y Afines')" value="Catalogadores de Piezas de Museos, Archivos y Afines">Catalogadores de Piezas de Museos, Archivos y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Catedrático')" value="Catedrático">Catedrático</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ciclista')" value="Ciclista">Ciclista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cienfífico')" value="Cienfífico">Cienfífico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cocineros')" value="Cocineros">Cocineros</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Codificador de Datos, Corrector Pruebas Imprenta y Afines')" value="Codificador de Datos, Corrector Pruebas Imprenta y Afines">Codificador de Datos, Corrector Pruebas Imprenta y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Columnista')" value="Columnista">Columnista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Comandante Estación Bomberos')" value="Comandante Estación Bomberos">Comandante Estación Bomberos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Comediante')" value="Comediante">Comediante</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Comerciante')" value="Comerciante">Comerciante</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Comisario de Familia')" value="Comisario de Familia">Comisario de Familia</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Compositor')" value="Compositor">Compositor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Comunicador Social')" value="Comunicador Social">Comunicador Social</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Concejal')" value="Concejal">Concejal</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consejero de Estado')" value="Consejero de Estado">Consejero de Estado</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consejero Jurídico')" value="Consejero Jurídico">Consejero Jurídico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consejero Matrimonial')" value="Consejero Matrimonial">Consejero Matrimonial</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consejero Ocupacional')" value="Consejero Ocupacional">Consejero Ocupacional</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consejero Educativo')" value="Consejero Educativo">Consejero Educativo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consul')" value="Consul">Consul</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consultor Ambiental')" value="Consultor Ambiental">Consultor Ambiental</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consultor Financiero')" value="Consultor Financiero">Consultor Financiero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consultor Organizacional')" value="Consultor Organizacional">Consultor Organizacional</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consultor Política Social')" value="Consultor Política Social">Consultor Política Social</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Consultor Recursos Humanos')" value="Consultor Recursos Humanos">Consultor Recursos Humanos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Contadores')" value="Contadores">Contadores</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Contralores')" value="Contralores">Contralores</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Coordinador Servicios Generales')" value="Coordinador Servicios Generales">Coordinador Servicios Generales</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Copiloto Aeronave')" value="Copiloto Aeronave">Copiloto Aeronave</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Coreógrafo y Afines')" value="Coreógrafo y Afines">Coreógrafo y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Corredor Autos')" value="Corredor Autos">Corredor Autos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Corredor Bolsa')" value="Corredor Bolsa">Corredor Bolsa</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Corresponsal de Prensa')" value="Corresponsal de Prensa">Corresponsal de Prensa</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Criador de Ganado y Animales Domésticos')" value="Criador de Ganado y Animales Domésticos">Criador de Ganado y Animales Domésticos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Criador de Especies Acuáticas')" value="Criador de Especies Acuáticas">Criador de Especies Acuáticas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Criador de Insectors, Sericultures y Afines')" value="Criador de Insectors, Sericultures y Afines">Criador de Insectors, Sericultures y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cristalero')" value="Cristalero">Cristalero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Crítico Artes y Medios')" value="Crítico Artes y Medios">Crítico Artes y Medios</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cuentero')" value="Cuentero">Cuentero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Curador Arte')" value="Curador Arte">Curador Arte</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Curador Urbanístico')" value="Curador Urbanístico">Curador Urbanístico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dactiloscopista')" value="Dactiloscopista">Dactiloscopista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Decanos')" value="Decanos">Decanos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Declamador')" value="Declamador">Declamador</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director Artístico')" value="Director Artístico">Director Artístico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director Cine')" value="Director Cine">Director Cine</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento de Mantenimiento')" value="Director Departamento de Mantenimiento">Director Departamento de Mantenimiento</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento de Seguridad')" value="Director Departamento de Seguridad">Director Departamento de Seguridad</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director Escuela de Aviación')" value="Director Escuela de Aviación">Director Escuela de Aviación</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director General Industria Manufacturera')" value="Director General Industria Manufacturera">Director General Industria Manufacturera</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director Grupo Musical')" value="Director Grupo Musical">Director Grupo Musical</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento Financiero y Administrativo')" value="Director Departamento Financiero y Administrativo">Director Departamento Financiero y Administrativo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento Investigacion y Desarrollo')" value="Director Departamento Investigacion y Desarrollo">Director Departamento Investigacion y Desarrollo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento Personal')" value="Director Departamento Personal">Director Departamento Personal</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Director Departamento Publicidad y Mercadeo')" value="Director Departamento Publicidad y Mercadeo">Director Departamento Publicidad y Mercadeo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dibujantes')" value="Dibujantes">Dibujantes</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Diseñador Grafico e Industrial')" value="Diseñador Grafico e Industrial">Diseñador Grafico e Industrial</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('DiskJockey')" value="DiskJockey">DiskJockey</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dramaturgo')" value="Dramaturgo">Dramaturgo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ecologista')" value="Ecologista">Ecologista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ecólogo')" value="Ecólogo">Ecólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Economistas')" value="Economistas">Economistas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Edil')" value="Edil">Edil</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Educadores')" value="Educadores">Educadores</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Electricista')" value="Electricista">Electricista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Electrotécnico')" value="Electrotécnico">Electrotécnico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Empresario')" value="Empresario">Empresario</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Entrenador')" value="Entrenador">Entrenador</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Escritor y Afines')" value="Escritor y Afines">Escritor y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estadístico')" value="Estadístico">Estadístico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Etimologista')" value="Etimologista">Etimologista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Etnografo')" value="Etnografo">Etnografo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Etnólogo')" value="Etnólogo">Etnólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Farmacéutico')" value="Farmacéutico">Farmacéutico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Farmacólogo')" value="Farmacólogo">Farmacólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Filólogo')" value="Filólogo">Filólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Filósofo')" value="Filósofo">Filósofo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fiscal')" value="Fiscal">Fiscal</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fisiatra')" value="Fisiatra">Fisiatra</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Físico')" value="Físico">Físico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fisiólogo')" value="Fisiólogo">Fisiólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Floricultor')" value="Floricultor">Floricultor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fontanero e Instaladores de Tuberias')" value="Fontanero e Instaladores de Tuberias">Fontanero e Instaladores de Tuberias</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fotógrafo')" value="Fotógrafo">Fotógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fruticultor')" value="Fruticultor">Fruticultor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fisioterapeuta')" value="Fisioterapeuta">Fisioterapeuta</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fonólogo')" value="Fonólogo">Fonólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Forenses')" value="Forenses">Forenses</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fotógrafo')" value="Fotógrafo">Fotógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Futbolista')" value="Futbolista">Futbolista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ganadero')" value="Ganadero">Ganadero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geólogo')" value="Geólogo">Geólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geotecnista')" value="Geotecnista">Geotecnista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Gemólogo')" value="Gemólogo">Gemólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Genetista')" value="Genetista">Genetista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geofísico')" value="Geofísico">Geofísico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geógrafo')" value="Geógrafo">Geógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geriatra')" value="Geriatra">Geriatra</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Gobernador Comunidad Indígena')" value="Gobernador Comunidad Indígena">Gobernador Comunidad Indígena</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Grabadores de Imprenta y Fotograbadores')" value="Grabadores de Imprenta y Fotograbadores">Grabadores de Imprenta y Fotograbadores</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Grabadores de Vidrio')" value="Grabadores de Vidrio">Grabadores de Vidrio</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Grafólogo')" value="Grafólogo">Grafólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Herramentistas y Afines')" value="Herramentistas y Afines">Herramentistas y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Herreros y Forjadores')" value="Herreros y Forjadores">Herreros y Forjadores</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Histólogo')" value="Histólogo">Histólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Histopatólogo')" value="Histopatólogo">Histopatólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Humorista')" value="Humorista">Humorista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Higienetistas')" value="Higienetistas">Higienetistas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Historiador')" value="Historiador">Historiador</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ictólogo')" value="Ictólogo">Ictólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Impresor Artes Gráficas')" value="Impresor Artes Gráficas">Impresor Artes Gráficas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Agrícola')" value="Ingeniero Agrícola">Ingeniero Agrícola</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Agroindustrial')" value="Ingeniero Agroindustrial">Ingeniero Agroindustrial</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Agrónomo')" value="Ingeniero Agrónomo">Ingeniero Agrónomo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Alimentos')" value="Ingeniero Alimentos">Ingeniero Alimentos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Ambiental')" value="Ingeniero Ambiental">Ingeniero Ambiental</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Biomédico')" value="Ingeniero Biomédico">Ingeniero Biomédico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Civil')" value="Ingeniero Civil">Ingeniero Civil</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Electricista')" value="Ingeniero Electricista">Ingeniero Electricista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Eléctrico')" value="Ingeniero Eléctrico">Ingeniero Eléctrico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Electromécanico')" value="Ingeniero Electromécanico">Ingeniero Electromécanico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Electronico')" value="Ingeniero Electronico">Ingeniero Electronico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Industrial')" value="Ingeniero Industrial">Ingeniero Industrial</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Forestal')" value="Ingeniero Forestal">Ingeniero Forestal</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Genética')" value="Ingeniero Genética">Ingeniero Genética</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Geologo')" value="Ingeniero Geologo">Ingeniero Geólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Hidráulico')" value="Ingeniero Hidráulico">Ingeniero Hidráulico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Mecánico')" value="Ingeniero Mecánico">Ingeniero Mecánico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Mecatrónico')" value="Ingeniero Mecatrónico">Ingeniero Mecatrónico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Naval')" value="Ingeniero Naval">Ingeniero Naval</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Pesquero')" value="Ingeniero Pesquero">Ingeniero Pesquero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Petróleos')" value="Ingeniero Petróleos">Ingeniero Petróleos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Producción')" value="Ingeniero Producción">Ingeniero Producción</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Químico')" value="Ingeniero Químico">Ingeniero Químico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Sanitario')" value="Ingeniero Sanitario">Ingeniero Sanitario</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Seguridad Industrial')" value="Ingeniero Seguridad Industrial">Ingeniero Seguridad Industrial</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Sistemas')" value="Ingeniero Sistemas">Ingeniero Sistemas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Sonido')" value="Ingeniero Sonido">Ingeniero Sonido</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Telecomunicaciones')" value="Ingeniero Telecomunicaciones">Ingeniero Telecomunicaciones</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Textil')" value="Ingeniero Textil">Ingeniero Textil</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Transportes')" value="Ingeniero Transportes">Ingeniero Transportes</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Vuelo')" value="Ingeniero Vuelo">Ingeniero Vuelo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniero Minas, Metalúrgicos')" value="Ingeniero Minas, Metalúrgicos ">Ingeniero Minas, Metalúrgicos </li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Instrumentador Quirúrgico')" value="Instrumentador Quirúrgico">Instrumentador Quirúrgico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Interprete')" value="Interprete">Interprete</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Interventor')" value="Interventor">Interventor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Investigador')" value="Investigador">Investigador</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Jardinero')" value="Jardinero">Jardinero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Juez')" value="Juez">Juez</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Lexicógrafo')" value="Lexicógrafo">Lexicógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Lexicólogo')" value="Lexicólogo">Lexicólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Libretista')" value="Libretista">Libretista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Licenciado')" value="Licenciado">Licenciado</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Locutor de Radio, Televisión y Afines')" value="Locutor de Radio, Televisión y Afines">Locutor de Radio, Televisión y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Luminotécnico')" value="Luminotécnico">Luminotécnico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Maestro')" value="Maestro">Maestro</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Magistrado')" value="Magistrado">Magistrado</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Maquinista de Vehiculos por riel')" value="Maquinista de Vehiculos por riel">Maquinista de Vehiculos por riel</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Marineros de Cubierta y Afines')" value="Marineros de Cubierta y Afines">Marineros de Cubierta y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Maquetero')" value="Maquetero">Maquetero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Marroquinero')" value="Marroquinero">Marroquinero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Matemático')" value="Matemático">Matemático</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mecánico Industrial')" value="Mecánico Industrial">Mecánico Industrial</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mesero, Taberneros y Afines')" value="Mesero, Taberneros y Afines">Mesero, Taberneros y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Meteorologos')" value="Meteorologos">Meteorologos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mimo Teatro y Callejero')" value="Mimo Teatro y Callejero">Mimo Teatro y Callejero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mineros y Canteros')" value="Mineros y Canteros">Mineros y Canteros</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ministro')" value="Ministro">Ministro</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Músico')" value="Músico">Músico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Notario')" value="Notario">Notario</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Novillero')" value="Novillero">Novillero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Oceanógrafo')" value="Oceanógrafo">Oceanógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo')" value="Odontólogo">Odontólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Oficial Ejército')" value="Oficial Ejército">Oficial Ejército</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Oficial Polícia')" value="Oficial Polícia">Oficial Polícia</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Oficial Naval')" value="Oficial Naval">Oficial Naval</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Oficial Fuerza Aérea')" value="Oficial Fuerza Aérea">Oficial Fuerza Aérea</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Oftalmólogo')" value="Oftalmólogo">Oftalmólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Operador Máquinas')" value="Operador Máquinas ">Operador Máquinas </li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Optómetra')" value="Optómetra">Optómetra</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ortodoncista')" value="Ortodoncista">Ortodoncista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ortopedista')" value="Ortopedista">Ortopedista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Paleobiólogo')" value="Paleobiólogo">Paleobiólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Paleógrafo')" value="Paleógrafo">Paleógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Paleólogo')" value="Paleólogo">Paleólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Paleontólogo')" value="Paleontólogo">Paleontólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Panadero, Pastelero y Confitero')" value="Panadero, Pastelero y Confitero">Panadero, Pastelero y Confitero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Patinador')" value="Patinador">Patinador</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Patólogo')" value="Patólogo">Patólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Pedagogo')" value="Pedagogo">Pedagogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Periodista')" value="Periodista">Periodista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Perito')" value="Perito">Perito</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Periodoncista')" value="Periodoncista">Periodoncista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Personero')" value="Personero">Personero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Pescador')" value="Pescador">Pescador</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Piloto Avión, Carros Carreras, Afines')" value="Piloto Avión, Carros Carreras, Afines">Piloto Avión, Carros Carreras, Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Pintor Arte')" value="Pintor Arte">Pintor Arte</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Piscicultor')" value="Piscicultor">Piscicultor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Planificador Medio Ambiente')" value="Planificador Medio Ambiente">Planificador Medio Ambiente</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Planificador Tránsito')" value="Planificador Tránsito">Planificador Tránsito</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Plomero')" value="Plomero">Plomero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Poeta')" value="Poeta">Poeta</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Politólogo')" value="Politólogo">Politólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Polvorero')" value="Polvorero">Polvorero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Porcicultor')" value="Porcicultor">Porcicultor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Publicista')" value="Publicista">Publicista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Procurador')" value="Procurador">Procurador</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Químico y Afines')" value="Químico y Afines">Químico y Afines</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Radiotécnico')" value="Radiotécnico">Radiotécnico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Rector Institución Educativa')" value="Rector Institución Educativa">Rector Institución Educativa</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Registrador')" value="Registrador">Registrador</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Rejoneador')" value="Rejoneador">Rejoneador</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Relojero')" value="Relojero">Relojero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Reportero Gráfico')" value="Reportero Gráfico">Reportero Gráfico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Representante a la Cámara')" value="Representante a la Cámara">Representante a la Cámara</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Revisor Fiscal')" value="Revisor Fiscal">Revisor Fiscal</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Salvavidas')" value="Salvavidas">Salvavidas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sastres, Modistos')" value="Sastres, Modistos">Sastres, Modistos</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sismólogo')" value="Sismólogo">Sismólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sub Oficial Ejercito')" value="Sub Oficial Ejercito">Sub Oficial Ejercito</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sub Oficial Policia')" value="Sub Oficial Policia">Sub Oficial Policia</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sub Oficial Naval')" value="Sub Oficial Naval">Sub Oficial Naval</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sub Oficial Fuerza Aerea')" value="Sub Oficial Fuerza Aerea">Sub Oficial Fuerza Aerea</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Taxonomista')" value="Taxonomista">Taxonomista</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Técnicos en general')" value="Técnicos en general">Técnicos en general</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Terapeuta')" value="Terapeuta">Terapeuta</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Tesorero')" value="Tesorero">Tesorero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Topógrafo')" value="Topógrafo">Topógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Torero')" value="Torero">Torero</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Toxicólogo')" value="Toxicólogo">Toxicólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Traductor')" value="Traductor">Traductor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Tutor')" value="Tutor">Tutor</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Veterinario')" value="Veterinario">Veterinario</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Virólogo')" value="Virólogo">Virólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Vulcanólogo')" value="Vulcanólogo">Vulcanólogo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Xilógrafo')" value="Xilógrafo">Xilógrafo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Zoólogo')" value="Zoólogo ">Zoólogo </li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Zootécnico')" value="Zootécnico">Zootécnico</li></a></td></tr>
+                            </tbody>
+							</table>
         <div> &nbsp;</div>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>

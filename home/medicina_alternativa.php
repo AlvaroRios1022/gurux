@@ -142,7 +142,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos" >MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -177,187 +177,190 @@ box-shadow: none;
         <div class="contenido">
             <div class="barraizquierdaalterna">
 			
-					<form class="form-search">
-						<div class="input-group">
+			<div class="input-group">
 							<br><br>
-							<input id="buscador" style="margin-left:10px" class="buscadoralterna" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input style="margin-left:10px" id="buscador" class="buscadoralterna" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchalterna" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-					</form>
 							<div class="especialalterno" >
-							<a href="#"><li style="color: #333; " onclick="filtroTipo('Acidez')" value=">Acidez">Acidez</li></a><br>
-								<a href="#"><li style="color: #333; "  onclick="filtroTipo('Acné')"  value=">Acné">Acné</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Acoso escolar')" value=">Acoso escolar">Acoso escolar</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Adicción a medicamentos')" value=">Adicción a medicamentos">Adicción a medicamentos</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Agorafobia')" value=">Agorafobia">Agorafobia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Alcoholismo y abuso de alcohol')" value=">Alcoholismo y abuso de alcohol">Alcoholismo y abuso de alcohol</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Alergia a insectos')" value=">Alergia a insectos">Alergia a insectos</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Alergia ocular')" value=">Alergia ocular">Alergia ocular</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Ambliopía')" value=">Ambliopía">Ambliopía</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Amenaza de aborto')" value=">Amenaza de aborto">Amenaza de aborto</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Anorexia nerviosa')" value=">Anorexia nerviosa">Anorexia nerviosa</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Anorgasmia')" value=">Anorgasmia">Anorgasmia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Ansiedad')" value=">Ansiedad">Ansiedad</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Artritis')" value=">Artritis">Artritis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Artrosis')" value=">Artrosis">Artrosis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Asma en niños')" value=">Asma en niños">Asma en niños</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Astigmatismo')" value=">Astigmatismo">Astigmatismo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Aversión al sexo')" value=">Aversión al sexo">Aversión al sexo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Bronquiolitis')" value=">Bronquiolitis">Bronquiolitis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Bruxismo')" value=">Bruxismo">Bruxismo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Bulimia nerviosa')" value=">Bulimia nerviosa">Bulimia nerviosa</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Cambios hormonales')" value=">Cambios hormonales">Cambios hormonales</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Cáncer cervical')" value=">Cáncer cervical">Cáncer cervical</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Cáncer cutáneo')" value=">Cáncer cutáneo">Cáncer cutáneo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Capsulitis adhesiva')" value=">Capsulitis adhesiva">Capsulitis adhesiva</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Cataratas')" value=">Cataratas">Cataratas</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Cefaleas tensionales')" value=">Cefaleas tensionales">Cefaleas tensionales</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Celopatía')" value=">Celopatía">Celopatía</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Cicatriz')" value=">Cicatriz">Cicatriz</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Colitis ulcerativa')" value=">Colitis ulcerativa">Colitis ulcerativa</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Colon espástico')" value=">Colon espástico">Colon espástico</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Coronavirus COVID-19')" value=">Coronavirus COVID-19">Coronavirus COVID-19</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Croup (Laringotraqueobronquitis)')" value=">Croup (Laringotraqueobronquitis)">Croup (Laringotraqueobronquitis)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Demencia')" value=">Demencia">Demencia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Demencia senil, tipo de Binswanger')" value=">Demencia senil, tipo de Binswanger">Demencia senil, tipo de Binswanger</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dentición')" value=">Dentición">Dentición</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dependencia emocional')" value=">Dependencia emocional">Dependencia emocional</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Depresión')" value=">Depresión">Depresión</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dermatitis')" value=">Dermatitis">Dermatitis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dermatitis atópica')" value=">Dermatitis atópica">Dermatitis atópica</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dermatomiositis juvenil')" value=">Dermatomiositis juvenil">Dermatomiositis juvenil</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Desarrollo motor')" value=">Desarrollo motor">Desarrollo motor</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Deseo sexual hipoactivo')" value=">Deseo sexual hipoactivo">Deseo sexual hipoactivo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Desnutrición')" value=">Desnutrición">Desnutrición</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Diabetes')" value=">Diabetes">Diabetes</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Diabetes gestacional')" value=">Diabetes gestacional">Diabetes gestacional</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Diarrea')" value=">Diarrea">Diarrea</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dificultades del aprendizaje')" value=">Dificultades del aprendizaje">Dificultades del aprendizaje</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Disfunción eréctil')" value=">Disfunción eréctil">Disfunción eréctil</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Disfunción sexual femenina')" value=">Disfunción sexual femenina">Disfunción sexual femenina</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dispareunia')" value=">Dispareunia">Dispareunia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Displasia cervical')" value=">Displasia cervical">Displasia cervical</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Distensión del músculo de la pantorrilla')" value=">Distensión del músculo de la pantorrilla">Distensión del músculo de la pantorrilla</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Distonía focal')" value=">Distonía focal">Distonía focal</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor articular')" value=">Dolor articular">Dolor articular</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor crónico de cuello')" value=">Dolor crónico de cuello">Dolor crónico de cuello</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor de cabeza')" value=">Dolor de cabeza">Dolor de cabeza</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor de cabeza por contracción muscular')" value=">Dolor de cabeza por contracción muscular">Dolor de cabeza por contracción muscular</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor de cabeza por migraña')" value=">Dolor de cabeza por migraña">Dolor de cabeza por migraña</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor de espalda')" value=">Dolor de espalda">Dolor de espalda</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor de garganta')" value=">Dolor de garganta">Dolor de garganta</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Duelo')" value=">Duelo">Duelo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Eccema (Dermatitis Atópica)')" value=">Eccema (Dermatitis Atópica)">Eccema (Dermatitis Atópica)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Embarazo ectópico')" value=">Embarazo ectópico">Embarazo ectópico</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Endometriosis')" value=">Endometriosis">Endometriosis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad común agravada por el trabajo')" value=">Enfermedad común agravada por el trabajo">Enfermedad común agravada por el trabajo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad del reflujo gastroesofágico - Bebé')" value=">Enfermedad del reflujo gastroesofágico - Bebé">Enfermedad del reflujo gastroesofágico - Bebé</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad del reflujo gastroesofágico - Niño')" value=">Enfermedad del reflujo gastroesofágico - Niño">Enfermedad del reflujo gastroesofágico - Niño</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad del reflujo gastroesofágico (GERD)')" value=">Enfermedad del reflujo gastroesofágico (GERD)">Enfermedad del reflujo gastroesofágico (GERD)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad laboral')" value=">Enfermedad laboral">Enfermedad laboral</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad pélvica inflamatoria')" value=">Enfermedad pélvica inflamatoria">Enfermedad pélvica inflamatoria</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Enuresis')" value=">Enuresis">Enuresis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Envejecimiento facial')" value=">Envejecimiento facial">Envejecimiento facial</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Epicondilitis lateral')" value=">Epicondilitis lateral">Epicondilitis lateral</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Escoliosis')" value=">Escoliosis">Escoliosis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Esguince del tobillo')" value=">Esguince del tobillo">Esguince del tobillo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Esquizofrenia')" value=">Esquizofrenia">Esquizofrenia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Estreñimiento')" value=">Estreñimiento">Estreñimiento</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Estrés')" value=">Estrés">Estrés</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Eyaculación precoz')" value=">Eyaculación precoz">Eyaculación precoz</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Eyaculación retardada')" value=">Eyaculación retardada">Eyaculación retardada</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Falta de crecimiento')" value=">Falta de crecimiento">Falta de crecimiento</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Farmacodependencia')" value=">Farmacodependencia">Farmacodependencia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Fibromialgia')" value=">Fibromialgia">Fibromialgia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Flacidez de labios mayores')" value=">Flacidez de labios mayores">Flacidez de labios mayores</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Fobia específica o simple')" value=">Fobia específica o simple">Fobia específica o simple</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Fractura de codo')" value=">Fractura de codo">Fractura de codo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Fractura de pie')" value=">Fractura de pie">Fractura de pie</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Gastritis')" value=">Gastritis">Gastritis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Gastroenteritis viral')" value=">Gastroenteritis viral">Gastroenteritis viral</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Glaucoma')" value=">Glaucoma">Glaucoma</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Gripe')" value=">Gripe">Gripe</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Hemorragia uterina anormal')" value=">Hemorragia uterina anormal">Hemorragia uterina anormal</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Hepatitis B')" value=">Hepatitis B">Hepatitis B</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Hepatitis C')" value=">Hepatitis C">Hepatitis C</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Hernia de disco')" value=">Hernia de disco">Hernia de disco</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Hernia diafragmática')" value=">Hernia diafragmática">Hernia diafragmática</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Herpes zóster (Neuralgia Posherpética)')" value=">Herpes zóster (Neuralgia Posherpética)">Herpes zóster (Neuralgia Posherpética)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Hipercolesterolemia (colesterol alto)')" value=">Hipercolesterolemia (colesterol alto)">Hipercolesterolemia (colesterol alto)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Hiperemesis gravídica')" value=">Hiperemesis gravídica">Hiperemesis gravídica</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Hiperemesis gravídica')" value=">Hiperhidrosis">Hiperhidrosis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Hipertensión arterial')" value=">Hipertensión arterial">Hipertensión arterial</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Hipertrofia de labios menores')" value=">Hipertrofia de labios menores">Hipertrofia de labios menores</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Impotencia')" value=">Impotencia">Impotencia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Infecciones del tracto urinario en la infancia')" value=">Infecciones del tracto urinario en la infancia">Infecciones del tracto urinario en la infancia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Infertilidad')" value=">Infertilidad">Infertilidad</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Infertilidad femenina')" value=">Infertilidad femenina">Infertilidad femenina</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Intolerancia a la lactosa')" value=">Intolerancia a la lactosa">Intolerancia a la lactosa</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Laringomalacia')" value=">Laringomalacia">Laringomalacia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Lesiones deportivas')" value=">Lesiones deportivas">Lesiones deportivas</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Lunares')" value=">Lunares">Lunares</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Lupus eritomatoso sistémico (Lupus)')" value=">Lupus eritomatoso sistémico (Lupus)">Lupus eritomatoso sistémico (Lupus)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Menopausia')" value=">Menopausia">Menopausia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Migraña')" value=">Migraña">Migraña</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Miomas')" value=">Miomas">Miomas</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Músculo de la ingle tensionado')" value=">Músculo de la ingle tensionado">Músculo de la ingle tensionado</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Neumonía')" value=">Neumonía">Neumonía</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Obesidad')" value=">Obesidad">Obesidad</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Obesidad en niños y adolescentes')" value=">Obesidad en niños y adolescentes">Obesidad en niños y adolescentes</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Odontalgia')" value=">Odontalgia">Odontalgia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Ojo seco')" value=">Ojo seco">Ojo seco</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Onicomicosis')" value=">Onicomicosis">Onicomicosis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Parálisis cerebral')" value=">Parálisis cerebral">Parálisis cerebral</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Parálisis facial')" value=">Parálisis facial">Parálisis facial</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Piel de cristal')" value=">Piel de cristal">Piel de cristal</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Problemas gástricos')" value=">Problemas gástricos">Problemas gástricos</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Psoriasis')" value=">Psoriasis">Psoriasis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Queratosis seborreica')" value=">Queratosis seborreica">Queratosis seborreica</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Quiste epidérmico')" value=">Quiste epidérmico">Quiste epidérmico</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Quiste ovárico')" value=">Quiste ovárico">Quiste ovárico</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Reflujo vesicoureteral: niño')" value=">Reflujo vesicoureteral: niño">Reflujo vesicoureteral: niño</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Resfriado')" value=">Resfriado">Resfriado</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Retraso en el crecimiento')" value=">Retraso en el crecimiento">Retraso en el crecimiento</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Rinitis alérgica')" value=">Rinitis alérgica">Rinitis alérgica</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Salpingitis')" value=">Salpingitis">Salpingitis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de Asperger')" value=">Síndrome de Asperger">Síndrome de Asperger</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de disfunción por dolor miofacial')" value=">Síndrome de disfunción por dolor miofacial">Síndrome de disfunción por dolor miofacial</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de dolor miofascial')" value=">Síndrome de dolor miofascial">Síndrome de dolor miofascial</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de dolor regional complejo')" value=">Síndrome de dolor regional complejo">Síndrome de dolor regional complejo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de las piernas inquietas')" value=">Síndrome de las piernas inquietas">Síndrome de las piernas inquietas</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de ovarios poliquísticos (SOP)')" value=">Síndrome de ovarios poliquísticos (SOP)">Síndrome de ovarios poliquísticos (SOP)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome piriforme')" value=">Síndrome piriforme">Síndrome piriforme</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Síndromes de dolor por cáncer')" value=">Síndromes de dolor por cáncer">Síndromes de dolor por cáncer</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Sonambulismo')" value=">Sonambulismo">Sonambulismo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Tendinitis')" value=">Tendinitis">Tendinitis</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Torcedura, músculo')" value=">Torcedura, músculo">Torcedura, músculo</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno bipolar')" value=">Trastorno bipolar">Trastorno bipolar</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de adaptación')" value=">Trastorno de adaptación">Trastorno de adaptación</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de ansiedad (fobia social)')" value=">Trastorno de ansiedad (fobia social)">Trastorno de ansiedad (fobia social)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de conducta')" value=">Trastorno de conducta">Trastorno de conducta</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de estrés postraumático')" value=">Trastorno de estrés postraumático">Trastorno de estrés postraumático</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de la conducta alimentaria')" value=">Trastorno de la conducta alimentaria">Trastorno de la conducta alimentaria</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de pánico')" value=">Trastorno de pánico">Trastorno de pánico</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de personalidad dependiente')" value=">Trastorno de personalidad dependiente">Trastorno de personalidad dependiente</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno del espectro autista (TEA)')" value=">Trastorno del espectro autista (TEA)">Trastorno del espectro autista (TEA)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno disfórico premenstrual (TDPM)')" value=">Trastorno disfórico premenstrual (TDPM)">Trastorno disfórico premenstrual (TDPM)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno evitativo de la personalidad')" value=">Trastorno evitativo de la personalidad">Trastorno evitativo de la personalidad</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno obsesivo compulsivo (TOC)')" value=">Trastorno obsesivo compulsivo (TOC)">Trastorno obsesivo compulsivo (TOC)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno por déficit de atención (ADD)')" value=">Trastorno por déficit de atención (ADD)">Trastorno por déficit de atención (ADD)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastornos de la lactancia')" value=">Trastornos de la lactancia">Trastornos de la lactancia</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastornos del aprendizaje')" value=">Trastornos del aprendizaje">Trastornos del aprendizaje</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastornos por déficit de atención e hiperactividad (TDAH)')" value=">Trastornos por déficit de atención e hiperactividad (TDAH)">Trastornos por déficit de atención e hiperactividad (TDAH)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Trastornos sexuales')" value=">Trastornos sexuales">Trastornos sexuales</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Úlcera')" value=">Úlcera">Úlcera</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Urticaria')" value=">Urticaria">Urticaria</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Vaginitis atrófica')" value=">Vaginitis atrófica">Vaginitis atrófica</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Vaginosis bacteriana')" value=">Vaginosis bacteriana">Vaginosis bacteriana</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Venas várices')" value=">Venas várices">Venas várices</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Verrugas')" value=">Verrugas">Verrugas</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Virus del papiloma humano (HPV)')" value=">Virus del papiloma humano (HPV)">Virus del papiloma humano (HPV)</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Vómitos')" value=">Vómitos">Vómitos</li></a><br>
+							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+							<tbody id="myTable">
+							<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Acidez')" value=">Acidez">Acidez</li></a></td></tr>
+							<tr><td><a href="#"><li style="color: #333; "  onclick="filtroTipo('Acné')"  value="Acné">Acné</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Acoso escolar')" value="Acoso escolar">Acoso escolar</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Adicción a medicamentos')" value="Adicción a medicamentos">Adicción a medicamentos</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Agorafobia')" value="Agorafobia">Agorafobia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Alcoholismo y abuso de alcohol')" value="Alcoholismo y abuso de alcohol">Alcoholismo y abuso de alcohol</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Alergia a insectos')" value="Alergia a insectos">Alergia a insectos</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Alergia ocular')" value="Alergia ocular">Alergia ocular</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ambliopía')" value="Ambliopía">Ambliopía</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Amenaza de aborto')" value="Amenaza de aborto">Amenaza de aborto</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Anorexia nerviosa')" value="Anorexia nerviosa">Anorexia nerviosa</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Anorgasmia')" value="Anorgasmia">Anorgasmia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ansiedad')" value="Ansiedad">Ansiedad</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Artritis')" value="Artritis">Artritis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Artrosis')" value="Artrosis">Artrosis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Asma en niños')" value="Asma en niños">Asma en niños</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Astigmatismo')" value="Astigmatismo">Astigmatismo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Aversión al sexo')" value="Aversión al sexo">Aversión al sexo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bronquiolitis')" value="Bronquiolitis">Bronquiolitis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bruxismo')" value="Bruxismo">Bruxismo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bulimia nerviosa')" value="Bulimia nerviosa">Bulimia nerviosa</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cambios hormonales')" value="Cambios hormonales">Cambios hormonales</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cáncer cervical')" value="Cáncer cervical">Cáncer cervical</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cáncer cutáneo')" value="Cáncer cutáneo">Cáncer cutáneo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Capsulitis adhesiva')" value="Capsulitis adhesiva">Capsulitis adhesiva</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cataratas')" value="Cataratas">Cataratas</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cefaleas tensionales')" value="Cefaleas tensionales">Cefaleas tensionales</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Celopatía')" value="Celopatía">Celopatía</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cicatriz')" value="Cicatriz">Cicatriz</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Colitis ulcerativa')" value="Colitis ulcerativa">Colitis ulcerativa</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Colon espástico')" value="Colon espástico">Colon espástico</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Coronavirus COVID-19')" value="Coronavirus COVID-19">Coronavirus COVID-19</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Croup (Laringotraqueobronquitis)')" value="Croup (Laringotraqueobronquitis)">Croup (Laringotraqueobronquitis)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Demencia')" value="Demencia">Demencia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Demencia senil, tipo de Binswanger')" value="Demencia senil, tipo de Binswanger">Demencia senil, tipo de Binswanger</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dentición')" value="Dentición">Dentición</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dependencia emocional')" value="Dependencia emocional">Dependencia emocional</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Depresión')" value="Depresión">Depresión</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dermatitis')" value="Dermatitis">Dermatitis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dermatitis atópica')" value="Dermatitis atópica">Dermatitis atópica</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dermatomiositis juvenil')" value="Dermatomiositis juvenil">Dermatomiositis juvenil</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Desarrollo motor')" value="Desarrollo motor">Desarrollo motor</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Deseo sexual hipoactivo')" value="Deseo sexual hipoactivo">Deseo sexual hipoactivo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Desnutrición')" value="Desnutrición">Desnutrición</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Diabetes')" value="Diabetes">Diabetes</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Diabetes gestacional')" value="Diabetes gestacional">Diabetes gestacional</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Diarrea')" value="Diarrea">Diarrea</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dificultades del aprendizaje')" value="Dificultades del aprendizaje">Dificultades del aprendizaje</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Disfunción eréctil')" value="Disfunción eréctil">Disfunción eréctil</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Disfunción sexual femenina')" value="Disfunción sexual femenina">Disfunción sexual femenina</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dispareunia')" value="Dispareunia">Dispareunia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Displasia cervical')" value="Displasia cervical">Displasia cervical</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Distensión del músculo de la pantorrilla')" value="Distensión del músculo de la pantorrilla">Distensión del músculo de la pantorrilla</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Distonía focal')" value="Distonía focal">Distonía focal</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor articular')" value="Dolor articular">Dolor articular</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor crónico de cuello')" value="Dolor crónico de cuello">Dolor crónico de cuello</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor de cabeza')" value="Dolor de cabeza">Dolor de cabeza</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor de cabeza por contracción muscular')" value="Dolor de cabeza por contracción muscular">Dolor de cabeza por contracción muscular</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor de cabeza por migraña')" value="Dolor de cabeza por migraña">Dolor de cabeza por migraña</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor de espalda')" value="Dolor de espalda">Dolor de espalda</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dolor de garganta')" value="Dolor de garganta">Dolor de garganta</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Duelo')" value="Duelo">Duelo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Eccema (Dermatitis Atópica)')" value="Eccema (Dermatitis Atópica)">Eccema (Dermatitis Atópica)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Embarazo ectópico')" value="Embarazo ectópico">Embarazo ectópico</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Endometriosis')" value="Endometriosis">Endometriosis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad común agravada por el trabajo')" value="Enfermedad común agravada por el trabajo">Enfermedad común agravada por el trabajo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad del reflujo gastroesofágico - Bebé')" value="Enfermedad del reflujo gastroesofágico - Bebé">Enfermedad del reflujo gastroesofágico - Bebé</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad del reflujo gastroesofágico - Niño')" value="Enfermedad del reflujo gastroesofágico - Niño">Enfermedad del reflujo gastroesofágico - Niño</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad del reflujo gastroesofágico (GERD)')" value="Enfermedad del reflujo gastroesofágico (GERD)">Enfermedad del reflujo gastroesofágico (GERD)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad laboral')" value="Enfermedad laboral">Enfermedad laboral</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermedad pélvica inflamatoria')" value="Enfermedad pélvica inflamatoria">Enfermedad pélvica inflamatoria</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Enuresis')" value="Enuresis">Enuresis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Envejecimiento facial')" value="Envejecimiento facial">Envejecimiento facial</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Epicondilitis lateral')" value="Epicondilitis lateral">Epicondilitis lateral</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Escoliosis')" value="Escoliosis">Escoliosis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Esguince del tobillo')" value="Esguince del tobillo">Esguince del tobillo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Esquizofrenia')" value="Esquizofrenia">Esquizofrenia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estreñimiento')" value="Estreñimiento">Estreñimiento</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estrés')" value="Estrés">Estrés</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Eyaculación precoz')" value="Eyaculación precoz">Eyaculación precoz</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Eyaculación retardada')" value="Eyaculación retardada">Eyaculación retardada</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Falta de crecimiento')" value="Falta de crecimiento">Falta de crecimiento</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Farmacodependencia')" value="Farmacodependencia">Farmacodependencia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fibromialgia')" value="Fibromialgia">Fibromialgia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Flacidez de labios mayores')" value="Flacidez de labios mayores">Flacidez de labios mayores</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fobia específica o simple')" value="Fobia específica o simple">Fobia específica o simple</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fractura de codo')" value="Fractura de codo">Fractura de codo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fractura de pie')" value="Fractura de pie">Fractura de pie</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Gastritis')" value="Gastritis">Gastritis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Gastroenteritis viral')" value="Gastroenteritis viral">Gastroenteritis viral</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Glaucoma')" value="Glaucoma">Glaucoma</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Gripe')" value="Gripe">Gripe</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hemorragia uterina anormal')" value="Hemorragia uterina anormal">Hemorragia uterina anormal</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hepatitis B')" value="Hepatitis B">Hepatitis B</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hepatitis C')" value="Hepatitis C">Hepatitis C</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hernia de disco')" value="Hernia de disco">Hernia de disco</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hernia diafragmática')" value="Hernia diafragmática">Hernia diafragmática</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Herpes zóster (Neuralgia Posherpética)')" value="Herpes zóster (Neuralgia Posherpética)">Herpes zóster (Neuralgia Posherpética)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hipercolesterolemia (colesterol alto)')" value="Hipercolesterolemia (colesterol alto)">Hipercolesterolemia (colesterol alto)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hiperemesis gravídica')" value="Hiperemesis gravídica">Hiperemesis gravídica</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hiperemesis gravídica')" value="Hiperhidrosis">Hiperhidrosis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hipertensión arterial')" value="Hipertensión arterial">Hipertensión arterial</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hipertrofia de labios menores')" value="Hipertrofia de labios menores">Hipertrofia de labios menores</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Impotencia')" value="Impotencia">Impotencia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Infecciones del tracto urinario en la infancia')" value="Infecciones del tracto urinario en la infancia">Infecciones del tracto urinario en la infancia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Infertilidad')" value="Infertilidad">Infertilidad</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Infertilidad femenina')" value="Infertilidad femenina">Infertilidad femenina</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Intolerancia a la lactosa')" value="Intolerancia a la lactosa">Intolerancia a la lactosa</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Laringomalacia')" value="Laringomalacia">Laringomalacia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Lesiones deportivas')" value="Lesiones deportivas">Lesiones deportivas</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Lunares')" value="Lunares">Lunares</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Lupus eritomatoso sistémico (Lupus)')" value="Lupus eritomatoso sistémico (Lupus)">Lupus eritomatoso sistémico (Lupus)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Menopausia')" value="Menopausia">Menopausia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Migraña')" value="Migraña">Migraña</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Miomas')" value="Miomas">Miomas</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Músculo de la ingle tensionado')" value="Músculo de la ingle tensionado">Músculo de la ingle tensionado</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neumonía')" value="Neumonía">Neumonía</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Obesidad')" value="Obesidad">Obesidad</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Obesidad en niños y adolescentes')" value="Obesidad en niños y adolescentes">Obesidad en niños y adolescentes</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontalgia')" value="Odontalgia">Odontalgia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ojo seco')" value="Ojo seco">Ojo seco</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Onicomicosis')" value="Onicomicosis">Onicomicosis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Parálisis cerebral')" value="Parálisis cerebral">Parálisis cerebral</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Parálisis facial')" value="Parálisis facial">Parálisis facial</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Piel de cristal')" value="Piel de cristal">Piel de cristal</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Problemas gástricos')" value="Problemas gástricos">Problemas gástricos</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Psoriasis')" value="Psoriasis">Psoriasis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Queratosis seborreica')" value="Queratosis seborreica">Queratosis seborreica</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Quiste epidérmico')" value="Quiste epidérmico">Quiste epidérmico</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Quiste ovárico')" value="Quiste ovárico">Quiste ovárico</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Reflujo vesicoureteral: niño')" value="Reflujo vesicoureteral: niño">Reflujo vesicoureteral: niño</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Resfriado')" value="Resfriado">Resfriado</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Retraso en el crecimiento')" value="Retraso en el crecimiento">Retraso en el crecimiento</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Rinitis alérgica')" value="Rinitis alérgica">Rinitis alérgica</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Salpingitis')" value="Salpingitis">Salpingitis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de Asperger')" value="Síndrome de Asperger">Síndrome de Asperger</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de disfunción por dolor miofacial')" value="Síndrome de disfunción por dolor miofacial">Síndrome de disfunción por dolor miofacial</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de dolor miofascial')" value="Síndrome de dolor miofascial">Síndrome de dolor miofascial</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de dolor regional complejo')" value="Síndrome de dolor regional complejo">Síndrome de dolor regional complejo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de las piernas inquietas')" value="Síndrome de las piernas inquietas">Síndrome de las piernas inquietas</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome de ovarios poliquísticos (SOP)')" value="Síndrome de ovarios poliquísticos (SOP)">Síndrome de ovarios poliquísticos (SOP)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Síndrome piriforme')" value="Síndrome piriforme">Síndrome piriforme</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Síndromes de dolor por cáncer')" value="Síndromes de dolor por cáncer">Síndromes de dolor por cáncer</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sonambulismo')" value="Sonambulismo">Sonambulismo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Tendinitis')" value="Tendinitis">Tendinitis</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Torcedura, músculo')" value="Torcedura, músculo">Torcedura, músculo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno bipolar')" value="Trastorno bipolar">Trastorno bipolar</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de adaptación')" value="Trastorno de adaptación">Trastorno de adaptación</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de ansiedad (fobia social)')" value="Trastorno de ansiedad (fobia social)">Trastorno de ansiedad (fobia social)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de conducta')" value="Trastorno de conducta">Trastorno de conducta</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de estrés postraumático')" value="Trastorno de estrés postraumático">Trastorno de estrés postraumático</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de la conducta alimentaria')" value="Trastorno de la conducta alimentaria">Trastorno de la conducta alimentaria</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de pánico')" value="Trastorno de pánico">Trastorno de pánico</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno de personalidad dependiente')" value="Trastorno de personalidad dependiente">Trastorno de personalidad dependiente</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno del espectro autista (TEA)')" value="Trastorno del espectro autista (TEA)">Trastorno del espectro autista (TEA)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno disfórico premenstrual (TDPM)')" value="Trastorno disfórico premenstrual (TDPM)">Trastorno disfórico premenstrual (TDPM)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno evitativo de la personalidad')" value="Trastorno evitativo de la personalidad">Trastorno evitativo de la personalidad</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno obsesivo compulsivo (TOC)')" value="Trastorno obsesivo compulsivo (TOC)">Trastorno obsesivo compulsivo (TOC)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastorno por déficit de atención (ADD)')" value="Trastorno por déficit de atención (ADD)">Trastorno por déficit de atención (ADD)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastornos de la lactancia')" value="Trastornos de la lactancia">Trastornos de la lactancia</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastornos del aprendizaje')" value="Trastornos del aprendizaje">Trastornos del aprendizaje</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastornos por déficit de atención e hiperactividad (TDAH)')" value="Trastornos por déficit de atención e hiperactividad (TDAH)">Trastornos por déficit de atención e hiperactividad (TDAH)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trastornos sexuales')" value="Trastornos sexuales">Trastornos sexuales</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Úlcera')" value="Úlcera">Úlcera</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Urticaria')" value="Urticaria">Urticaria</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Vaginitis atrófica')" value="Vaginitis atrófica">Vaginitis atrófica</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Vaginosis bacteriana')" value="Vaginosis bacteriana">Vaginosis bacteriana</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Venas várices')" value="Venas várices">Venas várices</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Verrugas')" value="Verrugas">Verrugas</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Virus del papiloma humano (HPV)')" value="Virus del papiloma humano (HPV)">Virus del papiloma humano (HPV)</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Vómitos')" value="Vómitos">Vómitos</li></a></td></tr>
+									
+							</tbody>
+							</table>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>

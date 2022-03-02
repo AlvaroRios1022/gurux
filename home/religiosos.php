@@ -142,7 +142,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos">MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -171,32 +171,34 @@ box-shadow: none;
         <div class="contenido">
             <div class="barraizquierdareligioso">
 			
-					<form class="form-search">
-						<div class="input-group">
+			<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadorreligioso" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input style="margin-left:10px" id="buscador" class="buscadorreligioso" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchreligioso" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-					</form>
 							<div class="especialreligioso" >
-							<a href="#"><li style="color: #333;" onclick="filtroTipo('Iman Islamismo')" value="Iman Islamismo">Iman Islamismo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Maestro Taoísmo')" value="Maestro Taoísmo">Maestro Taoísmo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Maestros Budismo')" value="Maestros Budismo">Maestros Budismo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Monjes Confucionismo')" value="Monjes Confucionismo">Monjes Confucionismo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Pastor Cristiano')" value="Pastor Cristiano">Pastor Cristiano</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Pastor Iglesias Adventistas')" value="Pastor Iglesias Adventistas">Pastor Iglesias Adventistas</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Pastor Pentecostalismo')" value="Pastor Pentecostalismo">Pastor Pentecostalismo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Pastro Baptista Metodismo')" value="Pastro Baptista Metodismo">Pastor Baptista Metodismo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Rabinos Judaísmo')" value="Rabinos Judaísmo">Rabinos Judaísmo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Católico')" value="Sacerdote Católico">Sacerdote Católico</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Hinduísmo')" value="Sacerdote Hinduísmo">Sacerdote Hinduísmo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Iglesia Anglicana')" value="Sacerdote Iglesia Anglicana">Sacerdote Iglesia Anglicana</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Iglesia Ortodoxa')" value="Sacerdote Iglesia Ortodoxa">Sacerdote Iglesia Ortodoxa</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Luteranismo')" value="Sacerdote Luteranismo">Sacerdote Luteranismo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Mormonismo')" value="Sacerdote Mormonismo">Sacerdote Mormonismo</li></a><br>
-                            <a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Protentanismo')" value="Sacerdote Protentanismo">Sacerdote Protentanismo</li></a><br>
+							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+							<tbody id="myTable">
+							<tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Iman Islamismo')" value="Iman Islamismo">Iman Islamismo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Maestro Taoísmo')" value="Maestro Taoísmo">Maestro Taoísmo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Maestros Budismo')" value="Maestros Budismo">Maestros Budismo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Monjes Confucionismo')" value="Monjes Confucionismo">Monjes Confucionismo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Pastor Cristiano')" value="Pastor Cristiano">Pastor Cristiano</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Pastor Iglesias Adventistas')" value="Pastor Iglesias Adventistas">Pastor Iglesias Adventistas</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Pastor Pentecostalismo')" value="Pastor Pentecostalismo">Pastor Pentecostalismo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Pastro Baptista Metodismo')" value="Pastro Baptista Metodismo">Pastor Baptista Metodismo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Rabinos Judaísmo')" value="Rabinos Judaísmo">Rabinos Judaísmo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Católico')" value="Sacerdote Católico">Sacerdote Católico</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Hinduísmo')" value="Sacerdote Hinduísmo">Sacerdote Hinduísmo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Iglesia Anglicana')" value="Sacerdote Iglesia Anglicana">Sacerdote Iglesia Anglicana</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Iglesia Ortodoxa')" value="Sacerdote Iglesia Ortodoxa">Sacerdote Iglesia Ortodoxa</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Luteranismo')" value="Sacerdote Luteranismo">Sacerdote Luteranismo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Mormonismo')" value="Sacerdote Mormonismo">Sacerdote Mormonismo</li></a></td></tr>
+                            <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Sacerdote Protentanismo')" value="Sacerdote Protentanismo">Sacerdote Protentanismo</li></a></td></tr>
+							</tbody>
+							</table>
 <div> &nbsp;</div>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>

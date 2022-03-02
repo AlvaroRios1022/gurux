@@ -142,7 +142,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos" >MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -178,36 +178,40 @@ box-shadow: none;
 					<form class="form-search">
 						<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadorconstruccion" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input style="margin-left:10px" id="buscador" class="buscadorconstruccion" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchconstruccion" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
 					</form>
 							<div class="especialconstructores" >
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Baños')" value=">Baños">Baños</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Casa inteligente y Seguridad')" value=">Casa inteligente y Seguridad">Casa inteligente y Seguridad</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cerraduras y Herrajes')" value=">Cerraduras y Herrajes">Cerraduras y Herrajes</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Climatizacion')" value=">Climatizacion">Climatizacion</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cocina')" value=">Cocina">Cocina</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Complementos de Baños')" value=">Complementos de Baños">Complementos de Baños</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Construccion y Ferreteria')" value=">Construccion y Ferreteria">Construccion y Ferreteria</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Cortinas y Persianas')" value=">Cortinas y Persianas">Cortinas y Persianas</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Electricidad')" value=">Electricidad">Electricidad</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Electrodomésticos de Cocina')" value=">Electrodomésticos de Cocina">Electrodomésticos de Cocina</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Electrodomésticos del Hogar')" value=">Electrodomésticos del Hogar">Electrodomésticos del Hogar</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Escaleras y Mudanzas')" value=">Escaleras y Mudanzas">Escaleras y Mudanzas</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Estufas, Hornos & Campanas')" value=">Estufas, Hornos & Campanas">Estufas, Hornos & Campanas</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Herramientas Electricas')" value=">Herramientas Electricas">Herramientas Electricas</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Lavandería y Lavadero')" value=">Lavandería y Lavadero">Lavandería y Lavadero</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Maderas, Tableros y Herrajes')" value=">Maderas, Tableros y Herrajes">Maderas, Tableros y Herrajes</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Pinturas')" value=">Pinturas">Pinturas</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Pisos y Paredes')" value=">Pisos y Paredes">Pisos y Paredes</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Pisos y Pinturas para tus Espacios')" value=">Pisos y Pinturas para tus Espacios">Pisos y Pinturas para tus Espacios</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Plomería')" value=">Plomería">Plomería</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Puertas')" value=">Puertas">Puertas</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Tecnologia y Television')" value=">Tecnologia y Television">Tecnologia y Television</li></a><br>
-								<a href="#"><li style="color: #333; " onclick="filtroTipo('Tejas y Drywall')" value=">Tejas y Drywall">Tejas y Drywall</li></a><br>
+							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+							<tbody id="myTable">
+							<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Baños')" value="Baños">Baños</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Casa inteligente y Seguridad')" value="Casa inteligente y Seguridad">Casa inteligente y Seguridad</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cerraduras y Herrajes')" value="Cerraduras y Herrajes">Cerraduras y Herrajes</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Climatizacion')" value="Climatizacion">Climatizacion</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cocina')" value="Cocina">Cocina</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Complementos de Baños')" value="Complementos de Baños">Complementos de Baños</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Construccion y Ferreteria')" value="Construccion y Ferreteria">Construccion y Ferreteria</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cortinas y Persianas')" value="Cortinas y Persianas">Cortinas y Persianas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Electricidad')" value="Electricidad">Electricidad</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Electrodomésticos de Cocina')" value="Electrodomésticos de Cocina">Electrodomésticos de Cocina</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Electrodomésticos del Hogar')" value="Electrodomésticos del Hogar">Electrodomésticos del Hogar</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Escaleras y Mudanzas')" value="Escaleras y Mudanzas">Escaleras y Mudanzas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estufas, Hornos & Campanas')" value="Estufas, Hornos & Campanas">Estufas, Hornos & Campanas</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Herramientas Electricas')" value="Herramientas Electricas">Herramientas Electricas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Lavandería y Lavadero')" value="Lavandería y Lavadero">Lavandería y Lavadero</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Maderas, Tableros y Herrajes')" value="Maderas, Tableros y Herrajes">Maderas, Tableros y Herrajes</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Pinturas')" value="Pinturas">Pinturas</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Pisos y Paredes')" value="Pisos y Paredes">Pisos y Paredes</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Pisos y Pinturas para tus Espacios')" value="Pisos y Pinturas para tus Espacios">Pisos y Pinturas para tus Espacios</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Plomería')" value="Plomería">Plomería</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Puertas')" value="Puertas">Puertas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Tecnologia y Television')" value="Tecnologia y Television">Tecnologia y Television</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Tejas y Drywall')" value="Tejas y Drywall">Tejas y Drywall</li></a></td></tr>
+								</tbody>
+							</table>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>
