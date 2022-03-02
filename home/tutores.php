@@ -142,7 +142,7 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="medicos.php"><li class="azulmedicos" >MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -2035,9 +2035,9 @@ box-shadow: none;
 		
 			<section class="section-grid2">
 				
-				<div class="grid-prod2">
+				<div class="grid-prod2" id="div_gurus">
 				
-					<P style="margin-left:64%;  padding-top:10px; color:#FFF; background-color:#BFBFBF; height:50px; font-size:100%">&nbsp;&nbsp;&nbsp;&nbsp;VER TODOS LOS GÚRUS >&nbsp;&nbsp;&nbsp;&nbsp;<P>
+					
 
 				</div>
 				<div align="left" style="padding-left: 0px;margin-right: 20px; ">
