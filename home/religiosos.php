@@ -1867,11 +1867,11 @@ box-shadow: none;
 		
 			<section class="section-grid2">
 				
-				<div class="grid-prod2">
+				<div class="grid-prod2" id="div_gurus">
 				
 					
 					
-					<P style="margin-left:64%;  padding-top:10px; color:#FFF; background-color:#BFBFBF; height:50px; font-size:100%">&nbsp;&nbsp;&nbsp;&nbsp;VER TODOS LOS GÚRUS >&nbsp;&nbsp;&nbsp;&nbsp;<P>
+					
 
 				</div>
 				<div align="left" style="padding-left: 0px;margin-right: 20px; ">
