@@ -2324,7 +2324,7 @@ box-shadow: none;
 		
 			<section class="section-grid2">
 				
-				<div class="grid-prod2">
+				<div class="grid-prod2" id="div_gurus">
 				
 					
 				</div>

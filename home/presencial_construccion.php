@@ -290,7 +290,7 @@ box-shadow: none;
 								<option value="Tejas y Drywall">Tejas y Drywall</option>
   </select>
   <span style="margin-left:3%"> Rango de Precio:</span>
-  <input type="hidden" id="filtro" value="Idioma">
+  <input type="hidden" id="filtro" value="construccion">
   <select class="camposgenerales" 
   
   style=" border: none;
@@ -1693,7 +1693,7 @@ box-shadow: none;
 		
 			<section class="section-grid2">
 				
-				<div class="grid-prod2">
+				<div class="grid-prod2" id="div_gurus">
 				
 					
 				</div>
