@@ -1,6 +1,12 @@
 var LISTA_GURUS = []
 var LISTA_GURUS_TEMP = []
 var TIPO_GURU =""
+var CIUDAD = ""
+var RANGO_INICIAL = ""
+var RANGO_FINAL = ""
+var IDIOMA = ""
+var PAIS = ""
+
 
 $( document ).ready(function() {
 
