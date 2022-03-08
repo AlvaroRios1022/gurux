@@ -183,7 +183,7 @@ box-shadow: none;
 			
 						<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadorotros" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input  id="buscador" style="margin-left:10px" class="buscadorotros" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchotros" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
