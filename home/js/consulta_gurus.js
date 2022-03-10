@@ -81,7 +81,8 @@ function Pintar_Gurus(){
             "</div>"+
         "</div>";
             }
-                
+            
+
     });
 
     for(var i = LISTA_GURUS_TEMP.length; i<27 ;i++){
@@ -117,7 +118,9 @@ function Pintar_Gurus(){
             "<img src='img/categorias/en linea/barra.png' style='width:2px; height:50px; margin-top:20px' alt='kalita'> Tiempo de Consulta: </p>"+
             "<p class='textopguru'  style='margin-bottom:10px; margin-top:-40px; font-size:15px'> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>"+
         "</div>"+
+    "</div><br><br><br>"+
     "</div><br><br><br>";
+    ;
     }
   
    
