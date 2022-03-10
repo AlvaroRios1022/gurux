@@ -2,6 +2,11 @@
 require_once("../config/conexion.php");
 class LoginModel {
 
+
+    public static function cambiar_pass($post){
+        
+    }
+
     public static function Inicio_sesion($post){
         $return = array();
         $mysqli=Conectar::conexion();
