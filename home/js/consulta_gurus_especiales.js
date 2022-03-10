@@ -1,4 +1,3 @@
-
 var LISTA_GURUS = []
 var LISTA_GURUS_TEMP = []
 var TIPO_GURU =""
@@ -27,10 +26,12 @@ event.preventDefault();
 })
 
 
+
+
 $(document).ready(function(){
     $("#buscador").on("keyup", function() {
       var value = $(this).val().toLowerCase();
-      console.log(value)
+     
       $("#myTable tr").filter(function() {
           console.log(value)
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
@@ -41,7 +42,6 @@ $(document).ready(function(){
 
 function Pintar_Gurus(){
     var html =""
- 
     LISTA_GURUS_TEMP = LISTA_GURUS
     var contador = 0;
     $.each(LISTA_GURUS_TEMP, function (index, v) {
@@ -49,6 +49,7 @@ function Pintar_Gurus(){
             && ((RANGO_INICIAL < v.precio && v.precio < RANGO_FINAL) || (RANGO_INICIAL == '' || RANGO_FINAL == '') )
             && (v.idioma == IDIOMA || IDIOMA == "" ) &&( v.pais == PAIS || PAIS == "")
             ){
+
             html = html +  "<div class='prod-grid3' style='margin-top:25px;height: 180px;'>"+
             "<img class='imgredonguru' src='"+v.url_image+"' alt='kalita'>"+
               "<img src='img/categorias/en linea/1m.png' alt='kalita'>"+
@@ -84,8 +85,6 @@ function Pintar_Gurus(){
         "</div>";
         contador ++;
             }
-            
-
     });
 
     for(var i = contador; i<27 ;i++){
@@ -121,9 +120,7 @@ function Pintar_Gurus(){
             "<img src='img/categorias/en linea/barra.png' style='width:2px; height:50px; margin-top:20px' alt='kalita'> Tiempo de Consulta: </p>"+
             "<p class='textopguru'  style='margin-bottom:10px; margin-top:-40px; font-size:15px'> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>"+
         "</div>"+
-    "</div><br><br><br>"+
     "</div><br><br><br>";
-    ;
     }
   
    
@@ -131,7 +128,10 @@ function Pintar_Gurus(){
 
                     $("#div_gurus").html(html)
 
+
 }
+
+
 
 function filtroTipo(tipo){
     TIPO_GURU = tipo;
@@ -161,5 +161,11 @@ function change_idioma(e){
 
 function change_pais(e){
     PAIS = e.value;
+    Pintar_Gurus();
+}
+
+
+function SeleccionaProfesional(e){
+    TIPO_GURU = e.value;
     Pintar_Gurus();
 }

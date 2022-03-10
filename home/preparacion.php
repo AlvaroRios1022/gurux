@@ -1894,7 +1894,7 @@ box-shadow: none;
 					
 					<div class="menuright" align="center" >
 
-						<form  action="" method="post">
+						<form  action="" method="post" id="form_login">
 							<div >			
 								<h4 style=" color: #FEC705; ">&nbsp; </h4>
 								<h4 style=" color: #FEC705;  "><strong>Iniciar Sesión</strong></h4>
@@ -1903,6 +1903,8 @@ box-shadow: none;
 							</div>
 							<div >				
 								<div class="form-group" >
+								<input type="hidden" value="login" name="tipo">
+								<input type="hidden" value="1" name="tipo_user">
 									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario">
 								</div>
 								<br>
@@ -2290,5 +2292,6 @@ function carousel() {
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="js/consulta_gurus.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>

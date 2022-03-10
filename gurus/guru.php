@@ -237,12 +237,12 @@ header('Access-Control-Allow-Origin: *');
                         echo $_POST['tutor'];
                     } ?>">
                     <input type="hidden" name="especialista" id="especialista" value="<?php 
-                    if(isset($_POST['especialista'])){
-                        echo $_POST['especialista'];
+                    if(isset($_POST['constructor'])){
+                        echo $_POST['constructor'];
                     } ?>">
                     <input type="hidden" name="Preparacion_fisica" id="Preparacion_fisica" value="<?php 
-                    if(isset($_POST['Preparacion_fisica'])){
-                        echo $_POST['Preparacion_fisica'];
+                    if(isset($_POST['yoga'])){
+                        echo $_POST['yoga'];
                     } 
                     ?>">
                     <input type="hidden" name="otros" id="otros" value="<?php

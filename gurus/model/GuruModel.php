@@ -431,7 +431,7 @@ class GuruModel {
         $idiomas = $db->real_escape_string($post['idiomas']);
         $otras_profesiones = $db->real_escape_string($post['otras_profesiones']);
         $tutor = $db->real_escape_string($post['tutor']);
-        $construccion = $db->real_escape_string($post['otros']);
+        $otros = $db->real_escape_string($post['otros']);
         $nombre = $db->real_escape_string($post['nombre']);
         $documento = $db->real_escape_string($post['documento']);
         $genero = $db->real_escape_string($post['genero']);
@@ -458,8 +458,8 @@ class GuruModel {
         
     
         if($id_personal=="0"){
-          $query = "INSERT INTO `guru`(`otro_idioma`,`idioma`,`codigo_pais`,`url_cert_formacion`,`estado_c`,`tipo_doc`,`medicina`, `alternativa`, `body_fisico` , `tutor` ,`psiquico`, `religioso`, `coaching`, `idiomas`, `otras_profesiones`, `construccion`, `nombre`, `documento`, `genero`, `fecha`, `pais`, `ciudad`, `direccion`, `telefono`, `correo`,`url_image`,`password`,preparacion_fisica,especialista)VALUES 
-          ('".$idioma_adicional."','".$idioma."','".$codigo."', '".$url_cert_formacion."','".$estado_c."',".$tipo_doc.",'".$medicina."', '".$alternativa."', '".$fisico."' , '".$tutor."',   '".$psiquico."', '".$religioso."', '".$coaching."', '".$idiomas."', '".$otras_profesiones."', '".$construccion."', '".$nombre."', '".$documento."', '".$genero."', '".$fecha."', '".$pais."', '".$ciudad."', '".$direccion."', '".$telefono."', '".$correo."','".$url_image."','".$password."','".$Preparacion_fisica."','".$especialista."')";
+          $query = "INSERT INTO `guru`(`otro_idioma`,`idioma`,`codigo_pais`,`url_cert_formacion`,`estado_c`,`tipo_doc`,`medicina`, `alternativa`, `body_fisico` , `tutor` ,`psiquico`, `religioso`, `coaching`, `idiomas`, `otras_profesiones`, `nombre`, `documento`, `genero`, `fecha`, `pais`, `ciudad`, `direccion`, `telefono`, `correo`,`url_image`,`password`,preparacion_fisica,especialista)VALUES 
+          ('".$idioma_adicional."','".$idioma."','".$codigo."', '".$url_cert_formacion."','".$estado_c."',".$tipo_doc.",'".$medicina."', '".$alternativa."', '".$fisico."' , '".$tutor."',   '".$psiquico."', '".$religioso."', '".$coaching."', '".$idiomas."', '".$otros."', '".$nombre."', '".$documento."', '".$genero."', '".$fecha."', '".$pais."', '".$ciudad."', '".$direccion."', '".$telefono."', '".$correo."','".$url_image."','".$password."','".$Preparacion_fisica."','".$especialista."')";
          
       }else{
           $query = "UPDATE guru SET `nombre` ='".$nombre."', `documento`='".$documento."', `genero`='".$genero."', `fecha`='".$fecha."', `pais`='".$pais."', `ciudad`='".$ciudad."', `direccion`='".$direccion."', `telefono`='".$telefono."', `correo`='".$correo."',url_image='".$url_image."' WHERE id=".$id_personal;
