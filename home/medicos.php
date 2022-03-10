@@ -130,10 +130,10 @@ box-shadow: none;
 			
 			<div class="menusuperiocentro"  style="margin-left: -30px">
 				<a href="usuarios.php"> <img src="img/registros_.png" width="176px" height="30px" alt="registro" /></a>
-				<img src="img/sesiones_.png" width="176px" height="30px" alt="sesion" />
+					<a href="login.php"><img src="img/sesiones_.png" width="176px" height="30px" alt="sesion" /></a>
 			</div>
 			<a href="cobru.php" ><img src="img/logoheader.png" width="7%"  alt="sesion" style="margin-top:10px" /></a>
-
+ 
 
 			<div class="menusuperiorderecho" align="left"  style="margin-left: -20px">
 				<span class="itemlista">IDIOMA  <a style="color:#FFC808"> ES </a>  |  EN</span>
