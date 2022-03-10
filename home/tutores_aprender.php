@@ -133,7 +133,7 @@ box-shadow: none;
 			
 			<div class="menusuperiocentro"  style="margin-left: -30px">
 				<a href="usuarios.php"> <img src="img/registros_.png" width="176px" height="30px" alt="registro" /></a>
-				<img src="img/sesiones_.png" width="176px" height="30px" alt="sesion" />
+					<a href="login.php"><img src="img/sesiones_.png" width="176px" height="30px" alt="sesion" /></a>
 			</div>
 			<a href="cobru.php" ><img src="img/logoheader.png" width="7%"  alt="sesion" style="margin-top:10px" /></a>
 
@@ -182,199 +182,198 @@ box-shadow: none;
 
 						<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadortutores" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input  id="buscador" style="margin-left:10px" class="buscadortutores" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchtutores" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
 						
 							<div class="especialtutores" >
-							<p>Asignaturas Colegio </p>
 					<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
 							<tbody id="myTable">
-							<a href="#"><li style="color: #333; " onclick="filtroTipo('Biología')" value="Biología">Biología</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias sociales')" value="Ciencias sociales">Ciencias sociales</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Contabilidad')" value="Contabilidad">Contabilidad</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Economía')" value="Economía">Economía</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Español')" value="Español">Español</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ética')" value="Ética">Ética</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Filosofía')" value="Filosofía">Filosofía</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Física')" value="Física">Física</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Geometría')" value="Geometría">Geometría</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Humanidades')" value="Humanidades">Humanidades</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Matemáticas')" value="Matemáticas">Matemáticas</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Química')" value="Química">Química</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas y Tecnología')" value="Sistemas y Tecnología">Sistemas y Tecnología</li></a><br>
-                           <br>
+							<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biología')" value="Biología">Biología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias sociales')" value="Ciencias sociales">Ciencias sociales</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Contabilidad')" value="Contabilidad">Contabilidad</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Economía')" value="Economía">Economía</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Español')" value="Español">Español</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ética')" value="Ética">Ética</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Filosofía')" value="Filosofía">Filosofía</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Física')" value="Física">Física</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geometría')" value="Geometría">Geometría</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Humanidades')" value="Humanidades">Humanidades</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Matemáticas')" value="Matemáticas">Matemáticas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Química')" value="Química">Química</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas y Tecnología')" value="Sistemas y Tecnología">Sistemas y Tecnología</li></a></td></tr>
+                           
 
-                            <p>Ciencias</p>
-                             	<a href="#"><li style="color: #333; "onclick="filtroTipo('Balance de materia y energía')" value="Balance de materia y energía">Balance de materia y energía</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Biofísica')" value="Biofísica">Biofísica</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Biología')" value="Biología">Biología</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Biología celular')" value="Biología celular">Biología celular</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Biología computacional')" value="Biología computacional">Biología computacional</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Biología molecular')" value="Biología molecular">Biología molecular</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Bioquímica')" value="Bioquímica">Bioquímica</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Bioquímica metabólica')" value="Bioquímica metabólica">Bioquímica metabólica</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Catálisis')" value="Catálisis">Catálisis</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Ciencias agrícolas')" value="Ciencias agrícolas">Ciencias agrícolas</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Circuitos eléctricos')" value="Circuitos eléctricos">Circuitos eléctricos</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Diseño de máquinas')" value="Diseño de máquinas">Diseño de máquinas</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Ecología')" value="Ecología">Ecología</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Electromagnetismo')" value="Electromagnetismo">Electromagnetismo</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Electrónica análoga')" value="Electrónica análoga">Electrónica análoga</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Estática')" value="Estática">Estática</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Física 1')" value="Física 1">Física 1</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Física 2')" value="Física 2">Física 2</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Física biomecánica')" value="Física biomecánica">Física biomecánica</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Fisicoquímica')" value="Fisicoquímica">Fisicoquímica</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Genética')" value="Genética">Genética</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Geociencia')" value="Geociencia">Geociencia</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Geología')" value="Geología">Geología</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Hidrología')" value="Hidrología">Hidrología</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Mecánica de fluidos y sólidos')" value="Mecánica de fluidos y sólidos">Mecánica de fluidos y sólidos</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Mecatrónica')" value="Mecatrónica">Mecatrónica</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Metrología')" value="Metrología">Metrología</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Microbiología')" value="Microbiología">Microbiología</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Química analítica')" value="Química analítica">Química analítica</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Química general')" value="Química general">Química general</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Química inorgánica')" value="Química inorgánica">Química inorgánica</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Química orgánica')" value="Química orgánica">Química orgánica</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Resistencia de materiales')" value="Resistencia de materiales">Resistencia de materiales</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Termodinámica')" value="Termodinámica">Termodinámica</li></a><br>
-                            <br>
 
-                            <p>Ciencias Politicas y Sociales</p>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Antropología')" value="Antropología">Antropología</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias políticas')" value="Ciencias políticas">Ciencias políticas</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Common law')" value="Common law">Common law</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Criminología')" value="Criminología">Criminología</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho civil')" value="Derecho civil">Derecho civil</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho comercial y mercantil')" value="Derecho comercial y mercantil">Derecho comercial y mercantil</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho constitucional')" value="Derecho constitucional">Derecho constitucional</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho internacional')" value="Derecho internacional">Derecho internacional</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho laboral')" value="Derecho laboral">Derecho laboral</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho penal')" value="Derecho penal">Derecho penal</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho privado')" value="Derecho privado">Derecho privado</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho procesal')" value="Derecho procesal">Derecho procesal</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho público')" value="Derecho público">Derecho público</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho romano')" value="Derecho romano">Derecho romano</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Derechos humanos')" value="Derechos humanos">Derechos humanos</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Filosofía')" value="Filosofía">Filosofía</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Hermenéutica')" value="Hermenéutica">Hermenéutica</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Historia y geografía')" value="Historia y geografía">Historia y geografía</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Recursos humanos')" value="Recursos humanos">Recursos humanos</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Redacción y gramática')" value="Redacción y gramática">Redacción y gramática</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Relaciones internacionales')" value="Relaciones internacionales">Relaciones internacionales</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sociología')" value="Sociología">Sociología</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Teología')" value="Teología">Teología</li></a><br>
-                            <br>
+                             	<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Balance de materia y energía')" value="Balance de materia y energía">Balance de materia y energía</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Biofísica')" value="Biofísica">Biofísica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Biología')" value="Biología">Biología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Biología celular')" value="Biología celular">Biología celular</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Biología computacional')" value="Biología computacional">Biología computacional</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Biología molecular')" value="Biología molecular">Biología molecular</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Bioquímica')" value="Bioquímica">Bioquímica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Bioquímica metabólica')" value="Bioquímica metabólica">Bioquímica metabólica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Catálisis')" value="Catálisis">Catálisis</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Ciencias agrícolas')" value="Ciencias agrícolas">Ciencias agrícolas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Circuitos eléctricos')" value="Circuitos eléctricos">Circuitos eléctricos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Diseño de máquinas')" value="Diseño de máquinas">Diseño de máquinas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Ecología')" value="Ecología">Ecología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Electromagnetismo')" value="Electromagnetismo">Electromagnetismo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Electrónica análoga')" value="Electrónica análoga">Electrónica análoga</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Estática')" value="Estática">Estática</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Física 1')" value="Física 1">Física 1</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Física 2')" value="Física 2">Física 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Física biomecánica')" value="Física biomecánica">Física biomecánica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Fisicoquímica')" value="Fisicoquímica">Fisicoquímica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Genética')" value="Genética">Genética</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Geociencia')" value="Geociencia">Geociencia</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Geología')" value="Geología">Geología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Hidrología')" value="Hidrología">Hidrología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Mecánica de fluidos y sólidos')" value="Mecánica de fluidos y sólidos">Mecánica de fluidos y sólidos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Mecatrónica')" value="Mecatrónica">Mecatrónica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Metrología')" value="Metrología">Metrología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Microbiología')" value="Microbiología">Microbiología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Química analítica')" value="Química analítica">Química analítica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Química general')" value="Química general">Química general</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Química inorgánica')" value="Química inorgánica">Química inorgánica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Química orgánica')" value="Química orgánica">Química orgánica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Resistencia de materiales')" value="Resistencia de materiales">Resistencia de materiales</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Termodinámica')" value="Termodinámica">Termodinámica</li></a></td></tr>
+                            
 
-                            <p>Economía, Finanzas y Contabilidad</p>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Análisis financiero')" value="Análisis financiero">Análisis financiero</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Comercio')" value="Comercio">Comercio</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Contabilidad')" value="Contabilidad">Contabilidad</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Costos')" value="Costos">Costos</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Econometría')" value="Econometría">Econometría</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Economía internacional')" value="Economía internacional">Economía internacional</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Economía matemática')" value="Economía matemática">Economía matemática</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Finanzas')" value="Finanzas">Finanzas</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos macroeconómicos')" value="Fundamentos macroeconómicos">Fundamentos macroeconómicos</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos microeconómicos')" value="Fundamentos microeconómicos">Fundamentos microeconómicos</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Impuestos')" value="Impuestos">Impuestos</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Macroeconomía 1')" value="Macroeconomía 1">Macroeconomía 1</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Macroeconomía 2')" value="Macroeconomía 2">Macroeconomía 2</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Matemática financiera')" value="Matemática financiera">Matemática financiera</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Mercadeo')" value="Mercadeo">Mercadeo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Mercado de valores')" value="Mercado de valores">Mercado de valores</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Mercadotecnia y ventas')" value="Mercadotecnia y ventas">Mercadotecnia y ventas</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Microeconomía 1')" value="Microeconomía 1">Microeconomía 1</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Microeconomía 2')" value="Microeconomía 2">Microeconomía 2</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Niif')" value="Niif">Niif</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Presupuesto')" value="Presupuesto">Presupuesto</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Simulación financiera')" value="Simulación financiera">Simulación financiera</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría de juegos')" value="Teoría de juegos">Teoría de juegos</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría del consumidor')" value="Teoría del consumidor">Teoría del consumidor</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Trading')" value="Trading">Trading</li></a><br>
-                                <br>
 
-                            <p>Deportes</p>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Ajedrez')"  value="Ajedrez">Ajedrez</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Artes marciales')"  value="Artes marciales">Artes marciales</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Baloncesto')"  value="Baloncesto">Baloncesto</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Box/kick boxing')"  value="Box/kick boxing">Box/kick boxing</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Entrenador personal')"  value="Entrenador personal">Entrenador personal</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Fútbol')"  value="Fútbol">Fútbol</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Manejo de dron')"  value="Manejo de dron">Manejo de dron</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Mma (artes marciales mixtas)')"  value="Mma (artes marciales mixtas)">Mma (artes marciales mixtas)</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Natación')"  value="Natación">Natación</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Patinaje')"  value="Patinaje">Patinaje</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Pilates')"  value="Pilates">Pilates</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Slackline')"  value="Slackline">Slackline</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Squash')"  value="Squash">Squash</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Tenis')"  value="Tenis">Tenis</li></a><br>
-                                <a href="#"><li style="color: #333; "onclick="filtroTipo('Zumba')"  value="Zumba">Zumba</li></a><br>
-                            <br>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Antropología')" value="Antropología">Antropología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias políticas')" value="Ciencias políticas">Ciencias políticas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Common law')" value="Common law">Common law</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Criminología')" value="Criminología">Criminología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho civil')" value="Derecho civil">Derecho civil</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho comercial y mercantil')" value="Derecho comercial y mercantil">Derecho comercial y mercantil</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho constitucional')" value="Derecho constitucional">Derecho constitucional</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho internacional')" value="Derecho internacional">Derecho internacional</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho laboral')" value="Derecho laboral">Derecho laboral</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho penal')" value="Derecho penal">Derecho penal</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho privado')" value="Derecho privado">Derecho privado</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho procesal')" value="Derecho procesal">Derecho procesal</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho público')" value="Derecho público">Derecho público</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho romano')" value="Derecho romano">Derecho romano</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derechos humanos')" value="Derechos humanos">Derechos humanos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Filosofía')" value="Filosofía">Filosofía</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hermenéutica')" value="Hermenéutica">Hermenéutica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Historia y geografía')" value="Historia y geografía">Historia y geografía</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Recursos humanos')" value="Recursos humanos">Recursos humanos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Redacción y gramática')" value="Redacción y gramática">Redacción y gramática</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Relaciones internacionales')" value="Relaciones internacionales">Relaciones internacionales</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sociología')" value="Sociología">Sociología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Teología')" value="Teología">Teología</li></a></td></tr>
+                            
 
-                            <p>Ingeniería</p>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Anadec')" value="Anadec">Anadec</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Base de datos')" value="Base de datos">Base de datos</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Base de datos linux')" value="Base de datos linux">Base de datos linux</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Calidad')" value="Calidad">Calidad</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Comunicaciones analógicas')" value="Comunicaciones analógicas">Comunicaciones analógicas</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Control de producción')" value="Control de producción">Control de producción</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos de producción')" value="Fundamentos de producción">Fundamentos de producción</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniería civil')" value="Ingeniería civil">Ingeniería civil</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Inteligencia artificial')" value="Inteligencia artificial">Inteligencia artificial</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Logística de producción')" value="Logística de producción">Logística de producción</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Machine learning')" value="Machine learning">Machine learning</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Modelos de ingeniería 1 y 2')" value="Modelos de ingeniería 1 y 2">Modelos de ingeniería 1 y 2</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Simulación')" value="Simulación">Simulación</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sistema de apoyo a la decisión')" value="Sistema de apoyo a la decisión">Sistema de apoyo a la decisión</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sistema de control gerencial')" value="Sistema de control gerencial">Sistema de control gerencial</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas de control analógico')" value="Sistemas de control analógico">Sistemas de control analógico</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas de control discreto')" value="Sistemas de control discreto">Sistemas de control discreto</li></a><br>
-                            <br>
 
-                            <p>Instrumentos Musicales</p>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Acordeón')" value="Acordeón">Acordeón</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Bajo')" value="Bajo">Bajo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Batería')" value="Batería">Batería</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Composición musical')" value="Composición musical">Composición musical</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Flauta')" value="Flauta">Flauta</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Grabación y producción musical')" value="Grabación y producción musical">Grabación y producción musical</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Guitarra')" value="Guitarra">Guitarra</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Guitarra eléctrica')" value="Guitarra eléctrica">Guitarra eléctrica</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniería de sonido')" value="Ingeniería de sonido">Ingeniería de sonido</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Piano')" value="Piano">Piano</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Técnica vocal')" value="Técnica vocal">Técnica vocal</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría musical')" value="Teoría musical">Teoría musical</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Trompeta')" value="Trompeta">Trompeta</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ukelele')" value="Ukelele">Ukelele</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Violín')" value="Violín">Violín</li></a><br>
-                            <br>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Análisis financiero')" value="Análisis financiero">Análisis financiero</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Comercio')" value="Comercio">Comercio</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Contabilidad')" value="Contabilidad">Contabilidad</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Costos')" value="Costos">Costos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Econometría')" value="Econometría">Econometría</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Economía internacional')" value="Economía internacional">Economía internacional</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Economía matemática')" value="Economía matemática">Economía matemática</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Finanzas')" value="Finanzas">Finanzas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos macroeconómicos')" value="Fundamentos macroeconómicos">Fundamentos macroeconómicos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos microeconómicos')" value="Fundamentos microeconómicos">Fundamentos microeconómicos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Impuestos')" value="Impuestos">Impuestos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Macroeconomía 1')" value="Macroeconomía 1">Macroeconomía 1</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Macroeconomía 2')" value="Macroeconomía 2">Macroeconomía 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Matemática financiera')" value="Matemática financiera">Matemática financiera</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mercadeo')" value="Mercadeo">Mercadeo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mercado de valores')" value="Mercado de valores">Mercado de valores</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mercadotecnia y ventas')" value="Mercadotecnia y ventas">Mercadotecnia y ventas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Microeconomía 1')" value="Microeconomía 1">Microeconomía 1</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Microeconomía 2')" value="Microeconomía 2">Microeconomía 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Niif')" value="Niif">Niif</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Presupuesto')" value="Presupuesto">Presupuesto</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Simulación financiera')" value="Simulación financiera">Simulación financiera</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría de juegos')" value="Teoría de juegos">Teoría de juegos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría del consumidor')" value="Teoría del consumidor">Teoría del consumidor</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trading')" value="Trading">Trading</li></a></td></tr>
 
-                            <p>Matemáticas y probabilidad universitaria</p>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Álgebra lineal')" value="Álgebra lineal">Álgebra lineal</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Análisis matemático')" value="Análisis matemático">Análisis matemático</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo diferencial')" value="Cálculo diferencial">Cálculo diferencial</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo integral')" value="Cálculo integral">Cálculo integral</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo multivariado')" value="Cálculo multivariado">Cálculo multivariado</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo vectorial')" value="Cálculo vectorial">Cálculo vectorial</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Ecuaciones diferenciales')" value="Ecuaciones diferenciales">Ecuaciones diferenciales</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística aplicada')" value="Estadística aplicada">Estadística aplicada</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística descriptiva')" value="Estadística descriptiva">Estadística descriptiva</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística inferencial')" value="Estadística inferencial">Estadística inferencial</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Geometría')" value="Geometría">Geometría</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Matemática estructural')" value="Matemática estructural">Matemática estructural</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Modelos probabilísticos')" value="Modelos probabilísticos">Modelos probabilísticos</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Precálculo')" value="Precálculo">Precálculo</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad 1')" value="Probabilidad 1">Probabilidad 1</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad 2')" value="Probabilidad 2">Probabilidad 2</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad y estadística 1')" value="Probabilidad y estadística 1">Probabilidad y estadística 1</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad y estadística 2')" value="Probabilidad y estadística 2">Probabilidad y estadística 2</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Trigonometría')" value="Trigonometría">Trigonometría</li></a><br>
-                                <a href="#"><li style="color: #333; " onclick="filtroTipo('Variable compleja')" value="Variable compleja">Variable compleja</li></a><br>
+
+
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Ajedrez')"  value="Ajedrez">Ajedrez</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Artes marciales')"  value="Artes marciales">Artes marciales</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Baloncesto')"  value="Baloncesto">Baloncesto</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Box/kick boxing')"  value="Box/kick boxing">Box/kick boxing</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Entrenador personal')"  value="Entrenador personal">Entrenador personal</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Fútbol')"  value="Fútbol">Fútbol</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Manejo de dron')"  value="Manejo de dron">Manejo de dron</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Mma (artes marciales mixtas)')"  value="Mma (artes marciales mixtas)">Mma (artes marciales mixtas)</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Natación')"  value="Natación">Natación</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Patinaje')"  value="Patinaje">Patinaje</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Pilates')"  value="Pilates">Pilates</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Slackline')"  value="Slackline">Slackline</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Squash')"  value="Squash">Squash</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Tenis')"  value="Tenis">Tenis</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Zumba')"  value="Zumba">Zumba</li></a></td></tr>
+                            
+
+                            
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Anadec')" value="Anadec">Anadec</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Base de datos')" value="Base de datos">Base de datos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Base de datos linux')" value="Base de datos linux">Base de datos linux</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Calidad')" value="Calidad">Calidad</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Comunicaciones analógicas')" value="Comunicaciones analógicas">Comunicaciones analógicas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Control de producción')" value="Control de producción">Control de producción</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos de producción')" value="Fundamentos de producción">Fundamentos de producción</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniería civil')" value="Ingeniería civil">Ingeniería civil</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Inteligencia artificial')" value="Inteligencia artificial">Inteligencia artificial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Logística de producción')" value="Logística de producción">Logística de producción</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Machine learning')" value="Machine learning">Machine learning</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Modelos de ingeniería 1 y 2')" value="Modelos de ingeniería 1 y 2">Modelos de ingeniería 1 y 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Simulación')" value="Simulación">Simulación</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sistema de apoyo a la decisión')" value="Sistema de apoyo a la decisión">Sistema de apoyo a la decisión</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sistema de control gerencial')" value="Sistema de control gerencial">Sistema de control gerencial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas de control analógico')" value="Sistemas de control analógico">Sistemas de control analógico</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas de control discreto')" value="Sistemas de control discreto">Sistemas de control discreto</li></a></td></tr>
+                            
+
+
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Acordeón')" value="Acordeón">Acordeón</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bajo')" value="Bajo">Bajo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Batería')" value="Batería">Batería</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Composición musical')" value="Composición musical">Composición musical</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Flauta')" value="Flauta">Flauta</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Grabación y producción musical')" value="Grabación y producción musical">Grabación y producción musical</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Guitarra')" value="Guitarra">Guitarra</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Guitarra eléctrica')" value="Guitarra eléctrica">Guitarra eléctrica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniería de sonido')" value="Ingeniería de sonido">Ingeniería de sonido</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Piano')" value="Piano">Piano</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Técnica vocal')" value="Técnica vocal">Técnica vocal</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría musical')" value="Teoría musical">Teoría musical</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trompeta')" value="Trompeta">Trompeta</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ukelele')" value="Ukelele">Ukelele</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Violín')" value="Violín">Violín</li></a></td></tr>
+                            
+
+                            
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Álgebra lineal')" value="Álgebra lineal">Álgebra lineal</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Análisis matemático')" value="Análisis matemático">Análisis matemático</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo diferencial')" value="Cálculo diferencial">Cálculo diferencial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo integral')" value="Cálculo integral">Cálculo integral</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo multivariado')" value="Cálculo multivariado">Cálculo multivariado</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo vectorial')" value="Cálculo vectorial">Cálculo vectorial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ecuaciones diferenciales')" value="Ecuaciones diferenciales">Ecuaciones diferenciales</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística aplicada')" value="Estadística aplicada">Estadística aplicada</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística descriptiva')" value="Estadística descriptiva">Estadística descriptiva</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística inferencial')" value="Estadística inferencial">Estadística inferencial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geometría')" value="Geometría">Geometría</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Matemática estructural')" value="Matemática estructural">Matemática estructural</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Modelos probabilísticos')" value="Modelos probabilísticos">Modelos probabilísticos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Precálculo')" value="Precálculo">Precálculo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad 1')" value="Probabilidad 1">Probabilidad 1</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad 2')" value="Probabilidad 2">Probabilidad 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad y estadística 1')" value="Probabilidad y estadística 1">Probabilidad y estadística 1</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad y estadística 2')" value="Probabilidad y estadística 2">Probabilidad y estadística 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trigonometría')" value="Trigonometría">Trigonometría</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Variable compleja')" value="Variable compleja">Variable compleja</li></a></td></tr>
                             	
 							</tbody>
 							</table>
@@ -427,7 +426,7 @@ box-shadow: none;
   margin-bottom: auto;
   text-align: center" 
   name="profesional" id="profesional" onchange="SeleccionaProfesional(this)">        
-  <option('Biología')" value="Biología">Biología</option>
+  <option value="Biología">Biología</option>
                                 <option value="Ciencias sociales">Ciencias sociales</option>
                                 <option value="Contabilidad">Contabilidad</option>
                                 <option value="Economía">Economía</option>

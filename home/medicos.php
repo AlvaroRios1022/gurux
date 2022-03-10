@@ -130,10 +130,10 @@ box-shadow: none;
 			
 			<div class="menusuperiocentro"  style="margin-left: -30px">
 				<a href="usuarios.php"> <img src="img/registros_.png" width="176px" height="30px" alt="registro" /></a>
-				<img src="img/sesiones_.png" width="176px" height="30px" alt="sesion" />
+					<a href="login.php"><img src="img/sesiones_.png" width="176px" height="30px" alt="sesion" /></a>
 			</div>
 			<a href="cobru.php" ><img src="img/logoheader.png" width="7%"  alt="sesion" style="margin-top:10px" /></a>
-
+ 
 
 			<div class="menusuperiorderecho" align="left"  style="margin-left: -20px">
 				<span class="itemlista">IDIOMA  <a style="color:#FFC808"> ES </a>  |  EN</span>
@@ -189,13 +189,29 @@ box-shadow: none;
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-					
+						
+
+
+
+
+
+
+
+
+
 							<div class="especial" >
 							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
 							<tbody id="myTable">
 							<tr><td><a href="#"><li style="color: #333; "   onclick="filtroTipo('Alergólogo')">Alergólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cardiólogo')">Cardiólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Angiólogo')">Angiólogo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cardiólogo')">Cardiólogo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cirugía cardiovascular')">Cirugía cardiovascular</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cirugía general y del aparato digestivo')">Cirugía general y del aparato digestivo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cirugía oral y maxilofacial')">Cirugía oral y maxilofacial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cirugía ortopédica y traumatología')">Cirugía ortopédica y traumatología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cirugía pediátrica')">Cirugía pediátrica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cirugía plástica, estética y reparadora')">Cirugía plástica, estética y reparadora</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cirugía torácica')">Cirugía torácica</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Deportólogo')">Deportólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dermatólogo')">Dermatólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Endocrinólogo')">Endocrinólogo</li></a></td></tr>
@@ -215,6 +231,7 @@ box-shadow: none;
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Microbiólogo')">Microbiólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Nefrólogo')">Nefrólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neumólogo')">Neumólogo</li></a></td></tr>
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neurocirugía')">Neurocirugía</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neurólogo')">Neurólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Oncólogo')">Oncólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ortopedista')">Ortopedista</li></a></td></tr>

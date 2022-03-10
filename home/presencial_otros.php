@@ -133,7 +133,7 @@ box-shadow: none;
 			
 			<div class="menusuperiocentro"  style="margin-left: -30px">
 				<a href="usuarios.php"> <img src="img/registros_.png" width="176px" height="30px" alt="registro" /></a>
-				<img src="img/sesiones_.png" width="176px" height="30px" alt="sesion" />
+					<a href="login.php"><img src="img/sesiones_.png" width="176px" height="30px" alt="sesion" /></a>
 			</div>
 			<a href="cobru.php" ><img src="img/logoheader.png" width="7%"  alt="sesion" style="margin-top:10px" /></a>
 
@@ -183,7 +183,7 @@ box-shadow: none;
 			
 						<div class="input-group">
 							<br><br>
-							<input style="margin-left:10px" class="buscadorotros" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input  id="buscador" style="margin-left:10px" class="buscadorotros" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="searchotros" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
