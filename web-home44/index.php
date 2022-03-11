@@ -1171,7 +1171,7 @@ function showSlides(n) {
 							</div>
 							<div >				
 								<div class="form-group" >
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario">
+									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
 								</div>
 								<div class="form-group" >
 									<div class="clearfix">
@@ -1197,7 +1197,7 @@ function showSlides(n) {
 							</div>
 							<div >				
 								<div class="form-group" >
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario">
+									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
 								</div>
 								<div class="form-group" >
 									<div class="clearfix">
