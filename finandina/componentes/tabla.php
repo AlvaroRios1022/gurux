@@ -8,7 +8,7 @@
  	
 <div class="row">
 	<div class="col-lg-12">
-	<h2>Tabla de Gurús Profesionales</h2>
+	<h2>Gurús por Aprobación de Tarjeta</h2>
 		<table class="table table-hover table-condensed table-bordered">
 		<caption>
 			
@@ -17,15 +17,8 @@
 				<td style="vertical-align: middle;">Numero</td>
 				<td style="vertical-align: middle;">Nombre Apellido</td>
 				<td style="vertical-align: middle;">Cédula o Id</td>
-				<td style="vertical-align: middle;">Profesión</td>
-				<td style="vertical-align: middle;">Certificación académica</td>
-				<td style="vertical-align: middle;">Fecha de Nacimiento</td>
-				<td style="vertical-align: middle;">Edad</td>
-				<td style="vertical-align: middle;">Lugar de Nacimiento</td>
 				<td style="vertical-align: middle;">Aprobar</td>
 				<td style="vertical-align: middle;">Rechazar</td>
-				
-
 			</tr>
 
 			<?php
