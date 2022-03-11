@@ -490,7 +490,7 @@ box-shadow: none;
 							</div>
 							<div >				
 								<div class="form-group" >
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario">
+									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
 								</div>
 								<br>
 								<div class="form-group" >
@@ -517,7 +517,7 @@ box-shadow: none;
 							</div>
 							<div >				
 								<div class="form-group" >
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario">
+									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
 								</div><br>
 								<div class="form-group" >
 									<div class="clearfix">
