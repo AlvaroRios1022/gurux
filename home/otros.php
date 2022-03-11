@@ -127,10 +127,22 @@ box-shadow: none;
 				</ul>-->   
 			</div>
 			
-			<div class="menusuperiocentro"  style="margin-left: -30px">
-				<a href="usuarios.php"> <img src="img/registros_.png" width="176px" height="30px" alt="registro" /></a>
+			<?php 
+				if(!(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE)){
+			?>
+				<div class="menusuperiocentro"  style="margin-left: -30px">
+					<a href="usuarios.php"> <img src="img/registros_.png" width="176px" height="30px" alt="registro" /></a>
 					<a href="login.php"><img src="img/sesiones_.png" width="176px" height="30px" alt="sesion" /></a>
-			</div>
+				</div>
+			<?php 
+				}else{ 
+			?>
+				<div class="menusuperiocentro logout"  style="margin-left: -30px">
+					<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
+				</div>
+			<?php 
+				} 
+			?>
 			<a href="cobru.php" ><img src="img/logoheader.png" width="7%"  alt="sesion" style="margin-top:10px" /></a>
 
 
@@ -2232,7 +2244,7 @@ box-shadow: none;
 								<div class="form-group" >
 								<input type="hidden" value="login" name="tipo">
 								<input type="hidden" value="1" name="tipo_user">
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario">
+									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
 								</div>
 								<br>
 								<div class="form-group" >
@@ -2260,7 +2272,7 @@ box-shadow: none;
 							</div>
 							<div >				
 								<div class="form-group" >
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario">
+									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
 								</div><br>
 								<div class="form-group" >
 									<div class="clearfix">

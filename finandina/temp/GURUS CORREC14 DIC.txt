@@ -1,0 +1,25 @@
+INFORMACIÓN PERSONAL: lo del guardar
+Solo me sale los datos han sido guardados en información personal, pero al guardar información académica y dar editar de nuevo información personal, se de desaparece toda la información, en las otra secciones si se conserva
+
+INFORMACIÓN ACADÉMICA:
+Me deja poner una fecha anterior a la del inicio del curso
+Cuando se adicione un estudio que no se borre el anterior pues no se si queda guardado o no
+
+
+ESTUDIOS COMPLEMENTARIOS
+No me deja poner una fecha posterior a la fecha de inicio
+Me pide señalar EN CURSO cuando ya está finalizado, esto no puede ser obligatorio si ya lo terminé
+
+
+EXPERIENCIA LABORAL
+CARGO	 
+ 
+No sirve ADICIONAR EXPERIENCIA y que se conserve la que ya hemos llenado al dar EDITAR
+Me deja poner una fecha anterior a la del inicio del trabajo
+
+IDIOMAS
+Que conserve todos los idiomas que adiciono y solo UNO pueda ser el nativo, no que en todos me pida chulear nativo para avanzar
+botón enviar no envía o no sale mensaje de enviado.
+y en idiomas que cuando salga la palabra otros tengamos la opcion de escribir cual
+
+de los botones de arriba, los gráficos que no sirven
