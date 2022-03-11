@@ -18,6 +18,9 @@ switch ($post['tipo']) {
     case "login" :
         login($post);
         break;
+        case "cambiar_pass" :
+            cambiar_pass($post);
+            break;
 default: echo('Error, no existe el dato "TIPO" en el objeto POST');
     break;
 }
@@ -27,3 +30,10 @@ function  login($post){
 $datos = LoginModel::Inicio_sesion($post);
 echo json_encode($datos); 
 }
+
+
+
+function  cambiar_pass($post){
+    $datos = LoginModel::cambiar_pass($post);
+    echo json_encode($datos); 
+    }
