@@ -1,12 +1,9 @@
-
-
-<?php 
-			function conexion(){
-				$conexion=new mysqli("localhost", "guruxy_ratsel", "1Ratsel2@", "guruxy_ratsel");
-				$conexion->query("SET NAMES 'utf8'");
-				
-				return $conexion;
-			}
-		
-
- ?> 
+<?php
+	
+	$mysqli=new mysqli("localhost", "u157971792_admin", "1Especialista2", "u157971792_gurus"); //servidor, usuario de base de datos, contraseña del usuario, nombre de base de datos
+	if(mysqli_connect_errno()){
+		echo 'Conexion Fallida : ', mysqli_connect_error();
+		exit();
+	}
+	
+?>
