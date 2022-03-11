@@ -1,0 +1,50 @@
+[26-Jan-2022 15:48:12 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'u157971792_admin'@'localhost' (using password: YES) in /home/guruxy/public_html/ratsel/config/conexion.php on line 4
+[26-Jan-2022 15:48:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/config/conexion.php on line 5
+[26-Jan-2022 15:48:12 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 8
+[26-Jan-2022 15:48:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 12
+[26-Jan-2022 15:48:12 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 21
+[26-Jan-2022 15:48:24 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'u157971792_admin'@'localhost' (using password: YES) in /home/guruxy/public_html/ratsel/config/conexion.php on line 4
+[26-Jan-2022 15:48:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/config/conexion.php on line 5
+[26-Jan-2022 15:48:24 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 8
+[26-Jan-2022 15:48:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 12
+[26-Jan-2022 15:48:24 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 21
+[27-Jan-2022 15:15:52 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'u157971792_admin'@'localhost' (using password: YES) in /home/guruxy/public_html/ratsel/config/conexion.php on line 4
+[27-Jan-2022 15:15:52 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/config/conexion.php on line 5
+[27-Jan-2022 15:15:52 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 8
+[27-Jan-2022 15:15:52 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 12
+[27-Jan-2022 15:15:52 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 21
+[27-Jan-2022 15:16:55 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'u157971792_admin'@'localhost' (using password: YES) in /home/guruxy/public_html/ratsel/config/conexion.php on line 4
+[27-Jan-2022 15:16:55 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/config/conexion.php on line 5
+[27-Jan-2022 15:16:55 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 8
+[27-Jan-2022 15:16:55 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 12
+[27-Jan-2022 15:16:55 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 21
+[27-Jan-2022 15:17:51 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'u157971792_admin'@'localhost' (using password: YES) in /home/guruxy/public_html/ratsel/config/conexion.php on line 4
+[27-Jan-2022 15:17:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/config/conexion.php on line 5
+[27-Jan-2022 15:17:51 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 8
+[27-Jan-2022 15:17:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 12
+[27-Jan-2022 15:17:51 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 21
+[27-Jan-2022 15:18:27 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'u157971792_admin'@'localhost' (using password: YES) in /home/guruxy/public_html/ratsel/config/conexion.php on line 4
+[27-Jan-2022 15:18:27 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/config/conexion.php on line 5
+[27-Jan-2022 15:18:27 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 8
+[27-Jan-2022 15:18:27 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 12
+[27-Jan-2022 15:18:27 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 21
+[27-Jan-2022 15:19:27 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'u157971792_admin'@'localhost' (using password: YES) in /home/guruxy/public_html/ratsel/config/conexion.php on line 4
+[27-Jan-2022 15:19:27 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/config/conexion.php on line 5
+[27-Jan-2022 15:19:27 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 8
+[27-Jan-2022 15:19:27 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 12
+[27-Jan-2022 15:19:27 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 21
+[01-Feb-2022 16:50:09 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'u157971792_admin'@'localhost' (using password: YES) in /home/guruxy/public_html/ratsel/config/conexion.php on line 4
+[01-Feb-2022 16:50:09 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/config/conexion.php on line 5
+[01-Feb-2022 16:50:09 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 8
+[01-Feb-2022 16:50:09 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 12
+[01-Feb-2022 16:50:09 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 21
+[01-Feb-2022 16:50:20 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'u157971792_admin'@'localhost' (using password: YES) in /home/guruxy/public_html/ratsel/config/conexion.php on line 4
+[01-Feb-2022 16:50:20 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/config/conexion.php on line 5
+[01-Feb-2022 16:50:20 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 8
+[01-Feb-2022 16:50:20 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 12
+[01-Feb-2022 16:50:20 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 21
+[08-Feb-2022 18:42:02 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'u157971792_admin'@'localhost' (using password: YES) in /home/guruxy/public_html/ratsel/config/conexion.php on line 4
+[08-Feb-2022 18:42:02 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/config/conexion.php on line 5
+[08-Feb-2022 18:42:02 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 8
+[08-Feb-2022 18:42:02 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 12
+[08-Feb-2022 18:42:02 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/guruxy/public_html/ratsel/model/LoginModel.php on line 21
