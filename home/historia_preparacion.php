@@ -342,9 +342,9 @@ box-shadow: none;
 								
 							</div>
 							<div >
-								<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
+							<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
 								<a href="usuarios.php" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
-								<br>
+					 			<br>
 						  </div>
 							<input href="usuarios.php"type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
 						</form>

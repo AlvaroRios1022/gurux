@@ -41,14 +41,17 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                     <label for="password">Contraseña</label><br>
                         <input type="password"  name="password" class="imputright" required="required" placeholder="Contraseña">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"> 
                         <label for="tipo_user">Tipo Usuario</label><br>
-                        <select required id="tipo_user" name="tipo_user" class="camposgenerales"  > 
+                        <select required id="tipo_user" name="tipo_user" class="imputright"  > 
                             <option value="">Selecciona</option>
                             <option value = "0">Guru</option>
                             <option value = "1">Cliente</option>
                         </select>
                     </div>
+                    <br>
+                    <a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
+								<br>
                     <input type="submit" name="entrar" value="Entrar" id="bton_entrar" class=" botonright" style=" " >
                 </form>
             </div>

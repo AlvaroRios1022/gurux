@@ -594,7 +594,7 @@ box-shadow: none;
 								
 							</div>
 							<div >
-								<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
+								<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
 								<a href="usuarios.php" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
 								<br>
 						  </div>
@@ -619,7 +619,7 @@ box-shadow: none;
 								</div>
 							</div>
 							<div >
-								<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
+								<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
 									<a href="https://www.guruxy.com" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
 
 								<br>
