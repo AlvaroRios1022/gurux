@@ -4,7 +4,11 @@ class LoginModel {
 
 
     public static function cambiar_pass($post){
-        
+        $return = array();
+        $mysqli=Conectar::conexion();
+        $correo = $mysqli->real_escape_string($post['correo']);
+        $consulta = "SELECT * FROM `usuario_guru` WHERE email_usu= '$correo'";
+        //echo $consulta;
     }
 
     public static function Inicio_sesion($post){

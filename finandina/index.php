@@ -25,7 +25,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
     <br>
         <img src="images/logo.png"  width="20%" height="auto" alt="" style="margin-left:20%; margin-top:20px; margin-bottom:20px;  " />
 
-        <img src="images/logo_ratsel.png"  width="20%" height="auto" alt="" style="margin-left:20%; margin-top:20px; margin-bottom:20px;  " />
+        <img src="img/finandina-blanco.png"  width="20%" height="auto" alt="" style="margin-left:20%; margin-top:20px; margin-bottom:20px;  " />
         <div class="fondoblanco">
             <br><br> <br>
             <div class="menuright" align="center" >
@@ -35,7 +35,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                         <h4 style=" color: #FEC705; ">&nbsp; </h4>
                         <h4 style=" color: #FEC705; ">Ingresar al Administrador</h4>
 
-                        <p style=" color: #FEC705; font-size:20px ">Guruxy - Ratsel</p>
+                        <p style=" color: #FEC705; font-size:20px ">Guruxy - Banco Finandina</p>
                     </div>
                     <br>
                     <div class="form-group" >

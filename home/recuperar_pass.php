@@ -35,7 +35,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                     <br>
                     <div class="form-group" >
                         <label for="usuario">Correo electrónico</label><br>
-                        <input name="usuario" type="text" class="imputright" required="required" placeholder="Correo electrónico">
+                        <input name="correo" type="text" class="imputright" required="required" placeholder="Correo electrónico">
                     </div>
                    
                    
@@ -87,7 +87,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
             <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-            <script src="js/login.js"></script>
+            <script src="js/recuperar_pass.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     </body>
 </html>
