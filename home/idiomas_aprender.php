@@ -736,199 +736,400 @@ box-shadow: none;
 	
 	
 	
-		  <!--Product Grid-->
-		<div align="left">
+		   <!--Product Grid-->
+		<div align="right">
 
 		
-			<section class="section-grid2">
-				
-				<div class="grid-prod2" id="div_gurus">
-				<div style="width: 45%;">
-				<h2 class="preguntas" style="margin-left:-10px" >Quiero aprender</h2>
-				</div>
-			<div class="bloquepreguntas_int">
-				<br>
-			<p style="font-size:14px; text-align: justify;">
-				<li>Prepárese para lograr sus objetivos con tutores privados</li>
-				<li>Sumérjase en una nueva cultura</li>
-				<li>Conéctese con expertos en idiomas de todo el mundo</li>
-				<li>Triunfa en tu carrera</li>
-				<li>Desarrolle su vocabulario de trabajo y comuníquese con claridad</li>
-				<li>Obtenga ayuda de expertos cuando la necesite</li>
-				<li>Aprende a resolver cualquier problema en cualquier idioma.</li>
-				<li>Habla con naturalidad, siempre causa una buena impresión y genera confianza en cualquier idioma</li>
-		</p>
-		<br><br>
-		<h2 class="preguntas" style="margin-left:-10px" >Garantía de satisfacción del 100%</h2>
-		<p style="font-size:14px; text-align: justify;">
-			Si no está satisfecho con su lección de prueba, le daremos un reemplazo gratuito con otro tutor o un reembolso completo
-		</p>
-				<br><br>
-			</div>
-					
-					
-				</div>
-				<div align="left" style="padding-left: 0px;margin-right: 20px; ">
-					
-					<div class="menuright" align="center" >
+<section class="section-grid2">
+  
+  <div class="grid-prod2"  id="div_gurus">
+  
+    
+    
 
-						<form  action="" method="post" id="form_login">
-							<div >			
-								<h4 style=" color: #FEC705; ">&nbsp; </h4>
-								<h4 style=" color: #FEC705;  "><strong>Iniciar Sesión</strong></h4>
-								<P style="font-size: 14px; color: #ffffff; margin:0 20%">Para chatear con nuestros Gurús inicia sesión con tu usuario y contraseña</P>
-							<br>
-							</div>
-							<div >				
-								<div class="form-group" >
-								<input type="hidden" value="login" name="tipo">
-								<input type="hidden" value="1" name="tipo_user">
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
-								</div>
-								<br>
-								<div class="form-group" >
-									<div class="clearfix">
-									</div>
-									<input type="password"  name="password" class="imputright" required="required" placeholder="Contraseña">
-								</div>
-								
-							</div>
-							<div >
-								<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
-																<a href="usuarios.php" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
-
-								<br>
-						  </div>
-							<input type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
-						</form>
-					</div>
-				</div>
-				</section>
-			</div>
-		</div>
-	</div>
-
-	<div class="footeridiomas" align="center" >
-		<div class="container2" >
-		<div align="right">         
-            <img  style="width:100%; margin-top:-15px; margin-bottom:30px;" src="img/aidiomas.png" alt="kalita">
-        </div>
-            
-                <div align="center">
-                    
-				<img  style="width:15%; border-radius:20px" src="img/preffo1.png" alt="kalita">
-                    <img  style="width:15%; border-radius:20px; margin-left:25px" src="img/preffo2.png" alt="kalita">
-                    <img  style="width:15%; border-radius:20px; margin-left:25px" src="img/preffo3.png" alt="kalita">
-                    <img  style="width:15%; border-radius:20px; margin-left:25px; margin-right:25px " src="img/preffo4.png" alt="kalita">
-                </div>  
-
-
-			<div class="row" >		
-
-			</div>
-		</div>
-	</div>
-	<footer>
-		<div class="container" style="margin-left:20%">
-			<div class="row">
-			    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                	<ul class="contact">
-						<span style="color: #C93782">SOBRE NOSOTROS </span>    
-						
-                           
-						<li>
-							<a href="politicas.pdf" download="politicas.pdf">Política de Privacidad</a>
-						</li>
-							
-						<li>
-							<a href="terminos.pdf" download="terminos.pdf">Términos y Condiciones</a>
-						</li>
-							
-						<li>
-							<a href="terminos.pdf" download="terminos.pdf">Términos de Uso </a>
-						</li>
-					</ul>
-            	</div>
-            
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <ul class="contact">
-                     <span style="color: #C93782">ERES GURÚ?</span>    
-                     <li>
-                        <a href="https://www.guruxy.com" >Únete hoy a nosotros y conéctate a esta gran red de expertos.</a>
-                     </li>
-                </ul>
-            </div>
-       
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-               <ul class="social">
-                          <span style="color: #C93782">SÍGUENOS</span>    
-                           <li>
-                                <a href="#"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
-                           </li>
-                          
-                           <li>
-                                <a href="#"><i style="color: #FFFFFF"  class="fa fa-instagram fa-2x"></i></a>
-						   </li>
-						   <li>
-                                <a href="#"><i style="color: #FFFFFF" class="fa fa-linkedin fa-2x"></i></a>
-                           </li>
-                          
-                           <li>
-                                <a href="#"><i style="color: #FFFFFF"  class="fa fa-youtube fa-2x"></i></a>
-                           </li>
-				  <a href="https://guruxy.com/home/index.php" ><img  src="images/logo.png" width="220" height="auto" style="margin-left: -30px"  alt=""/></a
->
-              </ul>
-            </div>
-       
-       
-	<?php
-	require("modal/registro.php");
-	require("modal/inicio_sesion.php");
-	require("modal/olvido_password.php");
-	?>
-	 
   </div>
- </footer>
+  <div align="left" style="padding-left: 0px;margin-right: 20px; ">
+    
+    <div class="menuright" align="center" >
 
-		<!-- SLIDER -->
+      <form  action="" method="post" id="form_login">
+        <div >			
+          <h4 style=" color: #FEC705; ">&nbsp; </h4>
+          <h4 style=" color: #FEC705;  "><strong>Iniciar Sesión</strong></h4>
+          <P style="font-size: 14px; color: #ffffff; margin:0 20%">Para chatear con nuestros Gurús inicia sesión con tu usuario y contraseña</P>
+        <br>
+        </div>
+        <div >				
+          <div class="form-group" >
+          <input type="hidden" value="login" name="tipo">
+          <input type="hidden" value="1" name="tipo_user">
+            <input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
+          </div>
+          <br>
+          <div class="form-group" >
+            <div class="clearfix">
+            </div>
+            <input type="password"  name="password" class="imputright" required="required" placeholder="Contraseña">
+          </div>
+          
+        </div>
+        <div >
+          <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
+                          <a href="usuarios.php" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
 
-		<script>
-			var slideIndex = 1;
-			showSlides(slideIndex);
+          <br>
+        </div>
+        <input type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
+      </form>
+    </div>
+    <div class="menuright3" align="center" style="margin-top: 20px" >
+      <form  action="" method="post">
+        <div >			
+          <h4 style=" color: #FEC705; ">&nbsp; </h4>
+          <h4 style=" color: #FEC705; ">Eres Gúru?</h4>
+          <P style="font-size: 18px; color: #ffffff">Ingresa a tu perfil</P>
+        </div>
+        <div >				
+          <div class="form-group" >
+            <input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
+          </div><br>
+          <div class="form-group" >
+            <div class="clearfix">
+            </div>
+            <input type="password"  name="password" class="imputright" required="required" placeholder="Contraseña">
+          </div>
+        </div>
+        <div >
+          <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
+                          <a href="https://www.guruxy.com" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
 
-			function plusSlides(n) {
-			showSlides(slideIndex += n);
-			}
+          <br>
 
-			function currentSlide(n) {
-			showSlides(slideIndex = n);
-			}
+        </div>
+        <input type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
+      </form>
+    </div>
+    
+    <div class="menuright2" align="center" style="margin-top: 20px" >
+      <form  action="" method="post">
+        <h4 style="color:#5C3293; padding-top: 20px; margin-bottom: 20px; font-size:16"> GURÚS DESTACADOS </h4>
+      </form>
+      <div class="prod-grid2 bloqueguru " style=" background-color: #4EB3BD; color:#fff">
+        <br>
+        <a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
+        <br><br>
+        <a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
+        <br>
+        <form>
+          <p class="clasificacion2" >
+            <input id="radio1" type="radio" name="estrellas" value="5"><!--
+            --><label style="color:#fff" for="radio1">★</label><!--
+            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label style="color:#fff" for="radio2">★</label><!--
+            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+            --><label style="color:#fff" for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+            --><label style="color:#fff" for="radio4">★</label><!--
+            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+            --><label style="color:#fff" for="radio5">★</label>
+          </p>
+        </form>
+        <br>
+        <img  style="margin-bottom:10;" src="img/categorias/en linea/1.jpg" alt="kalita">
+      </div>
+          
+      <p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
+      <p class="textopguru2">IDIOMAS  
+      <img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
+      <img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
+      <img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
+      <h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
+      </p>
+      <div class=" bloqueguru3" style=" background-color:#4EB3BD; " >
+      <p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
+        <img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
+        <p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
+      </div>
+      <br><br>
+      <div class="prod-grid2 bloqueguru " style=" background-color: #4EB3BD; color:#fff">
+      <br>
+      <a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
+      <br><br>
+      <a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
+      <br>
+      <form>
+          <p class="clasificacion2" style="margin-bottom: -7px">
+          <input id="radio1" type="radio" name="estrellas" value="5"><!--
+          --><label style="color:#fff" for="radio1">★</label><!--
+          --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+          --><label style="color:#fff" for="radio2">★</label><!--
+          --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+          --><label style="color:#fff" for="radio3">★</label><!--
+          --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+          --><label style="color:#fff" for="radio4">★</label><!--
+          --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+          --><label style="color:#fff" for="radio5">★</label>
+        </p>
+        <br><br>
+      </form>
+      <img  style="margin-bottom:10;" src="img/categorias/en linea/2.jpg" alt="kalita">
+</div>
+          
+      <p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
+      <p class="textopguru2">IDIOMAS  
+      <img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
+      <img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
+      <img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
+      <h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
+      </p>
+      <div class=" bloqueguru3" style=" background-color:#4EB3BD; " >
+      <p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
+        <img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
+        <p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
+      </div>
+      <br><br>
+      <div class="prod-grid2 bloqueguru " style=" background-color: #4EB3BD; color:#fff">
+      <br>
+        <a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
+      <br><br>
+      <a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
+      <br>
+      <form>
+          <p class="clasificacion2" style="margin-bottom: -7px">
+          <input id="radio1" type="radio" name="estrellas" value="5"><!--
+          --><label style="color:#fff" for="radio1">★</label><!--
+          --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+          --><label style="color:#fff" for="radio2">★</label><!--
+          --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+          --><label style="color:#fff" for="radio3">★</label><!--
+          --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+          --><label style="color:#fff" for="radio4">★</label><!--
+          --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+          --><label style="color:#fff" for="radio5">★</label>
+        </p>
+        <br>
+      </form>
+      <img  style="margin-bottom:10;" src="img/categorias/en linea/3.jpg" alt="kalita">
+      </div>
+          
+      <p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
+      <p class="textopguru2">IDIOMAS  
+      <img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
+      <img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
+      <img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
+      <h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
+      </p>
+      <div class=" bloqueguru3" style=" background-color:#4EB3BD; " >
+      <p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
+        <img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
+        <p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
+      </div>
+      <br><br>
+      <div class="prod-grid2 bloqueguru " style=" background-color: #4EB3BD; color:#fff">
+      <br>
+      <a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
+      <br><br>
+      <a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
+      <br>
+      <form>
+          <p class="clasificacion2" style="margin-bottom: -7px">
+          <input id="radio1" type="radio" name="estrellas" value="5"><!--
+          --><label style="color:#fff" for="radio1">★</label><!--
+          --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+          --><label style="color:#fff" for="radio2">★</label><!--
+          --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+          --><label style="color:#fff" for="radio3">★</label><!--
+          --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+          --><label style="color:#fff" for="radio4">★</label><!--
+          --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+          --><label style="color:#fff" for="radio5">★</label>
+        </p>
+        <br>
+      </form>
+      <img  style="margin-bottom:10;" src="img/categorias/en linea/4.jpg" alt="kalita">
+    </div>
+          
+      <p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
+      <p class="textopguru2">IDIOMAS  
+      <img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
+      <img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
+      <img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
+      <h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
+      </p>
+      
+      <div class=" bloqueguru3" style=" background-color:#4EB3BD; " >
+        <p class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
+          <img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
+        <p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
+      </div>
+      <br><br>
+      <div class="prod-grid2 bloqueguru " style=" background-color: #4EB3BD; color:#fff">
+        <br>
+        <a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
+        <br><br>
+        <a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
+        <br>
+        <form>
+          <p class="clasificacion2" style="margin-bottom: -7px">
+            <input id="radio1" type="radio" name="estrellas" value="5"><!--
+            --><label style="color:#fff" for="radio1">★</label><!--
+            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label style="color:#fff" for="radio2">★</label><!--
+            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+            --><label style="color:#fff" for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+            --><label style="color:#fff" for="radio4">★</label><!--
+            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+            --><label style="color:#fff" for="radio5">★</label>
+          </p>
+          <br>
+        </form>
+          <img  style="margin-bottom:10;" src="img/categorias/en linea/5.jpg" alt="kalita">
+      </div>
+          
+      <p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
+      <p class="textopguru2">IDIOMAS  
+      <img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
+      <img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
+      <img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
+      <h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
+      </p>
+      <div class=" bloqueguru3" style=" background-color:#4EB3BD; " >
+        <p class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
+          <img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
+        <p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
+      </div>
 
-			function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("dot");
-			if (n > slides.length) {slideIndex = 1}    
-			if (n < 1) {slideIndex = slides.length}
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";  
-			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex-1].style.display = "block";  
-			dots[slideIndex-1].className += " active";
-			}
-		</script>
+  <br><br>
+  </div>
+  </section>
+</div>
+</div>
+</div>
+
+<div class="footeridiomas" align="center" >
+<div class="container2" >
+<div align="right">         
+      <img  style="width:100%; margin-top:-15px; margin-bottom:30px;" src="img/aidiomas.png" alt="kalita">
+  </div>
+      
+          <div align="center">
+              
+  <img  style="width:15%; border-radius:20px" src="img/preffo1.png" alt="kalita">
+              <img  style="width:15%; border-radius:20px; margin-left:25px" src="img/preffo2.png" alt="kalita">
+              <img  style="width:15%; border-radius:20px; margin-left:25px" src="img/preffo3.png" alt="kalita">
+              <img  style="width:15%; border-radius:20px; margin-left:25px; margin-right:25px " src="img/preffo4.png" alt="kalita">
+          </div>  
+
+
+<div class="row" >		
+
+</div>
+</div>
+</div>
+<footer>
+<div class="container" style="margin-left:20%">
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <ul class="contact">
+      <span style="color: #C93782">SOBRE NOSOTROS </span>    
+      
+                     
+      <li>
+        <a href="politicas.pdf" download="politicas.pdf">Política de Privacidad</a>
+      </li>
+      
+      <li>
+        <a href="terminos.pdf" download="terminos.pdf">Términos y Condiciones</a>
+      </li>
+       
+      <li>
+        <a href="terminos.pdf" download="terminos.pdf">Términos de Uso </a>
+      </li>
+      
+    </ul>
+        </div>
+      
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <ul class="contact">
+               <span style="color: #C93782">ERES GURÚ?</span>    
+               <li>
+                  <a href="https://www.guruxy.com" >Únete hoy a nosotros y conéctate a esta gran red de expertos.</a>
+               </li>
+     
+          </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+         <ul class="social">
+                    <span style="color: #C93782">SÍGUENOS</span>    
+                     <li>
+                          <a href="#"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
+                     </li>
+                    
+                     <li>
+                          <a href="#"><i style="color: #FFFFFF"  class="fa fa-instagram fa-2x"></i></a>
+         </li>
+         <li>
+                          <a href="#"><i style="color: #FFFFFF" class="fa fa-linkedin fa-2x"></i></a>
+                     </li>
+                    
+                     <li>
+                          <a href="#"><i style="color: #FFFFFF"  class="fa fa-youtube fa-2x"></i></a>
+                     </li>
+    <a href="https://guruxy.com/home/index.php" ><img  src="images/logo.png" width="220" height="auto" style="margin-left: -30px"  alt=""/></a
+>
+        </ul>
+      </div>
+ 
+ 
+<?php
+require("modal/registro.php");
+require("modal/inicio_sesion.php");
+require("modal/olvido_password.php");
+?>
+
+</div>
+</footer>
+
+<!-- SLIDER -->
+
 <script>
-    (function($){
-        $(window).on("load",function(){
-            $(".barraizquierdaidiomas").mCustomScrollbar({
-    theme:"rounded"
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
+</script>
+<script>
+(function($){
+  $(window).on("load",function(){
+      $(".barraizquierdaidiomas").mCustomScrollbar({
+theme:"rounded"
 });
-        });
-    })(jQuery);
+  });
+})(jQuery);
 </script>
 
 <script>
@@ -936,21 +1137,21 @@ var slideIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1} 
-  x[slideIndex-1].style.display = "block"; 
-  setTimeout(carousel, 15000); 
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none"; 
+}
+slideIndex++;
+if (slideIndex > x.length) {slideIndex = 1} 
+x[slideIndex-1].style.display = "block"; 
+setTimeout(carousel, 15000); 
 }
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script src="js/consulta_gurus_especiales.js"></script>
+<script src="js/consulta_gurus.js"></script>
 <script src="js/login.js"></script>
 </body>
 </html>
