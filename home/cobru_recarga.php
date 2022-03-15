@@ -127,7 +127,7 @@ box-shadow: none;
 					</li>
 					<li style="font-size: 15px; color: #FFF;margin-left:-20px;height:30px;width:3px;background-color:transparent">|</li>
 					<li class="menuamarillo" style=" margin-left:-40px;height:30px;width:250px;background-color:transparent">
-						<a class="menuamarillo" href="#" style="font-size: 15px; text-decoration:none;">¿CÓMO FUNCIONA?</a>
+						<a href="como.php" class="menuamarillo" href="#" style="font-size: 15px; text-decoration:none;">¿CÓMO FUNCIONA?</a>
 					</li>
 				</ul> 
 			</nav>

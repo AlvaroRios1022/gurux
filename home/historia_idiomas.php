@@ -115,7 +115,7 @@ box-shadow: none;
 					</li>
 					<li style="font-size: 15px; color: #FFF;margin-left:-20px;height:30px;width:3px;background-color:transparent">|</li>
 					<li class="menuamarillo" style=" margin-left:-40px;height:30px;width:250px;background-color:transparent">
-						<a class="menuamarillo" href="#" style="font-size: 15px; text-decoration:none;">¿CÓMO FUNCIONA?</a>
+						<a href="como.php" class="menuamarillo" href="#" style="font-size: 15px; text-decoration:none;">¿CÓMO FUNCIONA?</a>
 					</li>
 				</ul> 
 			</nav>
@@ -236,7 +236,7 @@ box-shadow: none;
 				          
 		
 	<div align="right">
-		<img style="width:84%; margin-top:142px " src="img/categorias/barracomo.png" alt="estres">
+		<a href="como.php"><img style="width:84%; margin-top:142px " src="img/categorias/barracomo.png" alt="estres"></a>
 	</div>
 	
 	<div class="slideshow-container2" style="margin-left:16%" >

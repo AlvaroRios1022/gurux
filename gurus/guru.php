@@ -2031,63 +2031,7 @@ function mostrar() {
                 </div>
             </div>
             <br>
-        <img src="img/barbancof.png"  width="100%" height="auto" alt=""  />
-        <br><br>
-        <div align="left">
-        <h5 > 
-            <input required type="radio" checked value="ok" id="ok" name="ok" class="camposradio">
-            <label for="ok" style="font-size:22px">* Esta Tarjeta es GRATUITA y hace parte de nuestra plataforma, con el proceso de registro. </label>&nbsp;&nbsp;&nbsp;
-            <label for="ok" style="font-size:22px; margin-left: 3.5%;">En caso de NO ser aprobado por la entidad bancaria, NO TE PREOCUPES!!! Eres bienvenido a nuestra COMUNIDAD GURUXY.</label>&nbsp;&nbsp;&nbsp;
-        </h5>   
-              
-
-       <a style= " margin-left: 3%; font-size:24px" > Beneficios de la tarjeta de Crédito Digital:</a>
-       </div>
- 
-
-     <a style= " margin-left: 3%; font-size:18px"> ¡Tú tienes el poder, el control es tuyo!</a>
-<div style= "margin-left:3%; margin-right:3%">
-
-    <h6 style= "color: #000">
-    <h6><a style= "font-size:18px"> ¿Cuál es la mejor oficina para manejar tu dinero? ¡El celular! Desarrollamos una experiencia digital para que puedas hacer fácilmente todas tus transacciones desde casa o donde te encuentres! </h6>
-    <ul>
-        <li style= "color: #000; font-size:15px"><strong style= "font-size:20px">Recibir los recursos</strong> <a style= "font-size:18px">de tus servicios profesionales y transferirlos a tu Tarjeta de Crédito. </li> 
-        <li style= "color: #000; font-size:15px"><strong style= "font-size:20px">100% Humano</strong><a style= "font-size:18px">, Atendemos personalmente todos nuestros canales de servicio.</li>
-        <li style= "color: #000; font-size:15px"><strong style= "font-size:20px">Tarjeta 100% digital</strong><a style= "font-size:18px">, Descubre una App realmente diferente. Adiós al papeleo y a las sucursales. Nuevas y mejores funcionalidades.</li>
-        <li style= "color: #000; font-size:15px"><strong style= "font-size:20px">$0 cuota de manejo* </strong><a style= "font-size:18px">, Somos eficientes y No tendrás que pagar cuota de manejo, No existe contrato con la letra pequeña.</li>
-        <li style= "color: #000; font-size:15px"><strong style= "font-size:20px">20% de descuento* </strong><a style= "font-size:18px">en la tasa de interés vigente.</li>
-        <li style= "color: #000; font-size:15px">Devolución de <strong style= "font-size:20px">$30.000* </strong><a style= "font-size:18px"> si la primera compra es igual o superior a $200.000 dentro de los 3 meses a partir de la fecha de activación de la tarjeta.</li>
-        <li style= "color: #000; font-size:15px"><strong style= "font-size:20px">Compras seguras</strong> <a style= "font-size:18px">y sin contacto por medio de QR.</li>
-        <li style= "color: #000; font-size:15px"><strong style= "font-size:20px">Seguros y asistencias Visa.</strong></li>
-        <li style= "color: #000; font-size:15px"><strong style= "font-size:20px">Te devolvemos</strong><a style= "font-size:18px"> el 1% de las compras diferidas.</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">Adicionalmente desde tu celular tienes una experiencia digital para que puedas realizar fácilmente todas tus transacciones desde casa.</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">Podrás tener el control sobre tu vida financiera</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">Encontraras la mejor versión para tu vida financiera.</li>
-        <br>
-        <a style= "font-size:18px">*Solo aplica para TDC digital Banco Finandina.</a>
-    </ul>
-    <h6>
-    <h4><a style= "font-size:18px"> Siendo parte de la comunidad </a><a style= "color: #462161"> GURUXY </a><a style= "font-size:18px">podrás disfrutar de muchos productos y servicios.</h4>
-    <br>
-    <h6>
-        <ul>
-            <li style= "color: #000;"><a style= "font-size:18px">Obtendrás un descuento del 15% permanentemente por la compra de productos y servicios en la plataforma.</li>
-            <li style= "color: #000;"><a style= "font-size:18px">Podrás realizar cuantas consultas requieras, ya que tendrás una tarjeta asociada al pago.</li>                
-            <li style= "color: #000;"><a style= "font-size:18px">Pagarás tu cuota de manejo solo los meses en que utilices la Tarjeta o tengas alguna deuda pendiente. </li>
-            <li style= "color: #000;"><a style= "font-size:18px">Escogerás el tiempo que deseas pagar tu compra.</li>
-            <li style= "color: #000;"><a style= "font-size:18px">Disfrutarás de descuentos exclusivos todas las semanas del año en la COMUNIDAD GURUXY.</li>
-            <li style= "color: #000;"><a style= "font-size:18px">Tendrás la opción de realizar avances de tu cupo de crédito.</li>
-            <li style= "color: #000;"><a style= "font-size:18px">Las condiciones señaladas aplican solo para la Tarjeta de crédito Digital del Banco finandina.</li>
-            <li style= "color: #000;"><a style= "font-size:18px">Aplican terminos y condiciones.</li>
-        </ul>
-        <br> <br>
-        <div align="center">
-            <img src="img/logobancolargo.png"  width="40%" height="auto" alt=""  />
-        </div>
-        <br><br>
-
-    </h6 >
-</div>
+            
         </div>
        
 

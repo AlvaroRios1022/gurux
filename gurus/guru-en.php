@@ -870,66 +870,7 @@ function mostrar() {
                             </div>
                         </div>
                     </div><br>
-        <img src="img/barbancof_en.png"  width="100%" height="auto" alt=""  />
-        <br><br>
-        <div align="left">
-        <h5 > 
-            <input required type="radio" checked value="ok" id="ok" name="ok" class="camposradio">
-            <label for="ok" style="font-size:22px">This card is free and is part of our platform, with the registration process.</label>&nbsp;&nbsp;&nbsp;
-            <label for="ok" style="font-size:22px; margin-left: 3.5%;">In case of NOT being approved by the bank, DO NOT WORRY !!! You are welcome to our GURUXY COMMUNITY.</label>&nbsp;&nbsp;&nbsp;
-
-        
-        </h5>   
-                       
-       <a style= "color: #462161; margin-left: 3%; font-size:24px"> Benefits of the Digital Credit card:</a>
-       </div>   
- 
-
-       <a style= "color: #C02938; margin-left: 3%; font-size:18px"> You have the power, the control is yours!</a>
-<div style= "margin-left:3%; margin-right:3%">
-
-    <h6 style= "color: #000">
-    <h6><a style= "font-size:18px"> What is the best office to handle your money? The cell phone! We develop a digital experience so that you can easily make all your transactions from home or wherever you are!</h6>
-    <ul>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">Receive the resources of your professional services and transfer them to your Credit Card. </li> 
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">100% Human, We personally attend all our service channels.</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">100% digital card, Discover a really different App. Goodbye to paperwork and branches. New and better features.</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">$ 0 handling fee*, We are efficient and you will not have to pay handling fee, There is no contract with the fine print.</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">20% discount* on the current interest rate.</li>
-        <li style= "color: #000; font-size:15px">Devolución de <a style= "font-size:18px">Refund of $ 30,000* if the first purchase is equal to or greater than $ 200,000 within 3 months from the card activation date.</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">Secure and contactless shopping via QR.</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">Insurance and assistance Visa.</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">We refund 1% of deferred purchases.</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">Additionally, from your cell phone you have a digital experience so that you can easily carry out all your transactions from home.</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">You can have control over your financial life</li>
-        <li style= "color: #000; font-size:15px"><a style= "font-size:18px">You will find the best version for your financial life.</li>
-        <br>
-        <a style= "font-size:18px">* It only applies to Banco Finandina digital TDC.</a>
-
-    </ul>
-    <h6>
-    <h4> Being part of the <a style= "color: #462161"> GURUXY </a>community you can enjoy many products and services.</h4>
-    <br>
-    <h6 >
-        <ul>
-            <li style= "color: #000;"><a style= "font-size:18px">Obtain a permanent 15% discount for the purchase of services and products on the platform.</li>
-            <li style= "color: #000;"><a style= "font-size:18px">Be able to make as many inquiries on the platform as you require, since you will have a card associated with the payment.</li>                
-            <li style= "color: #000;"><a style= "font-size:18px">Pay your handling fee only for the months you use the Card or have any outstanding debt. </li>
-            <li style= "color: #000;"><a style= "font-size:18px">Choose the time in which you want to pay for your purchase.</li>
-            <li style= "color: #000;"><a style= "font-size:18px">Enjoy exclusive discounts every week of the year in the GURUXY COMMUNITY.</li>
-            <li style= "color: #000;"><a style= "font-size:18px">Have the option of making advances on your credit quota.</li>
-            <li style= "color: #000;"><a style= "font-size:18px">The conditions indicated apply only to the Banco finandina Digital Credit Card. </li>
-            <li style= "color: #000;"><a style= "font-size:18px">Terms and conditions apply. </li>
-        </ul>
-        <br> <br>
-        <div align="center">
-            <img src="img/logobancolargo.png"  width="40%" height="auto" alt=""  />
-        </div>
-        <br><br>
-
-    </h6 >
-</div>
-        </div>
+               </div>
 
         <!-- Fin Informacion Personal -->
          <!-- TERMINOS  -->
