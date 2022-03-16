@@ -7,8 +7,57 @@ class LoginModel {
         $return = array();
         $mysqli=Conectar::conexion();
         $correo = $mysqli->real_escape_string($post['correo']);
-        $consulta = "SELECT * FROM `usuario_guru` WHERE email_usu= '$correo'";
-        //echo $consulta;
+        $consultaemail = "SELECT * FROM `usuario_guru` WHERE email_usu= '$correo'";
+        //echo $consultaemail;
+        $aleatorio = uniqid();
+        if($resultadopass = $mysqli->query($consultaemail)) {
+            while($row = $resultadopass->fetch_array()) {
+                    $contraseña = $row['password'];
+            }
+            $return['code'] ='0';
+            
+            $resultadopass->close();
+        }
+        
+
+        if($resultadoemail = $mysqli->query($consultaemail));
+        $numeroemail = $resultadoemail->num_rows;
+        if($numeroemail==0) {
+            $return['mensaje'] ="el correo electronico ingresado no existe.";
+            $return['status'] ='warning';
+	    }
+        else {
+            require_once(dirname(__FILE__) . "/../class/Mailer/envio.php");
+            $email_subject = "Nueva contraseña Gurú";
+                $email_from = "noreply.guruxy.com";
+                $email_message = "Hola , Se ha generado una nueva contraseña \n\n";
+                //$email_message = "Hola " . $username . ", Se ha generado una nueva contraseña \n\n";
+                //$email_message .= "Contraseña: " . $rpass . "\n";
+    
+                $query_update = "UPDATE `usuario_guru` SET pass_usu='".md5($aleatorio)."' WHERE `email_usu`= '".$correo."' ";
+
+                if($registro = $mysqli->query($query_update)){
+
+                ob_start();
+                EnvioModel::enviopassword($correo, $email_subject, $aleatorio);
+                ob_end_clean();
+            
+            
+                $return['mensaje'] ="Se ha enviado un correo electrónico a su cuenta con la contraseña";
+                $return['status'] ='success';
+                }
+                else{
+                    
+                $return['mensaje'] ="Se ha presentado un error por favor intente de nuevo.";
+                $return['status'] ='warning';
+                }
+            
+        }
+          
+
+          
+        $mysqli->close();
+          return $return;
     }
 
     public static function Inicio_sesion($post){
