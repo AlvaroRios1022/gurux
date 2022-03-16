@@ -168,7 +168,7 @@ box-shadow: none;
 			}
 		?>
 	<div >
-		<img style="width:100%;margin-top: 116px;" src="img/categorias/barracomo.png" alt="estres">
+		<a href="como.php"><img style="width:100%;margin-top: 116px;" src="img/categorias/barracomo.png" alt="estres"></a>
 	</div>
 	<div class="slideshow-container">
 		<div class="mySlides fade">
