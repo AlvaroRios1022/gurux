@@ -114,7 +114,7 @@ box-shadow: none;
 					</li>
 					<li style="font-size: 15px; color: #FFF;margin-left:-20px;height:30px;width:3px;background-color:transparent">|</li>
 					<li class="menuamarillo" style=" margin-left:-40px;height:30px;width:250px;background-color:transparent">
-						<a class="menuamarillo" href="#" style="font-size: 15px; text-decoration:none;">¿CÓMO FUNCIONA?</a>
+						<a href="como.php" class="menuamarillo" href="#" style="font-size: 15px; text-decoration:none;">¿CÓMO FUNCIONA?</a>
 					</li>
 				</ul> 
 			</nav>
@@ -340,7 +340,7 @@ box-shadow: none;
 								
 							</div>
 							<div >
-								<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
+								<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
 								<a href="usuarios.php" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
 								<br>
 						  </div>
@@ -365,7 +365,7 @@ box-shadow: none;
 								</div>
 							</div>
 							<div >
-								<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
+								<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
 									<a href="https://www.guruxy.com" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
 
 								<br>

@@ -18,12 +18,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
-	
-	<script src="js/jquery-2.1.0.min.js"></script>
-	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-	
+
 	<title>Gurus Center</title>
 	<style type="text/css">
 		body {
@@ -31,18 +26,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			margin-top: 0px;
 			margin-right: 0px;
 			margin-bottom: 0px;
-		}
-		.mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-			background-color: #fff;
-			margin-top:60px;			
-			margin-left:-3px;
-		}
-
-		.mCS-rounded.mCSB_scrollTools .mCSB_draggerRail {
-			margin-right:10px;
-			margin-top:60px;
-			width:4px;
-			background-color: #DE5886;
 		}
 .mySlides {display:none;}
 
@@ -71,14 +54,13 @@ box-shadow: none;
 </head>
 
 <body class="cabecera">
-		
 <?php
 		if(empty($_SESSION['userlog'])) {
 	?>
-	<div id="container2" >
-		<div class="logo">
-		<a href="index.php"><img src="images/logo.png" style="margin-top:12px; margin-left:15px" width="190%"  alt="logo" /></a>
-		<nav  style=" margin-left:-20px; ">
+		<div id="container2" >
+			<div class="logo">
+				<a href="index.php"><img src="images/logo.png" style="margin-top:12px; margin-left:15px"  usemap="#logo" width="190%"  alt="logo" /></a>
+				<nav  style=" margin-left:-20px; ">
 				<ul  >
 					<li class="menuamarillo" style=" margin-top:-3px; margin-left:10px; width:120px; height:30px; background-color:transparent; ">
 					<a class="menuamarillo" href="#" style="font-size: 15px; background-color: #FFC808; border-radius:20px; color:#000;  text-decoration:none;">&nbsp;&nbsp;SERVICIOS&nbsp;&nbsp;</a>
@@ -110,7 +92,7 @@ box-shadow: none;
 					</li>
 					<li style="font-size: 15px; color: #FFF;height:30px;width:3px;background-color:transparent">|</li>
 					<li class="menuamarillo" style="margin-left:-20px;height:30px;width:250px;background-color:transparent">
-						<a class="menuamarillo" href="https://www.guruxy.com" style="font-size: 15px; text-decoration:none;">TRABAJA CON NOSOTROS</a>
+						<a class="menuamarillo" href="../gurus" style="font-size: 15px; text-decoration:none;">TRABAJA CON NOSOTROS</a>
 					</li>
 					<li style="font-size: 15px; color: #FFF;margin-left:-20px;height:30px;width:3px;background-color:transparent">|</li>
 					<li class="menuamarillo" style=" margin-left:-40px;height:30px;width:250px;background-color:transparent">
@@ -143,14 +125,15 @@ box-shadow: none;
 			<?php 
 				} 
 			?>
+
 			<a href="cobru.php" ><img src="img/logoheader.png" width="7%"  alt="sesion" style="margin-top:10px" /></a>
 
 
-			<div class="menusuperiorderecho" align="left"  style="margin-left: -20px">
+			<div class="menusuperiorderecho" align="left" style="margin-left: -20px" > 
 				<span class="itemlista">IDIOMA  <a style="color:#FFC808"> ES </a>  |  EN</span>
 			</div>
 			
-			<div class="menuinferior" >
+			<div class="menuinferior" style="margin-top:2px">
 				<br>
 				<nav>
 					<ul align="right">
@@ -168,56 +151,9 @@ box-shadow: none;
 				</nav>
 			</div>
 		</div>
-		<div class="barratutores" style="margin-top:-6px; ">
-		<ul id="lista1" >
-                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="tutores.php" > HOME TUTORES </a></li>
-                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="preguntas_tutores.php" >PREGUNTAS FRECUENTES</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="tutores_aprender.php">QUIERO APRENDER</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="tutores_cursos.php">CURSOS EN LÍNEA</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="libreria_tutores.php" style="color:#fff;text-shadow: 1px 1px 1px black;">LIBRERÍA</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="historia_tutores.php">MI CUENTA</a></li>
-            </ul>
-        </div>
-
-        <div class="contenido">
-            <div class="barraizquierdatutores">
-			
-					<form class="form-search">
-						<div class="input-group">
-							<br><br>
-							<input style="margin-left:10px" class="buscadortutores" maxlength="128" placeholder="Buscar" size="15" type="text" />
-							<button class="searchtutores" >
-								<i class="fa fa-search ">&nbsp;</i>
-							</button>
-						</div>
-					</form>
-							<div class="especialtutores" >
-								<a href=" "><li style="color: #333; " value="Biología">TUTORÍAS A -Z</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ciencias sociales">TENDENCIAS</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Contabilidad">TURORÍAS EN NOTICIAS</li></a><br>
-                                   
-							<div> &nbsp;</div>
-                                <div> &nbsp;</div>
-                                <div> &nbsp;</div>
-							</div>
-				</div>
-
-            
-
-            <div class="blanco">
-
-            </div>
-
-        </div>
 
 	</div>
-	
-	
+
 	<?php
 			}
 		?>
@@ -231,134 +167,33 @@ box-shadow: none;
 		<?php
 			}
 		?>
-				          
-		
-	<div align="right">
-		<a href="como.php"><img style="width:84%; margin-top:142px " src="img/categorias/barracomo.png" alt="estres"></a>
-	</div>
-	
-	<div class="slideshow-container2" style="margin-left:16%" >
-	<div class="mySlides fade">
-			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_inicio1.jpg" style="width:100%"></a>
-		</div>
-		<div class="mySlides fade">
-			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banners_tutores2.jpg" style="width:100%"></a>
-		</div>
-		<div class="mySlides fade">
-			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_tutores3.jpg" style="width:100%"></a>
-		</div>
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	
-		</div>
 
-		<!-- Gurus -->
-
-		<div class="fondomedio" >
-	
-	<div >
-		<br>
-	</div>
 	
 	
-	
-		  <!--Product Grid-->
-		<div align="left">
+		  <!--Product Grid-->		<br><br>
+          <br><br>
+          <br>
 
-		
-			<section class="section-grid2">
-				
-				<div class="grid-prod2">
-				
-				
-			
-				</div>		
-				<div align="left" style="padding-left: 0px;margin-right: 20px; ">
-					
-					<div class="menuright" align="center" >
-
-						<form  action="" method="post">
-							<div >			
-								<h4 style=" color: #FEC705; ">&nbsp; </h4>
-								<h4 style=" color: #FEC705;  "><strong>Iniciar Sesión</strong></h4>
-								<P style="font-size: 14px; color: #ffffff; margin:0 20%">Para chatear con nuestros Gurús inicia sesión con tu usuario y contraseña</P>
-							<br>
-							</div>
-							<div >				
-								<div class="form-group" >
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
-								</div>
-								<br>
-								<div class="form-group" >
-									<div class="clearfix">
-									</div>
-									<input type="password"  name="password" class="imputright" required="required" placeholder="Contraseña">
-								</div>
-								
-							</div>
-							<div >
-								<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
-																<a href="usuarios.php" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
-
-								<br>
-						  </div>
-							<input type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
-						</form>
-					</div>
-					<div class="menuright3" align="center" style="margin-top: 20px" >
-						<form  action="" method="post">
-							<div >			
-								<h4 style=" color: #FEC705; ">&nbsp; </h4>
-								<h4 style=" color: #FEC705; ">Eres Gúru?</h4>
-								<P style="font-size: 18px; color: #ffffff">Ingresa a tu perfil</P>
-							</div>
-							<div >				
-								<div class="form-group" >
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
-								</div><br>
-								<div class="form-group" >
-									<div class="clearfix">
-									</div>
-									<input type="password"  name="password" class="imputright" required="required" placeholder="Contraseña">
-								</div>
-							</div>
-							<div >
-								<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
-																<a href="https://www.guruxy.com" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
-
-								<br>
-
-							</div>
-						  <input type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
-						</form>
-					</div>
-					
-				</div>
-				</section>
-			</div>
-		</div>
-	</div>
-
-	<div class="footertutores" align="center" >
-		<div class="container2" >
-		<div align="right">         
-            <img  style="width:100%; margin-top:-15px; margin-bottom:30px;" src="img/atutores.png" alt="kalita">
+		<div style="margin-top:10px"  align="center" >
+            <iframe width="1200" height="600" src="https://www.youtube.com/embed/APvNmnHgq3I?autoplay=1" allow='autoplay'></iframe>
         </div>
-            
-                <div align="center">
-                    
-				<img  style="width:15%; border-radius:20px" src="img/preffo1.png" alt="kalita">
-                    <img  style="width:15%; border-radius:20px; margin-left:25px" src="img/preffo2.png" alt="kalita">
-                    <img  style="width:15%; border-radius:20px; margin-left:25px" src="img/preffo3.png" alt="kalita">
-                    <img  style="width:15%; border-radius:20px; margin-left:25px; margin-right:25px " src="img/preffo4.png" alt="kalita">
-                </div> 
+        <br>	
+        <br>	
+        <ul style=" margin-left:10%">
+            <li>Encuentra el Profesional que necesites en tiempo real.</li>
+            <li>Contrata al profesional para una consulta Virtual o Presencial.</li>
+            <li>Encontraras mas de 1.000 mil profesiones a tu disposición.</li>
+            <li>Contrata tu servicio con el presupuesto que mas se te ajuste.</li>
+            <li>No necesitas invertir tu tiempo en filas o días para contratar un servicio profesional.</li>
+            <li>Somos mas de 150.000 profesionales a tu servicio.</li>
+        </ul>
 
+        <div align="center">
+            <a style=" color:#3f2665;" href="index.php">RECIBE TU PRIMERA CONSULTA GRATIS DALE CLICK. </a>
+        </div>
 
-			<div class="row" >		
+        <br>	
 
-			</div>
-		</div>
-	</div>
 	<footer>
 		<div class="container" style="margin-left:20%">
 			<div class="row">
@@ -413,6 +248,7 @@ box-shadow: none;
             </div>
        
        
+    </div> 
 	<?php
 	require("modal/registro.php");
 	require("modal/inicio_sesion.php");
@@ -452,31 +288,30 @@ box-shadow: none;
 			dots[slideIndex-1].className += " active";
 			}
 		</script>
-<script>
-    (function($){
-        $(window).on("load",function(){
-            $(".barraizquierdatutores").mCustomScrollbar({
-    theme:"rounded"
-});
-        });
-    })(jQuery);
-</script>
 
-<script>
-var slideIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1} 
-  x[slideIndex-1].style.display = "block"; 
-  setTimeout(carousel, 15000); 
-}
-</script>
+		<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none"; 
+		}
+		slideIndex++;
+		if (slideIndex > x.length) {slideIndex = 1} 
+		x[slideIndex-1].style.display = "block"; 
+		setTimeout(carousel, 15000); 
+		}
+		</script>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="js/login.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </body>
 </html>

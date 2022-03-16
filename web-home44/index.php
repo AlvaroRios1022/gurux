@@ -1181,7 +1181,7 @@ function showSlides(n) {
 								
 							</div>
 							<div >
-								<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
+								<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
 								<h4 style=" color: #ffffff; ">Registrarme ¡GRATIS!</h4>
 								<br>
 						  </div>
@@ -1206,7 +1206,7 @@ function showSlides(n) {
 								</div>
 							</div>
 							<div >
-								<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
+								<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
 								<h4 style=" color: #ffffff; ">Registrarme ¡GRATIS!</h4>
 								<br>
 
