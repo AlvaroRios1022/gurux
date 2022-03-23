@@ -22,7 +22,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
     </head>
     <body class="cabecera" >
     <br>
-        <img src="img/headert.png"  width="60%" height="auto" alt="" style="margin:0px; padding:0px; " />
+    <img src="images/logo.png"  width="20%" height="auto" alt="" style="margin-left:20%; margin-top:20px; margin-bottom:20px;  " />
         <div class="fondoblanco">
             <br><br> <br>
             <div class="menuright" align="center" >
@@ -40,7 +40,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                     <div class="form-group" >
                     <label for="password">Contraseña</label><br>
                         <input type="password"  name="password" class="imputright" required="required" placeholder="Contraseña">
-                    </div>
+                    </div> 
                     <div class="form-group"> 
                         <label for="tipo_user">Tipo Usuario</label><br>
                         <select required id="tipo_user" name="tipo_user" class="imputright"  > 
