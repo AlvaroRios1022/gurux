@@ -62,11 +62,11 @@ class UsuarioModel {
         $conocio = $db->real_escape_string($_POST['conocio']); 
         $fecha = $db->real_escape_string($_POST['fecha']); 
 
-        $consultausuario = "SELECT email_usu FROM usuario_guru WHERE email_usu = '$usuario'";
+        //$consultausuario = "SELECT email_usu FROM usuario_guru WHERE email_usu = '$usuario'";
 	    $consultaemail = "SELECT email_usu FROM usuario_guru WHERE email_usu = '$email'";
 
-	    if($resultadousuario = $db->query($consultausuario));
-		    $numerousuario = $resultadousuario->num_rows;
+	   /* if($resultadousuario = $db->query($consultausuario));
+		    $numerousuario = $resultadousuario->num_rows;*/
 
 	    if($resultadoemail = $db->query($consultaemail));
 		    $numeroemail = $resultadoemail->num_rows;
@@ -74,11 +74,11 @@ class UsuarioModel {
 	    if($numeroemail>0) {
             $return['mensaje'] ="Este correo ya esta registrado, intente de nuevo  con otro correo electrónico.";
             $return['status'] ='warning';
-	    }
+	    }/*
 	    elseif($numerousuario>0) {
             $return['mensaje'] = "Este usuario ya existe, por favor registre un usuario valido.";
             $return['status'] ='warning';
-        }
+        }*/
         else {
             $aleatorio = uniqid();
     
