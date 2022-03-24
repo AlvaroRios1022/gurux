@@ -206,7 +206,7 @@ box-shadow: none;
 						</div>
 					
 					<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
-							<tbody id="myTable">
+							<tbody id="myTable" class="especial">
 							<tr><td><a href="#"><li style="color: #333; "   onclick="filtroTipo('Alergólogo')">Alergólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cardiólogo')">Cardiólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Angiólogo')">Angiólogo</li></a></td></tr>

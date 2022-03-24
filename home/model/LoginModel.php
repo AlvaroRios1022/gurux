@@ -7,7 +7,7 @@ class LoginModel {
         $return = array();
         $mysqli=Conectar::conexion();
         $correo = $mysqli->real_escape_string($post['correo']);
-        $consultaemail = "SELECT * FROM `usuario_guru` WHERE email_usu= '$correo'";
+        $consultaemail = "SELECT * FROM `usuario_guru` WHERE email_usu = '$correo'";
         //echo $consultaemail;
         $aleatorio = uniqid();
         if($resultadopass = $mysqli->query($consultaemail)) {
@@ -137,6 +137,8 @@ class LoginModel {
                     $_SESSION['logueado']=TRUE;
                     $return['mensaje'] ="Inicio se sesión exitoso.";
                     $return['status'] ='success';
+                    $_SESSION['user_name']  = $userok; 
+
                 }
                 else {
                     $return['mensaje'] ="Error! el usuario o contraseña no coinciden.";

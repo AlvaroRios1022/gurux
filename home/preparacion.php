@@ -199,9 +199,9 @@ box-shadow: none;
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-							<div class="especialyoga" >
+							<div  >
 							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
-							<tbody id="myTable">
+							<tbody id="myTable" class="especialyoga">
 							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Aeróbicos')" value="Aeróbicos">Aeróbicos</li></a></td></tr>
 							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Bachata')" value="Baile Bachata">Baile Bachata</li></a></td></tr>
 							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Merengue')" value="Baile Merengue">Baile Merengue</li></a></td></tr>

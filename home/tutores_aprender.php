@@ -200,9 +200,9 @@ box-shadow: none;
 							</button>
 						</div>
 						
-							<div class="especialtutores" >
+							<div  >
 					<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
-							<tbody id="myTable">
+							<tbody id="myTable" class="especialtutores">
 							<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biología')" value="Biología">Biología</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias sociales')" value="Ciencias sociales">Ciencias sociales</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Contabilidad')" value="Contabilidad">Contabilidad</li></a></td></tr>
