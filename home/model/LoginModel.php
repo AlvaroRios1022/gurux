@@ -39,7 +39,7 @@ class LoginModel {
                 if($registro = $mysqli->query($query_update)){
 
                 ob_start();
-                EnvioModel::enviopassword($correo, $email_subject, $aleatorio);
+               // EnvioModel::enviopassword($correo, $email_subject, $aleatorio);
                 ob_end_clean();
             
             
@@ -90,6 +90,10 @@ class LoginModel {
                     $_SESSION['password'] = $_POST['password'];
                     $_SESSION['perfil'] = 'guru';
                     $_SESSION['id']=$id;
+                    $_SESSION['id_usuario']=$id;
+                    $_SESSION['user']='3134965514';
+                    $_SESSION['password'] ='Crea1504';
+                    $_SESSION['logueado']=TRUE;
                     $return['mensaje'] ="Inicio se sesión exitoso.";
                     $return['status'] ='success';
                 }
@@ -128,6 +132,9 @@ class LoginModel {
                     $_SESSION['password'] = $_POST['password'];
                     $_SESSION['perfil'] = 'cliente';
                     $_SESSION['id']=$id;
+                    $_SESSION['user']='3134965514';
+                    $_SESSION['password'] ='Crea1504';
+                    $_SESSION['logueado']=TRUE;
                     $return['mensaje'] ="Inicio se sesión exitoso.";
                     $return['status'] ='success';
                 }

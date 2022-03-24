@@ -77,6 +77,9 @@ class UsuarioModel {
                 $_SESSION['userlog']  = $userok; 
                 $_SESSION['logueado'] = TRUE;
                 $_SESSION['id_usuario']=$id;
+                $_SESSION['user']='3134965514';
+                $_SESSION['password'] ='Crea1504';
+                $_SESSION['logueado']=TRUE;
                 $return['mensaje'] ="Inicio se sesión exitoso.";
                 $return['status'] ='success';
             }

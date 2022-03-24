@@ -128,7 +128,7 @@ function Informacion_Personal($post){
     $url = "https://prod.cobru.co/token/";
 
     $post2 = array(
-        'username' => '3123886528',
+        'username' => '3134965514',
         'password' => 'Crea1504'
     );
 
@@ -205,6 +205,7 @@ function Informacion_Personal($post){
 
     $responseRequest = json_decode($resp2);
 
+    var_dump($responseRequest);
    
     if($responseRequest->error != NULL){
 
