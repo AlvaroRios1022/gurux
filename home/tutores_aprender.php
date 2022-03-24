@@ -207,7 +207,7 @@ box-shadow: none;
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias sociales')" value="Ciencias sociales">Ciencias sociales</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Contabilidad')" value="Contabilidad">Contabilidad</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Economía')" value="Economía">Economía</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Español')" value="Español">Español</li></a></td></tr>
+                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Español')" value="Español">Español</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ética')" value="Ética">Ética</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Filosofía')" value="Filosofía">Filosofía</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Física')" value="Física">Física</li></a></td></tr>

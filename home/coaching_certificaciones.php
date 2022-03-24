@@ -67,6 +67,10 @@ box-shadow: none;
 -webkit-box-shadow: none;
 
 }
+.caja_inline {
+    display: inline-block;
+    width: 100px;
+}
 	
 
 		
