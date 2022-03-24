@@ -206,15 +206,6 @@ box-shadow: none;
 							</button>
 						</div>
 						
-
-
-
-
-
-
-
-
-
 							<div  >
 							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
 							<tbody id="myTable" class="especial">
