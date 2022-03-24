@@ -3,66 +3,17 @@ require_once("../config/conexion.php");
 class UsuarioModel {
 
 
-    public static function Recuperar_pass($post){
-        $return = array();
-        $mysqli=Conectar::conexion();
-        $username = $mysqli->real_escape_string($_POST['usuario_pass']);
-        $consulta = "SELECT email_usu FROM usuario_guru WHERE usuario_usu = '$username'";
-        
-        if($resultado = $mysqli->query($consulta)) {
-            while($row = $resultado->fetch_array()) {
-  
-              $emailok = $row['email_usu'];
-            }
-            $resultado->close();
-          }
-          
-
-          if(isset($emailok)) {
-                $rpass= UsuarioModel::randomPassword();
-                $password = md5($rpass);
-                $query = "UPDATE usuario_guru set pass_usu ='".$password."' WHERE usuario_usu='".$username."'" ;
-    
-                $mysqli->query($query);
-
-                require_once(dirname(__FILE__) . "/../class/Mailer/envio.php");
-                // Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
-                $email_to = $emailok;
-                $email_subject = "Nueva contraseña Gurú";
-                $email_from = "noreply.guruxy.com";
-                $email_message = "Hola " . $username . ", Se ha generado una nueva contraseña \n\n";
-                $email_message .= "Contraseña: " . $rpass . "\n";
-    
-    
-                ob_start();
-                EnvioModel::EnvioCodigo($emailok, $email_subject, $email_message);
-                ob_end_clean();
-            
-            
-                $return['mensaje'] ="Se ha enviado un correo electrónico a su cuenta con la nueva contraseña";
-                $return['status'] ='success';
-            
-        }else{
-            $return['mensaje'] ="Error! el usuario no existe.";
-            $return['status'] ='warning';
-
-        }
-        $mysqli->close();
-          return $return;
-    }
-
-
     public static function Inicio_sesion($post){
         $return = array();
         $mysqli=Conectar::conexion();
         $username = $mysqli->real_escape_string($_POST['usuario']);
         $password = md5($_POST['password']);
-        $consulta = "SELECT id_usuario,usuario_usu,pass_usu FROM usuario_guru WHERE usuario_usu = '$username' AND pass_usu = '$password'";
+        $consulta = "SELECT id_usuario,email_usu,pass_usu FROM usuario_guru WHERE email_usu = '$username' AND pass_usu = '$password'";
 
         if($resultado = $mysqli->query($consulta)) {
             while($row = $resultado->fetch_array()) {
   
-              $userok = $row['usuario_usu'];
+              $userok = $row['email_usu'];
               $passok = $row['pass_usu'];
                 $id = $row['id_usuario'];
             }
@@ -111,7 +62,7 @@ class UsuarioModel {
         $conocio = $db->real_escape_string($_POST['conocio']); 
         $fecha = $db->real_escape_string($_POST['fecha']); 
 
-        $consultausuario = "SELECT usuario_usu FROM usuario_guru WHERE usuario_usu = '$usuario'";
+        $consultausuario = "SELECT email_usu FROM usuario_guru WHERE email_usu = '$usuario'";
 	    $consultaemail = "SELECT email_usu FROM usuario_guru WHERE email_usu = '$email'";
 
 	    if($resultadousuario = $db->query($consultausuario));
