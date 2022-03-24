@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+echo $_SESSION['nombre'];
 if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	$nombre_usu = $_SESSION['user_name']  = $userok; 
 
@@ -132,7 +134,10 @@ box-shadow: none;
 			
 			<?php 
 				if(!(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE)){
+
+				
 			?>
+			
 				<div class="menusuperiocentro"  style="margin-left: -30px">
 					<a href="usuarios.php"> <img src="img/registros_.png" width="176px" height="30px" alt="registro" /></a>
 					<a href="login.php"><img src="img/sesiones_.png" width="176px" height="30px" alt="sesion" /></a>
