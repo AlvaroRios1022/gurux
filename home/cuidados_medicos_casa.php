@@ -206,10 +206,9 @@ box-shadow: none;
 							</button>
 						</div>
 				
-							<div class="especial" >
-							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+<div  >							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
 
-							<tbody id="myTable">
+							<tbody id="myTable" class="especial">
 							<tr><td>
 								<a href="cuidados_medicos_adultos.php"><li style="color: #333; " value="Alergólogo">Cuidado de Adultos</li></a></td></tr>
                                 <tr><td><a href="cuidados_medicos_enfermeras.php "><li style="color: #333; " value="Angiólogo">Enfermeras</li></a></td></tr>

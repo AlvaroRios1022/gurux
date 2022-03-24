@@ -3,6 +3,8 @@ session_start();
 
 echo $_SESSION['nombre'];
 if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
+	$nombre_usu = $_SESSION['user_name']  = $userok; 
+
   
 }
 ?>
@@ -142,6 +144,8 @@ box-shadow: none;
 				</div>
 			<?php 
 				}else{ 
+					
+					echo $nombre_usu;
 			?>
 				<div class="menusuperiocentro logout"  style="margin-left: -30px">
 					<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
@@ -216,9 +220,9 @@ box-shadow: none;
 
 
 
-							<div class="especial" >
+							<div  >
 							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
-							<tbody id="myTable">
+							<tbody id="myTable" class="especial">
 							<tr><td><a href="#"><li style="color: #333; "   onclick="filtroTipo('Alergólogo')">Alergólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Angiólogo')">Angiólogo</li></a></td></tr>
 								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cardiólogo')">Cardiólogo</li></a></td></tr>

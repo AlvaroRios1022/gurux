@@ -204,8 +204,7 @@ box-shadow: none;
 							</button>
 						</div>
 					</form>
-							<div class="especial" >
-								<a href="cuidados_medicos_adultos.php "><li style="color: #61C7E2; " value="Alergólogo">Cuidado de Adultos</li></a><br>
+<div  >								<a href="cuidados_medicos_adultos.php "><li style="color: #61C7E2; " value="Alergólogo">Cuidado de Adultos</li></a><br>
                                 <a href="cuidados_medicos_enfermeras.php "><li style="color: #333; " value="Enfermeras">Enfermeras</li></a><br>
                                 <a href="cuidados_medicos_equipos.php"><li style="color: #333; " value="Cardiólogo">Equipos médicos</li></a><br>
                                 <a href="cuidados_medicos_examenes.php "><li style="color: #333; " value="Deportólogo">Exámenes</li></a><br>

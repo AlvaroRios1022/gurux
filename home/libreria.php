@@ -201,8 +201,7 @@ box-shadow: none;
 							</button>
 						</div>
 					</form>
-							<div class="especial" >
-							<a href=" "><li style="color: #333; " value="Alergólogo">Salud A - Z</li></a><br>
+<div  class="especial">							<a href=" "><li style="color: #333; " value="Alergólogo">Salud A - Z</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Angiólogo">Vivir Sano</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Cardiólogo">Guruscenter en Noticias</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Deportólogo">Dias de Conciencia</li></a><br>

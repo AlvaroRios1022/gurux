@@ -201,9 +201,9 @@ box-shadow: none;
 							</button>
 						</div>
 
-							<div class="especialotros" >
+							<div  >
               <table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
-							<tbody id="myTable">
+							<tbody id="myTable" class="especialotros">
               <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación Estatal')" value="Abogado “Contratación Estatal">Abogado “Contratación Estatal</li></a></td></tr>
                             <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación  Comercial')" value="Abogado “Contratación  Comercial ">Abogado “Contratación  Comercial </li></a></td></tr>
                             <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Abogado “Contratación  Civil')" value="Abogado “Contratación  Civil ">Abogado “Contratación  Civil </li></a></td></tr>

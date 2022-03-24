@@ -200,9 +200,9 @@ box-shadow: none;
 							</button>
 						</div>
 
-						<div class="especialconstructores" >
+						<div  >
 							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
-							<tbody id="myTable">
+							<tbody id="myTable" class="especialconstructores">
 							<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Baños')" value="Baños">Baños</li></a></td></tr>
 								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Casa inteligente y Seguridad')" value="Casa inteligente y Seguridad">Casa inteligente y Seguridad</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cerraduras y Herrajes')" value="Cerraduras y Herrajes">Cerraduras y Herrajes</li></a></td></tr>

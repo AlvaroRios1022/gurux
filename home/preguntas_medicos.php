@@ -201,8 +201,7 @@ box-shadow: none;
 							</button>
 						</div>
 					</form>
-							<div class="especial" >
-								<a href=" "><li style="color: #333; " value="Alergólogo">Alergólogo</li></a><br>
+<div  class="especial">								<a href=" "><li style="color: #333; " value="Alergólogo">Alergólogo</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Angiólogo">Angiólogo</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Cardiólogo">Cardiólogo</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Deportólogo">Deportólogo</li></a><br>
