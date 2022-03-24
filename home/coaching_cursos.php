@@ -204,7 +204,7 @@ box-shadow: none;
 							</button>
 						</div>
 					
-						<div  >
+		 				<div  >
 						<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
 							<tbody id="myTable" class="especialcoaching">
 							<tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Coaching adicciones')" value="Coaching adicciones">Coaching adicciones</li></a></td></tr>
