@@ -63,8 +63,8 @@ class LoginModel {
     public static function Inicio_sesion($post){
         $return = array();
         $mysqli=Conectar::conexion();
-        $username = $mysqli->real_escape_string($_POST['usuario']);
-        $password = md5($_POST['password']);
+        $username = $mysqli->real_escape_string($post['usuario']);
+        $password = md5($post['password']);
         if($_POST['tipo_user'] == "0"){ 
             $consulta = "SELECT `id`, `telefono`, `password` FROM `guru` WHERE telefono= '$username' AND password = '$password'";
 
@@ -109,12 +109,13 @@ class LoginModel {
             }
 
         }else{
-            $consulta = "SELECT `id_usuario`, `email_usu`, `pass_usu` FROM `usuario_guru` WHERE email_usu= '$username' AND pass_usu = '$password'";
+            $consulta = "SELECT nombre_usu,apellido_usu,`id_usuario`, `email_usu`, `pass_usu` FROM `usuario_guru` WHERE email_usu= '$username' AND pass_usu = '$password'";
             if($resultado = $mysqli->query($consulta)) {
                 while($row = $resultado->fetch_array()) {
       
                   $userok = $row['email_usu'];
                   $passok = $row['pass_usu'];
+                  $nombre = $row['nombre_usu']." ".$row['apellido_usu'];
                   $id = $row['id_usuario'];
                 }
                 $return['code'] ='1';
@@ -126,6 +127,7 @@ class LoginModel {
               if(isset($userok) && isset($passok)) {
 
                 if($username == $userok && $password == $passok) {
+                    $_SESSION['nombre']  = $nombre; 
                   
                     $_SESSION['user']  = $userok; 
                     $_SESSION['logueado'] = TRUE;

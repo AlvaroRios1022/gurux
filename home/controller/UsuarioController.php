@@ -38,7 +38,7 @@ function Inicio_sesion($post){
 }
 
 function Registro($post){
-
+/*
     $url = "https://prod.cobru.co/token/";
 
     $post2 = array(
@@ -134,8 +134,9 @@ function Registro($post){
 
     }else{
         $post['pk'] = $responseRequest->id;
-        $respuesta = UsuarioModel::Registro($post);
-    }
+        */
+        $respuesta = UsuarioModel::Registro($post);/*
+    }*/
 
 
     echo json_encode($respuesta);
