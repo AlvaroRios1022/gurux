@@ -13,8 +13,9 @@ if(!(isset($_SESSION['perfil']) && $_SESSION['perfil'] == 'guru') && !(isset($_S
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="css/estilos_cobru.css" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+
+	<link href="css/estilos_cobru2.css" rel="stylesheet" type="text/css" />
+	<link href="css/estilos.css" rel="stylesheet" type="text/css" />		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -146,7 +147,7 @@ box-shadow: none;
 			<?php 
 				}else{ 
 			?>
-				<div class="menusuperiocentro logout"  style="">
+			<div class="menusuperiocentro logout"  style="">
 				<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 				<a class="logout_btn" href="logout.php" style=" "> Cerrar Sesión</a>
@@ -268,14 +269,14 @@ box-shadow: none;
 	<?php 
 		if(!(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE)){
 	?>
-		<div class="caja2" style="margin-left:3%;top: 15.1rem !important;" >
+		<div class="cajai2" style="margin-left:3%;top: 15.1rem !important;" >
 			<img style=" margin-left:18%; margin-top:10px; width:60%; " src="img/Ilustracion2.svg" alt="cobru">
 			<br>
 		</div>
 	<?php 
 		}else{ 
 	?>
-		<div class="caja2" style="margin-left:3%;" >
+		<div class="cajai2" style="margin-left:3%;" >
 			<img style=" margin-left:18%; margin-top:10px; width:60%; " src="img/Ilustracion2.svg" alt="cobru">
 			<br>
 		</div>

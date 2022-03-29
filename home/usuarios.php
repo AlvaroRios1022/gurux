@@ -275,7 +275,7 @@ $nuevafechaestudio=date ('Y-m-d',$fecha_estudio);
                                     <br>
                                     <input required type="checkbox" name="politicas" value="politicas" class="check4">
                                         <label for="18" class="texto"> 
-                                            <p style="font-size:14px; color:#888482">&nbsp;&nbsp;Acepto recibir notificaciones de GURU´S CENTER.</p>
+                                            <p style="font-size:14px; color:#888482">&nbsp;&nbsp;Acepto recibir notificaciones de GURUXY.</p>
                                         </label>
                                     <br><br><br>
                                 </div>

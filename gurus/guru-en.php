@@ -879,7 +879,7 @@ function mostrar() {
                 <ul class="lista">
                     <div style="text-align: justify; margin-right: 30px "><br>
                         <li> 
-                            <p style="display: contents;"> By submitting your application you authorize us to send your information to our evaluators. Your application will be considered exclusively to apply as an independent contractor at Guru's Center and not to obtain any position as our employee.</p>
+                            <p style="display: contents;"> By submitting your application you authorize us to send your information to our evaluators. Your application will be considered exclusively to apply as an independent contractor at Guruxy and not to obtain any position as our employee.</p>
                         </li> 
                     </div>
                 </ul>

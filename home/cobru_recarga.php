@@ -17,7 +17,9 @@ if(isset($_GET["tipo_servicio"])){
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="css/estilos_cobru.css" rel="stylesheet" type="text/css" />
+
+	<link href="css/estilos_cobru2.css" rel="stylesheet" type="text/css" />
+	<link href="css/estilos.css" rel="stylesheet" type="text/css" />		
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
@@ -274,8 +276,7 @@ box-shadow: none;
 	<?php 
 		if(!(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE)){
 	?>
-		<div class="caja2" style="margin-left:3%;top: 15.1rem !important;" >
-			<h5 class="titleServicios">Selecciona el servicio a recargar</h5>
+		<div class="cajai2" style="margin-left:3%;top: 15.1rem !important;" >
 			<div class="serviciosContainer">
 				<a class="btnCobru <?php if ($_GET["tipo_servicio"] == 'claro') echo "selectedItem"; ?>" onclick="cambiarServicio('claro');"><img style=" margin-left:5%; margin-top:10px " src="img/cobru_claro.png" alt="cobru"></a>
 				<a class="btnCobru <?php if ($_GET["tipo_servicio"] == 'tigo') echo "selectedItem"; ?>" onclick="cambiarServicio('tigo');"><img style=" margin-left:5%; margin-top:10px " src="img/cobru_tigo.png" alt="cobru"></a>
@@ -291,7 +292,7 @@ box-shadow: none;
 	<?php 
 		}else{ 
 	?>
-		<div class="caja2" style="margin-left:3%; " >
+		<div class="cajai2" style="margin-left:3%; " >
 			<h5 class="titleServicios">Selecciona el servicio a recargar</h5>
 			<div class="serviciosContainer">
 				<a class="btnCobru <?php if ($_GET["tipo_servicio"] == 'claro') echo "selectedItem"; ?>" onclick="cambiarServicio('claro');"><img style=" margin-left:5%; margin-top:10px " src="img/cobru_claro.png" alt="cobru"></a>

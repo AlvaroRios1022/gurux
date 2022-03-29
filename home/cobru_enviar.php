@@ -16,7 +16,9 @@ if(isset($_GET["tipo_envio"])){
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="css/estilos_cobru.css" rel="stylesheet" type="text/css" />
+
+	<link href="css/estilos_cobru2.css" rel="stylesheet" type="text/css" />
+	<link href="css/estilos.css" rel="stylesheet" type="text/css" />	
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
@@ -268,10 +270,10 @@ box-shadow: none;
 		</div>
 	</div>
 
-	<?php 
+	<?php  
 		if(!(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE)){
 	?>
-		<div class="caja2" style="margin-left:3%;top: 15.1rem !important;" >
+		<div class="cajai2" style="margin-left:3%;top: 15.1rem !important;" >
 			<img style=" margin-left:3%; margin-top:10px " src="img/titulo.svg" alt="cobru">
 			<a class="btnCobru <?php if ($_GET["tipo_envio"] == 'cobru') echo "selectedItem"; ?>" onclick="cambiarEnvio('cobru');"><img style=" margin-left:3%; margin-top:10px " src="img/cobru_billetera.svg" alt="cobru"></a>
 			<a class="btnCobru <?php if ($_GET["tipo_envio"] == 'baloto') echo "selectedItem"; ?>" onclick="cambiarEnvio('baloto');"><img style=" margin-left:3%; margin-top:10px " src="img/cobru_baloto.svg" alt="cobru"></a>
@@ -283,7 +285,7 @@ box-shadow: none;
 	<?php 
 		}else{ 
 	?>
-		<div class="caja2" style="margin-left:3%; " >
+		<div class="cajai2" style="margin-left:3%; " >
 			<img style=" margin-left:3%; margin-top:10px " src="img/titulo.svg" alt="cobru">
 			<a class="btnCobru <?php if ($_GET["tipo_envio"] == 'cobru') echo "selectedItem"; ?>" onclick="cambiarEnvio('cobru');"><img style=" margin-left:3%; margin-top:10px " src="img/cobru_billetera.svg" alt="cobru"></a>
 			<a class="btnCobru <?php if ($_GET["tipo_envio"] == 'baloto') echo "selectedItem"; ?>" onclick="cambiarEnvio('baloto');"><img style=" margin-left:3%; margin-top:10px " src="img/cobru_baloto.svg" alt="cobru"></a>
