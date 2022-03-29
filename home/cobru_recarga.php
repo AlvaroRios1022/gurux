@@ -293,8 +293,8 @@ box-shadow: none;
 		}else{ 
 	?>
 		<div class="cajai2" style="margin-left:3%; " >
-			<h5 class="titleServicios">Selecciona el servicio a recargar</h5>
-			<div class="serviciosContainer">
+			<h5 style="margin-top:-50px" class="titleServicios">Selecciona el servicio a recargar</h5>
+			<div style="margin-top:50px" class="serviciosContainer">
 				<a class="btnCobru <?php if ($_GET["tipo_servicio"] == 'claro') echo "selectedItem"; ?>" onclick="cambiarServicio('claro');"><img style=" margin-left:5%; margin-top:10px " src="img/cobru_claro.png" alt="cobru"></a>
 				<a class="btnCobru <?php if ($_GET["tipo_servicio"] == 'tigo') echo "selectedItem"; ?>" onclick="cambiarServicio('tigo');"><img style=" margin-left:5%; margin-top:10px " src="img/cobru_tigo.png" alt="cobru"></a>
 				<a class="btnCobru <?php if ($_GET["tipo_servicio"] == 'movistar') echo "selectedItem"; ?>" onclick="cambiarServicio('movistar');"><img style=" margin-left:5%; margin-top:10px " src="img/cobru_movistar.png" alt="cobru"></a>

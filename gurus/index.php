@@ -22,31 +22,25 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
     </head>
     <body class="cabecera">
         <form action="guru.php" method="post">
-            <div  class="flex-container"  align="left">
-                <div align="left" >
-                <br>
-                    <img style="width:250px" src="images/logo.png"/>  
-                </div>
+            <div align="center" >
+                <br><br>
 
-
-                <div align="center" >
-                <br>
-                    <img style="width:50%;" src="img/headert12.png"/> 
+                <a ><img style="width:20%" src="images/logo.png"/>  </a>
+                <a style="color:#FFC808; font-size:37px; font-weight: bold; margin-left:8%; "> Tu plataforma GRATUITA!!! </a>
+                <a ><img style="width: 20%; margin-left:10%" src="img/headert12.png"/> </a>
+                <br>    
+                <div  align="right" style="margin-right:8%"  >
+				    <span style=" color: #fff">IDIOMA   &nbsp;&nbsp;  <a style="color:#FFC808"> ES </a>  | <a href="index-en.php" style="text-decoration: none; color: #fff" >  EN</a></span>          
                 </div>  
-                <div  align="left"  >
-				<span style="color: #fff">IDIOMA   &nbsp;&nbsp;  <a style="color:#FFC808"> ES </a>  | <a href="index-en.php" style="text-decoration: none; color: #fff">  EN</a></span>
-			</div>          
-            </div>  
-            <br>
-
-            <div style="background-color: #fff;" align="center">
-            <img src="img/textos21.png"  width="100%" height="auto" alt="" />
+                <br>
+                <div style="background-color: #fff;" align="center">
+                <img src="img/textos21.png"  width="100%" height="auto" alt="" />
            
             
-            <img src="img/fotos8-es.png"  width="100%" height="auto" alt="" />
-            </div>
+                <img src="img/fotos8-es.png"  width="100%" height="auto" alt="" />
+                </div>
             <div >
-                <div class="flex-container" style="background-color: #fff;" align="center">
+            <div class="flex-container" style="background-color: #fff;" align="center">
                     <div class="flex-item-left">
                         <div  style="text-align: justify; margin-top:-100px" class="textoprincipal"><br>
                             <p style="display: contents; color:#452167"><strong>
@@ -136,6 +130,15 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                                 <option value="Nefrólogo">Nefrólogo</option>
                                 <option value="Neumólogo">Neumólogo</option>
                                 <option value="Neurólogo">Neurólogo</option>
+
+                                <option value="Odontólogo Endodoncista.">Odontólogo Endodoncista.</option>
+                                <option value="Odontólogo general">Odontólogo general</option>
+                                <option value="Odontólogo Odontopediatra">Odontólogo Odontopediatra</option>
+                                <option value="Odontólogo Ortodoncista">Odontólogo Ortodoncista</option>
+                                <option value="Odontólogo Patólogo oral o Cirujano oral">Odontólogo Patólogo oral o Cirujano oral</option>
+                                <option value="Odontólogo Periodoncista">Odontólogo Periodoncista</option>
+                                <option value="Odontólogo Prostodoncista">Odontólogo Prostodoncista</option>
+                                
                                 <option value="Oncólogo">Oncólogo</option>
                                 <option value="Ortopedista">Ortopedista</option>
                                 <option value="Patólogo">Patólogo</option>
