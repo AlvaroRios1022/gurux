@@ -254,6 +254,16 @@ box-shadow: none;
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neumólogo')">Neumólogo</li></a></td></tr>
 								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neurocirugía')">Neurocirugía</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neurólogo')">Neurólogo</li></a></td></tr>
+
+								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Endodoncista')">Odontólogo Endodoncista</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo general')">Odontólogo general</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Odontopediatra')">Odontólogo Odontopediatra</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Ortodoncista')">Odontólogo Ortodoncista</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Patólogo oral o Cirujano oral')">Odontólogo Patólogo oral o Cirujano oral</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Periodoncista')">Odontólogo Periodoncista</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Prostodoncista')">Odontólogo Prostodoncista</li></a></td></tr>
+                                
+
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Oncólogo')">Oncólogo</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ortopedista')">Ortopedista</li></a></td></tr>
                                 <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Patólogo')">Patólogo</li></a></td></tr>
