@@ -1,5 +1,22 @@
 /* Rectangle 45 */
 
+.cajai2 {
+    position: absolute;
+    width: 51%;
+    height: 152px;
+    left: 40rem;
+    top: 15.0rem;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 15%);
+    border-radius: 3px;
+}
+
+.serviciosContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .caja4 {
     width: 25%;
     height: 152px;

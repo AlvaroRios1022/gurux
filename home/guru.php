@@ -201,8 +201,10 @@ box-shadow: none;
 			<?php 
 				}else{ 
 			?>
-				<div class="menusuperiocentro logout"  style="margin-left: -30px">
-					<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
+				<div class="menusuperiocentro logout"  style="">
+				<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<a class="logout_btn" href="logout.php" style=" "> Cerrar Sesión</a>
 				</div>
 			<?php 
 				} 
@@ -264,9 +266,22 @@ box-shadow: none;
 					</div>
 					<div class="flex-container" style="background-color: #fff;" align="center">
                     <div class="flex-item-left">
-					<img src="img/foto2.png" style="width:100%; margin-top:-1px"><br>
-					<img src="img/comenzar.png" style="width:50%; margin-top:4px;">
-					<a href="usuarios.php"><img src="img/registrese.png" style="width:25%; margin-top:4px;"></a>
+						<img src="img/foto2.png" style="width:100%; margin-top:-1px"><br>
+						<img src="img/comenzar.png" style="width:50%; margin-top:4px;">
+						<?php 
+							if(!(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE)){
+						?>
+							<a href="usuarios.php"><img src="img/registrese.png" style="width:25%; margin-top:4px;"></a>
+
+						<?php 
+							}else{ 
+						?>
+						<a href="usuarios.php"><img src="img/registrese.png" style="width:25%; margin-top:4px;">Cambiar boton</a>
+					</div>
+					<?php 
+							} 
+					?>
+
 					</div>
 					<div class="flex-item-right" style="background-color: #fff; max-height:480px;" align="center"><br><br>
 
