@@ -51,7 +51,7 @@ function Pintar_Gurus(){
             ){
 
             html = html +  "<div class='prod-grid3' style='margin-top:25px;height: 180px;'>"+
-            "<img class='imgredonguru' src='img/avatar.png' alt='kalita'>"+
+            "<img class='imgredonguru' src='"+v.url_image+"' alt='kalita'>"+
               "<img src='img/categorias/en linea/1m.png' alt='kalita'>"+
               "<div class='bloqueguru bloqueguru2'>"+
                 "<h5 style=' margin-right: 45px'>"+v.nombre+" </h5>"+
@@ -92,7 +92,7 @@ function Pintar_Gurus(){
         "<img class='imgredonguru' src='img/avatar.png' alt='kalita'>"+
           "<img src='img/categorias/en linea/1m.png' alt='kalita'>"+
           "<div class='bloqueguru bloqueguru2'>"+
-            "<h5 style=' margin-right: 45px'> </h5>"+
+            "<h5 style=' margin-right: 45px'>Registrate </h5>"+
             "<form>"+
                 "<p class='clasificacion'>"+
                     "<input id='radio1' type='radio' name='estrellas' value='5'>"+

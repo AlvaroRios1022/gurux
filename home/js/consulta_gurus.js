@@ -49,7 +49,7 @@ function Pintar_Gurus(){
             && ((RANGO_INICIAL < v.precio && v.precio < RANGO_FINAL) || (RANGO_INICIAL == '' || RANGO_FINAL == '') )
             && (v.idioma == IDIOMA || IDIOMA == "" ) &&( v.pais == PAIS || PAIS == "")
             ){
-            html = html +  "<div class='prod-grid3' style='margin-top:25px;height: 180px;'>"+
+            html = html +  "<div class='prod-grid3' style='margin-top:25px;margin-bottom: 20px;height: 180px;'>"+
             "<img class='imgredonguru' src='"+v.url_image+"' alt='kalita'>"+
               "<img src='img/categorias/en linea/1m.png' alt='kalita'>"+
               "<div class='bloqueguru bloqueguru2'>"+
@@ -89,11 +89,11 @@ function Pintar_Gurus(){
     });
 
     for(var i = contador; i<27 ;i++){
-        html = html +  "<div class='prod-grid3' style='margin-top:25px;height: 180px;'>"+
+        html = html +  "<div class='prod-grid3' style='margin-bottom: 20px;margin-top:25px;height: 180px;'>"+
         "<img class='imgredonguru' src='img/avatar.png' alt='kalita'>"+
           "<img src='img/categorias/en linea/1m.png' alt='kalita'>"+
           "<div class='bloqueguru bloqueguru2'>"+
-            "<h5 style=' margin-right: 45px'> </h5>"+
+            "<h5 style=' margin-right: 45px'>Registrate</h5>"+
             "<form>"+
                 "<p class='clasificacion'>"+
                     "<input id='radio1' type='radio' name='estrellas' value='5'>"+
