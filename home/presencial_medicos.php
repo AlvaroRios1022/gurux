@@ -333,7 +333,7 @@ box-shadow: none;
 		</div>
 		<div class="barra" style="margin-top:-6px; ">
 		<ul id="lista1" >
-                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="medicos.php" > HOME MÉDICOS </a></li>
+                <li style="margin-left:-90px;" class="itemlista1"><a id="current" href="medicos.php" > HOME MÉDICOS </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="preguntas_medicos.php">PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>

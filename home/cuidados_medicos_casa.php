@@ -19,7 +19,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
 	
@@ -28,9 +27,11 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	
 	<title>Gurus Center</title>
 	<style type="text/css">
+
   .custom-combobox {
     position: relative;
     display: inline-block;
+	
   }
   .custom-combobox-toggle {
     position: absolute;
@@ -38,15 +39,20 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
     bottom: 0;
     margin-left: -1px;
     padding: 0;
+	border: 0;
+
   }
   .custom-combobox-input {
     margin: 0;
     padding: 5px 10px;
+	border: 0;
+
   }
   .ui-menu-item .ui-menu-item-wrapper:hover
 {
     background-color: #CCC;
     border: none;    
+
 }
 		body {
 			margin-left: 0px;
@@ -146,7 +152,7 @@ box-shadow: none;
  
         $( "<a>" )
           .attr( "tabIndex", -1 )
-          .attr( "title", "Show All Items" )
+          .attr( "title", "Buscar" )
           .tooltip()
           .appendTo( this.wrapper )
           .button({
@@ -212,7 +218,7 @@ box-shadow: none;
         // Remove invalid value
         this.input
           .val( "" )
-          .attr( "title", value + " didn't match any item" )
+          .attr( "title", value + " No Coincide" )
           .tooltip( "open" );
         this.element.val( "" );
         this._delay(function() {
@@ -226,10 +232,15 @@ box-shadow: none;
         this.element.show();
       }
     });
- 
+
+	$( "#cuidado_en_casa" ).combobox();
+	$( "#cars" ).combobox();
+
     $( "#filtro_ciudad" ).combobox();
     $( "#toggle" ).on( "click", function() {
       $( "#filtro_ciudad" ).toggle();
+      $( "#cars" ).toggle();
+      $( "#cuidado_en_casa" ).toggle();
     });
   } );
   </script>
@@ -337,7 +348,7 @@ box-shadow: none;
 		</div>
 		<div class="barra" style="margin-top:-6px; ">
             <ul id="lista1" >
-                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="medicos.php" > HOME MÉDICOS </a></li>
+                <li style="margin-left:-90px;" class="itemlista1"><a id="current" href="medicos.php" > HOME MÉDICOS </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="preguntas_medicos.php" >PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
@@ -423,7 +434,7 @@ box-shadow: none;
 		<br>
 		
 		<span >  Cuidado en Casa:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
     style=" border: none;
     background-color: #0000;
@@ -466,7 +477,6 @@ box-shadow: none;
         <option value="300000-350000">$300.000 - $350.000</option>
         <option value="350000-9999999999">Mayor a $350.000 </option>
   </select>
-
   <span style="margin-left:3%">  Ciudad:</span>
   <select class="camposgenerales" 
   name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
@@ -1714,7 +1724,7 @@ box-shadow: none;
     margin-bottom: auto;
 	text-align: center" 
 	
-	name="cars" id="cars">
+	name="cars2" id="cars2">
 	<option value="">-----</option>       
 	<option value="">En Linea</option>       
 	<option value="">En Consulta</option>       
@@ -1785,7 +1795,7 @@ box-shadow: none;
     	margin-bottom: auto;
     	text-align: center" 
 
-    	name="cars" id="cars">        
+    	name="cars3" id="cars3">        
    		 <option value="">-----</option>  
    		 <option value="">Nuestros Destacados</option>       
 
@@ -1804,7 +1814,7 @@ box-shadow: none;
     	margin-bottom: auto;
     	text-align: center" 
 
-    	name="cars" id="cars">        
+    	name="cars4" id="cars4">        
    		 <option value="">-----</option>       
 
   		</select>
@@ -2095,5 +2105,6 @@ function carousel() {
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/login.js"></script>
+
 </body>
 </html>
