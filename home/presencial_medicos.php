@@ -19,6 +19,8 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
 	
 	<script src="js/jquery-2.1.0.min.js"></script>
@@ -26,6 +28,22 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	
 	<title>Gurus Center</title>
 	<style type="text/css">
+		
+	.custom-combobox {
+		position: relative;
+		display: inline-block;
+	}
+	.custom-combobox-toggle {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin-left: -1px;
+		padding: 0;
+	}
+	.custom-combobox-input {
+		margin: 0;
+		padding: 5px 10px;
+	}
 		body {
 			margin-left: 0px;
 			margin-top: 0px;
@@ -73,6 +91,144 @@ box-shadow: none;
 
 
 	</style>
+		<script>
+	$( function() {
+		$.widget( "custom.combobox", {
+			_create: function() {
+				this.wrapper = $( "<span>" )
+					.addClass( "custom-combobox" )
+					.insertAfter( this.element );
+
+				this.element.hide();
+				this._createAutocomplete();
+				this._createShowAllButton();
+			},
+
+			_createAutocomplete: function() {
+				var selected = this.element.children( ":selected" ),
+					value = selected.val() ? selected.text() : "";
+
+				this.input = $( "<input>" )
+					.appendTo( this.wrapper )
+					.val( value )
+					.attr( "title", "" )
+					.addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )
+					.autocomplete({
+						delay: 0,
+						minLength: 0,
+						source: this._source.bind( this )
+					})
+					.tooltip({
+						classes: {
+							"ui-tooltip": "ui-state-highlight"
+						}
+					});
+
+				this._on( this.input, {
+					autocompleteselect: function( event, ui ) {
+						ui.item.option.selected = true;
+						this._trigger( "select", event, {
+							item: ui.item.option
+						});
+					},
+
+					autocompletechange: "_removeIfInvalid"
+				});
+			},
+
+			_createShowAllButton: function() {
+				var input = this.input,
+					wasOpen = false;
+
+				$( "<a>" )
+					.attr( "tabIndex", -1 )
+					.attr( "title", "Show All Items" )
+					.tooltip()
+					.appendTo( this.wrapper )
+					.button({
+						icons: {
+							primary: "ui-icon-triangle-1-s"
+						},
+						text: false
+					})
+					.removeClass( "ui-corner-all" )
+					.addClass( "custom-combobox-toggle ui-corner-right" )
+					.on( "mousedown", function() {
+						wasOpen = input.autocomplete( "widget" ).is( ":visible" );
+					})
+					.on( "click", function() {
+						input.trigger( "focus" );
+
+						// Close if already visible
+						if ( wasOpen ) {
+							return;
+						}
+
+						// Pass empty string as value to search for, displaying all results
+						input.autocomplete( "search", "" );
+					});
+			},
+
+			_source: function( request, response ) {
+				var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
+				response( this.element.children( "option" ).map(function() {
+					var text = $( this ).text();
+					if ( this.value && ( !request.term || matcher.test(text) ) )
+						return {
+							label: text,
+							value: text,
+							option: this
+						};
+				}) );
+			},
+
+			_removeIfInvalid: function( event, ui ) {
+
+				// Selected an item, nothing to do
+				if ( ui.item ) {
+					return;
+				}
+
+				// Search for a match (case-insensitive)
+				var value = this.input.val(),
+					valueLowerCase = value.toLowerCase(),
+					valid = false;
+				this.element.children( "option" ).each(function() {
+					if ( $( this ).text().toLowerCase() === valueLowerCase ) {
+						this.selected = valid = true;
+						return false;
+					}
+				});
+
+				// Found a match, nothing to do
+				if ( valid ) {
+					return;
+				}
+
+				// Remove invalid value
+				this.input
+					.val( "" )
+					.attr( "title", value + " didn't match any item" )
+					.tooltip( "open" );
+				this.element.val( "" );
+				this._delay(function() {
+					this.input.tooltip( "close" ).attr( "title", "" );
+				}, 2500 );
+				this.input.autocomplete( "instance" ).term = "";
+			},
+
+			_destroy: function() {
+				this.wrapper.remove();
+				this.element.show();
+			}
+		});
+
+		$( "#filtro_ciudad" ).combobox();
+		$( "#toggle" ).on( "click", function() {
+			$( "#filtro_ciudad" ).toggle();
+		});
+	} );
+	</script>
 </head>
 
 <body class="cabecera">
@@ -376,19 +532,17 @@ box-shadow: none;
 
 
   <span style="margin-left:3%">  Ciudad:</span>
-  <select class="camposgenerales"	style=" border: none; background-color: #0000;font-size: 15px;
+  
+  <select class="camposgenerales" style=" border: none; background-color: #0000;font-size: 15px;
 	width: 100px;text-decoration: none;margin-bottom: auto;text-align: center" 
-	name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
-	<option value="">-----</option>     
-
-	<optgroup label="Amazonas">     
+  name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
+  <option value="">-----</<option>  
+	<option value="Amazonas"></option>
 	<option value="Leticia">Leticia</option>
 	<option value="PuertoNariño">PuertoNariño</option>
 	
-</optgroup>
-	<optgroup label="Antioquia">
-	     
 
+	<option value="Antioquia"></option>
 <option value="Abejorral">Abejorral</option>
 <option value="Abriaquí">Abriaquí</option>
 <option value="Alejandría">Alejandría</option>
@@ -516,8 +670,8 @@ box-shadow: none;
 <option value="Zaragoza">Zaragoza</option>
 
 
-</optgroup>
-	<optgroup label="Arauca">
+
+	<option value="Arauca"></option>
 
 
 <option value="Arauca">Arauca</option>
@@ -529,8 +683,8 @@ box-shadow: none;
 <option value="Tame">Tame</option>
 
 
-</optgroup>
-	<optgroup label="Atlántico">
+
+	<option value="Atlántico"></option>
 		
 	<option value="Baranoa">Baranoa</option>
 <option value="Barranquilla">Barranquilla</option>
@@ -556,8 +710,8 @@ box-shadow: none;
 <option value="Tubará">Tubará</option>
 <option value="Usiacurí">Usiacurí</option>
 
-</optgroup>
-	<optgroup label="Bolivar">
+
+	<option value="Bolivar"></option>
 
 <option value="Achí">Achí</option>
 <option value="AltosDelRosario">AltosDelRosario</option>
@@ -606,8 +760,8 @@ box-shadow: none;
 <option value="Villanueva">Villanueva</option>
 <option value="Zambrano">Zambrano</option>
 
-</optgroup>
-	<optgroup label="Boyacá">
+
+	<option value="Boyacá"></option>
 
 <option value="Almeida">Almeida</option>
 <option value="Aquitania">Aquitania</option>
@@ -733,8 +887,8 @@ box-shadow: none;
 <option value="Viracachá">Viracachá</option>
 <option value="Zetaquirá">Zetaquirá</option>
 
-</optgroup>
-	<optgroup label="Caldas">
+
+	<option value="Caldas"></option>
 
 <option value="Aguadas">Aguadas</option>
 <option value="Anserma">Anserma</option>
@@ -764,8 +918,8 @@ box-shadow: none;
 <option value="Villamaría">Villamaría</option>
 <option value="Viterbo">Viterbo</option>
 
-</optgroup>
-	<optgroup label="Caquetá">
+
+	<option value="Caquetá"></option>
 
 <option value="Albania">Albania</option>
 <option value="BelénDeLosAndaquies">BelénDeLosAndaquies</option>
@@ -784,8 +938,8 @@ box-shadow: none;
 <option value="Solita">Solita</option>
 <option value="Valparaíso">Valparaíso</option>
 
-</optgroup>
-	<optgroup label="Casanare">
+
+	<option value="Casanare"></option>
 
 <option value="Aguazul">Aguazul</option>
 <option value="Chameza">Chameza</option>
@@ -807,8 +961,8 @@ box-shadow: none;
 <option value="Villanueva">Villanueva</option>
 <option value="Yopal">Yopal</option>
 
-</optgroup>
-	<optgroup label="Cauca">
+
+	<option value="Cauca"></option>
 
 <option value="Almaguer">Almaguer</option>
 <option value="Argelia">Argelia</option>
@@ -853,8 +1007,8 @@ box-shadow: none;
 <option value="Totoro">Totoro</option>
 <option value="VillaRica">VillaRica</option>
 
-</optgroup>
-	<optgroup label="Cesar">
+
+	<option value="Cesar"></option>
 
 <option value="Aguachica">Aguachica</option>
 <option value="AgustínCodazzi">AgustínCodazzi</option>
@@ -882,8 +1036,8 @@ box-shadow: none;
 <option value="Tamalameque">Tamalameque</option>
 <option value="Valledupar">Valledupar</option>
 
-</optgroup>
-	<optgroup label="Chocó">
+
+	<option value="Chocó"></option>
 
 <option value="Acandí">Acandí</option>
 <option value="AltoBaudó">AltoBaudó</option>
@@ -916,8 +1070,8 @@ box-shadow: none;
 <option value="Ungüía">Ungüía</option>
 <option value="UniónPanamericana">UniónPanamericana</option>
 
-</optgroup>
-	<optgroup label="Córdoba">
+
+	<option value="Córdoba"></option>
 
 <option value="Ayapel">Ayapel</option>
 <option value="Buenavista">Buenavista</option>
@@ -950,8 +1104,8 @@ box-shadow: none;
 <option value="Tuchín">Tuchín</option>
 <option value="Valencia">Valencia</option>
 
-</optgroup>
-	<optgroup label="Cundinamarca">
+
+	<option value="Cundinamarca"></option>
 
 <option value="AguaDeDios">AguaDeDios</option>
 <option value="Albán">Albán</option>
@@ -1071,22 +1225,22 @@ box-shadow: none;
 <option value="Zipacón">Zipacón</option>
 <option value="Zipaquirá">Zipaquirá</option>
 
-</optgroup>
-	<optgroup label="Guainía">
+
+	<option value="Guainía"></option>
 
 <option value="Barrancominas">Barrancominas</option>
 <option value="Inirida">Inirida</option>
 
-</optgroup>
-	<optgroup label="Guaviare">
+
+	<option value="Guaviare"></option>
 
 <option value="Calamar">Calamar</option>
 <option value="ElRetorno">ElRetorno</option>
 <option value="Miraflores">Miraflores</option>
 <option value="SanJoséDelGuaviare">SanJoséDelGuaviare</option>
 
-</optgroup>
-	<optgroup label="Huila">
+
+	<option value="Huila"></option>
 
 <option value="Acevedo">Acevedo</option>
 <option value="Agrado">Agrado</option>
@@ -1126,8 +1280,8 @@ box-shadow: none;
 <option value="Villavieja">Villavieja</option>
 <option value="Yaguará">Yaguará</option>
 
-</optgroup>
-	<optgroup label="La Guajira">
+
+	<option value="La Guajira"></option>
 
 <option value="Albania">Albania</option>
 <option value="Barrancas">Barrancas</option>
@@ -1145,8 +1299,8 @@ box-shadow: none;
 <option value="Urumita">Urumita</option>
 <option value="Villanueva">Villanueva</option>
 
-</optgroup>
-	<optgroup label="Magdalena">
+
+	<option value="Magdalena"></option>
 
 <option value="Algarrobo">Algarrobo</option>
 <option value="Aracataca">Aracataca</option>
@@ -1179,8 +1333,8 @@ box-shadow: none;
 <option value="Zapayán">Zapayán</option>
 <option value="ZonaBananera">ZonaBananera</option>
 
-</optgroup>
-	<optgroup label="Meta">
+
+	<option value="Meta"></option>
 
 <option value="Acacías">Acacías</option>
 <option value="BarrancaDeUpía">BarrancaDeUpía</option>
@@ -1212,8 +1366,8 @@ box-shadow: none;
 <option value="Villavicencio">Villavicencio</option>
 <option value="VistaHermosa">VistaHermosa</option>
 
-</optgroup>
-	<optgroup label="Nariño">\
+
+	<option value="Nariño"></option>
 <option value="Alban">Alban</option>
 <option value="Aldana">Aldana</option>
 <option value="Ancuyá">Ancuyá</option>
@@ -1279,8 +1433,8 @@ box-shadow: none;
 <option value="Túquerres">Túquerres</option>
 <option value="Yacuanquer">Yacuanquer</option>
 
-</optgroup>
-	<optgroup label="Norte de Santander">
+
+	<option value="Norte de Santander"></option>
 
 <option value="Abrego">Abrego</option>
 <option value="Arboledas">Arboledas</option>
@@ -1323,8 +1477,8 @@ box-shadow: none;
 <option value="VillaCaro">VillaCaro</option>
 <option value="VillaDelRosario">VillaDelRosario</option>
 
-</optgroup>
-	<optgroup label="Putumayo">
+
+	<option value="Putumayo"></option>
 
 <option value="Colón">Colón</option>
 <option value="Mocoa">Mocoa</option>
@@ -1340,8 +1494,8 @@ box-shadow: none;
 <option value="ValleDelGuamuez">ValleDelGuamuez</option>
 <option value="Villagarzón">Villagarzón</option>
 
-</optgroup>
-	<optgroup label="Qundío">
+
+	<option value="Qundío"></option>
 
 <option value="Armenia">Armenia</option>
 <option value="Buenavista">Buenavista</option>
@@ -1356,8 +1510,8 @@ box-shadow: none;
 <option value="Quimbaya">Quimbaya</option>
 <option value="Salento">Salento</option>
 
-</optgroup>
-	<optgroup label="Risaralda">
+
+	<option value="Risaralda"></option>
 
 <option value="Apía">Apía</option>
 <option value="Balboa">Balboa</option>
@@ -1374,13 +1528,13 @@ box-shadow: none;
 <option value="SantaRosaDeCabal">SantaRosaDeCabal</option>
 <option value="Santuario">Santuario</option>
 
-</optgroup>
-	<optgroup label="San Andrés">
+
+	<option value="San Andrés"></option>
 
 <option value="Providencia">Providencia</option>
 
-</optgroup>
-	<optgroup label="Santander">
+
+	<option value="Santander"></option>
 
 <option value="Aguada">Aguada</option>
 <option value="Albania">Albania</option>
@@ -1470,8 +1624,8 @@ box-shadow: none;
 <option value="Villanueva">Villanueva</option>
 <option value="Zapatoca">Zapatoca</option>
 
-</optgroup>
-	<optgroup label="Sucre">
+
+	<option value="Sucre"></option>
 
 <option value="Buenavista">Buenavista</option>
 <option value="Caimito">Caimito</option>
@@ -1500,8 +1654,8 @@ box-shadow: none;
 <option value="SantiagoDeTolú">SantiagoDeTolú</option>
 <option value="Toluviejo">Toluviejo</option>
 
-</optgroup>
-	<optgroup label="Tolima">
+
+	<option value="Tolima"></option>
 
 <option value="Alpujarra">Alpujarra</option>
 <option value="Alvarado">Alvarado</option>
@@ -1551,8 +1705,8 @@ box-shadow: none;
 <option value="Villahermosa">Villahermosa</option>
 <option value="Villarrica">Villarrica</option>
 
-</optgroup>
-	<optgroup label="Valle del Cauca">
+
+	<option value="Valle del Cauca"></option>
 
 <option value="Alcalá">Alcalá</option>
 <option value="Andalucía">Andalucía</option>
@@ -1597,22 +1751,19 @@ box-shadow: none;
 <option value="Yumbo">Yumbo</option>
 <option value="Zarzal">Zarzal</option>
 
-</optgroup>
-	<optgroup label="Vaupés">
+
+	<option value="Vaupés"></option>
 
 <option value="Caruru">Caruru</option>
 <option value="Mitú">Mitú</option>
 <option value="Taraira">Taraira</option>
 
-</optgroup>
-	<optgroup label="Vichada">
 
+	<option value="Vichada"></option>
 <option value="Cumaribo">Cumaribo</option>
 <option value="LaPrimavera">LaPrimavera</option>
 <option value="PuertoCarreño">PuertoCarreño</option>
 <option value="SantaRosalía">SantaRosalía</option>
-   
-</optgroup>
 
   </select>
 
@@ -2180,6 +2331,8 @@ function carousel() {
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="js/consulta_gurus_especiales.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script src="js/login.js"></script>
 </body>
 </html>
