@@ -1,4 +1,5 @@
 <?php
+/*
 class Conectar{
     public static function conexion(){
         $conexion=new mysqli("localhost", "guruxy_admin", "Z6HyYdRwHQa*", "guruxy_guru");
@@ -13,5 +14,19 @@ class Conectar{
         return $conexion;
     }
 }
-
+*/
 ?>
+
+
+
+<?php
+class Conectar{
+    public static function conexion(){
+        $conexion=new mysqli("localhost", "root", "", "guruxy");
+        $conexion->query("SET NAMES 'utf8'");
+        
+        return $conexion;
+    }
+}
+
+?> 

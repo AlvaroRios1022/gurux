@@ -205,7 +205,6 @@ function Informacion_Personal($post){
 
     $responseRequest = json_decode($resp2);
 
-    var_dump($responseRequest);
    
     if($responseRequest->error != NULL){
 

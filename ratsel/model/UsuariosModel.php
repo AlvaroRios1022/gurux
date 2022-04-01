@@ -3,7 +3,7 @@ require_once("../config/conexion2.php");
 class UsuariosModel {
 
     public static function Listar($start, $length, $search, $orderField, $orderDir) {
-        $sqlFromJoin = "  from guru  ";
+        $sqlFromJoin = "  from guru ";
     
         $sqlWhere = "  where estado = 0 ";
         

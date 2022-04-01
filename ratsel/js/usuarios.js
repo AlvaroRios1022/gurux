@@ -25,7 +25,7 @@ function ListarUsuarios(){
         "columns": [
             { "data": "id" },
             { "data": "nombre" },
-            { "data": "identificacion" },
+            { "data": "documento" },
         {
             "data": "id",
             "orderable": false,

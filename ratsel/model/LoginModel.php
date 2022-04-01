@@ -7,7 +7,7 @@ class LoginModel {
         $mysqli=Conectar::conexion();
         $username = $mysqli->real_escape_string($_POST['usuario']);
         $password = ($_POST['password']);
-        $consulta = "SELECT `id`, `user`, `password` FROM `admin_finandina` WHERE user= '$username' AND password = '$password'";
+        $consulta = "SELECT `id`, `user`, `password` FROM `admin_ratzel` WHERE user= '$username' AND password = '$password'";
         
 
         if($resultado = $mysqli->query($consulta)) {

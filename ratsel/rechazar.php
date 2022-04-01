@@ -1,13 +1,13 @@
 <?php 
 	session_start();
-	require_once "config/conexion.php";
+	require_once "config/conexion2.php";
   $db=Conectar::conexion();
 
     if(isset($_GET['id'])){
         $id = $_GET['id'];
     
 
-    $sql = ("UPDATE usuarios SET estado = 2 WHERE id = $id ");
+    $sql = ("UPDATE guru SET estado = 2 WHERE id = $id ");
 
 if ( $db->query($sql) === TRUE) {
   echo "Record updated successfully";
