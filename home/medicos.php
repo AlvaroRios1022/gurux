@@ -194,6 +194,8 @@ box-shadow: none;
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="historia_clinica.php">HISTORIA CLÍNICA</a></li>
 				<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li class="itemlista1"><a href="turismo_medico.php">TURISMO MÉDICO</a> </li>
+				<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 				<li class="itemlista1"><a href="libreria.php">LIBRERÍA</a></li> 
 
             </ul>

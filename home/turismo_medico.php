@@ -19,8 +19,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
 	
 	<script src="js/jquery-2.1.0.min.js"></script>
@@ -28,26 +26,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	
 	<title>Gurus Center</title>
 	<style type="text/css">
-  .custom-combobox {
-    position: relative;
-    display: inline-block;
-  }
-  .custom-combobox-toggle {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin-left: -1px;
-    padding: 0;
-  }
-  .custom-combobox-input {
-    margin: 0;
-    padding: 5px 10px;
-  }
-  .ui-menu-item .ui-menu-item-wrapper:hover
-{
-    background-color: #CCC;
-    border: none;    
-}
 		body {
 			margin-left: 0px;
 			margin-top: 0px;
@@ -95,144 +73,6 @@ box-shadow: none;
 
 
 	</style>
-	<script>
-  $( function() {
-    $.widget( "custom.combobox", {
-      _create: function() {
-        this.wrapper = $( "<span>" )
-          .addClass( "custom-combobox" )
-          .insertAfter( this.element );
- 
-        this.element.hide();
-        this._createAutocomplete();
-        this._createShowAllButton();
-      },
- 
-      _createAutocomplete: function() {
-        var selected = this.element.children( ":selected" ),
-          value = selected.val() ? selected.text() : "";
- 
-        this.input = $( "<input>" )
-          .appendTo( this.wrapper )
-          .val( value )
-          .attr( "title", "" )
-          .addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )
-          .autocomplete({
-            delay: 0,
-            minLength: 0,
-            source: $.proxy( this, "_source" )
-          })
-          .tooltip({
-            classes: {
-              "ui-tooltip": "ui-state-highlight"
-            }
-          });
- 
-        this._on( this.input, {
-          autocompleteselect: function( event, ui ) {
-            ui.item.option.selected = true;
-            this._trigger( "select", event, {
-              item: ui.item.option
-            });
-          },
- 
-          autocompletechange: "_removeIfInvalid"
-        });
-      },
- 
-      _createShowAllButton: function() {
-        var input = this.input,
-          wasOpen = false;
- 
-        $( "<a>" )
-          .attr( "tabIndex", -1 )
-          .attr( "title", "Show All Items" )
-          .tooltip()
-          .appendTo( this.wrapper )
-          .button({
-            icons: {
-              primary: "ui-icon-triangle-1-s"
-            },
-            text: false
-          })
-          .removeClass( "ui-corner-all" )
-          .addClass( "custom-combobox-toggle ui-corner-right" )
-          .on( "mousedown", function() {
-            wasOpen = input.autocomplete( "widget" ).is( ":visible" );
-          })
-          .on( "click", function() {
-            input.trigger( "focus" );
- 
-            // Close if already visible
-            if ( wasOpen ) {
-              return;
-            }
- 
-            // Pass empty string as value to search for, displaying all results
-            input.autocomplete( "search", "" );
-          });
-      },
- 
-      _source: function( request, response ) {
-        var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
-        response( this.element.children( "option" ).map(function() {
-          var text = $( this ).text();
-          if ( this.value && ( !request.term || matcher.test(text) ) )
-            return {
-              label: text,
-              value: text,
-              option: this
-            };
-        }) );
-      },
- 
-      _removeIfInvalid: function( event, ui ) {
- 
-        // Selected an item, nothing to do
-        if ( ui.item ) {
-          return;
-        }
- 
-        // Search for a match (case-insensitive)
-        var value = this.input.val(),
-          valueLowerCase = value.toLowerCase(),
-          valid = false;
-        this.element.children( "option" ).each(function() {
-          if ( $( this ).text().toLowerCase() === valueLowerCase ) {
-            this.selected = valid = true;
-            return false;
-          }
-        });
- 
-        // Found a match, nothing to do
-        if ( valid ) {
-          return;
-        }
- 
-        // Remove invalid value
-        this.input
-          .val( "" )
-          .attr( "title", value + " didn't match any item" )
-          .tooltip( "open" );
-        this.element.val( "" );
-        this._delay(function() {
-          this.input.tooltip( "close" ).attr( "title", "" );
-        }, 2500 );
-        this.input.autocomplete( "instance" ).term = "";
-      },
- 
-      _destroy: function() {
-        this.wrapper.remove();
-        this.element.show();
-      }
-    });
- 
-    $( "#filtro_ciudad" ).combobox();
-    $( "#toggle" ).on( "click", function() {
-      $( "#filtro_ciudad" ).toggle();
-    });
-  } );
-  </script>
 </head>
 
 <body class="cabecera">
@@ -351,7 +191,7 @@ box-shadow: none;
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="historia_clinica.php">HISTORIA CLÍNICA</a></li>
 				<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-				<li class="itemlista1"><a href="turismo_medico.php">TURISMO MÉDICO</a></li>
+				<li class="itemlista1"><a href="turismo_medico.php">TURISMO MÉDICO</a> </li>
 				<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 				<li class="itemlista1"><a href="libreria.php">LIBRERÍA</a></li> 
             </ul>
@@ -434,14 +274,17 @@ box-shadow: none;
     text-align: center" 
     name="cuidado_en_casa" id="cuidado_en_casa">        
     <option value="">-----</option>       
-	<option value="Cuidado de Adultos">Cuidado de Adultos</option>
-	<option value="Enfermeras">Enfermeras</option>
-	<option value="Equipos médicos">Equipos médicos</option>
-	<option value="Exámenes">Exámenes</option>
-	<option value="Fisioterapia">Fisioterapia</option>
-	<option value="Médicos">Médicos</option>
-	<option value="Rehabilitación">Rehabilitación</option>
-	<option value="Vacunación">Vacunación</option>
+	<option value="Cirugías Cardiovasculares">Cirugia Cardiovascular</option>
+	<option value="Cirugías Ortopédicas">Cirugías Ortopedicas</option>
+	<option value="Cirujanos Bariatricos">Cirujanos Bariatricos</option>
+	<option value="Cirujanos Plasticos">Cirujanos Plasticos</option>
+	<option value="Dermatología">Dermatología</option>
+	<option value="Ginecología">Ginecología</option>
+	<option value="Odontología">Odontología</option>
+	<option value="Oftalmología">Oftalmología</option>
+	<option value="Oncología">Oncología</option>
+	<option value="Otorrinolaringología">Otorrinolaringología</option>
+	<option value="Urología">Urología</option>
   </select>
 
   <span style="margin-left:3%" > Rango de Precio:</span>
@@ -467,16 +310,25 @@ box-shadow: none;
         <option value="350000-9999999999">Mayor a $350.000 </option>
   </select>
 
+
   <span style="margin-left:3%">  Ciudad:</span>
-  <select class="camposgenerales" 
-  name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
-	<option value="">-----</<option>  
-	<option value="Amazonas"></option>
+  <select class="camposgenerales"
+  
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">     
+	<option value="">-----</option>        
+    <optgroup label="Amazonas">     
 	<option value="Leticia">Leticia</option>
 	<option value="PuertoNariño">PuertoNariño</option>
 	
-
-	<option value="Antioquia"></option>
+</optgroup>
+	<optgroup label="Antioquia">
 <option value="Abejorral">Abejorral</option>
 <option value="Abriaquí">Abriaquí</option>
 <option value="Alejandría">Alejandría</option>
@@ -604,8 +456,8 @@ box-shadow: none;
 <option value="Zaragoza">Zaragoza</option>
 
 
-
-	<option value="Arauca"></option>
+</optgroup>
+	<optgroup label="Arauca">
 
 
 <option value="Arauca">Arauca</option>
@@ -617,8 +469,8 @@ box-shadow: none;
 <option value="Tame">Tame</option>
 
 
-
-	<option value="Atlántico"></option>
+</optgroup>
+	<optgroup label="Atlántico">
 		
 	<option value="Baranoa">Baranoa</option>
 <option value="Barranquilla">Barranquilla</option>
@@ -644,8 +496,8 @@ box-shadow: none;
 <option value="Tubará">Tubará</option>
 <option value="Usiacurí">Usiacurí</option>
 
-
-	<option value="Bolivar"></option>
+</optgroup>
+	<optgroup label="Bolivar">
 
 <option value="Achí">Achí</option>
 <option value="AltosDelRosario">AltosDelRosario</option>
@@ -694,8 +546,8 @@ box-shadow: none;
 <option value="Villanueva">Villanueva</option>
 <option value="Zambrano">Zambrano</option>
 
-
-	<option value="Boyacá"></option>
+</optgroup>
+	<optgroup label="Boyacá">
 
 <option value="Almeida">Almeida</option>
 <option value="Aquitania">Aquitania</option>
@@ -821,8 +673,8 @@ box-shadow: none;
 <option value="Viracachá">Viracachá</option>
 <option value="Zetaquirá">Zetaquirá</option>
 
-
-	<option value="Caldas"></option>
+</optgroup>
+	<optgroup label="Caldas">
 
 <option value="Aguadas">Aguadas</option>
 <option value="Anserma">Anserma</option>
@@ -852,8 +704,8 @@ box-shadow: none;
 <option value="Villamaría">Villamaría</option>
 <option value="Viterbo">Viterbo</option>
 
-
-	<option value="Caquetá"></option>
+</optgroup>
+	<optgroup label="Caquetá">
 
 <option value="Albania">Albania</option>
 <option value="BelénDeLosAndaquies">BelénDeLosAndaquies</option>
@@ -872,8 +724,8 @@ box-shadow: none;
 <option value="Solita">Solita</option>
 <option value="Valparaíso">Valparaíso</option>
 
-
-	<option value="Casanare"></option>
+</optgroup>
+	<optgroup label="Casanare">
 
 <option value="Aguazul">Aguazul</option>
 <option value="Chameza">Chameza</option>
@@ -895,8 +747,8 @@ box-shadow: none;
 <option value="Villanueva">Villanueva</option>
 <option value="Yopal">Yopal</option>
 
-
-	<option value="Cauca"></option>
+</optgroup>
+	<optgroup label="Cauca">
 
 <option value="Almaguer">Almaguer</option>
 <option value="Argelia">Argelia</option>
@@ -941,8 +793,8 @@ box-shadow: none;
 <option value="Totoro">Totoro</option>
 <option value="VillaRica">VillaRica</option>
 
-
-	<option value="Cesar"></option>
+</optgroup>
+	<optgroup label="Cesar">
 
 <option value="Aguachica">Aguachica</option>
 <option value="AgustínCodazzi">AgustínCodazzi</option>
@@ -970,8 +822,8 @@ box-shadow: none;
 <option value="Tamalameque">Tamalameque</option>
 <option value="Valledupar">Valledupar</option>
 
-
-	<option value="Chocó"></option>
+</optgroup>
+	<optgroup label="Chocó">
 
 <option value="Acandí">Acandí</option>
 <option value="AltoBaudó">AltoBaudó</option>
@@ -1004,8 +856,8 @@ box-shadow: none;
 <option value="Ungüía">Ungüía</option>
 <option value="UniónPanamericana">UniónPanamericana</option>
 
-
-	<option value="Córdoba"></option>
+</optgroup>
+	<optgroup label="Córdoba">
 
 <option value="Ayapel">Ayapel</option>
 <option value="Buenavista">Buenavista</option>
@@ -1038,8 +890,8 @@ box-shadow: none;
 <option value="Tuchín">Tuchín</option>
 <option value="Valencia">Valencia</option>
 
-
-	<option value="Cundinamarca"></option>
+</optgroup>
+	<optgroup label="Cundinamarca">
 
 <option value="AguaDeDios">AguaDeDios</option>
 <option value="Albán">Albán</option>
@@ -1159,22 +1011,22 @@ box-shadow: none;
 <option value="Zipacón">Zipacón</option>
 <option value="Zipaquirá">Zipaquirá</option>
 
-
-	<option value="Guainía"></option>
+</optgroup>
+	<optgroup label="Guainía">
 
 <option value="Barrancominas">Barrancominas</option>
 <option value="Inirida">Inirida</option>
 
-
-	<option value="Guaviare"></option>
+</optgroup>
+	<optgroup label="Guaviare">
 
 <option value="Calamar">Calamar</option>
 <option value="ElRetorno">ElRetorno</option>
 <option value="Miraflores">Miraflores</option>
 <option value="SanJoséDelGuaviare">SanJoséDelGuaviare</option>
 
-
-	<option value="Huila"></option>
+</optgroup>
+	<optgroup label="Huila">
 
 <option value="Acevedo">Acevedo</option>
 <option value="Agrado">Agrado</option>
@@ -1214,8 +1066,8 @@ box-shadow: none;
 <option value="Villavieja">Villavieja</option>
 <option value="Yaguará">Yaguará</option>
 
-
-	<option value="La Guajira"></option>
+</optgroup>
+	<optgroup label="La Guajira">
 
 <option value="Albania">Albania</option>
 <option value="Barrancas">Barrancas</option>
@@ -1233,8 +1085,8 @@ box-shadow: none;
 <option value="Urumita">Urumita</option>
 <option value="Villanueva">Villanueva</option>
 
-
-	<option value="Magdalena"></option>
+</optgroup>
+	<optgroup label="Magdalena">
 
 <option value="Algarrobo">Algarrobo</option>
 <option value="Aracataca">Aracataca</option>
@@ -1267,8 +1119,8 @@ box-shadow: none;
 <option value="Zapayán">Zapayán</option>
 <option value="ZonaBananera">ZonaBananera</option>
 
-
-	<option value="Meta"></option>
+</optgroup>
+	<optgroup label="Meta">
 
 <option value="Acacías">Acacías</option>
 <option value="BarrancaDeUpía">BarrancaDeUpía</option>
@@ -1300,8 +1152,8 @@ box-shadow: none;
 <option value="Villavicencio">Villavicencio</option>
 <option value="VistaHermosa">VistaHermosa</option>
 
-
-	<option value="Nariño"></option>
+</optgroup>
+	<optgroup label="Nariño">\
 <option value="Alban">Alban</option>
 <option value="Aldana">Aldana</option>
 <option value="Ancuyá">Ancuyá</option>
@@ -1367,8 +1219,8 @@ box-shadow: none;
 <option value="Túquerres">Túquerres</option>
 <option value="Yacuanquer">Yacuanquer</option>
 
-
-	<option value="Norte de Santander"></option>
+</optgroup>
+	<optgroup label="Norte de Santander">
 
 <option value="Abrego">Abrego</option>
 <option value="Arboledas">Arboledas</option>
@@ -1411,8 +1263,8 @@ box-shadow: none;
 <option value="VillaCaro">VillaCaro</option>
 <option value="VillaDelRosario">VillaDelRosario</option>
 
-
-	<option value="Putumayo"></option>
+</optgroup>
+	<optgroup label="Putumayo">
 
 <option value="Colón">Colón</option>
 <option value="Mocoa">Mocoa</option>
@@ -1428,8 +1280,8 @@ box-shadow: none;
 <option value="ValleDelGuamuez">ValleDelGuamuez</option>
 <option value="Villagarzón">Villagarzón</option>
 
-
-	<option value="Qundío"></option>
+</optgroup>
+	<optgroup label="Qundío">
 
 <option value="Armenia">Armenia</option>
 <option value="Buenavista">Buenavista</option>
@@ -1444,8 +1296,8 @@ box-shadow: none;
 <option value="Quimbaya">Quimbaya</option>
 <option value="Salento">Salento</option>
 
-
-	<option value="Risaralda"></option>
+</optgroup>
+	<optgroup label="Risaralda">
 
 <option value="Apía">Apía</option>
 <option value="Balboa">Balboa</option>
@@ -1462,13 +1314,13 @@ box-shadow: none;
 <option value="SantaRosaDeCabal">SantaRosaDeCabal</option>
 <option value="Santuario">Santuario</option>
 
-
-	<option value="San Andrés"></option>
+</optgroup>
+	<optgroup label="San Andrés">
 
 <option value="Providencia">Providencia</option>
 
-
-	<option value="Santander"></option>
+</optgroup>
+	<optgroup label="Santander">
 
 <option value="Aguada">Aguada</option>
 <option value="Albania">Albania</option>
@@ -1558,8 +1410,8 @@ box-shadow: none;
 <option value="Villanueva">Villanueva</option>
 <option value="Zapatoca">Zapatoca</option>
 
-
-	<option value="Sucre"></option>
+</optgroup>
+	<optgroup label="Sucre">
 
 <option value="Buenavista">Buenavista</option>
 <option value="Caimito">Caimito</option>
@@ -1588,8 +1440,8 @@ box-shadow: none;
 <option value="SantiagoDeTolú">SantiagoDeTolú</option>
 <option value="Toluviejo">Toluviejo</option>
 
-
-	<option value="Tolima"></option>
+</optgroup>
+	<optgroup label="Tolima">
 
 <option value="Alpujarra">Alpujarra</option>
 <option value="Alvarado">Alvarado</option>
@@ -1639,8 +1491,8 @@ box-shadow: none;
 <option value="Villahermosa">Villahermosa</option>
 <option value="Villarrica">Villarrica</option>
 
-
-	<option value="Valle del Cauca"></option>
+</optgroup>
+	<optgroup label="Valle del Cauca">
 
 <option value="Alcalá">Alcalá</option>
 <option value="Andalucía">Andalucía</option>
@@ -1685,20 +1537,23 @@ box-shadow: none;
 <option value="Yumbo">Yumbo</option>
 <option value="Zarzal">Zarzal</option>
 
-
-	<option value="Vaupés"></option>
+</optgroup>
+	<optgroup label="Vaupés">
 
 <option value="Caruru">Caruru</option>
 <option value="Mitú">Mitú</option>
 <option value="Taraira">Taraira</option>
 
-
-	<option value="Vichada"></option>
+</optgroup>
+	<optgroup label="Vichada">
 
 <option value="Cumaribo">Cumaribo</option>
 <option value="LaPrimavera">LaPrimavera</option>
 <option value="PuertoCarreño">PuertoCarreño</option>
 <option value="SantaRosalía">SantaRosalía</option>
+   
+</optgroup>
+  
 
   </select>
 
@@ -2092,8 +1947,6 @@ function carousel() {
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="js/consulta_gurus_especiales.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/login.js"></script>
 </body>
 </html>
