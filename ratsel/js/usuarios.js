@@ -26,6 +26,15 @@ function ListarUsuarios(){
             { "data": "id" },
             { "data": "nombre" },
             { "data": "documento" },
+            {
+                "data": "url_cert_formacion",
+                "orderable": false,
+                "searchable": false,
+                "width": "10%",
+                "render": function (data, type, full, meta) {
+                    return "<a  target='_blank' href='"+data+"'>Ver hoja de vida</a>";
+            }
+        },
         {
             "data": "id",
             "orderable": false,

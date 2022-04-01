@@ -46,6 +46,7 @@ unset($_SESSION['consulta']);
                   <th>Numero</th>
                   <th>Nombre Apellido</th>
                   <th>Cédula o Id</th>
+                  <th>Hoja de vida</th>
                   <th>Aprobar</th>
                   <th>Rechazar</th>
                 </tr>
