@@ -42,12 +42,14 @@ function Registro($post){
     $url = "https://prod.cobru.co/token/";
 
     $post2 = array(
-        'username' => '3123886527',
+        'username' => '3134965514',
         'password' => 'Crea1504'
     );
 
     
-
+    $_SESSION['user']='3134965514';
+    $_SESSION['password'] ='Crea1504';
+    $_SESSION['logueado']=TRUE;
     $headers = array(
         'Accept: application/json',
         'Content-Type: application/json',
@@ -111,7 +113,7 @@ function Registro($post){
         'platform' => ''
     );
 
-    $curl2 = curl_init($url2);
+    $curl2 = curl_init($url2); 
     curl_setopt($curl2, CURLOPT_URL, $url2);
     curl_setopt($curl2,CURLOPT_HTTPHEADER, $headers2);
     curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
@@ -122,7 +124,6 @@ function Registro($post){
     curl_close($curl2);
 
     $responseRequest = json_decode($resp2);
-
     if($responseRequest->error != NULL){
 
         $respuesta['mensaje']= $responseRequest->error;

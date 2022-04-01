@@ -1494,6 +1494,7 @@ a.logout_btn {
     color: black;
     padding: 8px;
     border-radius: 10px;
+    margin-left:50%;
 }
 
 a.logout_btn:hover {

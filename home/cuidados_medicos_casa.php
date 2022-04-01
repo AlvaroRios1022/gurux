@@ -302,8 +302,10 @@ box-shadow: none;
 			<?php 
 				}else{ 
 			?>
-				<div class="menusuperiocentro logout"  style="margin-left: -30px">
-					<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
+				<div class="menusuperiocentro logout"  style="">
+				<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<a class="logout_btn" href="logout.php" style=" "> Cerrar Sesión</a>
 				</div>
 			<?php 
 				} 
@@ -366,10 +368,9 @@ box-shadow: none;
 							</button>
 						</div>
 				
-							<div class="especial" >
-							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+<div  >							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
 
-							<tbody id="myTable">
+							<tbody id="myTable" class="especial">
 							<tr><td>
 								<a href="cuidados_medicos_adultos.php"><li style="color: #333; " value="Alergólogo">Cuidado de Adultos</li></a></td></tr>
                                 <tr><td><a href="cuidados_medicos_enfermeras.php "><li style="color: #333; " value="Angiólogo">Enfermeras</li></a></td></tr>

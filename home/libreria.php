@@ -137,8 +137,10 @@ box-shadow: none;
 			<?php 
 				}else{ 
 			?>
-				<div class="menusuperiocentro logout"  style="margin-left: -30px">
-					<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
+				<div class="menusuperiocentro logout"  style="">
+				<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<a class="logout_btn" href="logout.php" style=" "> Cerrar Sesión</a>
 				</div>
 			<?php 
 				} 
@@ -201,8 +203,7 @@ box-shadow: none;
 							</button>
 						</div>
 					</form>
-							<div class="especial" >
-							<a href=" "><li style="color: #333; " value="Alergólogo">Salud A - Z</li></a><br>
+<div  class="especial">							<a href=" "><li style="color: #333; " value="Alergólogo">Salud A - Z</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Angiólogo">Vivir Sano</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Cardiólogo">Guruscenter en Noticias</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Deportólogo">Dias de Conciencia</li></a><br>

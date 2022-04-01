@@ -137,8 +137,10 @@ box-shadow: none;
 			<?php 
 				}else{ 
 			?>
-				<div class="menusuperiocentro logout"  style="margin-left: -30px">
-					<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
+				<div class="menusuperiocentro logout"  style="">
+				<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<a class="logout_btn" href="logout.php" style=" "> Cerrar Sesión</a>
 				</div>
 			<?php 
 				} 
@@ -192,9 +194,9 @@ box-shadow: none;
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-							<div class="especialpsiquicos" >
+							<div  >
 							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
-							<tbody id="myTable">
+							<tbody id="myTable" class="especialpsiquicos">
                             <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Adivinación')" value="Adivinación">Adivinación</li></a></td></tr>
                             <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Amor y relaciones')" value="Amor y relaciones">Amor y relaciones</li></a></td></tr>
                             <tr><td><a href="#"><li style="color: #333;" onclick="filtroTipo('Análisis de sueños')" value="Análisis de sueños">Análisis de sueños</li></a></td></tr>

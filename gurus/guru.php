@@ -2042,7 +2042,7 @@ function mostrar() {
                 <ul class="lista">
                     <div style="text-align: justify; margin-right: 30px "><br>
                         <li> 
-                            <p style="display: contents;"> Al enviar tu postulación nos autorizas a enviar tu información a nuestros evaluadores. Tu solicitud será considerada exclusivamente para aplicar como contratista independiente en Guru´s Center y no para obtener alguna posición como nuestro empleado.</p>
+                            <p style="display: contents;"> Al enviar tu postulación nos autorizas a enviar tu información a nuestros evaluadores. Tu solicitud será considerada exclusivamente para aplicar como contratista independiente en Guruxy y no para obtener alguna posición como nuestro empleado.</p>
                         </li> 
                     </div>
                 </ul>

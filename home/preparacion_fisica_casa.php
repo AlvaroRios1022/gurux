@@ -142,8 +142,10 @@ box-shadow: none;
 			<?php 
 				}else{ 
 			?>
-				<div class="menusuperiocentro logout"  style="margin-left: -30px">
-					<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
+				<div class="menusuperiocentro logout"  style="">
+				<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<a class="logout_btn" href="logout.php" style=" "> Cerrar Sesión</a>
 				</div>
 			<?php 
 				} 
@@ -205,9 +207,9 @@ box-shadow: none;
 							</button>
 						</div>
 					
-							<div class="especialyoga" >
+							<div  >
 							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
-							<tbody id="myTable">
+							<tbody id="myTable" class="especialyoga">
 							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Aeróbicos')" value="Aeróbicos">Aeróbicos</li></a></td></tr>
 							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Bachata')" value="Baile Bachata">Baile Bachata</li></a></td></tr>
 							<tr><td><a href="#"><li style="color: #333; "onclick="filtroTipo('Baile Merengue')" value="Baile Merengue">Baile Merengue</li></a></td></tr>

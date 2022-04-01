@@ -1,9 +1,9 @@
 <?php
-require_once("../config/conexion.php");
+require_once("../config/conexion2.php");
 class UsuariosModel {
 
     public static function Listar($start, $length, $search, $orderField, $orderDir) {
-        $sqlFromJoin = "  from usuarios  ";
+        $sqlFromJoin = "  from guru  ";
     
         $sqlWhere = "  where estado = 0 ";
         

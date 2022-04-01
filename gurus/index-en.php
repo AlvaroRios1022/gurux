@@ -21,26 +21,20 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body class="cabecera">
-        <form action="guru-en.php" method="post">
-            <div  class="flex-container"  align="left">
-                <div align="left" >
-                <br>
-                    <img style="width:250px" src="images/logo.png"/>  
-                </div>
+    <form action="guru.php" method="post">
+            <div align="center" >
+                <br><br>
 
-
-                <div align="center" >
-                <br>
-                <img style="width:50%; " src="img/headert12en.png"/> 
-                </div>  
-
-                <div style="margin-left:-10px"  align="left"  >
+                <a ><img style="width:20%" src="images/logo.png"/>  </a>
+                <a style="color:#FFC808; font-size:37px; font-weight: bold; margin-left:13%; "> Your FREE platform!!! </a>
+                <a ><img style="width: 20%; margin-left:12%" src="img/headert12en.png"/> </a>
+                <br>    
+                <div  align="right" style="margin-right:10%"  >
 				<span style="color: #fff; text-decoration: none;">LANGUAGE   &nbsp;&nbsp; <a href="index.php" style="color:#fff"> ES </a>  | <a style=" color: #FFC808">  EN</a></span>
-			</div>          
-            </div>  
-            <br>
-
-            <div style="background-color: #fff;" align="center">
+                </div>  
+                <br>
+                <div style="background-color: #fff;" align="center">           
+            
             <img src="img/guruses-en.png"  width="100%" height="auto" alt="" />
            
             
@@ -137,6 +131,13 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                                 <option value = "Nephrologist"> Nephrologist </option>
                                 <option value = "Pulmonologist"> Pulmonologist </option>
                                 <option value = "Neurologist"> Neurologist </option>
+                                <option value="Dentist Endodontist.">Dentist Endodontist.</option>
+                                 <option value="General Dentist">General Dentist</option>
+                                 <option value="Dentist Pediatric Dentist">Dentist Pediatric Dentist</option>
+                                 <option value="Orthodontist Dentist">Orthodontist Dentist</option>
+                                 <option value="Oral Pathologist Dentist or Oral Surgeon">Oral Pathologist Dentist or Oral Surgeon</option>
+                                 <option value="Periodontist Dentist">Periodontist Dentist</option>
+                                 <option value="Prosthodontist Dentist">Prosthodontist Dentist</option>
                                 <option value = "Oncologist"> Oncologist </option>
                                 <option value = "Orthopedist"> Orthopedist </option>
                                 <option value = "Pathologist"> Pathologist </option>

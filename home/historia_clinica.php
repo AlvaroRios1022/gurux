@@ -137,8 +137,10 @@ box-shadow: none;
 			<?php 
 				}else{ 
 			?>
-				<div class="menusuperiocentro logout"  style="margin-left: -30px">
-					<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
+				<div class="menusuperiocentro logout"  style="">
+				<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<a class="logout_btn" href="logout.php" style=" "> Cerrar Sesión</a>
 				</div>
 			<?php 
 				} 
@@ -201,8 +203,7 @@ box-shadow: none;
 							</button>
 						</div>
 					</form>
-							<div class="especial" >
-							<a href=" "><li style="color: #333; " value="Alergólogo">Alergólogo</li></a><br>
+<div class="especial" >							<a href=" "><li style="color: #333; " value="Alergólogo">Alergólogo</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Angiólogo">Angiólogo</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Cardiólogo">Cardiólogo</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Deportólogo">Deportólogo</li></a><br>
@@ -225,6 +226,14 @@ box-shadow: none;
                                 <a href=" "><li style="color: #333; " value="Nefrólogo">Nefrólogo</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Neumólogo">Neumólogo</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Neurólogo">Neurólogo</li></a><br>
+								<a href=""><li style="color: #333; " value="Odontólogo Endodoncista">Odontólogo Endodoncista</li></a><br>
+                                <a href=""><li style="color: #333; " value="Odontólogo general">Odontólogo general</li></a><br>
+                                <a href=""><li style="color: #333; " value="Odontólogo Odontopediatra">Odontólogo Odontopediatra</li></a><br>
+                                <a href=""><li style="color: #333; " value="Odontólogo Ortodoncista">Odontólogo Ortodoncista</li></a><br>
+                                <a href=""><li style="color: #333; " value="Odontólogo Patólogo oral o Cirujano oral">Odontólogo Patólogo oral o Cirujano oral</li></a><br>
+                                <a href=""><li style="color: #333; " value="Odontólogo Periodoncista">Odontólogo Periodoncista</li></a><br>
+                                <a href=""><li style="color: #333; " value="Odontólogo Prostodoncista">Odontólogo Prostodoncista</li></a><br>
+                                
                                 <a href=" "><li style="color: #333; " value="Oncólogo">Oncólogo</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Ortopedista">Ortopedista</li></a><br>
                                 <a href=" "><li style="color: #333; " value="Patólogo">Patólogo</li></a><br>

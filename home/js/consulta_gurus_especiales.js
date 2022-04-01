@@ -51,7 +51,7 @@ function Pintar_Gurus(){
             ){
 
             html = html +  "<div class='prod-grid3' style='margin-top:25px;height: 180px;'>"+
-            "<img class='imgredonguru' src=https://www.clipartmax.com/png/middle/363-3636751_staff-photo-unavailable-avatar-html.png alt='kalita'>"+
+            "<a href='https://guruxy.com/home/guru.php'><img class='imgredonguru' src='"+v.url_image+"' alt='kalita'></a>"+
               "<img src='img/categorias/en linea/1m.png' alt='kalita'>"+
               "<div class='bloqueguru bloqueguru2'>"+
                 "<h5 style=' margin-right: 45px'>"+v.nombre+" </h5>"+
@@ -74,7 +74,7 @@ function Pintar_Gurus(){
                     "<img style='width:20px' src='img/categorias/en linea/b1.png' alt='kalita'>"+
                     "<img style='width:20px' src='img/categorias/en linea/b2.png' alt='kalita'>"+
                     "<img style='width:20px' src='img/categorias/en linea/b3.png' alt='kalita'>"+
-                    "<h7 style='margin-left:4%; color:#82142C'>Leer más ><h7>"+
+                    "<a href='https://guruxy.com/home/guru.php'><h7 style='margin-left:4%; color:#82142C'>Leer más</h7></a>"+
                 "</p>"+
             "</div>"+
             "<div class=' bloqueguru3' style=' background-color:#C8D3E5; ' >"+
@@ -89,10 +89,10 @@ function Pintar_Gurus(){
 
     for(var i = contador; i<27 ;i++){
         html = html +  "<div class='prod-grid3' style='margin-top:25px;height: 180px;'>"+
-        "<img class='imgredonguru' src='https://www.clipartmax.com/png/middle/363-3636751_staff-photo-unavailable-avatar-html.png' alt='kalita'>"+
+        "<a href='https://guruxy.com/gurus/'><img class='imgredonguru' src='img/avatar.png' alt='kalita'></a>"+
           "<img src='img/categorias/en linea/1m.png' alt='kalita'>"+
           "<div class='bloqueguru bloqueguru2'>"+
-            "<h5 style=' margin-right: 45px'> </h5>"+
+            "<h5 style=' margin-right: 45px'>Registrate </h5>"+
             "<form>"+
                 "<p class='clasificacion'>"+
                     "<input id='radio1' type='radio' name='estrellas' value='5'>"+

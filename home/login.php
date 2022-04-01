@@ -34,7 +34,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                     </div>
                     <br>
                     <div class="form-group" >
-                        <label for="usuario">Usuario - Tu Célular</label><br>
+                        <label for="usuario">Correo</label><br>
                         <input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario">
                     </div>
                     <div class="form-group" >
