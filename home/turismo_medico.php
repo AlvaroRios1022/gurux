@@ -46,8 +46,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 		}
 .mySlides {display:none;}
 
-.barratop::placeholder { color: #000; }
-
 .holder1::-webkit-input-placeholder {
   text-align: center;
   color: #452167;
@@ -70,6 +68,8 @@ box-shadow: none;
     display: inline-block;
     width: 100px;
 }
+
+		
 
 
 	</style>
@@ -131,7 +131,7 @@ box-shadow: none;
 					<li class="itemlista">¿CÓMO FUNCIONA?</li>
 				</ul>-->   
 			</div>
-			
+			<input type="hidden" id="filtro" value="medicina">
 			<?php 
 				if(!(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE)){
 			?>
@@ -176,14 +176,14 @@ box-shadow: none;
 			</div>
 		</div>
 		<div class="barra" style="margin-top:-6px; ">
-		<ul id="lista1" >
+            <ul id="lista1" >
                 <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="medicos.php" > HOME MÉDICOS </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="preguntas_medicos.php">PREGUNTAS FRECUENTES</a></li>
+                <li class="itemlista1"><a href="preguntas_medicos.php" >PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="cuidados_medicos_casa.php">CUIDADOS EN CASA</a></li>
+                <li class="itemlista1"><a href="cuidados_medicos_casa.php" style="color:#fff; text-shadow: 1px 1px 1px black;">CUIDADOS EN CASA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="presencial_medicos.php" style="color:#fff; text-shadow: 1px 1px 1px black;">CITA PRESENCIAL</a></li>
+                <li class="itemlista1"><a href="presencial_medicos.php">CITA PRESENCIAL</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">LABORATORIOS MÉDICOS</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
@@ -200,75 +200,33 @@ box-shadow: none;
         <div class="contenido">
             <div class="barraizquierda">
 			
+				
 						<div class="input-group">
 							<br><br>
-							<input  id="buscador"  style="margin-left:10px" class="buscador" maxlength="128" placeholder="Buscar" size="15" type="text" />
+							<input style="margin-left:10px" id="buscador" class="buscador" maxlength="128" placeholder="Buscar" size="15" type="text" />
 							<button class="search" >
 								<i class="fa fa-search ">&nbsp;</i>
 							</button>
 						</div>
-					
-					<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+				
+<div  >							<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+
 							<tbody id="myTable" class="especial">
-							<tr><td><a href="#"><li style="color: #333; "   onclick="filtroTipo('Alergólogo')">Alergólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cardiólogo')">Cardiólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Angiólogo')">Angiólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Deportólogo')">Deportólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Dermatólogo')">Dermatólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Endocrinólogo')">Endocrinólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Enfermero')">Enfermero</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Epidemiólogo')">Epidemiólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estomatólogo')">Estomatólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Farmacólogo')">Farmacólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fisiólogo')">Fisiólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fonoaudiólogo')">Fonoaudiólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Forense')">Forense</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('General')">General</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geriatra')">Geriatra</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ginecólogo')">Ginecólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hematólogo')">Hematólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Histólogo')">Histólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Inmunólogo')">Inmunólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Microbiólogo')">Microbiólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Nefrólogo')">Nefrólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neumólogo')">Neumólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Neurólogo')">Neurólogo</li></a></td></tr>
-								<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Endodoncista')">Odontólogo Endodoncista</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo general')">Odontólogo general</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Odontopediatra')">Odontólogo Odontopediatra</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Ortodoncista')">Odontólogo Ortodoncista</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Patólogo oral o Cirujano oral')">Odontólogo Patólogo oral o Cirujano oral</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Periodoncista')">Odontólogo Periodoncista</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Odontólogo Prostodoncista')">Odontólogo Prostodoncista</li></a></td></tr>
-                                
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Oncólogo')">Oncólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ortopedista')">Ortopedista</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Patólogo')">Patólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Pediatra')">Pediatra</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Podólogo')">Podólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Proctólogo')">Proctólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Psicoanalista')">Psicoanalista</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Psicólogo')">Psicólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Psicoterapeuta')">Psicoterapeuta</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Psiquiatra')">Psiquiatra</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Quiropráctico')">Quiropráctico</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Radiólogo')">Radiólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Radioterapeuta')">Radioterapeuta</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Reumatólogo')">Reumatólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sexólogo')">Sexólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sofrólogo')">Sofrólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Terapeuta')">Terapeuta</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Toxicólogo')">Toxicólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Traumatólogo y Ortopedista')">Traumatólogo y Ortopedista</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Urólogo')">Urólogo</li></a></td></tr>
-                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Virólogo')">Virólogo</li></a></td></tr> 
-                             
-								
-							</tbody>
-							</table>
-							<div> &nbsp;</div>
-							<div> &nbsp;</div>
+							<tr><td>
+								<a href="cuidados_medicos_adultos.php"><li style="color: #333; " value="Alergólogo">Cuidado de Adultos</li></a></td></tr>
+                                <tr><td><a href="cuidados_medicos_enfermeras.php "><li style="color: #333; " value="Angiólogo">Enfermeras</li></a></td></tr>
+                                <tr><td><a href="cuidados_medicos_equipos.php"><li style="color: #333; " value="Cardiólogo">Equipos médicos</li></a></td></tr>
+                                <tr><td><a href="cuidados_medicos_examenes.php "><li style="color: #333; " value="Deportólogo">Exámenes</li></a></td></tr>
+                                <tr><td><a href="cuidados_medicos_fisioterapia.php "><li style="color: #333; " value="Dermatólogo">Fisioterapia</li></a></td></tr>
+                                <tr><td><a href="cuidados_medicos_medicos.php "><li style="color: #333; " value="Endocrinólogo">Médicos</li></a></td></tr>
+                                <tr><td><a href="cuidados_medicos_rehabilitacion.php "><li style="color: #333; " value="Enfermero">Rehabilitación</li></a></td></tr>
+                                <tr><td><a href="cuidados_medicos_vacunacion.php "><li style="color: #333; " value="Epidemiólogo">Vacunación</li></a></td></tr>
+								</tbody>
+								</table>
                                 <div> &nbsp;</div>
+                                <div> &nbsp;</div>
+                                <div> &nbsp;</div>
+							</div>
 				</div>
 
             
@@ -297,14 +255,14 @@ box-shadow: none;
 		?>
 				          
 		
-	<div align="center" style="background-color:#D6F0FC">
+						  <div align="center" style="background-color:#D6F0FC;">
 		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
 		<br>
 		<br>
 		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
 		<br>
 		
-		<span >  Profesional:</span>
+		<span >  Cuidado en Casa:</span>
   <select class="camposgenerales"
   
     style=" border: none;
@@ -314,65 +272,22 @@ box-shadow: none;
     text-decoration: none;
     margin-bottom: auto;
     text-align: center" 
-    name="profesional" id="profesional" onchange="SeleccionaProfesional(this)">        
+    name="cuidado_en_casa" id="cuidado_en_casa">        
     <option value="">-----</option>       
-	<option   value="Alergólogo">Alergólogo</option>  
-                                <option   value="Angiólogo">Angiólogo</option>  
-                                <option   value="Cardiólogo">Cardiólogo</option>  
-                                <option   value="Deportólogo">Deportólogo</option>  
-                                <option   value="Dermatólogo">Dermatólogo</option>  
-                                <option   value="Endocrinólogo">Endocrinólogo</option>  
-                                <option   value="Enfermero">Enfermero</option>  
-                                <option   value="Epidemiólogo">Epidemiólogo</option>  
-                                <option   value="Estomatólogo">Estomatólogo</option>  
-                                <option   value="Farmacólogo">Farmacólogo</option>  
-                                <option   value="Fisiólogo">Fisiólogo</option>  
-                                <option   value="Fonoaudiólogo">Fonoaudiólogo</option>  
-                                <option   value="Forense">Forense</option>  
-                                <option   value="General">General</option>  
-                                <option   value="Geriatra">Geriatra</option>  
-                                <option   value="Ginecólogo">Ginecólogo</option>  
-                                <option   value="Hematólogo">Hematólogo</option>  
-                                <option   value="Histólogo">Histólogo</option>  
-                                <option   value="Inmunólogo">Inmunólogo</option>  
-                                <option   value="Microbiólogo">Microbiólogo</option>  
-                                <option   value="Nefrólogo">Nefrólogo</option>  
-                                <option   value="Neumólogo">Neumólogo</option>  
-                                <option   value="Neurólogo">Neurólogo</option>  
-
-								<option   value="Odontólogo Endodoncista">Odontólogo Endodoncista</option>  
-                                <option   value="Odontólogo general">Odontólogo general</option>  
-                                <option   value="Odontólogo Odontopediatra">Odontólogo Odontopediatra</option>  
-                                <option   value="Odontólogo Ortodoncista">Odontólogo Ortodoncista</option>  
-                                <option   value="Odontólogo Patólogo oral o Cirujano oral">Odontólogo Patólogo oral o Cirujano oral</option>  
-                                <option   value="Odontólogo Periodoncista">Odontólogo Periodoncista</option>  
-                                <option   value="Odontólogo Prostodoncista">Odontólogo Prostodoncista</option>  
-                               
-
-                                <option   value="Oncólogo">Oncólogo</option>  
-                                <option   value="Ortopedista">Ortopedista</option>  
-                                <option   value="Patólogo">Patólogo</option>  
-                                <option   value="Pediatra">Pediatra</option>  
-                                <option   value="Podólogo">Podólogo</option>  
-                                <option   value="Proctólogo">Proctólogo</option>  
-                                <option   value="Psicoanalista">Psicoanalista</option>  
-                                <option   value="Psicólogo">Psicólogo</option>  
-                                <option   value="Psicoterapeuta">Psicoterapeuta</option>  
-                                <option   value="Psiquiatra">Psiquiatra</option>  
-                                <option   value="Quiropráctico">Quiropráctico</option>  
-                                <option   value="Radiólogo">Radiólogo</option>  
-                                <option   value="Radioterapeuta">Radioterapeuta</option>  
-                                <option   value="Reumatólogo">Reumatólogo</option>  
-                                <option   value="Sexólogo">Sexólogo</option>  
-                                <option   value="Sofrólogo">Sofrólogo</option>  
-                                <option   value="Terapeuta">Terapeuta</option>  
-                                <option   value="Toxicólogo">Toxicólogo</option>  
-                                <option   value="Traumatólogo y Ortopedista">Traumatólogo y Ortopedista</option>  
-                                <option   value="Urólogo">Urólogo</option>  
-                                <option   value="Virólogo">Virólogo</option>  
+	<option value="Cirugías Cardiovasculares">Cirugia Cardiovascular</option>
+	<option value="Cirugías Ortopédicas">Cirugías Ortopedicas</option>
+	<option value="Cirujanos Bariatricos">Cirujanos Bariatricos</option>
+	<option value="Cirujanos Plasticos">Cirujanos Plasticos</option>
+	<option value="Dermatología">Dermatología</option>
+	<option value="Ginecología">Ginecología</option>
+	<option value="Odontología">Odontología</option>
+	<option value="Oftalmología">Oftalmología</option>
+	<option value="Oncología">Oncología</option>
+	<option value="Otorrinolaringología">Otorrinolaringología</option>
+	<option value="Urología">Urología</option>
   </select>
-  <span style="margin-left:3%"> Rango de Precio:</span>
-  <input type="hidden" id="filtro" value="medicina">
+
+  <span style="margin-left:3%" > Rango de Precio:</span>
   <select class="camposgenerales" 
   
   style=" border: none;
@@ -397,19 +312,23 @@ box-shadow: none;
 
 
   <span style="margin-left:3%">  Ciudad:</span>
-  <select class="camposgenerales"	style=" border: none; background-color: #0000;font-size: 15px;
-	width: 100px;text-decoration: none;margin-bottom: auto;text-align: center" 
-	name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
-	<option value="">-----</option>     
-
-	<optgroup label="Amazonas">     
+  <select class="camposgenerales"
+  
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-bottom: auto;
+    text-align: center" 
+    name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">     
+	<option value="">-----</option>        
+    <optgroup label="Amazonas">     
 	<option value="Leticia">Leticia</option>
 	<option value="PuertoNariño">PuertoNariño</option>
 	
 </optgroup>
 	<optgroup label="Antioquia">
-	     
-
 <option value="Abejorral">Abejorral</option>
 <option value="Abriaquí">Abriaquí</option>
 <option value="Alejandría">Alejandría</option>
@@ -1634,6 +1553,7 @@ box-shadow: none;
 <option value="SantaRosalía">SantaRosalía</option>
    
 </optgroup>
+  
 
   </select>
 
@@ -1665,50 +1585,47 @@ box-shadow: none;
     <div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
 	
 		<span style="margin-left:3%;">  El gurú Habla:</span>
-		<select class="camposgenerales" 
-  
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
-	
-	name="idioma" id="idioma" onchange="change_idioma(this)">
-        <option value="">-----</option>
-		
-                                    <option value="Alemán">Alemán</option>
-                                    <option value="Árabe">Árabe</option>
-                                    <option value="Bengalí">Bengalí</option>
-                                    <option value="Chino cantonés">Chino cantonés</option>
-                                    <option value="Chino mandarín">Chino mandarín</option>
-                                    <option value="Chino Mǐn Nán">Chino Mǐn Nán</option>
-                                    <option value="Chino Wu">Chino Wu</option>
-                                    <option value="Coreano">Coreano</option>
-                                    <option value="Español">Español</option>
-                                    <option value="Francés">Francés</option>
-                                    <option value="Hausa">Hausa</option>
-                                    <option value="Hindi">Hindi</option>
-                                    <option value="Indonesio">Indonesio</option>
-                                    <option value="Ingles">Ingles</option>
-                                    <option value="Italiano">Italiano</option>
-                                    <option value="Japonés">Japonés</option>
-                                    <option value="Javanés">Javanés</option>
-                                    <option value="Maratí">Maratí</option>
-                                    <option value="Panyabí occidental">Panyabí occidental</option>
-                                    <option value="Persa iraní">Persa iraní</option>
-                                    <option value="Portugués">Portugués</option>
-                                    <option value="Ruso">Ruso</option>
-                                    <option value="Tailandés">Tailandés</option>
-                                    <option value="Tamil">Tamil</option>
-                                    <option value="Telugú">Telugú</option>
-                                    <option value="Turco">Turco</option>
-                                    <option value="Urdu">Urdu</option>
-                                    <option value="Vietnamita">Vietnamita</option>
-	</select>
+  		<select class="camposgenerales"
+		  
+		style=" border: none;
+		background-color: #0000;
+    	font-size: 15px;
+    	width: 100px;
+    	text-decoration: none;
+    	margin-bottom: auto;
+    	text-align: center" 
 
+		name="idioma" id="idioma" onchange="change_idioma(this)">  
+   		 <option value="">-----</option>       
+		<option value="Alemán">Alemán</option>
+		<option value="Árabe">Árabe</option>
+		<option value="Bengalí">Bengalí</option>
+		<option value="Chino cantonés">Chino cantonés</option>
+		<option value="Chino mandarín">Chino mandarín</option>
+		<option value="Chino Mǐn Nán">Chino Mǐn Nán</option>
+		<option value="Chino Wu">Chino Wu</option>
+		<option value="Coreano">Coreano</option>
+		<option value="Español">Español</option>
+		<option value="Francés">Francés</option>
+		<option value="Hausa">Hausa</option>
+		<option value="Hindi">Hindi</option>
+		<option value="Indonesio">Indonesio</option>
+		<option value="Ingles">Ingles</option>
+		<option value="Italiano">Italiano</option>
+		<option value="Japonés">Japonés</option>
+		<option value="Javanés">Javanés</option>
+		<option value="Maratí">Maratí</option>
+		<option value="Panyabí occidental">Panyabí occidental</option>
+		<option value="Persa iraní">Persa iraní</option>
+		<option value="Portugués">Portugués</option>
+		<option value="Ruso">Ruso</option>
+		<option value="Tailandés">Tailandés</option>
+		<option value="Tamil">Tamil</option>
+		<option value="Telugú">Telugú</option>
+		<option value="Turco">Turco</option>
+		<option value="Urdu">Urdu</option>
+		<option value="Vietnamita">Vietnamita</option>
+  		</select>
 	</div>
 
 	<div class="caja_inline" style=" width:300px; height: 30px; background:#ddd; border-radius:20px">
@@ -1751,7 +1668,8 @@ box-shadow: none;
    
 </div>
 
-	<br>
+		<br>
+	</div>
 	
 	<div class="slideshow-container2" style="margin-left:16%" >
 	<div class="mySlides fade">
@@ -1772,33 +1690,53 @@ box-shadow: none;
 
 		<div class="fondomedio" >
 	
-	<div style="margin-left:250px; color: #452167;">
-		<br>
-		
-
-		<h2 >Cita Presencial</h2>
-			<br>
-			<p style="font-size:14px; text-align: justify;">
-				La cita presencial sólo se puede realizar en inicialmente en Colombia. 
-				Los invitamos a solicitar citas ON LINE para el resto de países. <br> 
-				Nuestros Gurús estarán gustusos de atenderlos.
-			</p>
-	</div>
-	
-	
 	
 		  <!--Product Grid-->
-		<div align="right">
+		<div >
+		<br>
+<!--
+			<div align="right">
+				<img  src="img/agenda.png" alt="kalita" style=" width:25%; margin-right:25px"  >
+			</div> -->
+			<section class="section-grid">
+				<div class="grid-med">
+					<div style="width: 45%;">
+				<h2 class="preguntas" style="margin-left:-10px" >Cuidados en Casa</h2>
+				</div>
+			<div class="bloquepreguntas_int">
+				<br>
+			<p style="font-size:14px; text-align: justify;">
+			<a style="color: #452167;">La atención domiciliaria como concepto está ganando terreno en Colombia.  </a>
+			Algunas estimaciones señalan que nuestra población total proyectada para Colombia 
+			en el año 2022 es de 50.834.240, de ellos 9.970.956 (19%) tiene más de 59 años, 5.370.613 
+			(55%) son mujeres, y 4.620.345 (45%) hombres, el 50% de la población mayor a 60 años se 
+			encuentra entre los 60 y 66 años de edad.
+			<br><br>
+			<a> En Colombia, la atención en casa se encuentra en una etapa muy incipiente en 
+				comparación con otros países occidentales y latinoamericanos. El 80% de la atención 
+				médica no urgente que se brinda actualmente en los hospitales se puede brindar en el 
+				hogar, algunas de las cuales son:
+			</a>
+		</p>
+			<br><br>
+<li style="text-align: justify;"><a style="color: #452167;">Continuidad de la atención: </a> la necesidad de una atención postoperatoria y primaria de mejor calidad más allá de los hospitales para mejorar los resultados a largo plazo después del procedimiento. Enfermedades no transmisibles que son de naturaleza crónica, que requieren un seguimiento a largo plazo e intervenciones periódicas para mantenerlas encaminadas.
+<br><br>
+<li style="text-align: justify;"><a style="color: #452167;">Estructura familiar: </a> Con el creciente número de familias nucleares, con una mayor migración urbana e incluso internacional, los ancianos se quedan sin cuidadores.
+<br><br>
+<li style="text-align: justify;"><a style="color: #452167;">Calidad de vida: </a> las personas ahora miran no solo la longevidad, sino también la calidad de vida. Aparte de los procedimientos médicos complejos, si estos no mejoran significativamente, la calidad de vida seguirá siendo una actitud pequeña entre la élite. En lugar de buscar una intervención médica agresiva, muchos optan por el manejo de los síntomas en casa.
+<br><br>
+<li style="text-align: justify;"><a style="color: #452167;">Mentalidad: </a> Una mentalidad cambiante del consumidor ahora tiende a comparar la atención médica con otros servicios, con acceso a la atención médica en el lugar y el momento que más le convenga.
+<br><br>
+La asistencia domiciliaria o la asistencia sanitaria a domicilio es, por tanto, una solución que se adapta cada vez mejor a los tiempos en que vivimos.
 
-		
-			<section class="section-grid2">
-				
-			<div class="grid-prod2" id="div_gurus">
-					
+Actualmente, la atención a las personas mayores, la fisioterapia, la rehabilitación y el manejo de la diabetes son cuatro servicios que presencian la máxima demanda en el segmento de la atención domiciliaria. De cara al futuro, prevemos una creciente demanda de diálisis, quimioterapia, cuidado de niños con necesidades especiales y cuidados paliativos.
+					</p>
+				<br><br>
+			</div>
 				</div>
 
-
-				<div align="left" style="padding-left: 0px;margin-right: 20px; ">
+			
+				<div align="left" style="margin-right: 40px; ">
 					
 					<div class="menuright" align="center" >
 
@@ -1825,11 +1763,10 @@ box-shadow: none;
 							</div>
 							<div >
 								<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
-																<a href="usuarios.php" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
-
+								<a href="usuarios.php" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
 								<br>
 						  </div>
-							<input type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
+							<input href="usuarios.php"type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
 						</form>
 					</div>
 					<div class="menuright3" align="center" style="margin-top: 20px" >
@@ -1851,212 +1788,22 @@ box-shadow: none;
 							</div>
 							<div >
 								<a href="recuperar_pass.php" style="text-decoration:none;">  <p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p> </a>
-																<a href="https://www.guruxy.com" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
+									<a href="https://www.guruxy.com" style="text-decoration:none;"> <h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4> </a>
 
 								<br>
 
 							</div>
 						  <input type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 " >
 						</form>
-					</div>
-					
-					<div class="menuright2" align="center" style="margin-top: 20px" >
-						<form  action="" method="post">
-							<h4 style="color:#5C3293; padding-top: 20px; margin-bottom: 20px; font-size:16"> GURÚS DESTACADOS </h4>
-						</form>
-						<div class="prod-grid2 bloqueguru " style=" background-color: #8ED8F8; color:#fff">
-							<br>
-							<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
-							<br><br>
-							<a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
-							<br>
-							<form>
-								<p class="clasificacion2" >
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label style="color:#fff" for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label style="color:#fff" for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label style="color:#fff" for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label style="color:#fff" for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label style="color:#fff" for="radio5">★</label>
-								</p>
-							</form>
-							<br>
-							<img  style="margin-bottom:10;" src="img/categorias/en linea/1.jpg" alt="kalita">
-						</div>
-								
-						<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-						<p class="textopguru2">IDIOMAS  
-						<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-						<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
-						</p>
-						<div class=" bloqueguru3" style=" background-color:#8ED8F8; " >
-						<p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-						<br><br>
-						<div class="prod-grid2 bloqueguru " style=" background-color: #8ED8F8; color:#fff">
-						<br>
-						<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
-						<br><br>
-						<a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
-						<br>
-						<form>
-  							<p class="clasificacion2" style="margin-bottom: -7px">
-								<input id="radio1" type="radio" name="estrellas" value="5"><!--
-								--><label style="color:#fff" for="radio1">★</label><!--
-								--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-								--><label style="color:#fff" for="radio2">★</label><!--
-								--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-								--><label style="color:#fff" for="radio3">★</label><!--
-								--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-								--><label style="color:#fff" for="radio4">★</label><!--
-								--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-								--><label style="color:#fff" for="radio5">★</label>
-							</p>
-							<br><br>
-						</form>
-					  <img  style="margin-bottom:10;" src="img/categorias/en linea/2.jpg" alt="kalita">
-		</div>
-								
-						<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-						<p class="textopguru2">IDIOMAS  
-						<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-						<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
-						</p>
-						<div class=" bloqueguru3" style=" background-color:#8ED8F8; " >
-						<p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-						<br><br>
-						<div class="prod-grid2 bloqueguru " style=" background-color: #8ED8F8; color:#fff">
-						<br>
-							<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
-						<br><br>
-						<a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
-						<br>
-						<form>
-  							<p class="clasificacion2" style="margin-bottom: -7px">
-								<input id="radio1" type="radio" name="estrellas" value="5"><!--
-								--><label style="color:#fff" for="radio1">★</label><!--
-								--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-								--><label style="color:#fff" for="radio2">★</label><!--
-								--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-								--><label style="color:#fff" for="radio3">★</label><!--
-								--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-								--><label style="color:#fff" for="radio4">★</label><!--
-								--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-								--><label style="color:#fff" for="radio5">★</label>
-							</p>
-							<br>
-						</form>
-					  <img  style="margin-bottom:10;" src="img/categorias/en linea/3.jpg" alt="kalita">
-						</div>
-								
-						<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-						<p class="textopguru2">IDIOMAS  
-						<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-						<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
-						</p>
-						<div class=" bloqueguru3" style=" background-color:#8ED8F8; " >
-						<p			 class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-						<br><br>
-						<div class="prod-grid2 bloqueguru " style=" background-color: #8ED8F8; color:#fff">
-						<br>
-						<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
-						<br><br>
-						<a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
-						<br>
-						<form>
-  							<p class="clasificacion2" style="margin-bottom: -7px">
-								<input id="radio1" type="radio" name="estrellas" value="5"><!--
-								--><label style="color:#fff" for="radio1">★</label><!--
-								--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-								--><label style="color:#fff" for="radio2">★</label><!--
-								--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-								--><label style="color:#fff" for="radio3">★</label><!--
-								--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-								--><label style="color:#fff" for="radio4">★</label><!--
-								--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-								--><label style="color:#fff" for="radio5">★</label>
-							</p>
-							<br>
-						</form>
-					  <img  style="margin-bottom:10;" src="img/categorias/en linea/4.jpg" alt="kalita">
-					</div>
-								
-						<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-						<p class="textopguru2">IDIOMAS  
-						<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-						<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
-						</p>
-						
-						<div class=" bloqueguru3" style=" background-color:#8ED8F8; " >
-							<p class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
-								<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-						<br><br>
-						<div class="prod-grid2 bloqueguru " style=" background-color: #8ED8F8; color:#fff">
-							<br>
-							<a style="font-size:26px; margin-left: 12px">Dr. Peter Ostheimer </a>
-							<br><br>
-							<a style=" margin-left: 10px; font-style: italic;">Gúru Médico </a>
-							<br>
-							<form>
-								<p class="clasificacion2" style="margin-bottom: -7px">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label style="color:#fff" for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label style="color:#fff" for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label style="color:#fff" for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label style="color:#fff" for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label style="color:#fff" for="radio5">★</label>
-								</p>
-								<br>
-							</form>
-					  		<img  style="margin-bottom:10;" src="img/categorias/en linea/5.jpg" alt="kalita">
-						</div>
-								
-						<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-						<p class="textopguru2">IDIOMAS  
-						<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-						<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-						<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-						<h7 style="margin-left:22%; color:#82142C">Leer más ><h7>
-						</p>
-						<div class=" bloqueguru3" style=" background-color:#8ED8F8; " >
-							<p class="textopguru" style="color:#fff; margin-top:-10px; font-size:15px" > TARIFA:
-								<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="color:#fff; margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-
-				<br><br>
+					</div>	
 				</div>
+				
 				</section>
+
+	<br><br>
 			</div>
 		</div>
 	</div>
-
 	<div class="footer2" align="center" >
 		<div class="container2" >
 		<div align="right">         
@@ -2196,7 +1943,6 @@ function carousel() {
   setTimeout(carousel, 15000); 
 }
 </script>
-
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
