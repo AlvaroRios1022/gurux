@@ -19,6 +19,8 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
 	
 	<script src="js/jquery-2.1.0.min.js"></script>
@@ -26,6 +28,21 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	
 	<title>Gurus Center</title>
 	<style type="text/css">
+	.custom-combobox {
+		position: relative;
+		display: inline-block;
+	}
+	.custom-combobox-toggle {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin-left: -1px;
+		padding: 0;
+	}
+	.custom-combobox-input {
+		margin: 0;
+		padding: 5px 10px;
+	}
 		body {
 			margin-left: 0px;
 			margin-top: 0px;
@@ -72,6 +89,144 @@ box-shadow: none;
 
 		
 	</style>
+<script>
+	$( function() {
+		$.widget( "custom.combobox", {
+			_create: function() {
+				this.wrapper = $( "<span>" )
+					.addClass( "custom-combobox" )
+					.insertAfter( this.element );
+
+				this.element.hide();
+				this._createAutocomplete();
+				this._createShowAllButton();
+			},
+
+			_createAutocomplete: function() {
+				var selected = this.element.children( ":selected" ),
+					value = selected.val() ? selected.text() : "";
+
+				this.input = $( "<input>" )
+					.appendTo( this.wrapper )
+					.val( value )
+					.attr( "title", "" )
+					.addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )
+					.autocomplete({
+						delay: 0,
+						minLength: 0,
+						source: this._source.bind( this )
+					})
+					.tooltip({
+						classes: {
+							"ui-tooltip": "ui-state-highlight"
+						}
+					});
+
+				this._on( this.input, {
+					autocompleteselect: function( event, ui ) {
+						ui.item.option.selected = true;
+						this._trigger( "select", event, {
+							item: ui.item.option
+						});
+					},
+
+					autocompletechange: "_removeIfInvalid"
+				});
+			},
+
+			_createShowAllButton: function() {
+				var input = this.input,
+					wasOpen = false;
+
+				$( "<a>" )
+					.attr( "tabIndex", -1 )
+					.attr( "title", "Show All Items" )
+					.tooltip()
+					.appendTo( this.wrapper )
+					.button({
+						icons: {
+							primary: "ui-icon-triangle-1-s"
+						},
+						text: false
+					})
+					.removeClass( "ui-corner-all" )
+					.addClass( "custom-combobox-toggle ui-corner-right" )
+					.on( "mousedown", function() {
+						wasOpen = input.autocomplete( "widget" ).is( ":visible" );
+					})
+					.on( "click", function() {
+						input.trigger( "focus" );
+
+						// Close if already visible
+						if ( wasOpen ) {
+							return;
+						}
+
+						// Pass empty string as value to search for, displaying all results
+						input.autocomplete( "search", "" );
+					});
+			},
+
+			_source: function( request, response ) {
+				var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
+				response( this.element.children( "option" ).map(function() {
+					var text = $( this ).text();
+					if ( this.value && ( !request.term || matcher.test(text) ) )
+						return {
+							label: text,
+							value: text,
+							option: this
+						};
+				}) );
+			},
+
+			_removeIfInvalid: function( event, ui ) {
+
+				// Selected an item, nothing to do
+				if ( ui.item ) {
+					return;
+				}
+
+				// Search for a match (case-insensitive)
+				var value = this.input.val(),
+					valueLowerCase = value.toLowerCase(),
+					valid = false;
+				this.element.children( "option" ).each(function() {
+					if ( $( this ).text().toLowerCase() === valueLowerCase ) {
+						this.selected = valid = true;
+						return false;
+					}
+				});
+
+				// Found a match, nothing to do
+				if ( valid ) {
+					return;
+				}
+
+				// Remove invalid value
+				this.input
+					.val( "" )
+					.attr( "title", value + " didn't match any item" )
+					.tooltip( "open" );
+				this.element.val( "" );
+				this._delay(function() {
+					this.input.tooltip( "close" ).attr( "title", "" );
+				}, 2500 );
+				this.input.autocomplete( "instance" ).term = "";
+			},
+
+			_destroy: function() {
+				this.wrapper.remove();
+				this.element.show();
+			}
+		});
+
+		$( "#filtro_ciudad" ).combobox();
+		$( "#toggle" ).on( "click", function() {
+			$( "#filtro_ciudad" ).toggle();
+		});
+	} );
+	</script>
 </head>
 
 <body class="cabecera">
@@ -204,189 +359,189 @@ box-shadow: none;
 					</form>
 							<div class="especialtutores" >
 							<p>Asignaturas Colegio </p>
-                                <a href=" "><li style="color: #333; " value="Biología">Biología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ciencias sociales">Ciencias sociales</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Contabilidad">Contabilidad</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Economía">Economía</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Español">Español</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ética">Ética</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Filosofía">Filosofía</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Física">Física</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Geometría">Geometría</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Humanidades">Humanidades</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Matemáticas">Matemáticas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Química">Química</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sistemas y Tecnología">Sistemas y Tecnología</li></a><br>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biología')"  value="Biología">Biología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias sociales')"  value="Ciencias sociales">Ciencias sociales</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Contabilidad')"  value="Contabilidad">Contabilidad</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Economía')"  value="Economía">Economía</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Español')"  value="Español">Español</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ética')"  value="Ética">Ética</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Filosofía')"  value="Filosofía">Filosofía</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Física')"  value="Física">Física</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geometría')"  value="Geometría">Geometría</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Humanidades')"  value="Humanidades">Humanidades</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Matemáticas')"  value="Matemáticas">Matemáticas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Química')"  value="Química">Química</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas y Tecnología')"  value="Sistemas y Tecnología">Sistemas y Tecnología</li></a></td></tr>
                            <br>
 
                             <p>Ciencias</p>
-                             	<a href=" "><li style="color: #333; " value="Balance de materia y energía">Balance de materia y energía</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Biofísica">Biofísica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Biología">Biología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Biología celular">Biología celular</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Biología computacional">Biología computacional</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Biología molecular">Biología molecular</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Bioquímica">Bioquímica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Bioquímica metabólica">Bioquímica metabólica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Catálisis">Catálisis</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ciencias agrícolas">Ciencias agrícolas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Circuitos eléctricos">Circuitos eléctricos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Diseño de máquinas">Diseño de máquinas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ecología">Ecología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Electromagnetismo">Electromagnetismo</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Electrónica análoga">Electrónica análoga</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Estática">Estática</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Física 1">Física 1</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Física 2">Física 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Física biomecánica">Física biomecánica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Fisicoquímica">Fisicoquímica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Genética">Genética</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Geociencia">Geociencia</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Geología">Geología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Hidrología">Hidrología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mecánica de fluidos y sólidos">Mecánica de fluidos y sólidos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mecatrónica">Mecatrónica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Metrología">Metrología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Microbiología">Microbiología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Química analítica">Química analítica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Química general">Química general</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Química inorgánica">Química inorgánica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Química orgánica">Química orgánica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Resistencia de materiales">Resistencia de materiales</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Termodinámica">Termodinámica</li></a><br>
+                             	<tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Balance de materia y energía')"  value="Balance de materia y energía">Balance de materia y energía</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biofísica')"  value="Biofísica">Biofísica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biología')"  value="Biología">Biología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biología celular')"  value="Biología celular">Biología celular</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biología computacional')"  value="Biología computacional">Biología computacional</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Biología molecular')"  value="Biología molecular">Biología molecular</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bioquímica')"  value="Bioquímica">Bioquímica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bioquímica metabólica')"  value="Bioquímica metabólica">Bioquímica metabólica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Catálisis')"  value="Catálisis">Catálisis</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias agrícolas')"  value="Ciencias agrícolas">Ciencias agrícolas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Circuitos eléctricos')"  value="Circuitos eléctricos">Circuitos eléctricos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Diseño de máquinas')"  value="Diseño de máquinas">Diseño de máquinas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ecología')"  value="Ecología">Ecología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Electromagnetismo')"  value="Electromagnetismo">Electromagnetismo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Electrónica análoga')"  value="Electrónica análoga">Electrónica análoga</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estática')"  value="Estática">Estática</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Física 1')"  value="Física 1">Física 1</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Física 2')"  value="Física 2">Física 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Física biomecánica')"  value="Física biomecánica">Física biomecánica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fisicoquímica')"  value="Fisicoquímica">Fisicoquímica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Genética')"  value="Genética">Genética</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geociencia')"  value="Geociencia">Geociencia</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geología')"  value="Geología">Geología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hidrología')"  value="Hidrología">Hidrología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mecánica de fluidos y sólidos')"  value="Mecánica de fluidos y sólidos">Mecánica de fluidos y sólidos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mecatrónica')"  value="Mecatrónica">Mecatrónica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Metrología')"  value="Metrología">Metrología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Microbiología')"  value="Microbiología">Microbiología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Química analítica')"  value="Química analítica">Química analítica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Química general')"  value="Química general">Química general</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Química inorgánica')"  value="Química inorgánica">Química inorgánica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Química orgánica')"  value="Química orgánica">Química orgánica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Resistencia de materiales')"  value="Resistencia de materiales">Resistencia de materiales</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Termodinámica')"  value="Termodinámica">Termodinámica</li></a></td></tr>
                             <br>
 
                             <p>Ciencias Politicas y Sociales</p>
-                                <a href=" "><li style="color: #333; " value="Antropología">Antropología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ciencias políticas">Ciencias políticas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Common law">Common law</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Criminología">Criminología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho civil">Derecho civil</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho comercial y mercantil">Derecho comercial y mercantil</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho constitucional">Derecho constitucional</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho internacional">Derecho internacional</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho laboral">Derecho laboral</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho penal">Derecho penal</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho privado">Derecho privado</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho procesal">Derecho procesal</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho público">Derecho público</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derecho romano">Derecho romano</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Derechos humanos">Derechos humanos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Filosofía">Filosofía</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Hermenéutica">Hermenéutica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Historia y geografía">Historia y geografía</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Recursos humanos">Recursos humanos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Redacción y gramática">Redacción y gramática</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Relaciones internacionales">Relaciones internacionales</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sociología">Sociología</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Teología">Teología</li></a><br>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Antropología')"  value="Antropología">Antropología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ciencias políticas')"  value="Ciencias políticas">Ciencias políticas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Common law')"  value="Common law">Common law</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Criminología')"  value="Criminología">Criminología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho civil')"  value="Derecho civil">Derecho civil</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho comercial y mercantil')"  value="Derecho comercial y mercantil">Derecho comercial y mercantil</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho constitucional')"  value="Derecho constitucional">Derecho constitucional</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho internacional')"  value="Derecho internacional">Derecho internacional</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho laboral')"  value="Derecho laboral">Derecho laboral</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho penal')"  value="Derecho penal">Derecho penal</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho privado')"  value="Derecho privado">Derecho privado</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho procesal')"  value="Derecho procesal">Derecho procesal</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho público')"  value="Derecho público">Derecho público</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derecho romano')"  value="Derecho romano">Derecho romano</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Derechos humanos')"  value="Derechos humanos">Derechos humanos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Filosofía')"  value="Filosofía">Filosofía</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Hermenéutica')"  value="Hermenéutica">Hermenéutica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Historia y geografía')"  value="Historia y geografía">Historia y geografía</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Recursos humanos')"  value="Recursos humanos">Recursos humanos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Redacción y gramática')"  value="Redacción y gramática">Redacción y gramática</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Relaciones internacionales')"  value="Relaciones internacionales">Relaciones internacionales</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sociología')"  value="Sociología">Sociología</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Teología')"  value="Teología">Teología</li></a></td></tr>
                             <br>
 
                             <p>Economía, Finanzas y Contabilidad</p>
-                                <a href=" "><li style="color: #333; " value="Análisis financiero">Análisis financiero</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Comercio">Comercio</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Contabilidad">Contabilidad</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Costos">Costos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Econometría">Econometría</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Economía internacional">Economía internacional</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Economía matemática">Economía matemática</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Finanzas">Finanzas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Fundamentos macroeconómicos">Fundamentos macroeconómicos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Fundamentos microeconómicos">Fundamentos microeconómicos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Impuestos">Impuestos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Macroeconomía 1">Macroeconomía 1</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Macroeconomía 2">Macroeconomía 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Matemática financiera">Matemática financiera</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mercadeo">Mercadeo</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mercado de valores">Mercado de valores</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mercadotecnia y ventas">Mercadotecnia y ventas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Microeconomía 1">Microeconomía 1</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Microeconomía 2">Microeconomía 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Niif">Niif</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Presupuesto">Presupuesto</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Simulación financiera">Simulación financiera</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Teoría de juegos">Teoría de juegos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Teoría del consumidor">Teoría del consumidor</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Trading">Trading</li></a><br>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Análisis financiero')"  value="Análisis financiero">Análisis financiero</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Comercio')"  value="Comercio">Comercio</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Contabilidad')"  value="Contabilidad">Contabilidad</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Costos')"  value="Costos">Costos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Econometría')"  value="Econometría">Econometría</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Economía internacional')"  value="Economía internacional">Economía internacional</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Economía matemática')"  value="Economía matemática">Economía matemática</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Finanzas')"  value="Finanzas">Finanzas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos macroeconómicos')"  value="Fundamentos macroeconómicos">Fundamentos macroeconómicos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos microeconómicos')"  value="Fundamentos microeconómicos">Fundamentos microeconómicos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Impuestos')"  value="Impuestos">Impuestos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Macroeconomía 1')"  value="Macroeconomía 1">Macroeconomía 1</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Macroeconomía 2')"  value="Macroeconomía 2">Macroeconomía 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Matemática financiera')"  value="Matemática financiera">Matemática financiera</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mercadeo')"  value="Mercadeo">Mercadeo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mercado de valores')"  value="Mercado de valores">Mercado de valores</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mercadotecnia y ventas')"  value="Mercadotecnia y ventas">Mercadotecnia y ventas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Microeconomía 1')"  value="Microeconomía 1">Microeconomía 1</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Microeconomía 2')"  value="Microeconomía 2">Microeconomía 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Niif')"  value="Niif">Niif</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Presupuesto')"  value="Presupuesto">Presupuesto</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Simulación financiera')"  value="Simulación financiera">Simulación financiera</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría de juegos')"  value="Teoría de juegos">Teoría de juegos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría del consumidor')"  value="Teoría del consumidor">Teoría del consumidor</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trading')"  value="Trading">Trading</li></a></td></tr>
                                 <br>
 
                             <p>Deportes</p>
-                                <a href=" "><li style="color: #333; " value="Ajedrez">Ajedrez</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Artes marciales">Artes marciales</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Baloncesto">Baloncesto</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Box/kick boxing">Box/kick boxing</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Entrenador personal">Entrenador personal</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Fútbol">Fútbol</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Manejo de dron">Manejo de dron</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Mma (artes marciales mixtas)">Mma (artes marciales mixtas)</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Natación">Natación</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Patinaje">Patinaje</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Pilates">Pilates</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Slackline">Slackline</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Squash">Squash</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Tenis">Tenis</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Zumba">Zumba</li></a><br>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ajedrez')"  value="Ajedrez">Ajedrez</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Artes marciales')"  value="Artes marciales">Artes marciales</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Baloncesto')"  value="Baloncesto">Baloncesto</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Box/kick boxing')"  value="Box/kick boxing">Box/kick boxing</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Entrenador personal')"  value="Entrenador personal">Entrenador personal</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fútbol')"  value="Fútbol">Fútbol</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Manejo de dron')"  value="Manejo de dron">Manejo de dron</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Mma (artes marciales mixtas)')"  value="Mma (artes marciales mixtas)">Mma (artes marciales mixtas)</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Natación')"  value="Natación">Natación</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Patinaje')"  value="Patinaje">Patinaje</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Pilates')"  value="Pilates">Pilates</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Slackline')"  value="Slackline">Slackline</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Squash')"  value="Squash">Squash</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Tenis')"  value="Tenis">Tenis</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Zumba')"  value="Zumba">Zumba</li></a></td></tr>
                             <br>
 
                             <p>Ingeniería</p>
-                                <a href=" "><li style="color: #333; " value="Anadec">Anadec</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Base de datos">Base de datos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Base de datos linux">Base de datos linux</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Calidad">Calidad</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Comunicaciones analógicas">Comunicaciones analógicas</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Control de producción">Control de producción</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Fundamentos de producción">Fundamentos de producción</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ingeniería civil">Ingeniería civil</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Inteligencia artificial">Inteligencia artificial</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Logística de producción">Logística de producción</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Machine learning">Machine learning</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Modelos de ingeniería 1 y 2">Modelos de ingeniería 1 y 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Simulación">Simulación</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sistema de apoyo a la decisión">Sistema de apoyo a la decisión</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sistema de control gerencial">Sistema de control gerencial</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sistemas de control analógico">Sistemas de control analógico</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Sistemas de control discreto">Sistemas de control discreto</li></a><br>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Anadec')"  value="Anadec">Anadec</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Base de datos')"  value="Base de datos">Base de datos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Base de datos linux')"  value="Base de datos linux">Base de datos linux</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Calidad')"  value="Calidad">Calidad</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Comunicaciones analógicas')"  value="Comunicaciones analógicas">Comunicaciones analógicas</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Control de producción')"  value="Control de producción">Control de producción</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Fundamentos de producción')"  value="Fundamentos de producción">Fundamentos de producción</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniería civil')"  value="Ingeniería civil">Ingeniería civil</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Inteligencia artificial')"  value="Inteligencia artificial">Inteligencia artificial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Logística de producción')"  value="Logística de producción">Logística de producción</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Machine learning')"  value="Machine learning">Machine learning</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Modelos de ingeniería 1 y 2')"  value="Modelos de ingeniería 1 y 2">Modelos de ingeniería 1 y 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Simulación')"  value="Simulación">Simulación</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sistema de apoyo a la decisión')"  value="Sistema de apoyo a la decisión">Sistema de apoyo a la decisión</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sistema de control gerencial')"  value="Sistema de control gerencial">Sistema de control gerencial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas de control analógico')"  value="Sistemas de control analógico">Sistemas de control analógico</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Sistemas de control discreto')"  value="Sistemas de control discreto">Sistemas de control discreto</li></a></td></tr>
                             <br>
 
                             <p>Instrumentos Musicales</p>
-                                <a href=" "><li style="color: #333; " value="Acordeón">Acordeón</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Bajo">Bajo</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Batería">Batería</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Composición musical">Composición musical</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Flauta">Flauta</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Grabación y producción musical">Grabación y producción musical</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Guitarra">Guitarra</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Guitarra eléctrica">Guitarra eléctrica</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ingeniería de sonido">Ingeniería de sonido</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Piano">Piano</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Técnica vocal">Técnica vocal</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Teoría musical">Teoría musical</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Trompeta">Trompeta</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ukelele">Ukelele</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Violín">Violín</li></a><br>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Acordeón')"  value="Acordeón">Acordeón</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Bajo')"  value="Bajo">Bajo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Batería')"  value="Batería">Batería</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Composición musical')"  value="Composición musical">Composición musical</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Flauta')"  value="Flauta">Flauta</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Grabación y producción musical')"  value="Grabación y producción musical">Grabación y producción musical</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Guitarra')"  value="Guitarra">Guitarra</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Guitarra eléctrica')"  value="Guitarra eléctrica">Guitarra eléctrica</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ingeniería de sonido')"  value="Ingeniería de sonido">Ingeniería de sonido</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Piano')"  value="Piano">Piano</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Técnica vocal')"  value="Técnica vocal">Técnica vocal</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Teoría musical')"  value="Teoría musical">Teoría musical</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trompeta')"  value="Trompeta">Trompeta</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ukelele')"  value="Ukelele">Ukelele</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Violín')"  value="Violín">Violín</li></a></td></tr>
                             <br>
 
                             <p>Matemáticas y probabilidad universitaria</p>
-                                <a href=" "><li style="color: #333; " value="Álgebra lineal">Álgebra lineal</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Análisis matemático">Análisis matemático</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Cálculo diferencial">Cálculo diferencial</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Cálculo integral">Cálculo integral</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Cálculo multivariado">Cálculo multivariado</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Cálculo vectorial">Cálculo vectorial</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Ecuaciones diferenciales">Ecuaciones diferenciales</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Estadística aplicada">Estadística aplicada</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Estadística descriptiva">Estadística descriptiva</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Estadística inferencial">Estadística inferencial</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Geometría">Geometría</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Matemática estructural">Matemática estructural</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Modelos probabilísticos">Modelos probabilísticos</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Precálculo">Precálculo</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Probabilidad 1">Probabilidad 1</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Probabilidad 2">Probabilidad 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Probabilidad y estadística 1">Probabilidad y estadística 1</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Probabilidad y estadística 2">Probabilidad y estadística 2</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Trigonometría">Trigonometría</li></a><br>
-                                <a href=" "><li style="color: #333; " value="Variable compleja">Variable compleja</li></a><br>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Álgebra lineal')"  value="Álgebra lineal">Álgebra lineal</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Análisis matemático')"  value="Análisis matemático">Análisis matemático</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo diferencial')"  value="Cálculo diferencial">Cálculo diferencial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo integral')"  value="Cálculo integral">Cálculo integral</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo multivariado')"  value="Cálculo multivariado">Cálculo multivariado</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Cálculo vectorial')"  value="Cálculo vectorial">Cálculo vectorial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Ecuaciones diferenciales')"  value="Ecuaciones diferenciales">Ecuaciones diferenciales</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística aplicada')"  value="Estadística aplicada">Estadística aplicada</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística descriptiva')"  value="Estadística descriptiva">Estadística descriptiva</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Estadística inferencial')"  value="Estadística inferencial">Estadística inferencial</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Geometría')"  value="Geometría">Geometría</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Matemática estructural')"  value="Matemática estructural">Matemática estructural</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Modelos probabilísticos')"  value="Modelos probabilísticos">Modelos probabilísticos</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Precálculo')"  value="Precálculo">Precálculo</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad 1')"  value="Probabilidad 1">Probabilidad 1</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad 2')"  value="Probabilidad 2">Probabilidad 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad y estadística 1')"  value="Probabilidad y estadística 1">Probabilidad y estadística 1</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Probabilidad y estadística 2')"  value="Probabilidad y estadística 2">Probabilidad y estadística 2</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Trigonometría')"  value="Trigonometría">Trigonometría</li></a></td></tr>
+                                <tr><td><a href="#"><li style="color: #333; " onclick="filtroTipo('Variable compleja')"  value="Variable compleja">Variable compleja</li></a></td></tr>
                             
 							<div> &nbsp;</div>
                                 <div> &nbsp;</div>
@@ -436,8 +591,9 @@ box-shadow: none;
   text-decoration: none;
   margin-bottom: auto;
   text-align: center" 
-  name="profesional" id="profesional" onchange="SeleccionaProfesional(this)">        
-  <option value="Biología">Biología</option>
+  name="profesional" id="profesional" onchange="SeleccionaProfesional(this)">
+  <option value="">-----</option>   
+  								<option value="Biología">Biología</option>
                                 <option value="Ciencias sociales">Ciencias sociales</option>
                                 <option value="Contabilidad">Contabilidad</option>
                                 <option value="Economía">Economía</option>
@@ -621,9 +777,9 @@ box-shadow: none;
                                 <option value="Trigonometría">Trigonometría</option>
                                 <option value="Variable compleja">Variable compleja</option>
                             
-  <span style="margin-left:3%"> Rango de Precio:</span>
-  <input type="hidden" id="filtro" value="Tutor">
-  <select class="camposgenerales" 
+								<input type="hidden" id="filtro" value="Tutor">
+								<span style="margin-left:3%"> Rango de Precio:</span>
+								<select class="camposgenerales" 
   
   style=" border: none;
     background-color: #0000;
@@ -648,19 +804,13 @@ box-shadow: none;
 
 
   <span style="margin-left:3%">  Ciudad:</span>
-  <select class="camposgenerales"	style=" border: none; background-color: #0000;font-size: 15px;
-	width: 100px;text-decoration: none;margin-bottom: auto;text-align: center" 
+  <select class="camposgenerales" 
 	name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
 	<option value="">-----</option>     
-
-	<optgroup label="Amazonas">     
-	<option value="Leticia">Leticia</option>
-	<option value="PuertoNariño">PuertoNariño</option>
-	
-</optgroup>
-	<optgroup label="Antioquia">
-	     
-
+<option value="Amazonas">Amazonas</option>     
+<option value="Leticia">Leticia</option>
+<option value="PuertoNariño">PuertoNariño</option>
+<option value="Antioquia">Antioquia</option>
 <option value="Abejorral">Abejorral</option>
 <option value="Abriaquí">Abriaquí</option>
 <option value="Alejandría">Alejandría</option>
@@ -786,12 +936,6 @@ box-shadow: none;
 <option value="Yolombó">Yolombó</option>
 <option value="Yondo">Yondo</option>
 <option value="Zaragoza">Zaragoza</option>
-
-
-</optgroup>
-	<optgroup label="Arauca">
-
-
 <option value="Arauca">Arauca</option>
 <option value="Arauquita">Arauquita</option>
 <option value="CravoNorte">CravoNorte</option>
@@ -799,12 +943,8 @@ box-shadow: none;
 <option value="PuertoRondón">PuertoRondón</option>
 <option value="Saravena">Saravena</option>
 <option value="Tame">Tame</option>
-
-
-</optgroup>
-	<optgroup label="Atlántico">
-		
-	<option value="Baranoa">Baranoa</option>
+<option value="Atlántico">Atlántico</option>
+<option value="Baranoa">Baranoa</option>
 <option value="Barranquilla">Barranquilla</option>
 <option value="CampoDeLaCruz">CampoDeLaCruz</option>
 <option value="Candelaria">Candelaria</option>
@@ -827,10 +967,7 @@ box-shadow: none;
 <option value="Suan">Suan</option>
 <option value="Tubará">Tubará</option>
 <option value="Usiacurí">Usiacurí</option>
-
-</optgroup>
-	<optgroup label="Bolivar">
-
+<option value="Bolivar">Bolivar</option>
 <option value="Achí">Achí</option>
 <option value="AltosDelRosario">AltosDelRosario</option>
 <option value="Arenal">Arenal</option>
@@ -877,10 +1014,7 @@ box-shadow: none;
 <option value="Turbana">Turbana</option>
 <option value="Villanueva">Villanueva</option>
 <option value="Zambrano">Zambrano</option>
-
-</optgroup>
-	<optgroup label="Boyacá">
-
+<option value="Boyacá">Boyacá</option>
 <option value="Almeida">Almeida</option>
 <option value="Aquitania">Aquitania</option>
 <option value="Arcabuco">Arcabuco</option>
@@ -1004,10 +1138,7 @@ box-shadow: none;
 <option value="VillaDeLeyva">VillaDeLeyva</option>
 <option value="Viracachá">Viracachá</option>
 <option value="Zetaquirá">Zetaquirá</option>
-
-</optgroup>
-	<optgroup label="Caldas">
-
+<option value="Caldas">Caldas</option>
 <option value="Aguadas">Aguadas</option>
 <option value="Anserma">Anserma</option>
 <option value="Aranzazu">Aranzazu</option>
@@ -1035,10 +1166,7 @@ box-shadow: none;
 <option value="Victoria">Victoria</option>
 <option value="Villamaría">Villamaría</option>
 <option value="Viterbo">Viterbo</option>
-
-</optgroup>
-	<optgroup label="Caquetá">
-
+<option value="Caquetá">Caquetá</option>
 <option value="Albania">Albania</option>
 <option value="BelénDeLosAndaquies">BelénDeLosAndaquies</option>
 <option value="CartagenaDelChairá">CartagenaDelChairá</option>
@@ -1055,10 +1183,7 @@ box-shadow: none;
 <option value="Solano">Solano</option>
 <option value="Solita">Solita</option>
 <option value="Valparaíso">Valparaíso</option>
-
-</optgroup>
-	<optgroup label="Casanare">
-
+<option value="Casanare">Casanare</option>
 <option value="Aguazul">Aguazul</option>
 <option value="Chameza">Chameza</option>
 <option value="HatoCorozal">HatoCorozal</option>
@@ -1078,10 +1203,7 @@ box-shadow: none;
 <option value="Trinidad">Trinidad</option>
 <option value="Villanueva">Villanueva</option>
 <option value="Yopal">Yopal</option>
-
-</optgroup>
-	<optgroup label="Cauca">
-
+<option value="Cauca">Cauca</option>
 <option value="Almaguer">Almaguer</option>
 <option value="Argelia">Argelia</option>
 <option value="Balboa">Balboa</option>
@@ -1124,10 +1246,7 @@ box-shadow: none;
 <option value="Toribio">Toribio</option>
 <option value="Totoro">Totoro</option>
 <option value="VillaRica">VillaRica</option>
-
-</optgroup>
-	<optgroup label="Cesar">
-
+<option value="Cesar">Cesar</option>
 <option value="Aguachica">Aguachica</option>
 <option value="AgustínCodazzi">AgustínCodazzi</option>
 <option value="Astrea">Astrea</option>
@@ -1153,10 +1272,7 @@ box-shadow: none;
 <option value="SanMartín">SanMartín</option>
 <option value="Tamalameque">Tamalameque</option>
 <option value="Valledupar">Valledupar</option>
-
-</optgroup>
-	<optgroup label="Chocó">
-
+<option value="Chocó">Chocó</option>
 <option value="Acandí">Acandí</option>
 <option value="AltoBaudó">AltoBaudó</option>
 <option value="Atrato">Atrato</option>
@@ -1187,10 +1303,7 @@ box-shadow: none;
 <option value="Sipí">Sipí</option>
 <option value="Ungüía">Ungüía</option>
 <option value="UniónPanamericana">UniónPanamericana</option>
-
-</optgroup>
-	<optgroup label="Córdoba">
-
+<option value="Córdoba">Córdoba</option>
 <option value="Ayapel">Ayapel</option>
 <option value="Buenavista">Buenavista</option>
 <option value="Canalete">Canalete</option>
@@ -1221,10 +1334,7 @@ box-shadow: none;
 <option value="Tierralta">Tierralta</option>
 <option value="Tuchín">Tuchín</option>
 <option value="Valencia">Valencia</option>
-
-</optgroup>
-	<optgroup label="Cundinamarca">
-
+<option value="Cundinamarca">Cundinamarca</option>
 <option value="AguaDeDios">AguaDeDios</option>
 <option value="Albán">Albán</option>
 <option value="Anapoima">Anapoima</option>
@@ -1342,24 +1452,15 @@ box-shadow: none;
 <option value="Yacopí">Yacopí</option>
 <option value="Zipacón">Zipacón</option>
 <option value="Zipaquirá">Zipaquirá</option>
-
-</optgroup>
-	<optgroup label="Guainía">
-
+<option value="Guainía">Guainía</option>
 <option value="Barrancominas">Barrancominas</option>
 <option value="Inirida">Inirida</option>
-
-</optgroup>
-	<optgroup label="Guaviare">
-
+<option value="Guaviare">Guaviare</option>
 <option value="Calamar">Calamar</option>
 <option value="ElRetorno">ElRetorno</option>
 <option value="Miraflores">Miraflores</option>
 <option value="SanJoséDelGuaviare">SanJoséDelGuaviare</option>
-
-</optgroup>
-	<optgroup label="Huila">
-
+<option value="Huila">Huila</option>
 <option value="Acevedo">Acevedo</option>
 <option value="Agrado">Agrado</option>
 <option value="Aipe">Aipe</option>
@@ -1397,10 +1498,7 @@ box-shadow: none;
 <option value="Timaná">Timaná</option>
 <option value="Villavieja">Villavieja</option>
 <option value="Yaguará">Yaguará</option>
-
-</optgroup>
-	<optgroup label="La Guajira">
-
+<option value="La Guajira">La Guajira</option>
 <option value="Albania">Albania</option>
 <option value="Barrancas">Barrancas</option>
 <option value="Dibulla">Dibulla</option>
@@ -1416,10 +1514,7 @@ box-shadow: none;
 <option value="Uribia">Uribia</option>
 <option value="Urumita">Urumita</option>
 <option value="Villanueva">Villanueva</option>
-
-</optgroup>
-	<optgroup label="Magdalena">
-
+<option value="Magdalena">Magdalena</option>
 <option value="Algarrobo">Algarrobo</option>
 <option value="Aracataca">Aracataca</option>
 <option value="Ariguaní">Ariguaní</option>
@@ -1450,10 +1545,7 @@ box-shadow: none;
 <option value="Tenerife">Tenerife</option>
 <option value="Zapayán">Zapayán</option>
 <option value="ZonaBananera">ZonaBananera</option>
-
-</optgroup>
-	<optgroup label="Meta">
-
+<option value="Meta">Meta</option>
 <option value="Acacías">Acacías</option>
 <option value="BarrancaDeUpía">BarrancaDeUpía</option>
 <option value="Cabuyaro">Cabuyaro</option>
@@ -1483,9 +1575,7 @@ box-shadow: none;
 <option value="Uribe">Uribe</option>
 <option value="Villavicencio">Villavicencio</option>
 <option value="VistaHermosa">VistaHermosa</option>
-
-</optgroup>
-	<optgroup label="Nariño">\
+<option value="Nariño">Nariño</option>
 <option value="Alban">Alban</option>
 <option value="Aldana">Aldana</option>
 <option value="Ancuyá">Ancuyá</option>
@@ -1550,10 +1640,7 @@ box-shadow: none;
 <option value="Tumaco">Tumaco</option>
 <option value="Túquerres">Túquerres</option>
 <option value="Yacuanquer">Yacuanquer</option>
-
-</optgroup>
-	<optgroup label="Norte de Santander">
-
+<option value="Norte de Santander">Norte de Santander</option>
 <option value="Abrego">Abrego</option>
 <option value="Arboledas">Arboledas</option>
 <option value="Bochalema">Bochalema</option>
@@ -1594,10 +1681,7 @@ box-shadow: none;
 <option value="Toledo">Toledo</option>
 <option value="VillaCaro">VillaCaro</option>
 <option value="VillaDelRosario">VillaDelRosario</option>
-
-</optgroup>
-	<optgroup label="Putumayo">
-
+<option value="Putumayo">Putumayo</option>
 <option value="Colón">Colón</option>
 <option value="Mocoa">Mocoa</option>
 <option value="Orito">Orito</option>
@@ -1611,10 +1695,7 @@ box-shadow: none;
 <option value="Sibundoy">Sibundoy</option>
 <option value="ValleDelGuamuez">ValleDelGuamuez</option>
 <option value="Villagarzón">Villagarzón</option>
-
-</optgroup>
-	<optgroup label="Qundío">
-
+<option value="Qundío">Qundío</option>
 <option value="Armenia">Armenia</option>
 <option value="Buenavista">Buenavista</option>
 <option value="Calarcá">Calarcá</option>
@@ -1627,10 +1708,7 @@ box-shadow: none;
 <option value="Pijao">Pijao</option>
 <option value="Quimbaya">Quimbaya</option>
 <option value="Salento">Salento</option>
-
-</optgroup>
-	<optgroup label="Risaralda">
-
+<option value="Risaralda">Risaralda</option>
 <option value="Apía">Apía</option>
 <option value="Balboa">Balboa</option>
 <option value="BelénDeUmbría">BelénDeUmbría</option>
@@ -1645,15 +1723,9 @@ box-shadow: none;
 <option value="Quinchía">Quinchía</option>
 <option value="SantaRosaDeCabal">SantaRosaDeCabal</option>
 <option value="Santuario">Santuario</option>
-
-</optgroup>
-	<optgroup label="San Andrés">
-
+<option value="San Andrés">San Andrés</option>
 <option value="Providencia">Providencia</option>
-
-</optgroup>
-	<optgroup label="Santander">
-
+<option value="Santander">Santander</option>
 <option value="Aguada">Aguada</option>
 <option value="Albania">Albania</option>
 <option value="Aratoca">Aratoca</option>
@@ -1741,10 +1813,7 @@ box-shadow: none;
 <option value="Vetas">Vetas</option>
 <option value="Villanueva">Villanueva</option>
 <option value="Zapatoca">Zapatoca</option>
-
-</optgroup>
-	<optgroup label="Sucre">
-
+<option value="Sucre">Sucre</option>
 <option value="Buenavista">Buenavista</option>
 <option value="Caimito">Caimito</option>
 <option value="Chalan">Chalan</option>
@@ -1771,10 +1840,7 @@ box-shadow: none;
 <option value="Sucre">Sucre</option>
 <option value="SantiagoDeTolú">SantiagoDeTolú</option>
 <option value="Toluviejo">Toluviejo</option>
-
-</optgroup>
-	<optgroup label="Tolima">
-
+<option value="Tolima">Tolima</option>
 <option value="Alpujarra">Alpujarra</option>
 <option value="Alvarado">Alvarado</option>
 <option value="Ambalema">Ambalema</option>
@@ -1822,10 +1888,7 @@ box-shadow: none;
 <option value="Venadillo">Venadillo</option>
 <option value="Villahermosa">Villahermosa</option>
 <option value="Villarrica">Villarrica</option>
-
-</optgroup>
-	<optgroup label="Valle del Cauca">
-
+<option value="Valle del Cauca">Valle del Cauca</option>
 <option value="Alcalá">Alcalá</option>
 <option value="Andalucía">Andalucía</option>
 <option value="Ansermanuevo">Ansermanuevo</option>
@@ -1868,23 +1931,15 @@ box-shadow: none;
 <option value="Yotoco">Yotoco</option>
 <option value="Yumbo">Yumbo</option>
 <option value="Zarzal">Zarzal</option>
-
-</optgroup>
-	<optgroup label="Vaupés">
-
+<option value="Vaupés">Vaupés</option>
 <option value="Caruru">Caruru</option>
 <option value="Mitú">Mitú</option>
 <option value="Taraira">Taraira</option>
-
-</optgroup>
-	<optgroup label="Vichada">
-
+<option value="Vichada">Vichada</option>
 <option value="Cumaribo">Cumaribo</option>
 <option value="LaPrimavera">LaPrimavera</option>
 <option value="PuertoCarreño">PuertoCarreño</option>
 <option value="SantaRosalía">SantaRosalía</option>
-   
-</optgroup>
 
   </select>
 
@@ -2034,919 +2089,9 @@ box-shadow: none;
 		
 			<section class="section-grid2">
 				
-				<div class="grid-prod2">
+				<div class="grid-prod2" id="div_gurus">
 			
-					<div class="prod-grid3 " style="margin-top:25px">
-						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 "style="margin-top:25px">
-						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 "style="margin-top:25px">
-						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/4.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/5.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/6.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/1.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/2.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					<div class="prod-grid3 ">
-						<img class="imgredonguru" src="img/categorias/en linea/3.jpg" alt="kalita">
-					  	<img src="img/categorias/en linea/8m.png" alt="kalita">
-					  	<div class="bloqueguru bloqueguru2">
-							<h5 style=" margin-right: 45px">Dr. Peter Ostheimer </h5>
-							<form>
-								<p class="clasificacion">
-									<input id="radio1" type="radio" name="estrellas" value="5"><!--
-									--><label for="radio1">★</label><!--
-									--><input id="radio2" type="radio" name="estrellas" value="4"><!--
-									--><label for="radio2">★</label><!--
-									--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-									--><label for="radio3">★</label><!--
-									--><input id="radio4" type="radio" name="estrellas" value="2"><!--
-									--><label for="radio4">★</label><!--
-									--><input id="radio5" type="radio" name="estrellas" value="1"><!--
-									--><label for="radio5">★</label>
-								</p>
-							</form>
-							<p class="textopguru">Especialista en Tantra Yoga, Meditacion, Esotérico Integral. </p>
-							<p class="textopguru2">IDIOMAS  
-								<img style="width:20px" src="img/categorias/en linea/b1.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b2.png" alt="kalita">
-								<img style="width:20px" src="img/categorias/en linea/b3.png" alt="kalita">
-								<h7 style="margin-left:4%; color:#82142C">Leer más ><h7>
-							</p>
-						</div>
-						<div class=" bloqueguru3" style=" background-color:#EADAE2; " >
-							<p class="textopguru" style="margin-top:-10px; font-size:85%" > TARIFA:
-							<img src="img/categorias/en linea/barra.png" style="width:2px; height:50px; margin-top:20px" alt="kalita"> Tiempo de Consulta: </p>
-							<p class="textopguru"  style="margin-bottom:10px; margin-top:-40px; font-size:15px"> US$30 &nbsp;&nbsp;&nbsp;&nbsp;30 minutos</p>
-						</div>
-					</div>
-					
-					<P style="margin-left:64%;  padding-top:10px; color:#FFF; background-color:#BFBFBF; height:50px; font-size:100%">&nbsp;&nbsp;&nbsp;&nbsp;VER TODOS LOS GÚRUS >&nbsp;&nbsp;&nbsp;&nbsp;<P>
-
+				
 				</div>
 				<div align="left" style="padding-left: 0px;margin-right: 20px; ">
 					
@@ -3344,5 +2489,12 @@ function carousel() {
   setTimeout(carousel, 15000); 
 }
 </script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="js/consulta_gurus.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>
