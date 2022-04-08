@@ -139,9 +139,9 @@ function filtroTipo(tipo){
 }
 
 
-function change_ciudad(e){
+function change_ciudad(ciudad){
     
-    CIUDAD = e.value;
+    CIUDAD =ciudad;
     Pintar_Gurus();
 }
 
