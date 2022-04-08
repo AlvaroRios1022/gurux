@@ -86,8 +86,7 @@ box-shadow: none;
 }
 	
 	</style>
-	
-	<script>
+<script>
 	$( function() {
 		$.widget( "custom.combobox", {
 			_create: function() {
@@ -123,6 +122,7 @@ box-shadow: none;
 				this._on( this.input, {
 					autocompleteselect: function( event, ui ) {
 						ui.item.option.selected = true;
+						change_ciudad(ui.item.option.value)
 						this._trigger( "select", event, {
 							item: ui.item.option
 						});
@@ -154,7 +154,6 @@ box-shadow: none;
 					})
 					.on( "click", function() {
 						input.trigger( "focus" );
-
 						// Close if already visible
 						if ( wasOpen ) {
 							return;
@@ -166,9 +165,11 @@ box-shadow: none;
 			},
 
 			_source: function( request, response ) {
+				
 				var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
 				response( this.element.children( "option" ).map(function() {
 					var text = $( this ).text();
+					
 					if ( this.value && ( !request.term || matcher.test(text) ) )
 						return {
 							label: text,
@@ -216,6 +217,7 @@ box-shadow: none;
 			_destroy: function() {
 				this.wrapper.remove();
 				this.element.show();
+			
 			}
 		});
 

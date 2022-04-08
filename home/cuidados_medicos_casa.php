@@ -137,6 +137,7 @@ box-shadow: none;
         this._on( this.input, {
           autocompleteselect: function( event, ui ) {
             ui.item.option.selected = true;
+						change_ciudad(ui.item.option.value)
             this._trigger( "select", event, {
               item: ui.item.option
             });
