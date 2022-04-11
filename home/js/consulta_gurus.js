@@ -142,6 +142,7 @@ function filtroTipo(tipo){
 function change_ciudad(ciudad){
     
     CIUDAD =ciudad;
+    console.log(ciudad)
     Pintar_Gurus();
 }
 
