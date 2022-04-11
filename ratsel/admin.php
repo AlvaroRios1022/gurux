@@ -36,7 +36,7 @@ unset($_SESSION['consulta']);
     <div id="tabla">
       <div class="row">
         <div class="col-lg-12">
-          <h2>Gurús por Aprobación de Tarjeta</h2>
+          <h2>Gurús para Aprobación de Ratsel</h2>
           <div class="table-responsive">
 
             <table class="display mb-0 table table-striped" style="width:100%" cellpadding="1000" style="width:100%" id="usuarios">
