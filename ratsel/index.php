@@ -35,7 +35,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                         <h4 style=" color: #FEC705; ">&nbsp; </h4>
                         <h4 style=" color: #FEC705; ">Ingresar al Administrador</h4>
 
-                        <p style=" color: #FEC705; font-size:20px ">Guruxy - Banco Finandina</p>
+                        <p style=" color: #FEC705; font-size:20px ">RATSEL</p>
                     </div>
                     <br>
                     <div class="form-group" >

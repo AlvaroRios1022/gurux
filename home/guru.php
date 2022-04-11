@@ -149,10 +149,17 @@ box-shadow: none;
 					
 					<ul style="margin-left:-35px; height:auto; max-width:130px;">
 							
-							<li class="bordes" style="width:120px; height:20px; background-color:#FFC808; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#000;" >COMUNIDAD GURÚ</a></li>
-							<li class="bordes" style="width:120px; height:20px; background-color:#FFC808; z-index: 999;"><a href="seguros.php" style="font-size:10px; text-decoration:none; color:#000;" >SEGUROS</a></li>
-							<li class="bordes" style="width:120px; height:20px; background-color:#FFC808; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#000;" >COBRU</a>	</li>
-						</ul>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/guruxy.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/falabella.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/larebaja.png"></a>	</li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/lopido.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:14px; text-decoration:none; color:#1ebdde;" >TURISMO MEDICO</a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/betplay.png"></a>	</li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/idime.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/cobru.png"></a>	</li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/pasalapagina.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/lesmills.png"></a>	</li>
+							</ul>
 					</li>
 					</nav>
 			</div>
@@ -267,7 +274,8 @@ box-shadow: none;
 					<div class="flex-container" style="background-color: #fff;" align="center">
                     <div class="flex-item-left">
 						<img src="img/foto2.png" style="width:100%; margin-top:-1px"><br>
-						<img src="img/comenzar.png" style="width:50%; margin-top:4px;">
+						<a style="color:#452167; "> Valor Consulta:</a><a style=" margin-right:10%"> Variable Valor</a>
+						<a href="metodos.php"><img src="img/comenzar.png" style="width:25%; margin-top:4px;"></a>
 						<?php 
 							if(!(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE)){
 						?>
@@ -314,10 +322,10 @@ box-shadow: none;
 					</div>
 					<br>
 					<div class="input-group">
-								<input style="border-radius: 25px; margin-left:10px;" type="text" class="chat">
+								<input style="border-radius: 25px; margin-left:10px; margin-top:10px" type="text" class="chat">
 								<span class="input-group-btn">
-									<button  type="button">
-										<img src="img/enviarm.png" style="width:50%;">
+									<button  type="button" >
+										<img src="img/enviarm.png" style="width:50%; margin-top:10px">
 									</button>
 								</span>
 							
@@ -329,25 +337,37 @@ box-shadow: none;
 			</div>
 		</div>
 		</div>
+		<br>
 		<div align="center" style=" height: 600px; width:100%; background-color: #fff;">
-			
-			<div id="div2" style="float:left; width:50%; margin-left:5%;">
+		<div id="div1" style="float:left; width:20%; margin-left:5%;">
+				<h4 style="color:#452167; ">Hoja de Vida / CV</h4>
+				<img style="width:90%" src="img/doctora.png">
+				
+			</div>
+			<div id="div2" style="float:left; width:50%;  ">
 				<h4 style="color:#452167">Agenda tu Cita</h4>
 				<?php
  					include calendario.php;
 				?>
-				<iframe style="width:100%; height: 530px; border:none;" src="calendario.php"></iframe>
+				<iframe style="width:50%; height: 500px; border:none;" src="calendario.php"></iframe>
 				
 			</div>
-			<div id="div1" style="float:left; width:30%;">
+			<div id="div3" style="float:left; width:20%; ">
 				<h4 style="color:#452167">Hoja de Vida / CV</h4>
-
-
+				<img style="width:90%" src="img/resena.png">
+		
+</div>
+		</div>
+		<div align="center" style=" height: 600px; width:100%; background-color: #fff;">
+		<div id="div1" style="float:left; width:40%; margin-left:5%;">
+				<img style="width:90%" src="img/soy.png">
 				
 			</div>
-
-		</div>
-		
+			<div id="div2" style="float:left; width:40%; margin-left:5%;">
+				<img style="width:90%" src="img/mas.png">
+				
+			</div>
+			</div>
 
 		<script>
     (function($){
