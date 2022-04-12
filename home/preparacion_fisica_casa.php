@@ -299,7 +299,7 @@ box-shadow: none;
 
 				$( "<a>" )
 					.attr( "tabIndex", -1 )
-					.attr( "title", "Show All Items" )
+					.attr( "title", "Mostrar Ciudades" )
 					.tooltip()
 					.appendTo( this.wrapper )
 					.button({

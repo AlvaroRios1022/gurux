@@ -295,7 +295,7 @@ box-shadow: none;
 
 				$( "<a>" )
 					.attr( "tabIndex", -1 )
-					.attr( "title", "Show All Items" )
+					.attr( "title", "Mostrar Ciudades" )
 					.tooltip()
 					.appendTo( this.wrapper )
 					.button({
@@ -1744,14 +1744,7 @@ box-shadow: none;
   <span style="margin-left:3%"> Rango de Precio:</span>
   <select class="camposgenerales" 
   
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
+    
 	
 	name="rango_precios" id="rango_precios" onchange="change_rango_precios(this)">
 	<option value="">-----</option>       
@@ -1768,14 +1761,7 @@ box-shadow: none;
   <span style="margin-left:3%"> Idioma</span>
   <select class="camposgenerales" 
   
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
+    
 	
 	name="idioma" id="idioma" onchange="change_idioma(this)">
         <option value="">-----</option>
@@ -1813,14 +1799,7 @@ box-shadow: none;
   <span style="margin-left:3%"> Pais:</span>
   <select class="camposgenerales"
   
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
+    
 	
 	name="pais" id="pais" onchange="change_pais(this)">
 
@@ -2076,14 +2055,7 @@ box-shadow: none;
   <span style="margin-left:3%"> Estado:</span>
   <select class="camposgenerales"
   
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
+    
 	
 	name="cars" id="cars">
 	<option value="">-----</option>       

@@ -296,7 +296,7 @@ box-shadow: none;
 
 				$( "<a>" )
 					.attr( "tabIndex", -1 )
-					.attr( "title", "Show All Items" )
+					.attr( "title", "Mostrar Ciudades" )
 					.tooltip()
 					.appendTo( this.wrapper )
 					.button({
@@ -2446,14 +2446,7 @@ box-shadow: none;
 		<span style="margin-left:3%;">  El gurú Habla:</span>
 		<select class="camposgenerales" 
   
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
+    
 	
 	name="idioma" id="idioma" onchange="change_idioma(this)">
         <option value="">-----</option>

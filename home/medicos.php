@@ -13,6 +13,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/filtros_generales.css" rel="stylesheet" type="text/css" />
 
 	<link href="css/estilos.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
@@ -21,7 +22,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="/resources/demos/style.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
 	
@@ -138,7 +138,7 @@ box-shadow: none;
 
 				$( "<a>" )
 					.attr( "tabIndex", -1 )
-					.attr( "title", "Show All Items" )
+					.attr( "title", "Mostrar Ciudades" )
 					.tooltip()
 					.appendTo( this.wrapper )
 					.button({
@@ -1653,14 +1653,7 @@ box-shadow: none;
   <span style="margin-left:3%"> Rango de Precio:</span>
   <select class="camposgenerales" 
   
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
+    
 	
 	name="rango_precios" id="rango_precios" onchange="change_rango_precios(this)">
 	<option value="">-----</option>       
@@ -1677,14 +1670,7 @@ box-shadow: none;
   <span style="margin-left:3%"> Idioma</span>
   <select class="camposgenerales" 
   
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
+    
 	
 	name="idioma" id="idioma" onchange="change_idioma(this)">
         <option value="">-----</option>
@@ -1722,14 +1708,7 @@ box-shadow: none;
   <span style="margin-left:3%"> Pais:</span>
   <select class="camposgenerales"
   
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
+    
 	
 	name="pais" id="pais" onchange="change_pais(this)">
 
@@ -1985,14 +1964,7 @@ box-shadow: none;
   <span style="margin-left:3%"> Estado:</span>
   <select class="camposgenerales"
   
-  style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-	color:#000;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
+    
 	
 	name="cars" id="cars">
 	<option value="">-----</option>       
