@@ -31,25 +31,30 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<title>Gurus Center</title>
 	<style type="text/css">
 	.custom-combobox {
-		position: relative;
-		display: inline-block;
-	}
-	.custom-combobox-toggle {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		margin-left: -1px;
-		padding: 0;
-	}
-	.custom-combobox-input {
-		margin: 0;
-		padding: 5px 10px;
-		body {
-			margin-left: 0px;
-			margin-top: 0px;
-			margin-right: 0px;
-			margin-bottom: 0px;
-		}
+    position: relative;
+    display: inline-block;
+	
+  }
+  .custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+	border: 0;
+
+  }
+  .custom-combobox-input {
+    margin: 0;
+	border: 0;
+
+  }
+  .ui-menu-item .ui-menu-item-wrapper:hover
+{
+    background-color: #CCC;
+    border: none;    
+
+}
 		.mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
 			background-color: #fff;
 			margin-top:60px;			
@@ -244,9 +249,17 @@ box-shadow: none;
 					
 					<ul style="margin-left:-35px; height:auto; max-width:130px;">
 							
-							<li class="bordes" style="width:120px; height:20px; background-color:#FFC808; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#000;" >COMUNIDAD GURÚ</a></li>
-							<li class="bordes" style="width:120px; height:20px; background-color:#FFC808; z-index: 999;"><a href="seguros.php" style="font-size:10px; text-decoration:none; color:#000;" >SEGUROS</a></li>
-							<li class="bordes" style="width:120px; height:20px; background-color:#FFC808; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#000;" >COBRU</a>	</li>
+							 <li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/guruxy.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/falabella.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/larebaja.png"></a>	</li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/lopido.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:14px; text-decoration:none; color:#1ebdde;" >TURISMO MEDICO</a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/betplay.png"></a>	</li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/idime.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/cobru.png"></a>	</li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/pasalapagina.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/lesmills.png"></a>	</li>
+							
 						</ul>
 					</li>
 					</nav>
@@ -511,7 +524,7 @@ box-shadow: none;
 		
 	<input type="hidden" id="filtro" value="medicina">
   <span style="margin-left:20%"> Ciudad:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" style=" height:30px"
 	name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
 	<option value="">-----</option>     
 <option value="Amazonas">Amazonas</option>     
@@ -1650,9 +1663,19 @@ box-shadow: none;
 
   </select>
 
-  <span style="margin-left:3%"> Rango de Precio:</span>
+ <span style="margin-left:3%"> Rango de Precio:</span>
   <select class="camposgenerales" 
   
+  style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
     
 	
 	name="rango_precios" id="rango_precios" onchange="change_rango_precios(this)">
@@ -1667,9 +1690,19 @@ box-shadow: none;
         <option value="350000-9999999999">Mayor a $350.000 </option>
   </select>
 
-  <span style="margin-left:3%"> Idioma</span>
+   <span style="margin-left:3%"> Idioma</span>
   <select class="camposgenerales" 
   
+  style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;""
     
 	
 	name="idioma" id="idioma" onchange="change_idioma(this)">
@@ -1706,9 +1739,19 @@ box-shadow: none;
 	</select>
 
   <span style="margin-left:3%"> Pais:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
-    
+  style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+	
 	
 	name="pais" id="pais" onchange="change_pais(this)">
 
@@ -1962,8 +2005,18 @@ box-shadow: none;
 
 
   <span style="margin-left:3%"> Estado:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
+  style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
     
 	
 	name="cars" id="cars">

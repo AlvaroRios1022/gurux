@@ -46,7 +46,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
   }
   .custom-combobox-input {
     margin: 0;
-    padding: 5px 10px;
 	border: 0;
 
   }
@@ -354,7 +353,7 @@ box-shadow: none;
 		</div>
 		<div class="barrayoga" style="margin-top:-6px; ">
 		<ul id="lista1" >
-                <li style="margin-left:-180px;" class="itemlista1"><a id="current" href="preparacion.php" > HOME PREPARACIÓN FÍSICA </a></li>
+                <li style="margin-left:-100px;" class="itemlista1"><a id="current" href="preparacion.php" > HOME PREPARACIÓN FÍSICA </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="preguntas_preparacion.php" >PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
@@ -452,19 +451,23 @@ box-shadow: none;
 		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
 		<br>
 		<br>
-		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
+		<form style=" margin-left:15%; width:80%" >
 		<br>
 		
 		<span >  Especialidad:</span>
   <select class="camposgenerales"
   
-    style=" border: none;
-    background-color: #0000;
+  style=" border: none;
+    background-color: #ffffff;
     font-size: 15px;
-    width: 100px;
+	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-    text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+   
     name="profesional" id="profesional" onchange="SeleccionaProfesional(this)">
     <option value="">-----</option>       
 	<option value="Aeróbicos">Aeróbicos</option>  
@@ -495,9 +498,19 @@ box-shadow: none;
 							<option value="Yoga prenatal">Yoga prenatal</option>  
 							<option value="oga restaurativo">Yoga restaurativo</option>  
   </select>
-  <span style="margin-left:3%"> Rango de Precio:</span>
+ <span style="margin-left:3%"> Rango de Precio:</span>
   <select class="camposgenerales" 
   
+  style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
   style=" border: none;
     background-color: #0000;
     font-size: 15px;
@@ -1662,15 +1675,18 @@ box-shadow: none;
   
 	<span style="margin-left:3%"> Disponibilidad:</span>
   <select class="camposgenerales"
-  
+   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
-	
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+   
 	name="cars" id="cars">
 	<option value="">-----</option>       
 	<option value="">En Linea</option>       

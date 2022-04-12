@@ -181,7 +181,7 @@ box-shadow: none;
 		</div>
 		<div class="barrayoga" style="margin-top:-6px; ">
 		<ul id="lista1" >
-                <li style="margin-left:-180px;" class="itemlista1"><a id="current" href="preparacion.php" > HOME PREPARACIÓN FÍSICA </a></li>
+                <li style="margin-left:-100px;" class="itemlista1"><a id="current" href="preparacion.php" > HOME PREPARACIÓN FÍSICA </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="preguntas_preparacion.php" style="color:#fff; text-shadow: 1px 1px 2px black;">PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>

@@ -45,7 +45,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
   }
   .custom-combobox-input {
     margin: 0;
-    padding: 5px 10px;
 	border: 0;
 
   }
@@ -439,7 +438,7 @@ box-shadow: none;
 		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
 		<br>
 		<br>
-		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
+		<form style=" margin-left:15%;  width:80%" >
 		<br>
 		
 		<span >  Cuidado en Casa:</span>
@@ -468,12 +467,15 @@ box-shadow: none;
   <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
-    width: 100px;
+	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-    text-align: center;  " 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;" 
     
     name="rango_precios" id="rango_precios" onchange="change_rango_precios(this)">
     <option value="">-----</option>       
@@ -489,7 +491,7 @@ box-shadow: none;
   <span style="margin-left:3%">  Ciudad:</span>
   <select style="width: 50px;" 
   name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
-	<option value=" ---">-----</<option>  
+	<option value=" "><option>  
 	<option value="Amazonas"></option>
 	<option value="Leticia">Leticia</option>
 	<option value="PuertoNariño">PuertoNariño</option>
@@ -1726,13 +1728,16 @@ box-shadow: none;
   <select class="camposgenerales"
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
-	
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+
 	name="cars2" id="cars2">
 	<option value="">-----</option>       
 	<option value="">En Linea</option>       

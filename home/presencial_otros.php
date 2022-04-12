@@ -44,7 +44,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
   }
   .custom-combobox-input {
     margin: 0;
-    padding: 5px 10px;
 	border: 0;
 
   }
@@ -754,19 +753,23 @@ box-shadow: none;
 		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
 		<br>
 		<br>
-		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
+		<form style=" margin-left:15%; width:80%" >
 		<br>
 		
 		<span>  Profesional:</span>
 		<select class="camposgenerales"
   
-  style=" border: none;
-  background-color: #0000;
-  font-size: 15px;
-  width: 100px;
-  text-decoration: none;
-  margin-bottom: auto;
-  text-align: center" 
+    style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+
   name="profesional" id="profesional" onchange="SeleccionaProfesional(this)">        
   <option value="">-----</option>
   <option('Abogado “Contratación Estatal')" value="Abogado “Contratación Estatal">Abogado “Contratación Estatal</option>
@@ -1111,13 +1114,16 @@ box-shadow: none;
   <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
-    width: 100px;
+	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-    text-align: center;  " 
-    
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+
     name="rango_precios" id="rango_precios" onchange="change_rango_precios(this)">
     <option value="">-----</option>       
 	<option value="0-50000">$0 - $50.000</option>
@@ -2274,15 +2280,17 @@ box-shadow: none;
   
 	<span style="margin-left:3%"> Disponibilidad:</span>
   <select class="camposgenerales"
-  
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
-	
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+  
 	name="cars" id="cars">
 	<option value="">-----</option>       
 	<option value="">En Linea</option>       
@@ -2301,7 +2309,14 @@ box-shadow: none;
 		<span style="margin-left:3%;">  El gurú Habla:</span>
 		<select class="camposgenerales" 
   
-    
+    style=" border: none;
+    background-color: #0000;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: cen"
 	
 	name="idioma" id="idioma" onchange="change_idioma(this)">
         <option value="">-----</option>

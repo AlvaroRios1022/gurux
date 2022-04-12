@@ -44,7 +44,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
   }
   .custom-combobox-input {
     margin: 0;
-    padding: 5px 10px;
 	border: 0;
 
   }
@@ -1609,9 +1608,19 @@ box-shadow: none;
 <option value="SantaRosalía">SantaRosalía</option>
 
   </select>
-  <span style="margin-left:3%"> Rango de Precio:</span>
+ <span style="margin-left:3%"> Rango de Precio:</span>
   <select class="camposgenerales" 
   
+  style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
     
 	
 	name="rango_precios" id="rango_precios" onchange="change_rango_precios(this)">
@@ -1626,9 +1635,19 @@ box-shadow: none;
         <option value="350000-9999999999">Mayor a $350.000 </option>
   </select>
 
-  <span style="margin-left:3%"> Idioma</span>
+   <span style="margin-left:3%"> Idioma</span>
   <select class="camposgenerales" 
   
+  style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
     
 	
 	name="idioma" id="idioma" onchange="change_idioma(this)">
@@ -1665,8 +1684,19 @@ box-shadow: none;
 	</select>
 
   <span style="margin-left:3%"> Pais:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
+  style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+	
     
 	
 	name="pais" id="pais" onchange="change_pais(this)">
@@ -1921,8 +1951,18 @@ box-shadow: none;
 
 
   <span style="margin-left:3%"> Estado:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
+  style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
     
 	
 	name="cars" id="cars">
