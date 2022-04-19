@@ -351,18 +351,18 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 
 				</div>
 				<br>
-				<div class="input-group">
-					<input style="border-radius: 25px; margin-left:10px; margin-top:10px" type="text" class="chat">
+				<div class="input-group" >
+					<input style="border-radius: 25px; margin-left:10px; margin-top:25px" type="text" class="chat">
 					<span class="input-group-btn">
 						<button type="button">
-							<img src="img/enviarm.png" style="width:50%; margin-top:10px">
+							<img src="img/enviarm.png" style="width:50%; margin-top:25px">
 						</button>
 					</span>
 
 				</div>
 			</div>
-
-			<div>
+			<br>
+			<div style=" background-color: #fff;">
 				<div>
 					<br>
 					<div align="center" style=" height: 600px; width:100%; background-color: #fff;">
@@ -373,17 +373,14 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 						<div id="div2" style="float:left; width:30%;  ">
 							<img style="width:90%" src="img/cita.png">
 
-							<!--	<?php
-									include calendario . php;
-									?>
-				<iframe style="width:50%; height: 500px; border:none;" src="calendario.php"></iframe>
-				-->
+						
 						</div>
 						<div id="div3" style="float:left; width:30%; margin-right:5%;">
 							<img style="width:78%" src="img/resena.png">
-
-
 						</div>
+					</div>
+					<br>
+					<div align="center" style=" height: 600px; width:100%; background-color: #fff;">
 						<div align="center" style=" height: 600px; width:100%; background-color: #fff;">
 							<div id="div1" style="float:left; width:40%; margin-left:5%;">
 								<img style="width:90%" src="img/soy.png">

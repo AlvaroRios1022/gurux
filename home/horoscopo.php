@@ -218,18 +218,18 @@ box-shadow: none;
 						</div>
 					</form>
 							<div class="especialpsiquicos" >
-                            <a href=" "><li style="color: #333;" value="Acuario">Acuario</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Aries">Aries</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Cancer">Cáncer</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Capricornio">Capricornio</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Escorpion">Escorpión</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Géminis">Géminis</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Libra">Libra</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Leo">Leo</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Piscis">Piscis</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Sagitario">Sagitario</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Tauro">Tauro</li></a><br>
-                            <a href=" "><li style="color: #333;" value="Virgo">Virgo</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Acuario"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_1.png">Acuario</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Aries"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_2.png">Aries</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Cancer"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_3.png">Cáncer</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Capricornio"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_4.png">Capricornio</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Escorpion"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_5.png">Escorpión</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Géminis"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_6.png">Géminis</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Libra"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_7.png">Libra</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Leo"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_8.png">Leo</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Piscis"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_9.png">Piscis</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Sagitario"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_10.png">Sagitario</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Tauro"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_11.png">Tauro</li></a><br>
+                            <a href=" "><li style="color: #333;" value="Virgo"><img style="width:35px; height:35px; margin-right:25px;" src="img/horoscopo/signo_12.png">Virgo</li></a><br>
 							
                                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>
