@@ -408,10 +408,20 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 
 					<div>
 						<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+							<tr>
+								<td>
+									<li style="color: #333; list-style: none; " value="title">Especialistas En:</li>
+								</td>
+							</tr>
 							<tbody id="myTable" class="especialconstructores">
 								<tr>
 									<td><a href="#">
 											<li style="color: #333; " onclick="filtroTipo('Baños')" value="Baños">Baños</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Calentadores de Agua')" value="Calentadores de Agua">Calentadores de Agua</li>
 										</a></td>
 								</tr>
 								<tr>
@@ -451,6 +461,11 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 								</tr>
 								<tr>
 									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Decoración')" value="Decoración">Decoración</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
 											<li style="color: #333; " onclick="filtroTipo('Electricidad')" value="Electricidad">Electricidad</li>
 										</a></td>
 								</tr>
@@ -476,7 +491,32 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 								</tr>
 								<tr>
 									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ferretería')" value="Ferretería">Ferretería</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Herramientas')" value="Herramientas">Herramientas</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
 											<li style="color: #333; " onclick="filtroTipo('Herramientas Electricas')" value="Herramientas Electricas">Herramientas Electricas</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Iluminación')" value="Iluminación">Iluminación</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Impermeabilizantes')" value="Impermeabilizantes">Impermeabilizantes</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Jardín')" value="Jardín">Jardín</li>
 										</a></td>
 								</tr>
 								<tr>
@@ -486,7 +526,32 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 								</tr>
 								<tr>
 									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Limpieza')" value="Limpieza">Limpieza</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Encofrador')" value="Línea Blanca">Línea Blanca</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
 											<li style="color: #333; " onclick="filtroTipo('Maderas, Tableros y Herrajes')" value="Maderas, Tableros y Herrajes">Maderas, Tableros y Herrajes</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Materiales de Construcción')" value="Materiales de Construcción">Materiales de Construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Muebles de Patio')" value="Muebles de Patio">Muebles de Patio</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Organizadores')" value="Organizadores">Organizadores</li>
 										</a></td>
 								</tr>
 								<tr>
@@ -511,7 +576,12 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 								</tr>
 								<tr>
 									<td><a href="#">
-											<li style="color: #333; " onclick="filtroTipo('Puertas')" value="Puertas">Puertas</li>
+											<li style="color: #333; " onclick="filtroTipo('Puertas y Ventanas')" value="Puertas y Ventanas">Puertas y Ventanas</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Seguridad')" value="Seguridad">Seguridad</li>
 										</a></td>
 								</tr>
 								<tr>
@@ -524,6 +594,421 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 											<li style="color: #333; " onclick="filtroTipo('Tejas y Drywall')" value="Tejas y Drywall">Tejas y Drywall</li>
 										</a></td>
 								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ventilación')" value="Ventilación">Ventilación</li>
+										</a></td>
+								</tr>
+
+
+								<tr>
+									<td>
+										<li class="sinfondo" style="color: #333; " value="title">Profesional de Construcción:</li>
+									</td>
+								</tr>
+
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Albañil')" value="Albañil">Albañil</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Alicatador')" value="Alicatador">Alicatador</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Arquitecto')" value="Arquitecto">Arquitecto</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Arquitecto Bioclimático')" value="Arquitecto Bioclimático">Arquitecto Bioclimático</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Arquitecto paisajista')" value="Arquitecto paisajista">Arquitecto paisajista</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Arquitecto técnico')" value="Arquitecto técnico">Arquitecto técnico</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Asesor de energías domésticas')" value="Asesor de energías domésticas">Asesor de energías domésticas</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Asistente topografía')" value="Asistente topografía">Asistente topografía</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Auxiliar Técnico de Obra')" value="Auxiliar Técnico de Obra">Auxiliar Técnico de Obra</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Buzo')" value="Buzo">Buzo</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Capataz en Construcción de Edificios')" value="Capataz en Construcción de Edificios">Capataz en Construcción de Edificios</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Carpintero')" value="Carpintero">Carpintero</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Carretillero')" value="Carretillero">Carretillero</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Construcción Manager')" value="Construcción Manager">Construcción Manager</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Cristalero')" value="Cristalero">Cristalero</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Decorador')" value="Decorador">Decorador</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Delineante')" value="Delineante">Delineante</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Director de cantera')" value="Director de cantera">Director de cantera</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Director de Obra')" value="Director de Obra">Director de Obra</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Director de paisajismo')" value="Director de paisajismo">Director de paisajismo</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Encargado de la construcción')" value="Encargado de la construcción">Encargado de la construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Encargado de Obra')" value="Encargado de Obra">Encargado de Obra</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Encargado de servicios')" value="Encargado de servicios">Encargado de servicios</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Encofrador')" value="Encofrador">Encofrador</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Experto Eficiencia Energética')" value="Experto Eficiencia Energética">Experto Eficiencia Energética</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Experto en Simulación Energética de Edificios')" value="Experto en Simulación Energética de Edificios">Experto en Simulación Energética de Edificios</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ferrallista')" value="Ferrallista">Ferrallista</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Geólogo')" value="Geólogo">Geólogo</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Hidrogeólogo')" value="Hidrogeólogo">Hidrogeólogo</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ingeniero civil')" value="Ingeniero civil">Ingeniero civil</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ingeniero de la construcción')" value="Ingeniero de la construcción">Ingeniero de la construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ingeniero de plataformas petrolíferas marinas')" value="Ingeniero de plataformas petrolíferas marinas">Ingeniero de plataformas petrolíferas marinas</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ingeniero de transportes')" value="Ingeniero de transportes">Ingeniero de transportes</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ingeniero estructural')" value="Ingeniero estructural">Ingeniero estructural</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ingeniero geólogo')" value="Ingeniero geólogo">Ingeniero geólogo</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ingeniero Medioambiental')" value="Ingeniero Medioambiental">Ingeniero Medioambiental</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ingeniero de Petróleos')" value="Ingeniero de Petróleos">Ingeniero de Petróleos</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Ingeniero técnico de la construcción')" value="Ingeniero técnico de la construcción">Ingeniero técnico de la construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Inspector de obras')" value="Inspector de obras">Inspector de obras</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Instalador de aislante térmico e insonorización')" value="Instalador de aislante térmico e insonorización">Instalador de aislante térmico e insonorización</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Instalador de cercas')" value="Instalador de cercas">Instalador de cercas</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Instalador de cercas')" value="Instalador de cercas">Instalador de cercas</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Instalador de sistemas de calefacción y aire acondicionado')" value="Instalador de sistemas de calefacción y aire acondicionado">Instalador de sistemas de calefacción y aire acondicionado</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Instalador de ventanas')" value="Instalador de ventanas">Instalador de ventanas</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Instalador Electricista')" value="Instalador Electricista">Instalador Electricista</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Instalador y reparador en tecnologías TIC')" value="Instalador y reparador en tecnologías TIC">Instalador y reparador en tecnologías TIC</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Interprete de Planos en Construcción')" value="Interprete de Planos en Construcción">Interprete de Planos en Construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Mampostero')" value="Mampostero">Mampostero</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Mantenedor de edificios')" value="Mantenedor de edificios">Mantenedor de edificios</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Maquetista')" value="Maquetista">Maquetista</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Mecánico de maquinaria de construcción')" value="Mecánico de maquinaria de construcción">Mecánico de maquinaria de construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Montador de andamios')" value="Montador de andamios">Montador de andamios</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Montador de estructuras metálicas')" value="Montador de estructuras metálicas">Montador de estructuras metálicas</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Obrero especializado en la fabricación de herramientas')" value="Obrero especializado en la fabricación de herramientas">Obrero especializado en la fabricación de herramientas</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Operador de grúa')" value="Operador de grúa">Operador de grúa</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Operador de maquinaria de construcción')" value="Operador de maquinaria de construcción">Operador de maquinaria de construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Operador de máquinas para trabajar la madera')" value="Operador de máquinas para trabajar la madera">Operador de máquinas para trabajar la madera</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Operario de carretilla elevadora')" value="Operario de carretilla elevadora">Operario de carretilla elevadora</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Operario de derribos')" value="Operario de derribos">Operario de derribos</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Operario de un almacén de construcción')" value="Operario de un almacén de construcción">Operario de un almacén de construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Peón de la construcción')" value="Peón de la construcción">Peón de la construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Perito de la construcción')" value="Perito de la construcción">Perito de la construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Personal de apoyo urbanístico')" value="Personal de apoyo urbanístico">Personal de apoyo urbanístico</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Proveedor de materiales de construcción')" value="Proveedor de materiales de construcción">Proveedor de materiales de construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Pulidor de muebles')" value="Pulidor de muebles">Pulidor de muebles</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Revocador de Construcción')" value="Revocador de Construcción">Revocador de Construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Soldador / Calderero')" value="Soldador / Calderero">Soldador / Calderero</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Techador')" value="Techador">Techador</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Técnico de aislamiento de paredes')" value="Técnico de aislamiento de paredes">Técnico de aislamiento de paredes</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Técnico de impermeabilización')" value="Técnico de impermeabilización">Técnico de impermeabilización</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Técnico de ingeniería civil o estructural')" value="Técnico de ingeniería civil o estructural">Técnico de ingeniería civil o estructural</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Técnico de la construcción')" value="Técnico de la construcción">Técnico de la construcción</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Técnico de planchado')" value="Técnico de planchado">Técnico de planchado</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Técnico de recubrimiento de superficies')" value="Técnico de recubrimiento de superficies">Técnico de recubrimiento de superficies</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Técnico en Diseño de Edificaciones')" value="Técnico en Diseño de Edificaciones">Técnico en Diseño de Edificaciones</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Técnico geólogo')" value="Técnico geólogo">Técnico geólogo </li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Técnico topógrafo')" value="Técnico topógrafo">Técnico topógrafo</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Trabajador de carreteras')" value="Trabajador de carreteras">Trabajador de carreteras</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Urbanista')" value="Urbanista">Urbanista</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">
+											<li style="color: #333; " onclick="filtroTipo('Yesero')" value="Yesero">Yesero</li>
+										</a></td>
+								</tr>
+
+
 
 							</tbody>
 						</table>
@@ -576,6 +1061,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
     border-bottom-left-radius: 3px;" name="profesional" id="profesional" onchange="SeleccionaProfesional(this)">
 				<option value="">-----</option>
 				<option value="Baños">Baños</option>
+				<option value="Calentadores de Agua">Calentadores de Agua</option>
 				<option value="Casa inteligente y Seguridad">Casa inteligente y Seguridad</option>
 				<option value="Cerraduras y Herrajes">Cerraduras y Herrajes</option>
 				<option value="Climatizacion">Climatizacion</option>
@@ -583,21 +1069,122 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 				<option value="Complementos de Baños">Complementos de Baños</option>
 				<option value="Construccion y Ferreteria">Construccion y Ferreteria</option>
 				<option value="Cortinas y Persianas">Cortinas y Persianas</option>
+				<option value="Decoración">Decoración</option>
 				<option value="Electricidad">Electricidad</option>
 				<option value="Electrodomésticos de Cocina">Electrodomésticos de Cocina</option>
 				<option value="Electrodomésticos del Hogar">Electrodomésticos del Hogar</option>
 				<option value="Escaleras y Mudanzas">Escaleras y Mudanzas</option>
 				<option value="Estufas, Hornos & Campanas">Estufas, Hornos & Campanas</option>
+				<option value="Ferretería">Ferretería</option>
+				<option value="Herramientas">Herramientas</option>
 				<option value="Herramientas Electricas">Herramientas Electricas</option>
+				<option value="Iluminación">Iluminación</option>
+				<option value="Impermeabilizantes">Impermeabilizantes</option>
+				<option value="Jardín">Jardín</option>
 				<option value="Lavandería y Lavadero">Lavandería y Lavadero</option>
+				<option value="Limpieza">Limpieza</option>
+				<option value="Línea Blanca">Línea Blanca</option>
 				<option value="Maderas, Tableros y Herrajes">Maderas, Tableros y Herrajes</option>
+				<option value="Materiales de Construcción">Materiales de Construcción</option>
+				<option value="Muebles de Patio">Muebles de Patio</option>
+				<option value="Organizadores">Organizadores</option>
 				<option value="Pinturas">Pinturas</option>
 				<option value="Pisos y Paredes">Pisos y Paredes</option>
 				<option value="Pisos y Pinturas para tus Espacios">Pisos y Pinturas para tus Espacios</option>
 				<option value="Plomería">Plomería</option>
-				<option value="Puertas">Puertas</option>
+				<option value="Puertas y Ventanas">Puertas y Ventanas</option>
+				<option value="Seguridad">Seguridad</option>
 				<option value="Tecnologia y Television">Tecnologia y Television</option>
 				<option value="Tejas y Drywall">Tejas y Drywall</option>
+				<option value="Ventilación">Ventilación</option>
+
+				<tr>
+					<td>
+						<li class="sinfondo" style="color: #333; " value="title">Profesional de Construcción:</li>
+					</td>
+				</tr>
+
+				<option value="Albañil">Albañil</option>
+				<option value="Alicatador">Alicatador</option>
+				<option value="Arquitecto">Arquitecto</option>
+				<option value="Arquitecto Bioclimático">Arquitecto Bioclimático</option>
+				<option value="Arquitecto paisajista">Arquitecto paisajista</option>
+				<option value="Arquitecto técnico">Arquitecto técnico</option>
+				<option value="Asesor de energías domésticas">Asesor de energías domésticas</option>
+				<option value="Asistente topografía">Asistente topografía</option>
+				<option value="Auxiliar Técnico de Obra">Auxiliar Técnico de Obra</option>
+				<option value="Buzo">Buzo</option>
+				<option value="Capataz en Construcción de Edificios">Capataz en Construcción de Edificios</option>
+				<option value="Carpintero">Carpintero</option>
+				<option value="Carretillero">Carretillero</option>
+				<option value="Construcción Manager">Construcción Manager</option>
+				<option value="Cristalero">Cristalero</option>
+				<option value="Decorador">Decorador</option>
+				<option value="Delineante">Delineante</option>
+				<option value="Director de cantera">Director de cantera</option>
+				<option value="Director de Obra">Director de Obra</option>
+				<option value="Director de paisajismo">Director de paisajismo</option>
+				<option value="Encargado de la construcción">Encargado de la construcción</option>
+				<option value="Encargado de Obra">Encargado de Obra</option>
+				<option value="Encargado de servicios">Encargado de servicios</option>
+				<option value="Encofrador">Encofrador</option>
+				<option value="Experto Eficiencia Energética">Experto Eficiencia Energética</option>
+				<option value="Experto en Simulación Energética de Edificios">Experto en Simulación Energética de Edificios</option>
+				<option value="Ferrallista">Ferrallista</option>
+				<option value="Geólogo">Geólogo</option>
+				<option value="Hidrogeólogo">Hidrogeólogo</option>
+				<option value="Ingeniero civil">Ingeniero civil</option>
+				<option value="Ingeniero de la construcción">Ingeniero de la construcción</option>
+				<option value="Ingeniero de plataformas petrolíferas marinas">Ingeniero de plataformas petrolíferas marinas</option>
+				<option value="Ingeniero de transportes">Ingeniero de transportes</option>
+				<option value="Ingeniero estructural">Ingeniero estructural</option>
+				<option value="Ingeniero geólogo">Ingeniero geólogo</option>
+				<option value="Ingeniero Medioambiental">Ingeniero Medioambiental</option>
+				<option value="Ingeniero de Petróleos">Ingeniero de Petróleos</option>
+				<option value="Ingeniero técnico de la construcción">Ingeniero técnico de la construcción</option>
+				<option value="Inspector de obras">Inspector de obras</option>
+				<option value="Instalador de aislante térmico e insonorización">Instalador de aislante térmico e insonorización</option>
+				<option value="Instalador de cercas">Instalador de cercas</option>
+				<option value="Instalador de cercas">Instalador de cercas</option>
+				<option value="Instalador de sistemas de calefacción y aire acondicionado">Instalador de sistemas de calefacción y aire acondicionado</option>
+				<option value="Instalador de ventanas">Instalador de ventanas</option>
+				<option value="Instalador Electricista">Instalador Electricista</option>
+				<option value="Instalador y reparador en tecnologías TIC">Instalador y reparador en tecnologías TIC</option>
+				<option value="Interprete de Planos en Construcción">Interprete de Planos en Construcción</option>
+				<option value="Mampostero">Mampostero</option>
+				<option value="Mantenedor de edificios">Mantenedor de edificios</option>
+				<option value="Maquetista">Maquetista</option>
+				<option value="Mecánico de maquinaria de construcción">Mecánico de maquinaria de construcción</option>
+				<option value="Montador de andamios">Montador de andamios</option>
+				<option value="Montador de estructuras metálicas">Montador de estructuras metálicas</option>
+				<option value="Obrero especializado en la fabricación de herramientas">Obrero especializado en la fabricación de herramientas</option>
+				<option value="Operador de grúa">Operador de grúa</option>
+				<option value="Operador de maquinaria de construcción">Operador de maquinaria de construcción</option>
+				<option Operador de máquinas para trabajar la madera')" value="Operador de máquinas para trabajar la madera">Operador de máquinas para trabajar la madera</option>
+				<option value="Operario de carretilla elevadora">Operario de carretilla elevadora</option>
+				<option value="Operario de derribos">Operario de derribos</option>
+				<option value="Operario de un almacén de construcción">Operario de un almacén de construcción</option>
+				<option value="Peón de la construcción">Peón de la construcción</option>
+				<option value="Perito de la construcción">Perito de la construcción</option>
+				<option value="Personal de apoyo urbanístico">Personal de apoyo urbanístico</option>
+				<option value="Proveedor de materiales de construcción">Proveedor de materiales de construcción</option>
+				<option value="Pulidor de muebles">Pulidor de muebles</option>
+				<option value="Revocador de Construcción">Revocador de Construcción</option>
+				<option value="Soldador / Calderero">Soldador / Calderero</option>
+				<option value="Techador">Techador</option>
+				<option value="Técnico de aislamiento de paredes">Técnico de aislamiento de paredes</option>
+				<option value="Técnico de impermeabilización">Técnico de impermeabilización</option>
+				<option value="Técnico de ingeniería civil o estructural">Técnico de ingeniería civil o estructural</option>
+				<option value="Técnico de la construcción">Técnico de la construcción</option>
+				<option value="Técnico de planchado">Técnico de planchado</option>
+				<option value="Técnico de recubrimiento de superficies">Técnico de recubrimiento de superficies</option>
+				<option value="Técnico en Diseño de Edificaciones">Técnico en Diseño de Edificaciones</option>
+				<option value="Técnico geólogo">Técnico geólogo </option>
+				<option value="Técnico topógrafo">Técnico topógrafo</option>
+				<option value="Trabajador de carreteras">Trabajador de carreteras</option>
+				<option value="Urbanista">Urbanista</option>
+				<option value="Yesero">Yesero</option>
+
 			</select>
 			<span style="margin-left:3%"> Rango de Precio:</span>
 			<input type="hidden" id="filtro" value="construccion">
