@@ -214,9 +214,9 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
         <h3 style="color:#452167">SELECCIONA EL METODO CON EL QUE QUIERES PAGAR</h3>
         <br>
         <br>
-        <img style="width:20%" src="img/servicios/paypal.png">
-        <img style="width:20%" src="img/servicios/paypal.png">
-        <img style="width:20%" src="img/servicios/paypal.png">
+        <img style="width:15%; " src="img/servicios/paypal.png">
+        <img style="width:15%; margin-left:3%" src="img/servicios/cobru.png">
+        <img style="width:15%; margin-left:3%" src="img/servicios/pse.png">
     </div>
     <footer>
         <div class="container" style="margin-left:20%">

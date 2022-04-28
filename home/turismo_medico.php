@@ -246,46 +246,59 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 						<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
 
 							<tbody id="myTable" class="especial">
-								<tr>
-									<td>
-										<a href="cuidados_medicos_adultos.php">
-											<li style="color: #333; " value="Alergólogo">Cuidado de Adultos</li>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td><a href="cuidados_medicos_enfermeras.php ">
-											<li style="color: #333; " value="Angiólogo">Enfermeras</li>
+							<tr>
+									<td><a href=" ">
+											<li style="color: #333; " value="Angiólogo">Cirugías Bariátricos</li>
 										</a></td>
 								</tr>
 								<tr>
-									<td><a href="cuidados_medicos_equipos.php">
-											<li style="color: #333; " value="Cardiólogo">Equipos médicos</li>
+									<td><a href="">
+											<li style="color: #333; " value="Cardiólogo">Cirugías Cardiovasculares</li>
 										</a></td>
 								</tr>
 								<tr>
-									<td><a href="cuidados_medicos_examenes.php ">
-											<li style="color: #333; " value="Deportólogo">Exámenes</li>
+									<td><a href="">
+											<li style="color: #333; " value="Cardiólogo">Cirugías Ortopédicas</li>
 										</a></td>
 								</tr>
 								<tr>
-									<td><a href="cuidados_medicos_fisioterapia.php ">
-											<li style="color: #333; " value="Dermatólogo">Fisioterapia</li>
+									<td><a href="turismo_cirugia_plastica.php ">
+											<li style="color: #333; " value="Deportólogo">Cirujanos Plásticos</li>
 										</a></td>
 								</tr>
 								<tr>
-									<td><a href="cuidados_medicos_medicos.php ">
-											<li style="color: #333; " value="Endocrinólogo">Médicos</li>
+									<td><a href="turismo_dermatologia.php">
+											<li style="color: #333; " value="Dermatólogo">Dermatología</li>
 										</a></td>
 								</tr>
 								<tr>
-									<td><a href="cuidados_medicos_rehabilitacion.php ">
-											<li style="color: #333; " value="Enfermero">Rehabilitación</li>
+									<td><a href="">
+											<li style="color: #333; " value="Endocrinólogo">Ginecología</li>
 										</a></td>
 								</tr>
 								<tr>
-									<td><a href="cuidados_medicos_vacunacion.php ">
-											<li style="color: #333; " value="Epidemiólogo">Vacunación</li>
+									<td><a href="turismo_odontologia.php">
+											<li style="color: #333; " value="Enfermero">Odontología</li>
+										</a></td>
+								</tr>	
+								<tr>
+									<td><a href="">
+											<li style="color: #333; " value="Epidemiólogo">Oftalmología</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="">
+											<li style="color: #333; " value="Epidemiólogo">Oncología</li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="">
+											<li style="color: #333; " value="Epidemiólogo">Otorrinolaringología </li>
+										</a></td>
+								</tr>
+								<tr>
+									<td><a href="">
+											<li style="color: #333; " value="Epidemiólogo">Urología</li>
 										</a></td>
 								</tr>
 							</tbody>
@@ -322,25 +335,337 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	?>
 
 
-	<div align="center" style="background-color:#D6F0FC;">
+	<div align="center" style="background-color:#fff;">
 		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
-		
-	</div>
-
-	<div class="slideshow-container2" style="margin-left:16%">
-		<div class="mySlides fade">
-			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_inicio2.jpg" style="width:100%"></a>
-		</div>
-		<div class="mySlides fade">
-			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_medicos2.jpg" style="width:100%"></a>
-		</div>
-		<div class="mySlides fade">
-			<a href="https://guruxy.com/home/usuarios.php"><img src="banners/banner_medicos3.jpg" style="width:100%"></a>
-		</div>
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 	</div>
+
+
+
+	<div style=" margin-left:13%;  background-color:#fff;" align="center">
+		<div>
+			<br>
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_3.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Pierde peso</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">
+					Con base en la evaluación, el fisioterapeuta principal sugerirá un
+					plan de cuidados de fisioterapia (físico o virtual) adaptado a tus
+					necesidades, y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="turismo_cirugia_plastica.php">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top; ">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_1.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Cirugías de alto impacto</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">
+					Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="turismo_cirugia_plastica.php">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_2.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Sistema óseo</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">
+					Con base en la evaluación, el fisioterapeuta principal sugerirá un
+					plan de cuidados de fisioterapia (físico o virtual) adaptado a tus
+					necesidades, y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="turismo_cirugia_plastica.php">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+			
+		</div>
+		<br>
+		<div>
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href="turismo_cirugia_plastica.php"><img style="width:100%" src=" img/turismo/turismo_4.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Lo mejor de la cirugía plástica</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">
+					Se manejan protocolos quirúrgicos de seguridad muy serios y técnicas
+					avanzadas, generando un factor diferencial y de confianza por parte de
+					nuestros pacientes.
+
+
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="turismo_cirugia_plastica.php">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href="turismo_dermatologia.php"><img style="width:100%" src=" img/turismo/turismo_5.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">El cuidado de tu piel</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="turismo_dermatologia.php">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_6.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Tu salud reproductiva</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+		</div>
+		<br>
+		<div>
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href="turismo_odontologia.php"><img style="width:100%" src=" img/turismo/turismo_7.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Cuida tu salud oral</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="turismo_odontologia.php">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_8.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Salud para tus ojos</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_9.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Detección temprana del cáncer</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+		</div>
+		<br>
+		<div>
+
+		<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_11.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Artículo</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_10.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Enfermedades más comunes</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_12.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Artículo</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+		</div>
+		<br>
+		<div style=" height:30px; background-color:#4eb4d5;" align="center">
+			<p style="color:#fff; margin-left:6%; text-align: left; ">
+				ARTÍCULOS MÁS POPULARES
+			</p>
+		</div>
+		<br>
+		<div>
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_7.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Cuida tu salud oral</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_8.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Salud para tus ojos</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_9.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Detección temprana del cáncer</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="x">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+		</div>
+		<br>
+		<div style=" height:30px; background-color:#178ca1;" align="center">
+			<p style="color:#fff; margin-left:6%; text-align: left; ">
+				ARTÍCULOS MÁS RECIENTES
+			</p>
+		</div>
+		<br>
+		<div>
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_7.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Cuida tu salud oral</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_8.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Salud para tus ojos</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+
+			<div class="caja_inline" style="width:25%; margin-left:5%;vertical-align: top">
+				<a href=""><img style="width:100%" src=" img/turismo/turismo_9.jpg"></a>
+				<h5 style="color:#2786a0; text-align: left;">Detección temprana del cáncer</h5>
+				<p style="color:#6b6b6b; font-size:13px; text-align: justify; ">Con base en la evaluación, el fisioterapeuta principal sugerirá un plan
+					de cuidados de fisioterapia (físico o virtual) adaptado a tus necesidades,
+					y también te asignará un fisioterapeuta.
+				</p>
+				<p style=" font-size: 12px; color:#2786a0; text-align: right;">
+					<a href="">
+
+						Leer más ->
+					</a>
+
+				</p>
+			</div>
+		</div>
+		<br>
+	</div>
+
 
 	<!-- Gurus -->
 
@@ -348,125 +673,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 
 
 		<!--Product Grid-->
-		<div>
-			<br>
-			<!--
-			<div align="right">
-				<img  src="img/agenda.png" alt="kalita" style=" width:25%; margin-right:25px"  >
-			</div> -->
-			<section class="section-grid">
-				<div class="grid-med">
-					<div style="width: 45%;">
-						<h2 class="preguntas" style="margin-left:-10px">Cuidados en Casa</h2>
-					</div>
-					<div class="bloquepreguntas_int">
-						<br>
-						<p style="font-size:14px; text-align: justify;">
-							<a style="color: #452167;">La atención domiciliaria como concepto está ganando terreno en Colombia. </a>
-							Algunas estimaciones señalan que nuestra población total proyectada para Colombia
-							en el año 2022 es de 50.834.240, de ellos 9.970.956 (19%) tiene más de 59 años, 5.370.613
-							(55%) son mujeres, y 4.620.345 (45%) hombres, el 50% de la población mayor a 60 años se
-							encuentra entre los 60 y 66 años de edad.
-							<br><br>
-							<a> En Colombia, la atención en casa se encuentra en una etapa muy incipiente en
-								comparación con otros países occidentales y latinoamericanos. El 80% de la atención
-								médica no urgente que se brinda actualmente en los hospitales se puede brindar en el
-								hogar, algunas de las cuales son:
-							</a>
-						</p>
-						<br><br>
-						<li style="text-align: justify;"><a style="color: #452167;">Continuidad de la atención: </a> la necesidad de una atención postoperatoria y primaria de mejor calidad más allá de los hospitales para mejorar los resultados a largo plazo después del procedimiento. Enfermedades no transmisibles que son de naturaleza crónica, que requieren un seguimiento a largo plazo e intervenciones periódicas para mantenerlas encaminadas.
-							<br><br>
-						<li style="text-align: justify;"><a style="color: #452167;">Estructura familiar: </a> Con el creciente número de familias nucleares, con una mayor migración urbana e incluso internacional, los ancianos se quedan sin cuidadores.
-							<br><br>
-						<li style="text-align: justify;"><a style="color: #452167;">Calidad de vida: </a> las personas ahora miran no solo la longevidad, sino también la calidad de vida. Aparte de los procedimientos médicos complejos, si estos no mejoran significativamente, la calidad de vida seguirá siendo una actitud pequeña entre la élite. En lugar de buscar una intervención médica agresiva, muchos optan por el manejo de los síntomas en casa.
-							<br><br>
-						<li style="text-align: justify;"><a style="color: #452167;">Mentalidad: </a> Una mentalidad cambiante del consumidor ahora tiende a comparar la atención médica con otros servicios, con acceso a la atención médica en el lugar y el momento que más le convenga.
-							<br><br>
-							La asistencia domiciliaria o la asistencia sanitaria a domicilio es, por tanto, una solución que se adapta cada vez mejor a los tiempos en que vivimos.
 
-							Actualmente, la atención a las personas mayores, la fisioterapia, la rehabilitación y el manejo de la diabetes son cuatro servicios que presencian la máxima demanda en el segmento de la atención domiciliaria. De cara al futuro, prevemos una creciente demanda de diálisis, quimioterapia, cuidado de niños con necesidades especiales y cuidados paliativos.
-							</p>
-							<br><br>
-					</div>
-				</div>
-
-
-				<div align="left" style="margin-right: 40px; ">
-
-					<div class="menuright" align="center">
-
-						<form action="" method="post" id="form_login">
-							<div>
-								<h4 style=" color: #FEC705; ">&nbsp; </h4>
-								<h4 style=" color: #FEC705;  "><strong>Iniciar Sesión</strong></h4>
-								<P style="font-size: 14px; color: #ffffff; margin:0 20%">Para chatear con nuestros Gurús inicia sesión con tu usuario y contraseña</P>
-								<br>
-							</div>
-							<div>
-								<div class="form-group">
-									<input type="hidden" value="login" name="tipo">
-									<input type="hidden" value="1" name="tipo_user">
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
-								</div>
-								<br>
-								<div class="form-group">
-									<div class="clearfix">
-									</div>
-									<input type="password" name="password" class="imputright" required="required" placeholder="Contraseña">
-								</div>
-
-							</div>
-							<div>
-								<a href="recuperar_pass.php" style="text-decoration:none;">
-									<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
-								</a>
-								<a href="usuarios.php" style="text-decoration:none;">
-									<h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4>
-								</a>
-								<br>
-							</div>
-							<input href="usuarios.php" type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 ">
-						</form>
-					</div>
-					<div class="menuright3" align="center" style="margin-top: 20px">
-						<form action="" method="post">
-							<div>
-								<h4 style=" color: #FEC705; ">&nbsp; </h4>
-								<h4 style=" color: #FEC705; ">Eres Gúru?</h4>
-								<P style="font-size: 18px; color: #ffffff">Ingresa a tu perfil</P>
-							</div>
-							<div>
-								<div class="form-group">
-									<input name="usuario" type="text" class="imputright" required="required" placeholder="Usuario - Celular">
-								</div><br>
-								<div class="form-group">
-									<div class="clearfix">
-									</div>
-									<input type="password" name="password" class="imputright" required="required" placeholder="Contraseña">
-								</div>
-							</div>
-							<div>
-								<a href="recuperar_pass.php" style="text-decoration:none;">
-									<p style=" color: #FEC705; font-size:12px  ">Olvidé mi usuario / contraseña</p>
-								</a>
-								<a href="https://www.guruxy.com" style="text-decoration:none;">
-									<h4 style=" color: #ffffff; text-decoration:none; ">Registrarme ¡GRATIS!</h4>
-								</a>
-
-								<br>
-
-							</div>
-							<input type="submit" name="entrar" value="Iniciar Sesión" class=" botonright" style="font-weight:800 ">
-						</form>
-					</div>
-				</div>
-
-			</section>
-
-			<br><br>
-		</div>
-	</div>
 	</div>
 	<div class="footer2" align="center">
 		<div class="container2">

@@ -548,8 +548,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			</select>
 			<span style="margin-left:3%"> Ciudad:</span>
 			<select style="width: 50px;" name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">
-				<option value=" ">
-				<option>
+				<option value=""></option>
 				<option value="Amazonas"></option>
 				<option value="Leticia">Leticia</option>
 				<option value="PuertoNariño">PuertoNariño</option>

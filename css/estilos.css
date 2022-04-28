@@ -1528,6 +1528,30 @@ img {
     }
 }
 
+.fade2 {
+    -webkit-animation-name: fade2;
+    -webkit-animation-duration: 2000000s;
+    animation-name: fade2;
+    animation-duration: 2000000s;
+}
+
+@-webkit-keyframes fade2 {
+    from {
+        opacity: 100
+    }
+    to {
+        opacity: 100
+    }
+}
+
+@keyframes fade2 {
+    from {
+        opacity: 100
+    }
+    to {
+        opacity: 100
+    }
+}
 
 /* On smaller screens, decrease text size */
 
