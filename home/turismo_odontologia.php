@@ -394,7 +394,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 								</tr>
 								<tr>
 									<td><a href="turismo_cirugia_plastica.php ">
-											<li style="color: #333; " value="Deportólogo">Cirujanos Plásticos</li>
+											<li style="color: #333; " value="Deportólogo">Cirugías Plásticas</li>
 										</a></td>
 								</tr>
 								<tr>
@@ -470,120 +470,12 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
 
 	</div>
-
-
-	<div style=" margin-left:15%; background-color:#fff;">
-		<img src="img/convenios/odontologia/contactenos.png" width="100%" alt="" />
-	</div>
-	<div style=" margin-left:15%; background-color:#fff;">
-		<img id="menup" src="img/convenios/odontologia/menu_principal.png" width="100%" usemap="#menu" alt="" />
-		<map name="menu" style=" width:100%">
-			<area title="Home" href="https://mauricioduran.com/" shape="rect" coords="902,91,1007,141" style="outline:none;" target="_self" />
-			<area title="Nosotros" href="https://mauricioduran.com/nosotros/" shape="rect" coords="1028,92,1202,142" />
-			<area title="Servicios" href="https://mauricioduran.com/servicios/" shape="rect" coords="1225,92,1389,142" />
-			<area title="Promociones" href="https://mauricioduran.com/category/promociones/" shape="rect" coords="1414,91,1556,141" />
-			<area title="Salud" href="https://mauricioduran.com/category/salud-oral/" shape="rect" coords="1574,92,1688,142" />
-			<area title="Blog" href="https://mauricioduran.com/category/blog/" shape="rect" coords="1711,91,1797,141" />
-			<area title="Contactenos" href="https://mauricioduran.com/contactenos/" shape="rect" coords="1823,93,2050,143" />
-			<area title="Cita" href="https://mauricioduran.com/solicitar-cita-gratis/" shape="rect" coords="2098,68,2379,168" />
-		</map>
-
-	</div>
-	<div class="slideshow-container2" style="margin-left:17%">
-		<div class="mySlides fade">
-			<a href=""><img src="img/convenios/odontologia/slider1.jpg" style="width:100%"></a>
-		</div>
-		<div class="mySlides fade">
-			<a href=""><img src="img/convenios/odontologia/slider2.jpg" style="width:100%"></a>
-		</div>
-		<div class="mySlides fade">
-			<a href=""><img src="img/convenios/odontologia/slider3.jpg" style="width:100%"></a>
-		</div>
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-	</div>
-	
 	<div style="margin-left:17%">
-		<img style="width:100%;" src=" img/convenios/odontologia/aliados.png">
-	</div>
-
-	<div class="caja_inline">
-		<div class="slide">
-			<div class="slide-inner">
-				<input class="slide-open" type="radio" id="slide-1" 
-			 	     name="slide" aria-hidden="true" hidden="" checked="checked">
-				<div class="slide-item">
-					<img src="https://www.migueltroyano.com/wp-content/uploads/2020/10/embeddingApi_7.jpg">
-				</div>
-				<input class="slide-open" type="radio" id="slide-2" 
-			 	     name="slide" aria-hidden="true" hidden="">
-				<div class="slide-item">
-					<img src="https://www.migueltroyano.com/wp-content/uploads/2020/09/postgres_copy.png">
-				</div>
-				<input class="slide-open" type="radio" id="slide-3" 
-			 	     name="slide" aria-hidden="true" hidden="">
-				<div class="slide-item">
-					<img src="https://www.migueltroyano.com/wp-content/uploads/2020/09/excel_guardar_como_csv.jpg">
-				</div>
-				<label for="slide-3" class="slide-control prev control-1">‹</label>
-				<label for="slide-2" class="slide-control next control-1">›</label>
-				<label for="slide-1" class="slide-control prev control-2">‹</label>
-				<label for="slide-3" class="slide-control next control-2">›</label>
-				<label for="slide-2" class="slide-control prev control-3">‹</label>
-				<label for="slide-1" class="slide-control next control-3">›</label>
-				<ol class="slide-indicador">
-					<li>
-						<label for="slide-1" class="slide-circulo">•</label>
-					</li>
-					<li>
-						<label for="slide-2" class="slide-circulo">•</label>
-					</li>
-					<li>
-						<label for="slide-3" class="slide-circulo">•</label>
-					</li>
-				</ol>
-			</div>
+	<iframe src="https://www.mauricioduran.com/" width="100%" height="2200px" allow="fullscreen"></iframe>
+	
 		</div>
 
-		<div class="slide">
-			<div class="slide-inner">
-				<input class="slide-open" type="radio" id="slide-1" 
-			 	     name="slide" aria-hidden="true" hidden="" checked="checked">
-				<div class="slide-item">
-					<img src="https://www.migueltroyano.com/wp-content/uploads/2020/10/embeddingApi_7.jpg">
-				</div>
-				<input class="slide-open" type="radio" id="slide-2" 
-			 	     name="slide" aria-hidden="true" hidden="">
-				<div class="slide-item">
-					<img src="https://www.migueltroyano.com/wp-content/uploads/2020/09/postgres_copy.png">
-				</div>
-				<input class="slide-open" type="radio" id="slide-3" 
-			 	     name="slide" aria-hidden="true" hidden="">
-				<div class="slide-item">
-					<img src="https://www.migueltroyano.com/wp-content/uploads/2020/09/excel_guardar_como_csv.jpg">
-				</div>
-				<label for="slide-3" class="slide-control prev control-1">‹</label>
-				<label for="slide-2" class="slide-control next control-1">›</label>
-				<label for="slide-1" class="slide-control prev control-2">‹</label>
-				<label for="slide-3" class="slide-control next control-2">›</label>
-				<label for="slide-2" class="slide-control prev control-3">‹</label>
-				<label for="slide-1" class="slide-control next control-3">›</label>
-				<ol class="slide-indicador">
-					<li>
-						<label for="slide-1" class="slide-circulo">•</label>
-					</li>
-					<li>
-						<label for="slide-2" class="slide-circulo">•</label>
-					</li>
-					<li>
-						<label for="slide-3" class="slide-circulo">•</label>
-					</li>
-				</ol>
-			</div>
-		</div>
 
-	</div>
 	<!-- Gurus -->
 
 	<div class="fondomedio">

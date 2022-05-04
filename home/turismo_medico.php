@@ -263,7 +263,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 								</tr>
 								<tr>
 									<td><a href="turismo_cirugia_plastica.php ">
-											<li style="color: #333; " value="Deportólogo">Cirujanos Plásticos</li>
+											<li style="color: #333; " value="Deportólogo">Cirugías Plásticas</li>
 										</a></td>
 								</tr>
 								<tr>

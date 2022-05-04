@@ -349,7 +349,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 
 
 
-	<iframe src="https://dermosaludcolombia.com/l" width="100%" height="2200px" allow="fullscreen"></iframe>
+	<iframe src="https://staging.pasalapagina.com/guruxy.controller/check-access.html" width="100%" height="2200px" allow="fullscreen"></iframe>
 	<!-- Gurus --> 
 
 	<div class="fondomedio">

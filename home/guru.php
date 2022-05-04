@@ -305,7 +305,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 				<div class="flex-item-left">
 					<img src="img/foto2.png" style="width:100%; margin-top:-1px"><br>
 					<a style="color:#452167; "> Valor Consulta:</a><a style=" margin-right:10%"> Variable Valor</a>
-					<a href="metodos.php"><img src="img/comenzar.png" style="width:25%; margin-top:4px;"></a>
+					<a href="pasarela.php"><img src="img/comenzar.png" style="width:25%; margin-top:4px;"></a>
 					<?php
 					if (!(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE)) {
 					?>

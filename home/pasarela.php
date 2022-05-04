@@ -215,7 +215,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
         <br>
         <br>
         <img style="width:15%; " src="img/servicios/paypal.png">
-        <img style="width:15%; margin-left:3%" src="img/servicios/cobru.png">
+        <img style="width:15%; margin-left:3%" src="img/servicios/cobru2.png">
         <img style="width:15%; margin-left:3%" src="img/servicios/pse.png">
     </div>
     <footer>

@@ -271,7 +271,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 								</tr>
 								<tr>
 									<td><a href="turismo_cirugia_plastica.php ">
-											<li style="color: #333; " value="Deportólogo">Cirujanos Plásticos</li>
+											<li style="color: #333; " value="Deportólogo">Cirugías Plásticas</li>
 										</a></td>
 								</tr>
 								<tr>
@@ -351,7 +351,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 
 
 	<div style=" margin-left:15%;  background-color:#fff;">
-	<iframe src="https://www.rolandoarias.com/embed" width="900" height="700" allow="fullscreen"  sandbox></iframe>
+	<iframe src="https://www.rolandoarias.com/" width="100%" height="2200px" allow="fullscreen" ></iframe>
 
 	</div>
 
