@@ -13,7 +13,7 @@
     display: flex;
 }
 
-.flex-containera>div {
+.flex-containera {
     background-color: #F7F8F8;
     margin: 10px;
     padding: 20px;
@@ -950,7 +950,6 @@ a:current {
 /*Footer*/
 
 footer {
-    margin-left: 17%;
     background-color: #452167;
     padding-top: 20px;
     padding-bottom: 0px;

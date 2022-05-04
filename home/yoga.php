@@ -242,29 +242,25 @@ box-shadow: none;
   <span style="margin-left:20%"> Ciudad:</span>
   <select class="camposgenerales"
   
-  	style=" border: none;
-    background-color: #0000;
-    font-size: 15px;
-	width: 100px;
-    text-decoration: none;
-    margin-bottom: auto;
-	text-align: center" 
-	name="cars" id="cars">        
+  	name="cars" id="cars">        
 	<option value="">-----</option>       
 
   </select>
 
-  <span style="margin-left:3%"> Rango de Precio:</span>
+ <span style="margin-left:3%"> Rango de Precio:</span>
   <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
-	
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+  
 	name="cars" id="cars">
 	<option value="">-----</option>       
         <option value="1">$0 - $50.000</option>
@@ -277,33 +273,40 @@ box-shadow: none;
         <option value="8">Mayor a $350.000 </option>
   </select>
 
-  <span style="margin-left:3%"> Idioma</span>
+   <span style="margin-left:3%"> Idioma</span>
   <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
-	
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+  
 	name="cars" id="cars">
         <option value="">-----</option>
 	
 	</select>
 
   <span style="margin-left:3%"> Pais:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
 	
+  
 	name="cars" id="cars">
 
         <option value="">-----</option>       
@@ -312,16 +315,19 @@ box-shadow: none;
 
 
   <span style="margin-left:3%"> Estado:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
-	
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+  
 	name="cars" id="cars">
 	<option value="">-----</option>       
 	<option value="">En Linea</option>       

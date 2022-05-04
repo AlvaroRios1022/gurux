@@ -13,9 +13,9 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/filtros_generales.css" rel="stylesheet" type="text/css" />
 
 	<link href="css/estilos.css" rel="stylesheet" type="text/css" />
-	<link href="css/filtros_generales.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
@@ -23,7 +23,8 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
 	<link rel="stylesheet" href="/resources/demos/style.css">
-	 
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
+	
 	<script src="js/jquery-2.1.0.min.js"></script>
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	
@@ -45,7 +46,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
   }
   .custom-combobox-input {
     margin: 0;
-    padding: 5px 10px;
 	border: 0;
 
   }
@@ -143,7 +143,7 @@ box-shadow: none;
 
 				$( "<a>" )
 					.attr( "tabIndex", -1 )
-					.attr( "title", "Show All Items" )
+					.attr( "title", "Mostrar Ciudades" )
 					.tooltip()
 					.appendTo( this.wrapper )
 					.button({
@@ -249,7 +249,7 @@ box-shadow: none;
 					
 					<ul style="margin-left:-35px; height:auto; max-width:130px;">
 							
-							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/guruxy.png"></a></li>
+							 <li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/guruxy.png"></a></li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/falabella.png"></a></li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/larebaja.png"></a>	</li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/lopido.png"></a></li>
@@ -257,9 +257,10 @@ box-shadow: none;
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/betplay.png"></a>	</li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/idime.png"></a></li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/cobru.png"></a>	</li>
-							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/pasalapagina.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="servicios_pasalapagina.php" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/pasalapagina.png"></a></li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/lesmills.png"></a>	</li>
-							</ul>
+							
+						</ul>
 					</li>
 					</nav>
 			</div>
@@ -523,8 +524,9 @@ box-shadow: none;
 		
 	<input type="hidden" id="filtro" value="medicina">
   <span style="margin-left:20%"> Ciudad:</span>
-  <select placeholder="---------x" name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
-	<option value=" " ></option>     
+  <select class="camposgenerales" style=" height:30px"
+	name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">  
+	<option value="">-----</option>     
 <option value="Amazonas">Amazonas</option>     
 <option value="Leticia">Leticia</option>
 <option value="PuertoNariño">PuertoNariño</option>
@@ -1661,10 +1663,20 @@ box-shadow: none;
 
   </select>
 
-  <span style="margin-left:3%"> Rango de Precio:</span>
+ <span style="margin-left:3%"> Rango de Precio:</span>
   <select class="camposgenerales" 
   
-  style="
+  style=" border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+	width: 100px;
+	color:#000;
+    text-decoration: none;
+    margin-bottom: auto;
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+    
 	
 	name="rango_precios" id="rango_precios" onchange="change_rango_precios(this)">
 	<option value="">-----</option>       
@@ -1678,17 +1690,20 @@ box-shadow: none;
         <option value="350000-9999999999">Mayor a $350.000 </option>
   </select>
 
-  <span style="margin-left:3%"> Idioma</span>
+   <span style="margin-left:3%"> Idioma</span>
   <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
 	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;""
+    
 	
 	name="idioma" id="idioma" onchange="change_idioma(this)">
         <option value="">-----</option>
@@ -1724,16 +1739,19 @@ box-shadow: none;
 	</select>
 
   <span style="margin-left:3%"> Pais:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
 	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+	
 	
 	name="pais" id="pais" onchange="change_pais(this)">
 
@@ -1987,16 +2005,19 @@ box-shadow: none;
 
 
   <span style="margin-left:3%"> Estado:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
 	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+    
 	
 	name="cars" id="cars">
 	<option value="">-----</option>       

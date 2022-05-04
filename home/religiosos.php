@@ -44,7 +44,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
   }
   .custom-combobox-input {
     margin: 0;
-    padding: 5px 10px;
 	border: 0;
 
   }
@@ -96,7 +95,6 @@ box-shadow: none;
 
 		
 	</style>
-<<<<<<< HEAD
 	<script>
   $( function() {
     $.widget( "custom.combobox", {
@@ -240,149 +238,6 @@ box-shadow: none;
     });
   } );
   </script>
-=======
-<script>
-	$( function() {
-		$.widget( "custom.combobox", {
-			_create: function() {
-				this.wrapper = $( "<span>" )
-					.addClass( "custom-combobox" )
-					.insertAfter( this.element );
-
-				this.element.hide();
-				this._createAutocomplete();
-				this._createShowAllButton();
-			},
-
-			_createAutocomplete: function() {
-				var selected = this.element.children( ":selected" ),
-					value = selected.val() ? selected.text() : "";
-
-				this.input = $( "<input>" )
-					.appendTo( this.wrapper )
-					.val( value )
-					.attr( "title", "" )
-					.addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )
-					.autocomplete({
-						delay: 0,
-						minLength: 0,
-						source: this._source.bind( this )
-					})
-					.tooltip({
-						classes: {
-							"ui-tooltip": "ui-state-highlight"
-						}
-					});
-
-				this._on( this.input, {
-					autocompleteselect: function( event, ui ) {
-						ui.item.option.selected = true;
-						change_ciudad(ui.item.option.value)
-						this._trigger( "select", event, {
-							item: ui.item.option
-						});
-					},
-
-					autocompletechange: "_removeIfInvalid"
-				});
-			},
-
-			_createShowAllButton: function() {
-				var input = this.input,
-					wasOpen = false;
-
-				$( "<a>" )
-					.attr( "tabIndex", -1 )
-					.attr( "title", "Show All Items" )
-					.tooltip()
-					.appendTo( this.wrapper )
-					.button({
-						icons: {
-							primary: "ui-icon-triangle-1-s"
-						},
-						text: false
-					})
-					.removeClass( "ui-corner-all" )
-					.addClass( "custom-combobox-toggle ui-corner-right" )
-					.on( "mousedown", function() {
-						wasOpen = input.autocomplete( "widget" ).is( ":visible" );
-					})
-					.on( "click", function() {
-						input.trigger( "focus" );
-						// Close if already visible
-						if ( wasOpen ) {
-							return;
-						}
-
-						// Pass empty string as value to search for, displaying all results
-						input.autocomplete( "search", "" );
-					});
-			},
-
-			_source: function( request, response ) {
-				
-				var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
-				response( this.element.children( "option" ).map(function() {
-					var text = $( this ).text();
-					
-					if ( this.value && ( !request.term || matcher.test(text) ) )
-						return {
-							label: text,
-							value: text,
-							option: this
-						};
-				}) );
-			},
-
-			_removeIfInvalid: function( event, ui ) {
-
-				// Selected an item, nothing to do
-				if ( ui.item ) {
-					return;
-				}
-
-				// Search for a match (case-insensitive)
-				var value = this.input.val(),
-					valueLowerCase = value.toLowerCase(),
-					valid = false;
-				this.element.children( "option" ).each(function() {
-					if ( $( this ).text().toLowerCase() === valueLowerCase ) {
-						this.selected = valid = true;
-						return false;
-					}
-				});
-
-				// Found a match, nothing to do
-				if ( valid ) {
-					return;
-				}
-
-				// Remove invalid value
-				this.input
-					.val( "" )
-					.attr( "title", value + " didn't match any item" )
-					.tooltip( "open" );
-				this.element.val( "" );
-				this._delay(function() {
-					this.input.tooltip( "close" ).attr( "title", "" );
-				}, 2500 );
-				this.input.autocomplete( "instance" ).term = "";
-			},
-
-			_destroy: function() {
-				this.wrapper.remove();
-				this.element.show();
-			
-			}
-		});
-
-		$( "#filtro_ciudad" ).combobox();
-		$( "#toggle" ).on( "click", function() {
-			$( "#filtro_ciudad" ).toggle();
-		});
-	} );
-	</script>
->>>>>>> 39a257e4ba89dca83143331dab7a4033ac53af40
 </head>
 
 <body class="cabecera">
@@ -408,7 +263,7 @@ box-shadow: none;
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/betplay.png"></a>	</li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/idime.png"></a></li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/cobru.png"></a>	</li>
-							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/pasalapagina.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="servicios_pasalapagina.php" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/pasalapagina.png"></a></li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/lesmills.png"></a>	</li>
 							</ul>
 					</li>
@@ -1738,17 +1593,20 @@ box-shadow: none;
 
   </select>
 
-  <span style="margin-left:3%"> Rango de Precio:</span>
+ <span style="margin-left:3%"> Rango de Precio:</span>
   <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
 	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+    
 	
 	name="rango_precios" id="rango_precios" onchange="change_rango_precios(this)">
 	<option value="">-----</option>       
@@ -1763,17 +1621,20 @@ box-shadow: none;
   </select>
 
 
-  <span style="margin-left:3%"> Idioma</span>
+   <span style="margin-left:3%"> Idioma</span>
   <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
 	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+    
 	
 	name="idioma" id="idioma" onchange="change_idioma(this)">
         <option value="">-----</option>
@@ -1809,16 +1670,20 @@ box-shadow: none;
 	</select>
 
   <span style="margin-left:3%"> Pais:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
 	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+	
+    
 	
 	name="pais" id="pais" onchange="change_pais(this)">
 
@@ -2071,17 +1936,21 @@ box-shadow: none;
 	</select>
 
 
+
   <span style="margin-left:3%"> Estado:</span>
-  <select class="camposgenerales"
+  <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
 	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+    
 	
 	name="cars" id="cars">
 	<option value="">-----</option>       
@@ -2090,10 +1959,8 @@ box-shadow: none;
 	<option value="">OffLine</option>       
 
   </select>
-
   <br><br>
 	</div>
-	
 	
 	
 		  <!--Product Grid-->

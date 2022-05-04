@@ -102,7 +102,7 @@ box-shadow: none;
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/betplay.png"></a>	</li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/idime.png"></a></li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/cobru.png"></a>	</li>
-							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/pasalapagina.png"></a></li>
+							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="servicios_pasalapagina.php" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/pasalapagina.png"></a></li>
 							<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;" ><img src=" img/servicios/lesmills.png"></a>	</li>
 							</ul>
 					</li>
@@ -265,19 +265,23 @@ box-shadow: none;
 		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
 		<br>
 		<br>
-		<form style=" margin-left:15%; background:#ffffff; border-radius:20px; width:80%" >
+		<form style=" margin-left:15%; width:80%" >
 		<br>
 		
 		<span >  Quiero Aprender:</span>
   <select class="camposgenerales"
   
-    style=" border: none;
-    background-color: #0000;
+  style=" border: none;
+    background-color: #ffffff;
     font-size: 15px;
-    width: 100px;
+	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-    text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+
     name="cars" id="cars">        
     <option value="">-----</option>       
 
@@ -286,12 +290,15 @@ box-shadow: none;
   <select class="camposgenerales" 
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
-    width: 100px;
+	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-    text-align: center;  " 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;" 
     
 	name="rango_precios" id="rango_precios" onchange="change_rango_precios(this)">
 	<option value="">-----</option>       
@@ -309,13 +316,17 @@ box-shadow: none;
   <span style="margin-left:3%">  Procedente de:</span>
   <select class="camposgenerales"
   
-    style=" border: none;
-    background-color: #0000;
+  style=" border: none;
+    background-color: #ffffff;
     font-size: 15px;
-    width: 100px;
+	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-    text-align: center" 
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+
     name="filtro_ciudad" id="filtro_ciudad" onchange="change_ciudad(this)">        
 	<option value="">-----</option>     
 
@@ -1560,13 +1571,16 @@ box-shadow: none;
   <select class="camposgenerales"
   
   style=" border: none;
-    background-color: #0000;
+    background-color: #ffffff;
     font-size: 15px;
 	width: 100px;
+	color:#000;
     text-decoration: none;
     margin-bottom: auto;
-	text-align: center" 
-	
+	text-align: center;
+    height: 25px;
+    border-bottom-left-radius: 3px;"
+
 	name="cars" id="cars">
 	<option value="">-----</option>       
 	<option value="">En Linea</option>       
