@@ -155,10 +155,10 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 				<?php
 				} else {
 				?>
-					<div class="menusuperiocentro logout" style="">
+					<div class="menusuperiocentro logout" >
 						<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-						<a class="logout_btn" href="logout.php" style=" "> Cerrar Sesión</a>
+						<a class="logout_btn" href="logout.php" > Cerrar Sesión</a>
 					</div>
 				<?php
 				}
@@ -243,71 +243,10 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					</div>
 
 					<div>
-						<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+						<table id="items_pasalapagina" style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
 
 							<tbody id="myTable" class="especial">
-								<tr>
-									<td>
-										<a href="">
-											<li style="color: #333; " value="Alergólogo">Cirugías Cardiovasculares</li>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td><a href=" ">
-											<li style="color: #333; " value="Angiólogo">Cirugías Bariátricos</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Cardiólogo">Cirugías Cardiovasculares</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Cardiólogo">Cirugías Ortopédicas</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="turismo_cirugia_plastica.php ">
-											<li style="color: #333; " value="Deportólogo">Cirugías Plásticas</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="turismo_dermatologia.php">
-											<li style="color: #333; " value="Dermatólogo">Dermatología</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Endocrinólogo">Ginecología</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="turismo_odontologia.php">
-											<li style="color: #333; " value="Enfermero">Odontología</li>
-										</a></td>
-								</tr>	
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Epidemiólogo">Oftalmología</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Epidemiólogo">Oncología</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Epidemiólogo">Urología</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Epidemiólogo">Otorrinolaringología</li>
-										</a></td>
-								</tr>
+								
 							</tbody>
 						</table>
 						<div> &nbsp;</div>
@@ -506,6 +445,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script src="js/consulta_gurus_especiales.js"></script>
+	<script src="js/consumo_servicio.js"></script>
 	<script src="js/login.js"></script>
 </body>
 
