@@ -121,7 +121,7 @@ box-shadow: none;
 					<br>
 					<nav  >
 						<ul  >
-							<li class="menuamarillo" style=";height:30px;background-color:transparent">
+							<li class="menuamarillo" style="height:30px;background-color:transparent">
 								<a class="menuamarillo" href="oficina.php" style="font-size: 15px; text-decoration:none; ">INGRESAR</a>
 							</li>
 							<li style="font-size: 15px; color: #FFF;height:30px;width:3px;background-color:transparent">|</li>
@@ -143,7 +143,7 @@ box-shadow: none;
 							<li class="menuamarillo" style=" width:170px; height:30px; background-color:transparent; ">
 								<a class="menuamarillo" href="screar.php" style="font-size: 15px;  text-decoration:none;">CREAR USUARIO</a>
 								<ul style="margin-left:-38px; height:auto; max-width:130px;">
-									<li class="bordes" style="width:170px; height:25px; background-color:#FFC808; z-index: 999;"><a style="; font-size:12px; text-decoration:none; color:#000;" href="">PACIENTE</a></li>
+									<li class="bordes" style="width:170px; height:25px; background-color:#FFC808; z-index: 999;"><a style=" font-size:12px; text-decoration:none; color:#000;" href="">PACIENTE</a></li>
 									<li class="bordes" style="width:170px; height:25px; background-color:#FFC808; z-index: 999;"><a href="#" style="font-size:12px; text-decoration:none; color:#000;" >ESTUDIANTE</a></li>
 									<li class="bordes" style="width:170px; height:25px; background-color:#FFC808; z-index: 999;"><a href="#" style="font-size:12px; text-decoration:none; color:#000;" >USUARIO / CLIENTE</a></li>
 									<li class="bordes" style="width:170px; height:25px; background-color:#FFC808; z-index: 999;"><a href="#" style="font-size:12px; text-decoration:none; color:#000;" >FELIGRÉS</a></li>
