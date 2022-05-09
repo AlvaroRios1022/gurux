@@ -361,6 +361,25 @@ nav li:hover>ul {
     padding-left: 210px;
 }
 
+.barrapasalapagina {
+    text-decoration: blink;
+    float: left;
+    height: 28px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background-color: #222;
+    clear: both;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 210px;
+}
+
 .preguntas {
     color: #452167;
     margin-left: 5%;
@@ -564,6 +583,17 @@ a:current {
     overflow: auto;
 }
 
+.barraizquierdapasalapagina {
+    width: 17%;
+    background-color: #222;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    height: 670px;
+    overflow: auto;
+}
+
 .especial {
     margin-bottom: 30px;
     margin-left: 10px;
@@ -751,6 +781,21 @@ a:current {
 
 .especialcobru :hover {
     background-color: #5E6FAA;
+    color: #000;
+    text-decoration: none;
+}
+.especialpasalapagina {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.especialpasalapagina :hover {
+    background-color: rgb(54, 53, 53);
     color: #000;
     text-decoration: none;
 }
@@ -989,6 +1034,15 @@ a:current {
     border-bottom: 1px solid #555555;
 }
 
+.buscadorpasalapagina {
+    width: 75%;
+    background-color: #222;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #fff;
+}
+
 .search {
     background-color: #D6F0FC;
     border: none;
@@ -1057,6 +1111,12 @@ a:current {
 
 .searchcobru {
     background-color: #5E6FAA;
+    border: none;
+    width: 14%;
+}
+
+.searchpasalapagina {
+    background-color: #222;
     border: none;
     width: 14%;
 }

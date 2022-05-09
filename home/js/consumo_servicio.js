@@ -11,7 +11,7 @@ $( document ).ready(function() {
                     rows += "<tr>"+
                                 "<td>"+
                                     "<a href=''>"+
-                                        "<li style='color: #333;' value="+v.name+">"+v.name+"</li>"
+                                        "<li style='color: #fff;' value="+v.name+">"+v.name+"</li>"
                                     "</a>"+
                                 "</td>"+
                             "</tr>"

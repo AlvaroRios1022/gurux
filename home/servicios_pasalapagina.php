@@ -43,7 +43,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			margin-right: 10px;
 			margin-top: 60px;
 			width: 4px;
-			background-color: #8ED8F8;
+			background-color: #fff;
 		}
 
 		.mySlides {
@@ -78,7 +78,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			width: 100px;
 		}
 	</style>
-	
+
 </head>
 
 <body class="cabecera">
@@ -155,10 +155,10 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 				<?php
 				} else {
 				?>
-					<div class="menusuperiocentro logout" >
+					<div class="menusuperiocentro logout">
 						<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-						<a class="logout_btn" href="logout.php" > Cerrar Sesión</a>
+						<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
 					</div>
 				<?php
 				}
@@ -208,7 +208,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					</nav>
 				</div>
 			</div>
-			<div class="barra" style="margin-top:-6px; ">
+			<!--	<div class="barrapasalapagina" style="margin-top:-6px; ">
 				<ul id="lista1">
 					<li style="margin-left:-90px;" class="itemlista1"><a id="current" href="medicos.php"> HOME MÉDICOS </a></li>
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
@@ -228,16 +228,17 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="libreria.php">LIBRERÍA</a></li>
 				</ul>
-			</div>
+			</div>-->
 
-			<div class="contenido">
-				<div class="barraizquierda">
+
+			<div class="contenido" style="margin-top:-6px;">
+				<div class="barraizquierdapasalapagina">
 
 
 					<div class="input-group">
 						<br><br>
-						<input style="margin-left:10px" id="buscador" class="buscador" maxlength="128" placeholder="Buscar" size="15" type="text" />
-						<button class="search">
+						<input style="margin-left:10px" id="buscador" class="buscadorpasalapagina" maxlength="128" placeholder="Buscar" size="15" type="text" />
+						<button class="searchpasalapagina">
 							<i class="fa fa-search ">&nbsp;</i>
 						</button>
 					</div>
@@ -245,8 +246,8 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<div>
 						<table id="items_pasalapagina" style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
 
-							<tbody id="myTable" class="especial">
-								
+							<tbody id="myTable" class="especialpasalapagina">
+
 							</tbody>
 						</table>
 						<div> &nbsp;</div>
@@ -280,17 +281,11 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	}
 	?>
 
+	<div style="margin-left:17%">
 
-	<div align="center" style="background-color:#fff;">
-		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
-
+		<iframe src="https://staging.pasalapagina.com/guruxy.controller/check-access.html" width="100%" height="2200px" allow="fullscreen"></iframe>
+		<!-- Gurus -->
 	</div>
-
-
-
-	<iframe src="https://staging.pasalapagina.com/guruxy.controller/check-access.html" width="100%" height="2200px" allow="fullscreen"></iframe>
-	<!-- Gurus --> 
-
 	<div class="fondomedio">
 
 
@@ -416,7 +411,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<script>
 		(function($) {
 			$(window).on("load", function() {
-				$(".barraizquierda").mCustomScrollbar({
+				$(".barraizquierdapasalapagina").mCustomScrollbar({
 					theme: "rounded"
 				});
 			});
