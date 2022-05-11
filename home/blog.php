@@ -622,7 +622,6 @@ box-shadow: none;
         <script src="js/site.js"></script>
         <script src="js/registro.js"></script>
         
-
-            
+     
      </body>   
 </html>
