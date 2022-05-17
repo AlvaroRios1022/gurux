@@ -370,7 +370,7 @@ nav li:hover>ul {
     margin-left: 0px;
     margin-bottom: 0px;
     margin-right: 0px;
-    background-color: #222;
+    background-color: #0a232c;
     clear: both;
     text-align: left;
     vertical-align: middle;
@@ -585,7 +585,7 @@ a:current {
 
 .barraizquierdapasalapagina {
     width: 17%;
-    background-color: #222;
+    background-color: #0a232c;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
@@ -795,8 +795,8 @@ a:current {
 }
 
 .especialpasalapagina :hover {
-    background-color: rgb(54, 53, 53);
-    color: #000;
+    background-color: #223742;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -1036,7 +1036,8 @@ a:current {
 
 .buscadorpasalapagina {
     width: 75%;
-    background-color: #222;
+    color: #fff;
+    background-color: #0a232c;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -1116,7 +1117,7 @@ a:current {
 }
 
 .searchpasalapagina {
-    background-color: #222;
+    background-color: #0a232c;
     border: none;
     width: 14%;
 }

@@ -99,16 +99,16 @@
                 <ul class="nav2" style=" margin-right: 180px;">
                     <li> <a><img style="" src=" img/servicios/servicio.png"></a>
                         <ul>
-                            <li><a class="fondo2" href="preguntas.php"><img src=" img/servicios/guruxy.png"></a></li>
-                            <li><a class="fondo2" href="politicas.pdf"><img src=" img/servicios/falabella.png"></a></li>
-                            <li><a class="fondo2" href="terminos.pdf"><img src=" img/servicios/larebaja.png"></a></li>
-                            <li><a class="fondo2" href="datos.pdf"><img src=" img/servicios/lopido.png"></a></li>
+                            <li><a class="fondo2" href="preguntas.php"><img src=" img/servicios/guruxy.svg"></a></li>
+                            <li><a class="fondo2" href="politicas.pdf"><img src=" img/servicios/falabella.svg"></a></li>
+                            <li><a class="fondo2" href="terminos.pdf"><img src=" img/servicios/larebaja.svg"></a></li>
+                            <li><a class="fondo2" href="datos.pdf"><img src=" img/servicios/lopido.svg"></a></li>
                             <li><a class="fondo2" href="contacto.php">TURISMO MEDICO</a></li>
-                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/betplay.png"></a></li>
-                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/idime.png"></a></li>
-                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/cobru.png"></a></li>
-                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/pasalapagina.png"></a></li>
-                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/lesmills.png"></a></li>
+                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/betplay.svg"></a></li>
+                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/synlab.svg"></a></li>
+                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/cobru.svg"></a></li>
+                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/pasalapagina.svg"></a></li>
+                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/smartfit.svg"></a></li>
                         </ul>
                     </li>
                 </ul>

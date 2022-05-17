@@ -96,16 +96,16 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 
 							<ul style="margin-left:-35px; height:auto; max-width:130px;">
 
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/guruxy.png"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/falabella.png"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/larebaja.png"></a> </li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/lopido.png"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:14px; text-decoration:none; color:#1ebdde;">TURISMO MEDICO</a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/betplay.png"></a> </li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/idime.png"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/cobru.png"></a> </li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/pasalapagina.png"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/lesmills.png"></a> </li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/guruxy.svg"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/falabella.svg"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/larebaja.svg"></a> </li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/lopido.svg"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="turismo_medico.php" style="font-size:14px; text-decoration:none; color:#1ebdde;">TURISMO MEDICO</a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/betplay.svg"></a> </li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/synlab.png"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/cobru.svg"></a> </li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/pasalapagina.svg"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/smartfit.svg"></a> </li>
 							</ul>
 						</li>
 				</nav>
@@ -231,13 +231,13 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			</div>-->
 
 
-			<div class="contenido" style="margin-top:-6px;">
+			<div class="contenido" style="margin-top:-4px;">
 				<div class="barraizquierdapasalapagina">
 
 
 					<div class="input-group">
 						<br><br>
-						<input style="margin-left:10px" id="buscador" class="buscadorpasalapagina" maxlength="128" placeholder="Buscar" size="15" type="text" />
+						<input style="margin-left:10px; color: #fff;" id="buscador" class="buscadorpasalapagina" maxlength="128" placeholder="Buscar" size="15" type="text" />
 						<button class="searchpasalapagina">
 							<i class="fa fa-search ">&nbsp;</i>
 						</button>
@@ -283,7 +283,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 
 	<div style="margin-left:17%">
 
-		<iframe src="https://staging.pasalapagina.com/guruxy.controller/check-access.html" width="100%" height="2200px" allow="fullscreen"></iframe>
+		<iframe src="https://staging.pasalapagina.com/guruxy.controller/check-access.html" style="border: none" width="100%" height="2200px" allow="fullscreen"></iframe>
 		<!-- Gurus -->
 	</div>
 	<div class="fondomedio">
