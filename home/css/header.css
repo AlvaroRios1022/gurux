@@ -6,6 +6,20 @@
     vertical-align: top;
 }
 
+.boton_servicios {
+    font-family: "Circular Std Book", "Circular Std Black";
+    font-size: 13px;
+    border: none;
+    display: inline-block;
+    width: 114px;
+    height: 50px;
+    color: #000;
+    background-color: #dd4527;
+    text-decoration: none;
+    vertical-align: top;
+    cursor: pointer;
+}
+
 .boton_medicos {
     font-family: "Circular Std Book", "Circular Std Black";
     font-size: 13px;
@@ -17,7 +31,6 @@
     background-color: #8ED8F8;
     text-decoration: none;
     vertical-align: top;
-    cursor: pointer;
     cursor: pointer;
 }
 .boton_alternativa {
@@ -143,19 +156,10 @@
     display: inline-block;
     text-decoration: none;
 }
-.boton_servicios {
-   
-    font-family: "Circular Std Book", "Circular Std Black";
-    border: none;
-    display: inline-block;
-    width: 200px;
-    border-radius: 20px;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
-.body{
+
+.bodys{
     background-color: #452167;
     width: 100%;
     height: 5%;

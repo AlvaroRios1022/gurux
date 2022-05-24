@@ -151,7 +151,11 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                     <br>
                     <nav>
                         <ul align="right">
-                            <a href="medicos.php">
+                            <a href="servicios.php">
+								<li class="rojoservicios" style="">	SERVICIOS</li>
+							</a>
+
+							<a href="medicos.php">
                                 <li class="azulmedicos" style="">MÉDICOS</li>
                             </a>
                             <a href="medicina_alternativa.php">

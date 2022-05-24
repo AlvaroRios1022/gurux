@@ -177,7 +177,11 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="servicios.php">
+								<li class="rojoservicios" style="">	SERVICIOS</li>
+							</a>
+
+							<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="preparacion.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>

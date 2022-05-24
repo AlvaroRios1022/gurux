@@ -174,6 +174,10 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<br>
 					<nav>
 						<ul align="right">
+							<a href="servicios.php">
+								<li class="rojoservicios" style="">	SERVICIOS</li>
+							</a>
+
 							<a href="medicos.php">
 								<li class="azulmedicos">MÉDICOS</li>
 							</a>
@@ -554,7 +558,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 		<br>
 		<div style=" height:30px; background-color:#4eb4d5;" align="center">
 			<p style="color:#fff; margin-left:6%; text-align: left; ">
-				ARTÍCULOS MÁS POPULARES
+				LIBRERÍA MÁS POPULARES
 			</p>
 		</div>
 		<br>
@@ -610,7 +614,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 		<br>
 		<div style=" height:30px; background-color:#178ca1;" align="center">
 			<p style="color:#fff; margin-left:6%; text-align: left; ">
-				ARTÍCULOS MÁS RECIENTES
+				LIBRERÍA MÁS RECIENTES
 			</p>
 		</div>
 		<br>

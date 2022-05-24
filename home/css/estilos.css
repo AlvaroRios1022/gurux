@@ -1,7 +1,71 @@
 
 
-/* Rectangle 45 */
-
+/* pantalla 15" */
+@media (min-width: 321px) and (max-width: 1500px) {
+    .rojoservicios {
+        width: 8%;
+        background-color: #dd4527;
+    }
+    
+    .azulmedicos {
+        width: 8%;
+        background-color: #8ED8F8;
+    }
+    
+    .verdemedicos {
+        width: 8%;
+        background-color: #A5CE39;
+    }
+    
+    .amarilloyoga {
+        width: 8%;
+        background-color: #FFED90;
+    }
+    
+    .moradosiquico {
+        width: 8%;
+        background-color: #A665A9;
+    }
+    
+    .azulreligioso {
+        width: 8%;
+        background-color: #59C7DA;
+    }
+    
+    .naranjacoaching {
+        width: 8%;
+        background-color: #F58120;
+    }
+    
+    .azulidioma {
+        width: 8%;
+        background-color: #4EB3BD;
+    }
+    
+    .verdeotros {
+        width: 8%;
+        background-color: #9AD3AE;
+    }
+    
+    .amarillocontruccion {
+        width: 8%;
+        background-color: #FFC808;
+    }
+    
+    .rosadotutores {
+        width: 8%;
+        background-color: #DE5886;
+    }
+    .itemlista {
+        font-family: "Circular Std Book", "Circular Std Black";
+        font-size: 5px;
+        color: #DE5886;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+}
 .compras {
     width: 35%;
     height: 525px;
@@ -1679,6 +1743,10 @@ nav li {
 nav li:hover {
     background-color: #dedede;
     color: #000;
+}
+
+.rojoservicios {
+    background-color: #dd4527;
 }
 
 .azulmedicos {

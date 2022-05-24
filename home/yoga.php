@@ -105,7 +105,11 @@ box-shadow: none;
 				<br>
 				<nav>
 					<ul align="right">
-					<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
+					<a href="servicios.php">
+								<li class="rojoservicios" style="">	SERVICIOS</li>
+							</a>
+
+							<a href="medicos.php"><li class="azulmedicos" style="">MÉDICOS</li></a>
 						<a href="medicina_alternativa.php"><li class="verdemedicos">MÉDICINA ALTERNATIVA</li></a>
 						<a href="yoga.php"><li class="amarilloyoga" >PREPARACIÓN FÍSICA</li></a>
 						<a href="psiquicos.php"><li class="moradosiquico">PSÍQUICOS</li></a>
@@ -131,7 +135,7 @@ box-shadow: none;
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">CURSOS EN LINEA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">LIBRERÍA</a></li>
+                <li class="itemlista1"><a href="libreria_religiosos.php" >LIBRERÍA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">MI CUENTA</a></li>
             </ul>

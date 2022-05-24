@@ -24,9 +24,9 @@
 </head>
 
 <body>
-    <div class="body">
+    <div class="bodys">
         <div class="caja_inline ">
-            <a style=" width:100%" href="index.php"><img src="images/logo.png" style=" width:100%;" alt="logo" /></a>
+            <a style=" width:100%" href="index.php"><img src="images/logo.png" style=" width:80%; margin-bottom:5px"  alt="logo" /></a>
         </div>
 
         <div class="caja_inline_noxotros">
@@ -95,27 +95,15 @@
 
         <div align="right" class="menu">
 
-            <div align="left" class="boton_servicios">
-                <ul class="nav2" style=" margin-right: 180px;">
-                    <li> <a><img style="" src=" img/servicios/servicio.png"></a>
-                        <ul>
-                            <li><a class="fondo2" href="preguntas.php"><img src=" img/servicios/guruxy.svg"></a></li>
-                            <li><a class="fondo2" href="politicas.pdf"><img src=" img/servicios/falabella.svg"></a></li>
-                            <li><a class="fondo2" href="terminos.pdf"><img src=" img/servicios/larebaja.svg"></a></li>
-                            <li><a class="fondo2" href="datos.pdf"><img src=" img/servicios/lopido.svg"></a></li>
-                            <li><a class="fondo2" href="contacto.php">TURISMO MEDICO</a></li>
-                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/betplay.svg"></a></li>
-                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/synlab.svg"></a></li>
-                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/cobru.svg"></a></li>
-                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/pasalapagina.svg"></a></li>
-                            <li><a class="fondo2" href="contacto.php"><img src=" img/servicios/smartfit.svg"></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
             <div class="boton">
-                <a href="medicos.php"><button class="boton_medicos" name="button">MÉDICOS</button></a>
+                <a href="servicios.php"><button class="boton_servicios" name="button">SERVICIOS</button></a>
+            </div>
+            <div class="boton">
+                <a href="servicios.php">
+								<li class="rojoservicios" style="">	SERVICIOS</li>
+							</a>
+
+							<a href="medicos.php"><button class="boton_medicos" name="button">MÉDICOS</button></a>
             </div>
             <div class="boton">
                 <a href="medicina_alternativa.php"><button class="boton_alternativa" name="button">MÉDICINA ALTERNATIVA</button></a>

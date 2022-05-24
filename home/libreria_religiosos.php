@@ -14,7 +14,6 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="css/estilos.css" rel="stylesheet" type="text/css" />
 	<link href="css/filtros_generales.css" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,7 +43,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			margin-right: 10px;
 			margin-top: 60px;
 			width: 4px;
-			background-color: #8ED8F8;
+			background-color: #fff;
 		}
 
 		.mySlides {
@@ -79,7 +78,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			width: 100px;
 		}
 	</style>
-	
+
 </head>
 
 <body class="cabecera">
@@ -103,7 +102,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/lopido.svg"></a></li>
 								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="turismo_medico.php" style="font-size:14px; text-decoration:none; color:#1ebdde;">TURISMO MEDICO</a></li>
 								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/betplay.svg"></a> </li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/synlab.svg"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/synlab.png"></a></li>
 								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/cobru.svg"></a> </li>
 								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/pasalapagina.svg"></a></li>
 								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/smartfit.svg"></a> </li>
@@ -156,10 +155,10 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 				<?php
 				} else {
 				?>
-					<div class="menusuperiocentro logout" style="">
+					<div class="menusuperiocentro logout">
 						<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-						<a class="logout_btn" href="logout.php" style=" "> Cerrar Sesión</a>
+						<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
 					</div>
 				<?php
 				}
@@ -176,7 +175,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<nav>
 						<ul align="right">
 							<a href="servicios.php">
-								<li class="rojoservicios" style="">	SERVICIOS</li>
+								<li class="rojoservicios" style=""> SERVICIOS</li>
 							</a>
 
 							<a href="medicos.php">
@@ -213,7 +212,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					</nav>
 				</div>
 			</div>
-			<div class="barra" style="margin-top:-6px; ">
+			<!--	<div class="barrapasalapagina" style="margin-top:-6px; ">
 				<ul id="lista1">
 					<li style="margin-left:-90px;" class="itemlista1"><a id="current" href="medicos.php"> HOME MÉDICOS </a></li>
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
@@ -233,86 +232,35 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="libreria.php">LIBRERÍA</a></li>
 				</ul>
-			</div>
-
-			<div class="contenido">
-				<div class="barraizquierda">
+			</div>-->
+			<div class="barrareligioso" style="margin-top:-6px; ">
+		<ul id="lista1" >
+                <li style="margin-left:-23px;" class="itemlista1"><a id="current" href="#" > HOME RELIGIOSOS </a></li>
+                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="itemlista1"><a href="#">PREGUNTAS FRECUENTES</a></li>
+                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="itemlista1"><a href="#">CEREMONIAS RELIGIOSAS EN VIVO</a></li>
+                <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="itemlista1"><a href="libreria_religiosos.php" style="color:#fff;text-shadow: 1px 1px 2px black;">LIBRERÍA</a></li>
+            </ul>
+        </div>
+			<div class="contenido" style="margin-top:0PX">
+				<div class="barraizquierdapasalapagina">
 
 
 					<div class="input-group">
 						<br><br>
-						<input style="margin-left:10px" id="buscador" class="buscador" maxlength="128" placeholder="Buscar" size="15" type="text" />
-						<button class="search">
+						<input style="margin-left:10px; color: #fff;" id="buscador" class="buscadorpasalapagina" maxlength="128" placeholder="Buscar" size="15" type="text" />
+						<button class="searchpasalapagina">
 							<i class="fa fa-search ">&nbsp;</i>
 						</button>
 					</div>
 
 					<div>
-						<table style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
+						<table id="items_pasalapagina" style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
 
-							<tbody id="myTable" class="especial">
-								<tr>
-									<td>
-										<a href="">
-											<li style="color: #333; " value="Alergólogo">Cirugías Cardiovasculares</li>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td><a href=" ">
-											<li style="color: #333; " value="Angiólogo">Cirugías Bariátricos</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Cardiólogo">Cirugías Cardiovasculares</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Cardiólogo">Cirugías Ortopédicas</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="turismo_cirugia_plastica.php ">
-											<li style="color: #333; " value="Deportólogo">Cirugías Plásticas</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="turismo_dermatologia.php">
-											<li style="color: #333; " value="Dermatólogo">Dermatología</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Endocrinólogo">Ginecología</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="turismo_odontologia.php">
-											<li style="color: #333; " value="Enfermero">Odontología</li>
-										</a></td>
-								</tr>	
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Epidemiólogo">Oftalmología</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Epidemiólogo">Oncología</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Epidemiólogo">Urología</li>
-										</a></td>
-								</tr>
-								<tr>
-									<td><a href="">
-											<li style="color: #333; " value="Epidemiólogo">Otorrinolaringología</li>
-										</a></td>
-								</tr>
+							<tbody id="myTable" class="especialpasalapagina">
+
 							</tbody>
 						</table>
 						<div> &nbsp;</div>
@@ -346,22 +294,11 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	}
 	?>
 
+	<div style="margin-left:17%; ">
 
-	<div align="center" style="background-color:#fff;">
-		<img style="width:84%; margin-top:142px; height:0.01px " src="img/barratop.png" alt="estres">
-
+		<iframe src="https://staging.pasalapagina.com/guruxy.controller/check-access.html#especializadas" style="border: none; margin-top: 142px;" width="100%" height="2200px" allow="fullscreen"></iframe>
+		<!-- Gurus -->
 	</div>
-
-
-
-	<div style=" margin-left:15%;  background-color:#fff;">
-	<iframe src="https://www.rolandoarias.com/" width="100%" height="2200px" allow="fullscreen" ></iframe>
-
-	</div>
-
-
-	<!-- Gurus -->
-
 	<div class="fondomedio">
 
 
@@ -487,7 +424,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<script>
 		(function($) {
 			$(window).on("load", function() {
-				$(".barraizquierda").mCustomScrollbar({
+				$(".barraizquierdapasalapagina").mCustomScrollbar({
 					theme: "rounded"
 				});
 			});
@@ -516,6 +453,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script src="js/consulta_gurus_especiales.js"></script>
+	<script src="js/consumo_servicio.js"></script>
 	<script src="js/login.js"></script>
 </body>
 

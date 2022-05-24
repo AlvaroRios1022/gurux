@@ -345,6 +345,10 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<br>
 					<nav>
 						<ul align="right">
+							<a href="servicios.php">
+								<li class="rojoservicios" style="">	SERVICIOS</li>
+							</a>
+
 							<a href="medicos.php">
 								<li class="azulmedicos">MÉDICOS</li>
 							</a>
@@ -389,7 +393,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="#">CURSOS EN LÍNEA </a></li>
 					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="#">LIBRERÍA</a></li>
+					<li class="itemlista1"><a href="libreria_construccion.php" >LIBRERÍA</a></li>
 					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="#">MI CUENTA</a></li>
 				</ul>

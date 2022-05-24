@@ -609,7 +609,7 @@ box-shadow: none;
 
         <script>
             function alerta(){
-                <img src="img/cierre.jpg" alt="">
+                <img src="img/cierre.jpg" alt=""/>
             }
         </script>
         
