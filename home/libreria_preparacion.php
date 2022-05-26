@@ -89,26 +89,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 		<div id="container2">
 			<div class="logo">
 				<a href="index.php"><img src="images/logo.png" style="margin-top:12px; margin-left:15px" width="190%" alt="logo" /></a>
-				<nav style=" margin-left:-20px; ">
-					<ul>
-						<li class="menuamarillo" style=" margin-top:-3px; margin-left:10px; width:120px; height:30px; background-color:transparent; ">
-							<a class="menuamarillo" href="#" style="font-size: 15px; background-color: #FFC808; border-radius:20px; color:#000;  text-decoration:none;">&nbsp;&nbsp;SERVICIOS&nbsp;&nbsp;</a>
 
-							<ul style="margin-left:-35px; height:auto; max-width:130px;">
-
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/guruxy.svg"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/falabella.svg"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/larebaja.svg"></a> </li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/lopido.svg"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="turismo_medico.php" style="font-size:14px; text-decoration:none; color:#1ebdde;">TURISMO MEDICO</a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/betplay.svg"></a> </li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/synlab.png"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/cobru.svg"></a> </li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/pasalapagina.svg"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/smartfit.svg"></a> </li>
-							</ul>
-						</li>
-				</nav>
 			</div>
 			<div class="menu">
 
@@ -175,7 +156,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<nav>
 						<ul align="right">
 							<a href="servicios.php">
-								<li class="rojoservicios" style="">	SERVICIOS</li>
+								<li class="rojoservicios" style=""> SERVICIOS</li>
 							</a>
 
 							<a href="medicos.php">
@@ -213,58 +194,26 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 				</div>
 			</div>
 			<div class="barrayoga" style="margin-top:-6px; ">
-		<ul id="lista1" >
-                <li style="margin-left:-100px;" class="itemlista1"><a id="current" href="preparacion.php" "> HOME PREPARACIÓN FÍSICA </a></li>
-                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="preguntas_preparacion.php">PREGUNTAS FRECUENTES</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="preparacion_fisica_casa.php">PREPARACIÓN FÍSICA EN CASA</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">TRASMISIONES EN LÍNEA</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="preparacion_cursos.php">CURSOS EN LÍNEA</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">NUTRICIÓN EN LÍNEA</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="libreria_preparacion.php" style="color:#fff; text-shadow: 1px 1px 2px black;">LIBRERÍA</a></li>
-                <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="historia_preparacion.php" >MI CUENTA</a></li>
-            </ul>
-        </div>
-
-
-			<div class="contenido" style="margin-top:-4px;">
-				<div class="barraizquierdapasalapagina">
-
-
-					<div class="input-group">
-						<br><br>
-						<input style="margin-left:10px; color: #fff;" id="buscador" class="buscadorpasalapagina" maxlength="128" placeholder="Buscar" size="15" type="text" />
-						<button class="searchpasalapagina">
-							<i class="fa fa-search ">&nbsp;</i>
-						</button>
-					</div>
-
-					<div>
-						<table id="items_pasalapagina" style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
-
-							<tbody id="myTable" class="especialpasalapagina">
-
-							</tbody>
-						</table>
-						<div> &nbsp;</div>
-						<div> &nbsp;</div>
-						<div> &nbsp;</div>
-					</div>
-				</div>
-
-
-
-				<div class="blanco">
-
-				</div>
-
+				<ul id="lista1">
+					<li style="margin-left:-100px;" class="itemlista1"><a id="current" href="preparacion.php" "> HOME PREPARACIÓN FÍSICA </a></li>
+                <li class=" itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li class="itemlista1"><a href="preguntas_preparacion.php">PREGUNTAS FRECUENTES</a></li>
+					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li class="itemlista1"><a href="preparacion_fisica_casa.php">PREPARACIÓN FÍSICA EN CASA</a></li>
+					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li class="itemlista1"><a href="#">TRASMISIONES EN LÍNEA</a></li>
+					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li class="itemlista1"><a href="preparacion_cursos.php">CURSOS EN LÍNEA</a></li>
+					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li class="itemlista1"><a href="#">NUTRICIÓN EN LÍNEA</a></li>
+					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li class="itemlista1"><a href="libreria_preparacion.php" style="color:#fff; text-shadow: 1px 1px 2px black;">LIBRERÍA</a></li>
+					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li class="itemlista1"><a href="historia_preparacion.php">MI CUENTA</a></li>
+				</ul>
 			</div>
+
+
 
 		</div>
 
@@ -283,13 +232,13 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	}
 	?>
 
-	<div style="margin-left:17%">
+	<div >
 
 		<iframe src="https://staging.pasalapagina.com/guruxy.controller/check-access.html#deportes" style="border: none; margin-top: 142px;" width="100%" height="2200px" allow="fullscreen"></iframe>
 		<!-- Gurus -->
 	</div>
 	<div class="fondomedio">
-	
+
 
 		<!--Product Grid-->
 

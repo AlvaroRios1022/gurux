@@ -89,26 +89,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 		<div id="container2">
 			<div class="logo">
 				<a href="index.php"><img src="images/logo.png" style="margin-top:12px; margin-left:15px" width="190%" alt="logo" /></a>
-				<nav style=" margin-left:-20px; ">
-					<ul>
-						<li class="menuamarillo" style=" margin-top:-3px; margin-left:10px; width:120px; height:30px; background-color:transparent; ">
-							<a class="menuamarillo" href="#" style="font-size: 15px; background-color: #FFC808; border-radius:20px; color:#000;  text-decoration:none;">&nbsp;&nbsp;SERVICIOS&nbsp;&nbsp;</a>
-
-							<ul style="margin-left:-35px; height:auto; max-width:130px;">
-
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/guruxy.svg"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/falabella.svg"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/larebaja.svg"></a> </li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/lopido.svg"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="turismo_medico.php" style="font-size:14px; text-decoration:none; color:#1ebdde;">TURISMO MEDICO</a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/betplay.svg"></a> </li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/synlab.png"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/cobru.svg"></a> </li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/pasalapagina.svg"></a></li>
-								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/smartfit.svg"></a> </li>
-							</ul>
-						</li>
-				</nav>
+				
 			</div>
 			<div class="menu">
 
@@ -246,38 +227,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<li class="itemlista1"><a href="historia_psiquicos.php" >MI CUENTA</a></li>
 				</ul>
 			</div>
-			<div class="contenido" style="margin-top:0PX">
-				<div class="barraizquierdapasalapagina">
-
-
-					<div class="input-group">
-						<br><br>
-						<input style="margin-left:10px; color: #fff;" id="buscador" class="buscadorpasalapagina" maxlength="128" placeholder="Buscar" size="15" type="text" />
-						<button class="searchpasalapagina">
-							<i class="fa fa-search ">&nbsp;</i>
-						</button>
-					</div>
-
-					<div>
-						<table id="items_pasalapagina" style="border: transparent !important;border-top: 0px !important ;color:transparent !important;border-radius: transparten;">
-
-							<tbody id="myTable" class="especialpasalapagina">
-
-							</tbody>
-						</table>
-						<div> &nbsp;</div>
-						<div> &nbsp;</div>
-						<div> &nbsp;</div>
-					</div>
-				</div>
-
-
-
-				<div class="blanco">
-
-				</div>
-
-			</div>
+			
 
 		</div>
 
@@ -296,7 +246,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	}
 	?>
 
-	<div style="margin-left:17%; ">
+	<div style=" ">
 
 		<iframe src="https://staging.pasalapagina.com/guruxy.controller/check-access.html#estilo-de-vida" style="border: none; margin-top: 142px;" width="100%" height="2200px" allow="fullscreen"></iframe>
 		<!-- Gurus -->

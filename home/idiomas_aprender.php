@@ -85,19 +85,7 @@ box-shadow: none;
   <div id="container2" >
     <div class="logo">
     <a href="index.php"><img src="images/logo.png" style="margin-top:12px; margin-left:15px" width="190%"  alt="logo" /></a>
-    <nav  style=" margin-left:-20px; ">
-        <ul  >
-          <li class="menuamarillo" style=" margin-top:-3px; margin-left:10px; width:120px; height:30px; background-color:transparent; ">
-          <a class="menuamarillo" href="#" style="font-size: 15px; background-color: #FFC808; border-radius:20px; color:#000;  text-decoration:none;">&nbsp;&nbsp;SERVICIOS&nbsp;&nbsp;</a>
-          
-          <ul style="margin-left:-35px; height:auto; max-width:130px;">
-              
-              <li class="bordes" style="width:120px; height:20px; background-color:#FFC808; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#000;" >COMUNIDAD GURÚ</a></li>
-              <li class="bordes" style="width:120px; height:20px; background-color:#FFC808; z-index: 999;"><a href="seguros.php" style="font-size:10px; text-decoration:none; color:#000;" >SEGUROS</a></li>
-              <li class="bordes" style="width:120px; height:20px; background-color:#FFC808; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#000;" >COBRU</a>  </li>
-            </ul>
-          </li>
-          </nav>
+    
       </div>
     <div class="menu">
       
@@ -242,7 +230,7 @@ box-shadow: none;
               </table>
                 <div> &nbsp;</div>
                                 <div> &nbsp;</div>
-                                <div> &nbsp;</div>
+                                <div> &nbsp;</div> 
               </div>
             </div>
 

@@ -10,7 +10,7 @@ $( document ).ready(function() {
                     console.log(v)
                     rows += "<tr>"+
                                 "<td>"+
-                                    "<a href=''>"+
+                                    "<a href='https://staging.pasalapagina.com/guruxy.controller/check-access.html#"+v.name+"'>"+
                                         "<li style='color: #fff;' value="+v.name+">"+v.name+"</li>"
                                     "</a>"+
                                 "</td>"+
@@ -19,4 +19,4 @@ $( document ).ready(function() {
                 $( rows ).appendTo( "#items_pasalapagina tbody" );
             }
     });
-})
+}) 

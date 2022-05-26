@@ -14,15 +14,11 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="css/estilos.css" rel="stylesheet" type="text/css" />
 	<link href="css/filtros_generales.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
-
-	<script src="js/jquery-2.1.0.min.js"></script>
-	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 	<title>Gurus Center</title>
 	<style type="text/css">
@@ -31,19 +27,6 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			margin-top: 0px;
 			margin-right: 0px;
 			margin-bottom: 0px;
-		}
-
-		.mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-			background-color: #fff;
-			margin-top: 60px;
-			margin-left: -3px;
-		}
-
-		.mCS-rounded.mCSB_scrollTools .mCSB_draggerRail {
-			margin-right: 10px;
-			margin-top: 60px;
-			width: 4px;
-			background-color: #fff;
 		}
 
 		.mySlides {
@@ -75,21 +58,38 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 
 		.caja_inline {
 			display: inline-block;
-			width: 100px;
+			width: 95px;
 		}
 	</style>
-
 </head>
 
 <body class="cabecera">
-
 	<?php
 	if (empty($_SESSION['userlog'])) {
 	?>
 		<div id="container2">
 			<div class="logo">
-				<a href="index.php"><img src="images/logo.png" style="margin-top:12px; margin-left:15px" width="190%" alt="logo" /></a>
-				
+				<a href="index.php"><img src="images/logo.png" style="margin-top:12px; margin-left:15px" usemap="#logo" width="190%" alt="logo" /></a>
+				<!--	<nav style=" margin-left:-20px; ">
+					<ul>
+						<li class="menuamarillo" style=" margin-top:-3px; margin-left:10px; width:120px; height:30px; background-color:transparent; ">
+							<a class="menuamarillo" href="#" style="font-size: 15px; background-color: #FFC808; border-radius:20px; color:#000;  text-decoration:none;">&nbsp;&nbsp;SERVICIOS&nbsp;&nbsp;</a>
+
+							<ul style="margin-left:-35px; height:auto; max-width:130px;">
+
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/guruxy.svg"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/falabella.svg"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/larebaja.svg"></a> </li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/lopido.svg"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="turismo_medico.php" style="font-size:14px; text-decoration:none; color:#1ebdde;">TURISMO MEDICO</a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/betplay.svg"></a> </li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/synlab.svg"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="cobru.php" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/cobru.svg"></a> </li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="servicios_pasalapagina.php" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/pasalapagina.svg"></a></li>
+								<li class="bordes" style="width:150px; height:40px; background-color:#452167; z-index: 999;"><a href="" style="font-size:10px; text-decoration:none; color:#FFC808;"><img src=" img/servicios/smartfit.svg"></a> </li>
+							</ul>
+						</li>
+				</nav> -->
 			</div>
 			<div class="menu">
 
@@ -109,7 +109,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 							</li>
 							<li style="font-size: 15px; color: #FFF;height:30px;width:3px;background-color:transparent">|</li>
 							<li class="menuamarillo" style="margin-left:-20px;height:30px;width:250px;background-color:transparent">
-								<a class="menuamarillo" href="https://www.guruxy.com" style="font-size: 15px; text-decoration:none;">TRABAJA CON NOSOTROS</a>
+								<a class="menuamarillo" href="../gurus" style="font-size: 15px; text-decoration:none;">TRABAJA CON NOSOTROS</a>
 							</li>
 							<li style="font-size: 15px; color: #FFF;margin-left:-20px;height:30px;width:3px;background-color:transparent">|</li>
 							<li class="menuamarillo" style=" margin-left:-40px;height:30px;width:250px;background-color:transparent">
@@ -125,7 +125,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<li class="itemlista">¿CÓMO FUNCIONA?</li>
 				</ul>-->
 				</div>
-				<input type="hidden" id="filtro" value="medicina">
+
 				<?php
 				if (!(isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE)) {
 				?>
@@ -136,14 +136,15 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 				<?php
 				} else {
 				?>
-					<div class="menusuperiocentro logout">
+					<div class="menusuperiocentro logout" style="">
 						<a style=" color:#FFC808;  "><?php echo $_SESSION['nombre']; ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-						<a class="logout_btn" href="logout.php"> Cerrar Sesión</a>
+						<a class="logout_btn" href="logout.php" style=" "> Cerrar Sesión</a>
 					</div>
 				<?php
 				}
 				?>
+
 				<a href="cobru.php"><img src="img/logoheader.png" width="7%" alt="sesion" style="margin-top:10px" /></a>
 
 
@@ -151,7 +152,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<span class="itemlista">IDIOMA <a style="color:#FFC808"> ES </a> | EN</span>
 				</div>
 
-				<div class="menuinferior">
+				<div class="menuinferior" style="margin-top:2px">
 					<br>
 					<nav>
 						<ul align="right">
@@ -160,7 +161,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 							</a>
 
 							<a href="medicos.php">
-								<li class="azulmedicos">MÉDICOS</li>
+								<li class="azulmedicos" style="">MÉDICOS</li>
 							</a>
 							<a href="medicina_alternativa.php">
 								<li class="verdemedicos">MÉDICINA ALTERNATIVA</li>
@@ -193,46 +194,8 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					</nav>
 				</div>
 			</div>
-			<!--	<div class="barrapasalapagina" style="margin-top:-6px; ">
-				<ul id="lista1">
-					<li style="margin-left:-90px;" class="itemlista1"><a id="current" href="medicos.php"> HOME MÉDICOS </a></li>
-					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="preguntas_medicos.php">PREGUNTAS FRECUENTES</a></li>
-					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="cuidados_medicos_casa.php">CUIDADOS EN CASA</a></li>
-					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="presencial_medicos.php">CITA PRESENCIAL</a></li>
-					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="#">LABORATORIOS MÉDICOS</a></li>
-					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="#">FARMACIAS</a></li>
-					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="historia_clinica.php">HISTORIA CLÍNICA</a></li>
-					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="turismo_medico.php" style="color:#fff; text-shadow: 1px 1px 1px black;">TURISMO MÉDICO</a> </li>
-					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="libreria.php">LIBRERÍA</a></li>
-				</ul>
-			</div>-->
-			<div class="barraconstruccion" style="margin-top:-6px; ">
-				<ul id="lista1">
-					<li style="margin-left:-23px;" class="itemlista1"><a id="current" href="construccion.php" > HOME ESPECIALISTAS CONSTRUCCIÓN </a></li>
-					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="#">PREGUNTAS FRECUENTES</a></li>
-					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="presencial_construccion.php">CITA PRESENCIAL</a></li>
-					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="#">CURSOS EN LÍNEA </a></li>
-					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="libreria_construccion.php" style="color:#fff; text-shadow: 1px 1px 1px black;" >LIBRERÍA</a></li>
-					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="#">MI CUENTA</a></li>
-				</ul>
-			</div>
-			
 
 		</div>
-
 
 	<?php
 	}
@@ -248,37 +211,57 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	}
 	?>
 
-	<div style=" ">
-
-		<iframe src="https://staging.pasalapagina.com/guruxy.controller/check-access.html#arquitectura-disentildeo-decoracioacuten" style="border: none; margin-top: 142px;" width="100%" height="2200px" allow="fullscreen"></iframe>
-		<!-- Gurus -->
-	</div>
-	<div class="fondomedio">
 
 
-		<!--Product Grid-->
-
-	</div>
-	<div class="footer2" align="center">
-		<div class="container2">
-			<div align="right">
-				<img style="width:100%; margin-top:-15px; margin-bottom:30px;" src="img/amedico.png" alt="kalita">
-			</div>
-
-			<div align="center">
-
-				<img style="width:15%;" src="img/preffo1.png" alt="kalita">
-				<img style="width:15%; margin-left:25px" src="img/preffo2.png" alt="kalita">
-				<img style="width:15%; margin-left:25px" src="img/preffo3.png" alt="kalita">
-				<img style="width:15%; margin-left:25px; margin-right:25px " src="img/preffo4.png" alt="kalita">
-			</div>
-
-
-			<div class="row">
-
-			</div>
+	<!--Product Grid--> <br><br>
+	<br><br>
+	<br>
+	<div style=" background:#fff; margin-top:-4px" align="right">
+		<div class="caja_inline  " style="margin-top:0px">
+			<a href=""><img class="ico_serv" src="img/barra/cursos.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href=""><img class="ico_serv" src="img/barra/entretenimiento.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href=""><img class="ico_serv" src="img/barra/farmacia.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href=""><img class="ico_serv" src="img/barra/inmobiliaria.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href=""><img class="ico_serv" src="img/barra/mercados.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href=""><img class="ico_serv" src="img/barra/migrantes.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href="servicios_pasalapagina.php"><img class="ico_serv" src="img/barra/ocio.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href=""><img class="ico_serv" src="img/barra/hamburger.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href=""><img class="ico_serv" src="img/barra/seguros.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href="servicios_finanzas.php"><img class="ico_serv" src="img/barra/finanzas.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href="servicios_turismo_medico.php"><img class="ico_serv" src="img/barra/salud.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href=""><img class="ico_serv" src="img/barra/tiendas.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href="servicios_turismo_medico.php"><img class="ico_serv" src="img/barra/turismo_medico.png" /> </a>
+		</div>
+		<div class="caja_inline " style="margin-top:0px">
+			<a href=""><img class="ico_serv" src="img/barra/viajes.png" /> </a>
 		</div>
 	</div>
+
+
 	<footer>
 		<div class="container" style="margin-left:20%">
 			<div class="row">
@@ -332,13 +315,14 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 				</div>
 
 
-				<?php
-				require("modal/registro.php");
-				require("modal/inicio_sesion.php");
-				require("modal/olvido_password.php");
-				?>
-
 			</div>
+			<?php
+			require("modal/registro.php");
+			require("modal/inicio_sesion.php");
+			require("modal/olvido_password.php");
+			?>
+
+		</div>
 	</footer>
 
 	<!-- SLIDER -->
@@ -375,15 +359,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			dots[slideIndex - 1].className += " active";
 		}
 	</script>
-	<script>
-		(function($) {
-			$(window).on("load", function() {
-				$(".barraizquierdapasalapagina").mCustomScrollbar({
-					theme: "rounded"
-				});
-			});
-		})(jQuery);
-	</script>
+
 
 	<script>
 		var slideIndex = 0;
@@ -403,12 +379,13 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			setTimeout(carousel, 15000);
 		}
 	</script>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<script src="js/consulta_gurus_especiales.js"></script>
-	<script src="js/consumo_servicio.js"></script>
 	<script src="js/login.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </body>
 
 </html>

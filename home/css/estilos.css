@@ -1,64 +1,102 @@
 
+.ico_serv{
+    width:100%;
+}
+
 
 /* pantalla 15" */
-@media (min-width: 321px) and (max-width: 1500px) {
+@media (min-width: 321px) and (max-width: 1440px) {
     .rojoservicios {
         width: 8%;
-        background-color: #dd4527;
+        background-color: #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
     }
     
     .azulmedicos {
         width: 8%;
         background-color: #8ED8F8;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .verdemedicos {
         width: 8%;
         background-color: #A5CE39;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .amarilloyoga {
         width: 8%;
         background-color: #FFED90;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .moradosiquico {
         width: 8%;
         background-color: #A665A9;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .azulreligioso {
         width: 8%;
         background-color: #59C7DA;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .naranjacoaching {
         width: 8%;
         background-color: #F58120;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .azulidioma {
         width: 8%;
         background-color: #4EB3BD;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .verdeotros {
         width: 8%;
         background-color: #9AD3AE;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .amarillocontruccion {
         width: 8%;
         background-color: #FFC808;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .rosadotutores {
         width: 8%;
         background-color: #DE5886;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     .itemlista {
         font-family: "Circular Std Book", "Circular Std Black";
-        font-size: 5px;
+        font-size: 80%;
+        color: #DE5886;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+}
+@media (min-width: 1500px){
+    .itemlista {
+        font-family: "Circular Std Book", "Circular Std Black";
+        font-size: 80%;
         color: #DE5886;
         padding-right: 0px;
         padding-top: 0px;
@@ -1695,7 +1733,6 @@ a.logout_btn:hover {
 
 .itemlista {
     font-family: "Circular Std Book", "Circular Std Black";
-    font-size: 14px;
     color: #FFF;
     padding-right: 0px;
     padding-top: 0px;
@@ -1745,48 +1782,77 @@ nav li:hover {
     color: #000;
 }
 
+
+  
+  
+
 .rojoservicios {
-    background-color: #dd4527;
+    background-color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+
+
 }
 
 .azulmedicos {
     background-color: #8ED8F8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .verdemedicos {
     background-color: #A5CE39;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .amarilloyoga {
     background-color: #FFED90;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .moradosiquico {
     background-color: #A665A9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .azulreligioso {
     background-color: #59C7DA;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .naranjacoaching {
     background-color: #F58120;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .azulidioma {
     background-color: #4EB3BD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .verdeotros {
     background-color: #9AD3AE;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .amarillocontruccion {
     background-color: #FFC808;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .rosadotutores {
     background-color: #DE5886;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
