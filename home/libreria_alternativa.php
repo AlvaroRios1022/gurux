@@ -201,9 +201,9 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 				<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="presencial_alternativa.php">CITA PRESENCIAL</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">PRUEBAS DE LABORATORIO</a></li>
+                <li class="itemlista1"><a href="servicios_synlab.php">PRUEBAS DE LABORATORIO</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">FARMACIA</a></li>
+                <li class="itemlista1"><a href="servicios_larebaja.php">FARMACIA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="historia_alternativa.php" >HISTORIA CLÍNICA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>

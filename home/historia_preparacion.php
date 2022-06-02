@@ -189,17 +189,17 @@ box-shadow: none;
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="preguntas_preparacion.php" >PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="preparacion_fisica_casa.php" style="color:#fff; text-shadow: 1px 1px 2px black;">PREPARACIÓN FÍSICA EN CASA</a></li>
+                <li class="itemlista1"><a href="preparacion_fisica_casa.php" >PREPARACIÓN FÍSICA EN CASA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">TRASMISIONES EN LÍNEA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="preparacion_cursos.php">CURSOS EN LÍNEA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">NUTRICIÓN EN LÍNEA</a></li>
+                <li class="itemlista1"><a href="servicios_fithub.php">NUTRICIÓN EN LÍNEA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="libreria_preparacion.php">LIBRERÍA</a></li>
+                <li class="itemlista1"><a href="libreria_preparacion.php" >LIBRERÍA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="historia_preparacion.php">MI CUENTA</a></li>
+                <li class="itemlista1"><a href="historia_preparacion.php" style="color:#fff; text-shadow: 1px 1px 2px black;">MI CUENTA</a></li>
             </ul>
         </div>
 
@@ -452,7 +452,7 @@ box-shadow: none;
                <ul class="social">
                           <span style="color: #C93782">SÍGUENOS</span>    
                            <li>
-                                <a href="#"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
+                                <a href="https://www.facebook.com/Guruxy-104884922225645"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
                            </li>
                           
                            <li>

@@ -190,13 +190,13 @@ box-shadow: none;
 				<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="presencial_alternativa.php">CITA PRESENCIAL</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">PRUEBAS DE LABORATORIO</a></li>
+                <li class="itemlista1"><a href="servicios_synlab.php">PRUEBAS DE LABORATORIO</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">FARMACIA</a></li>
+                <li class="itemlista1"><a href="servicios_larebaja.php">FARMACIA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="historia_alternativa.php">HISTORIA CLÍNICA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="libreria_alternativa.php">LIBRERÍA</a></li>
+                <li class="itemlista1"><a href="libreria_alternativa.php" >LIBRERÍA</a></li>
             </ul>
         </div>
 
@@ -800,7 +800,7 @@ box-shadow: none;
                <ul class="social">
                           <span style="color: #C93782">SÍGUENOS</span>    
                            <li>
-                                <a href="#"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
+                                <a href="https://www.facebook.com/Guruxy-104884922225645"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
                            </li>
                           
                            <li>

@@ -218,13 +218,13 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 	<br>
 	<div style=" background:#fff; margin-top:-4px" align="right">
 		<div class="caja_inline  " style="margin-top:0px">
-			<a href=""><img class="ico_serv" src="img/barra/cursos.png" /> </a>
+			<a href="servicios_cursos.php"><img class="ico_serv" src="img/barra/cursos.png" /> </a>
 		</div>
 		<div class="caja_inline " style="margin-top:0px">
 			<a href=""><img class="ico_serv" src="img/barra/entretenimiento.png" /> </a>
 		</div>
 		<div class="caja_inline " style="margin-top:0px">
-			<a href=""><img class="ico_serv" src="img/barra/farmacia.png" /> </a>
+			<a href="servicios_larebaja.php"><img class="ico_serv" src="img/barra/farmacia.png" /> </a>
 		</div>
 		<div class="caja_inline " style="margin-top:0px">
 			<a href=""><img class="ico_serv" src="img/barra/inmobiliaria.png" /> </a>

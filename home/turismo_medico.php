@@ -203,15 +203,15 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="presencial_medicos.php">CITA PRESENCIAL</a></li>
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="#">LABORATORIOS MÉDICOS</a></li>
+					<li class="itemlista1"><a href="servicios_synlab.php">LABORATORIOS MÉDICOS</a></li>
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="#">FARMACIAS</a></li>
+					<li class="itemlista1"><a href="servicios_larebaja.php">FARMACIAS</a></li>
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="historia_clinica.php">HISTORIA CLÍNICA</a></li>
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="turismo_medico.php" style="color:#fff; text-shadow: 1px 1px 1px black;">TURISMO MÉDICO</a> </li>
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="libreria.php">LIBRERÍA</a></li>
+					<li class="itemlista1"><a href="libreria.php" >LIBRERÍA</a></li>
 				</ul>
 			</div>
 

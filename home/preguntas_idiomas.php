@@ -191,9 +191,9 @@ box-shadow: none;
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="idiomas_aprender.php">QUIERO APRENDER</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="idiomas_cursos.php">CURSOS EN LÍNEA</a></li>
+                <li class="itemlista1"><a href="servicios_cursos.php">CURSOS EN LÍNEA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="libreria_idiomas.php">LIBRERÍA</a></li>
+                <li class="itemlista1"><a href="libreria_idiomas.php" >LIBRERÍA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="historia_idiomas.php">MI CUENTA</a></li>
             </ul>
@@ -504,7 +504,7 @@ box-shadow: none;
                <ul class="social">
                           <span style="color: #C93782">SÍGUENOS</span>    
                            <li>
-                                <a href="#"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
+                                <a href="https://www.facebook.com/Guruxy-104884922225645"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
                            </li>
                           
                            <li>

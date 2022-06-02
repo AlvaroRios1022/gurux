@@ -365,15 +365,15 @@ box-shadow: none;
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="presencial_medicos.php" style="color:#fff; text-shadow: 1px 1px 1px black;">CITA PRESENCIAL</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">LABORATORIOS MÉDICOS</a></li>
+                <li class="itemlista1"><a href="servicios_synlab.php">LABORATORIOS MÉDICOS</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="#">FARMACIAS</a></li>
+                <li class="itemlista1"><a href="servicios_larebaja.php">FARMACIAS</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="historia_clinica.php">HISTORIA CLÍNICA</a></li>
 				<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 				<li class="itemlista1"><a href="turismo_medico.php">TURISMO MÉDICO</a> </li>
 				<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-				<li class="itemlista1"><a href="libreria.php">LIBRERÍA</a></li> 
+				<li class="itemlista1"><a href="libreria.php" >LIBRERÍA</a></li> 
             </ul>
         </div>
  
@@ -2297,7 +2297,7 @@ box-shadow: none;
                <ul class="social">
                           <span style="color: #C93782">SÍGUENOS</span>    
                            <li>
-                                <a href="#"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
+                                <a href="https://www.facebook.com/Guruxy-104884922225645"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
                            </li>
                           
                            <li>

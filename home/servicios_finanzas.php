@@ -224,7 +224,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 			<a href=""><img class="ico_serv" src="img/barra/entretenimiento.png" /> </a>
 		</div>
 		<div class="caja_inline " style="margin-top:0px">
-			<a href=""><img class="ico_serv" src="img/barra/farmacia.png" /> </a>
+			<a href="servicios_larebaja.php"><img class="ico_serv" src="img/barra/farmacia.png" /> </a>
 		</div>
 		<div class="caja_inline " style="margin-top:0px">
 			<a href=""><img class="ico_serv" src="img/barra/inmobiliaria.png" /> </a>

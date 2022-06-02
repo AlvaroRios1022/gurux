@@ -135,7 +135,7 @@ box-shadow: none;
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">CURSOS EN LINEA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="libreria_religiosos.php" >LIBRERÍA</a></li>
+                <li class="itemlista1"><a href="servicios_libreria_general.php" >LIBRERÍA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="#">MI CUENTA</a></li>
             </ul>
@@ -1573,7 +1573,7 @@ box-shadow: none;
                <ul class="social">
                           <span style="color: #C93782">SÍGUENOS</span>    
                            <li>
-                                <a href="#"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
+                                <a href="https://www.facebook.com/Guruxy-104884922225645"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
                            </li>
                           
                            <li>

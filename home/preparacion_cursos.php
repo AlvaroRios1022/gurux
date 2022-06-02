@@ -376,9 +376,9 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="preparacion_cursos.php" style="color:#fff; text-shadow: 1px 1px 2px black;">CURSOS EN LÍNEA</a></li>
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="#">NUTRICIÓN EN LÍNEA</a></li>
+					<li class="itemlista1"><a href="servicios_fithub.php">NUTRICIÓN EN LÍNEA</a></li>
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="libreria_preparacion.php">LIBRERÍA</a></li>
+					<li class="itemlista1"><a href="servicios_libreria_general.php" >LIBRERÍA</a></li>
 					<li class="itemlista1">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="historia_preparacion.php">MI CUENTA</a></li>
 				</ul>

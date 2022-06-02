@@ -217,7 +217,7 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
 					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="horoscopo.php" style="color:#fff;text-shadow: 1px 1px 1px black;">HORÓSCOPO</a></li>
 					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-					<li class="itemlista1"><a href="libreria_psiquicos.php">LIBRERÍA</a></li>
+					<li class="itemlista1"><a href="libreria_psiquicos.php" >LIBRERÍA</a></li>
 					<li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
 					<li class="itemlista1"><a href="historia_psiquicos.php">MI CUENTA</a></li>
 				</ul>

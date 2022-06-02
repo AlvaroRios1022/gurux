@@ -196,11 +196,11 @@ box-shadow: none;
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="preguntas_coaching.php">PREGUNTAS FRECUENTES</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="coaching_cursos.php" href="coaching.php" >CURSOS EN LÍNEA</a></li>
+                <li class="itemlista1"><a href="servicios_cursos.php" href="coaching.php" >CURSOS EN LÍNEA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="coaching_certificaciones.php" style="color:#fff; text-shadow: 1px 1px 1px black;">CERTIFICACIONES EN LÍNEA</a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="itemlista1"><a href="libreria_coaching.php">LIBRERÍA </a></li>
+                <li class="itemlista1"><a href="libreria_coaching.php" >LIBRERÍA </a></li>
                 <li class="itemlista1">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li class="itemlista1"><a href="historia_coaching.php">MI CUENTA</a></li>
             </ul>
@@ -2722,12 +2722,11 @@ name="idioma" id="idioma" onchange="change_idioma(this)">
                      </li>
                 </ul>
             </div>
-       
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                <ul class="social">
                           <span style="color: #C93782">SÍGUENOS</span>    
                            <li>
-                                <a href="#"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
+                                <a href="https://www.facebook.com/Guruxy-104884922225645"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
                            </li>
                           
                            <li>
