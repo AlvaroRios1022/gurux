@@ -663,15 +663,15 @@ box-shadow: none;
                            </li>
                           
                            <li>
-                                <a href="#"><i style="color: #FFFFFF"  class="fa fa-instagram fa-2x"></i></a>
+                                <a href="https://www.instagram.com/guxury.co/"><i style="color: #FFFFFF"  class="fa fa-instagram fa-2x"></i></a>
 						   </li>
 						   <li>
-                                <a href="#"><i style="color: #FFFFFF" class="fa fa-linkedin fa-2x"></i></a>
-                           </li>
+							<a href="https://www.linkedin.com/company/guruxylatam"><i style="color: #FFFFFF" class="fa fa-linkedin fa-2x"></i></a>
+						</li>
                           
-                           <li>
+                            <!--<li>
                                 <a href="#"><i style="color: #FFFFFF"  class="fa fa-youtube fa-2x"></i></a>
-                           </li>
+                           </li> -->
 				  <a href="https://guruxy.com/home/index.php" ><img  src="images/logo.png" width="220" height="auto" style="margin-left: -30px"  alt=""/></a
 >
               </ul>

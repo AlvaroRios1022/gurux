@@ -1072,7 +1072,7 @@ box-shadow: none;
                      </li>
                     
                      <li>
-                          <a href="#"><i style="color: #FFFFFF"  class="fa fa-instagram fa-2x"></i></a>
+                          <a href="https://www.instagram.com/guxury.co/"><i style="color: #FFFFFF"  class="fa fa-instagram fa-2x"></i></a>
          </li>
          <li>
                           <a href="#"><i style="color: #FFFFFF" class="fa fa-linkedin fa-2x"></i></a>

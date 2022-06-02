@@ -239,11 +239,11 @@ if (isset($_SESSION['logueado']) && $_SESSION['logueado'] == TRUE) {
                     <ul class="social">
                         <span style="color: #C93782">SÍGUENOS</span>
                         <li>
-                            <a href="#"><i style="color: #FFFFFF" class="fa fa-facebook fa-2x"></i></a>
+                            <a href="https://www.facebook.com/Guruxy-104884922225645"><i style="color: #FFFFFF"  class="fa fa-facebook fa-2x"></i></a>
                         </li>
 
                         <li>
-                            <a href="#"><i style="color: #FFFFFF" class="fa fa-instagram fa-2x"></i></a>
+                            <a href="https://www.instagram.com/guxury.co/"><i style="color: #FFFFFF"  class="fa fa-instagram fa-2x"></i></a>
                         </li>
                         <li>
                             <a href="#"><i style="color: #FFFFFF" class="fa fa-linkedin fa-2x"></i></a>
